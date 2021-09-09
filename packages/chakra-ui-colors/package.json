@@ -1,0 +1,36 @@
+{
+  "name": "@hypertheme-editor/chakra-ui-colors",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "author": "marco",
+  "license": "ISC",
+  "peerDependencies": {
+    "@chakra-ui/react": ">= 1.0.0",
+    "@hypertheme-editor/chakra-ui-core": "0.1.0",
+    "framer-motion": ">= 4",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "recoil": "^0.4.1"
+  },
+  "dependencies": {
+    "colord": "^2.1.0",
+    "immer": "^9.0.5",
+    "react-colorful": "^5.2.3",
+    "react-icons": "^4.2.0",
+    "use-debouncy": "^4.2.0"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}

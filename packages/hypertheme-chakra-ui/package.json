@@ -43,7 +43,7 @@
     "@hypertheme-editor/chakra-ui-colors": "^0.1.0",
     "@hypertheme-editor/chakra-ui-core": "^0.1.0",
     "@hypertheme-editor/chakra-ui-font-sizes": "^0.1.0",
-    "immer": "^9.0.5",
+    "immer": "^9.0.6",
     "react-icons": "^4.2.0",
     "recoil": "^0.4.1",
     "use-debouncy": "^4.2.0"

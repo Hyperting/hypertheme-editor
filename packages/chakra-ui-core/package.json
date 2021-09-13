@@ -1,6 +1,6 @@
 {
   "name": "@hypertheme-editor/chakra-ui-core",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -21,14 +21,12 @@
     "immer": "^9.0.6",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
-    "recoil": "^0.4.1"
+    "recoil": "^0.4.1",
+    "react-icons": "^4.2.0"
   },
   "dependencies": {
-    "@fontsource/sora": "^4.5.0",
     "@hypertheme-editor/chakra-ui-theme": "^0.1.0",
-    "react-google-font-loader": "^1.1.0",
-    "react-icons": "^4.2.0",
-    "use-debouncy": "^4.2.0"
+    "react-google-font-loader": "^1.1.0"
   },
   "publishConfig": {
     "access": "restricted"

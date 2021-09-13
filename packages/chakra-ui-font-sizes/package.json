@@ -21,13 +21,12 @@
     "framer-motion": ">= 4",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
-    "recoil": "^0.4.1"
-  },
-  "dependencies": {
-    "immer": "^9.0.5",
+    "recoil": "^0.4.1",
+    "immer": "^9.0.6",
     "react-icons": "^4.2.0",
     "use-debouncy": "^4.2.0"
   },
+  "dependencies": {},
   "publishConfig": {
     "access": "restricted"
   }

@@ -1,1 +1,46 @@
 # HyperTheme Editor
+
+# Basic Setup
+### 1. Installation
+
+Install with NPM:
+
+```bash
+npm i @hypertheme-editor/chakra-ui
+```
+
+or with Yarn:
+
+```bash
+yarn add @hypertheme-editor/chakra-ui
+```
+
+### 2. Basic setup
+
+Installation is super easy and fast:
+
+- Add the component `<ThemeEditorProvider />` just below the `<ChakraProvider />` component.
+- Add the component `<DefaultThemeEditor />`.
+
+Here's an example:
+
+```jsx
+import * as React from 'react'
+import { ChakraProvider } from '@chakra-ui/react'
+import { ThemeEditorProvider, DefaultThemeEditor } from '@hypertheme-editor/chakra-ui'
+import theme from './my-theme'
+
+function App() {
+  return (
+    <ChakraProvider theme={theme}>
+      <ThemeEditorProvider>
+        <DefaultThemeEditor pos="fixed" bottom={4} right={2} />
+      </ThemeEditorProvider>
+    </ChakraProvider>
+  )
+}
+```
+
+### 3. Enjoy
+
+Enjoy! You now have an inline editor in your project.

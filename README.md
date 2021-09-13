@@ -24,7 +24,7 @@ HyperTheme Editor has also an extended version with more features:
 - Radii Editor
 - Spacing Editor
 
-Read more [here](https://hyperthe.me)
+Check out more [here](https://hyperthe.me)
 
 ## Basic Setup
 ### 1. Installation

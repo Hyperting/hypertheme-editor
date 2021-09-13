@@ -1,5 +1,9 @@
 # HyperTheme Editor
 
+![HyperTheme Editor screen shot](./hypertheme-banner.jpg)
+
+Powerful visual theme editor for your next Chakra UI project.
+
 # Basic Setup
 ### 1. Installation
 

@@ -4,7 +4,29 @@
 
 Powerful visual theme editor for your next Chakra UI project.
 
-# Basic Setup
+## Features
+
+- Chakra-UI Theme Foundation Color Editor
+- Chakra-UI Theme Foundation Font Sizes Editor
+- Undo/Redo
+- Customizable Editor Drawer
+- Custom Panel Editors
+- Unlimited exports
+
+
+## Extended Version
+
+HyperTheme Editor has also an extended version with more features:
+- Font Family Editor from Google Fonts
+- Line Heights Editor
+- Letter Spacing Editor
+- Shadows Editor
+- Radii Editor
+- Spacing Editor
+
+Read more [here](https://hyperthe.me)
+
+## Basic Setup
 ### 1. Installation
 
 Install with NPM:

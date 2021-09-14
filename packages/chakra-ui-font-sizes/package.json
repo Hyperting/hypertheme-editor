@@ -1,6 +1,6 @@
 {
   "name": "@hypertheme-editor/chakra-ui-font-sizes",
-  "version": "0.1.0-rc.1",
+  "version": "0.1.0-rc.2",
   "description": "",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -17,7 +17,7 @@
   "license": "ISC",
   "peerDependencies": {
     "@chakra-ui/react": ">= 1.0.0",
-    "@hypertheme-editor/chakra-ui-core": "0.1.0-rc.1",
+    "@hypertheme-editor/chakra-ui-core": "0.1.0-rc.2",
     "framer-motion": ">= 4",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",

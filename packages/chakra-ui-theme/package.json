@@ -1,6 +1,6 @@
 {
   "name": "@hypertheme-editor/chakra-ui-theme",
-  "version": "0.1.0-rc.4",
+  "version": "0.1.0-rc.5",
   "description": "",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",

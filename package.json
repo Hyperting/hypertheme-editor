@@ -9,6 +9,10 @@
       "**/recoil"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hyperting/hypertheme-editor.git"
+  },
   "dependencies": {
     "@babel/core": "^7.14.6",
     "@chakra-ui/react": "^1.6.7",
@@ -58,18 +62,30 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "release": "release-it"
+    "release": "release-it --preRelease=rc"
   },
   "release-it": {
     "plugins": {
+      "release-it-yarn-workspaces": true,
       "release-it-lerna-changelog": {
         "infile": "CHANGELOG.md",
         "launchEditor": true
       }
+    },
+    "npm": false,
+    "git": {
+      "requireCleanWorkingDir": false,
+      "requireBranch": "main",
+      "push": false
+    },
+    "github": {
+      "release": true
     }
   },
   "devDependencies": {
     "release-it": "^14.11.5",
-    "release-it-lerna-changelog": "^3.1.0"
-  }
+    "release-it-lerna-changelog": "^3.1.0",
+    "release-it-yarn-workspaces": "^2.0.1"
+  },
+  "version": "0.1.0-rc.1"
 }

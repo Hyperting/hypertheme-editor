@@ -17,18 +17,11 @@
   "license": "ISC",
   "peerDependencies": {
     "@chakra-ui/react": ">= 1.0.0",
-    "@hypertheme-editor/chakra-ui-core": "0.1.0-rc.4",
     "framer-motion": ">= 4",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
-  "dependencies": {
-    "colord": "^2.1.0",
-    "immer": "^9.0.6",
-    "react-colorful": "^5.2.3",
-    "react-icons": "^4.2.0",
-    "use-debouncy": "^4.2.0"
-  },
+  "dependencies": {},
   "publishConfig": {
     "access": "public"
   }

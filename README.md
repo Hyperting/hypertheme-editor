@@ -1,4 +1,4 @@
-# HyperTheme Editor
+# HyperTheme Editor (Release Candidate)
 
 ![HyperTheme Editor screen shot](./hypertheme-banner.jpg)
 
@@ -32,13 +32,13 @@ Check out more [here](https://hyperthe.me)
 Install with NPM:
 
 ```bash
-npm i @hypertheme-editor/chakra-ui
+npm i @hypertheme-editor/chakra-ui@rc
 ```
 
 or with Yarn:
 
 ```bash
-yarn add @hypertheme-editor/chakra-ui
+yarn add @hypertheme-editor/chakra-ui@rc
 ```
 
 ### 2. Basic setup

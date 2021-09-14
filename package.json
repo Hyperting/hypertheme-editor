@@ -62,7 +62,13 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "release": "release-it --preRelease=rc"
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "release": "release-it",
+    "release-rc": "release-it --preRelease=rc",
+    "deploy": "yarn build && yarn release",
+    "deploy-rc": "yarn build && yarn release-rc"
   },
   "release-it": {
     "plugins": {
@@ -87,5 +93,5 @@
     "release-it-lerna-changelog": "^3.1.0",
     "release-it-yarn-workspaces": "^2.0.1"
   },
-  "version": "0.1.0-rc.3"
+  "version": "0.1.0-rc.4"
 }

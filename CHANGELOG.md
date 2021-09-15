@@ -1,3 +1,7 @@
+## 0.1.0-rc.7 (2021-09-15)
+fix: chakra-ui-theme deps
+
+
 ## 0.1.0-rc.6 (2021-09-15)
 
 fix: chakra-ui-theme font dependencies

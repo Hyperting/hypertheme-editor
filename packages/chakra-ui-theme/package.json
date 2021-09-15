@@ -1,6 +1,6 @@
 {
   "name": "@hypertheme-editor/chakra-ui-theme",
-  "version": "0.1.0-rc.5",
+  "version": "0.1.0-rc.6",
   "description": "",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -21,7 +21,9 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@fontsource/sora": "^4.5.0"
+  },
   "publishConfig": {
     "access": "public"
   }

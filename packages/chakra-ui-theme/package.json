@@ -21,9 +21,7 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
-  "dependencies": {
-    "@fontsource/sora": "^4.5.0"
-  },
+  "dependencies": {},
   "publishConfig": {
     "access": "public"
   }

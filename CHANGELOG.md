@@ -1,3 +1,11 @@
+## 0.1.0-rc.9 (2021-09-21)
+
+- Removed unused "Add Theme" button
+- Removed unneccesary Menu on ThemeEditorHeader
+- removed unused imports from ThemeEditorButton
+
+
+
 ## 0.1.0-rc.8 (2021-09-21)
 
 Renamed DefaultThemeEditor to HyperThemeEditor

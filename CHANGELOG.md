@@ -1,3 +1,8 @@
+## 0.1.0-rc.8 (2021-09-21)
+
+Renamed DefaultThemeEditor to HyperThemeEditor
+
+
 ## 0.1.0-rc.7 (2021-09-15)
 fix: chakra-ui-theme deps
 

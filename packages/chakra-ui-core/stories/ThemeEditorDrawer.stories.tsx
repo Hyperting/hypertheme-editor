@@ -3,19 +3,12 @@ import React from 'react'
 import { ComponentMeta } from '@storybook/react'
 
 import { Box } from '@chakra-ui/react'
-import { CgColorPicker, CgEditShadows, CgSpaceBetween } from 'react-icons/cg'
-import { MdRoundedCorner } from 'react-icons/md'
-import { BiText } from 'react-icons/bi'
+import { CgColorPicker } from 'react-icons/cg'
 import ColorModeToggle from '../src/components/base/ColorModeToggle'
 import {
   ThemeEditorButton,
   ThemeEditorProvider,
   ThemeEditorRootPanel,
-  ThemeEditorColors,
-  ThemeEditorTypography,
-  ThemeEditorRadii,
-  ThemeEditorSpacing,
-  ThemeEditorShadows,
   ThemeEditorDrawer,
   ThemeEditor,
 } from '../src'
@@ -31,7 +24,7 @@ export const Default = (args) => (
     <ThemeEditor {...args}>
       <ThemeEditorButton />
       <ThemeEditorDrawer>
-        <ThemeEditorColors icon={CgColorPicker} title="Colors" />
+        {/* <ThemeEditorColors icon={CgColorPicker} title="Colors" /> */}
       </ThemeEditorDrawer>
     </ThemeEditor>
   </ThemeEditorProvider>
@@ -43,7 +36,7 @@ export const DefaultWithRootPanel = (args) => (
       <ThemeEditorButton />
       <ThemeEditorDrawer>
         <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
-          <ThemeEditorColors />
+          {/* <ThemeEditorColors /> */}
         </ThemeEditorRootPanel>
       </ThemeEditorDrawer>
     </ThemeEditor>
@@ -56,7 +49,7 @@ export const WithAllEditorsWithRootPanel = (args) => (
       <ThemeEditorButton />
       <ThemeEditorButton label="Try it" size="sm" />
       <ThemeEditorDrawer {...args}>
-        <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
+        {/* <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
           <ThemeEditorColors />
         </ThemeEditorRootPanel>
         <ThemeEditorRootPanel icon={BiText} title="Typography">
@@ -70,7 +63,7 @@ export const WithAllEditorsWithRootPanel = (args) => (
         </ThemeEditorRootPanel>
         <ThemeEditorRootPanel icon={CgSpaceBetween} title="Space">
           <ThemeEditorSpacing />
-        </ThemeEditorRootPanel>
+        </ThemeEditorRootPanel> */}
       </ThemeEditorDrawer>
     </ThemeEditor>
     <ColorModeToggle />
@@ -83,11 +76,11 @@ export const WithAllEditorsWithoutRootPanel = (args) => (
       <ThemeEditorButton />
       <ThemeEditorButton label="Try it" size="sm" />
       <ThemeEditorDrawer {...args}>
-        <ThemeEditorColors icon={CgColorPicker} title="Colors" />
+        {/* <ThemeEditorColors icon={CgColorPicker} title="Colors" />
         <ThemeEditorTypography icon={BiText} title="Typography" />
         <ThemeEditorShadows icon={CgEditShadows} title="Shadows" />
         <ThemeEditorRadii icon={MdRoundedCorner} title="Radii" />
-        <ThemeEditorSpacing icon={CgSpaceBetween} title="Space" />
+        <ThemeEditorSpacing icon={CgSpaceBetween} title="Space" /> */}
       </ThemeEditorDrawer>
     </ThemeEditor>
     <ColorModeToggle />
@@ -106,7 +99,7 @@ export const WithCustomHeader = (args) => (
         }
       >
         <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
-          <ThemeEditorColors />
+          {/* <ThemeEditorColors /> */}
         </ThemeEditorRootPanel>
       </ThemeEditorDrawer>
     </ThemeEditor>
@@ -125,7 +118,7 @@ export const WithCustomFooter = (args) => (
         }
       >
         <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
-          <ThemeEditorColors />
+          {/* <ThemeEditorColors /> */}
         </ThemeEditorRootPanel>
       </ThemeEditorDrawer>
     </ThemeEditor>

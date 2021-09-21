@@ -6,16 +6,23 @@ import { CgColorPicker, CgEditShadows, CgSpaceBetween } from 'react-icons/cg'
 import { ImFontSize } from 'react-icons/im'
 import { BiText } from 'react-icons/bi'
 import { MdRoundedCorner } from 'react-icons/md'
+// import {
+//   ThemeEditorButton,
+//   ThemeEditorProvider,
+//   ThemeEditorRootPanel,
+//   ThemeEditorDrawer,
+//   ThemeEditor,
+// } from '@hypertheme-editor/chakra-ui-core'
+import { ThemeEditorColors } from '@hypertheme-editor/chakra-ui-colors'
+import { ThemeEditorFontSizes } from '@hypertheme-editor/chakra-ui-font-sizes'
 import {
+  HyperThemeEditor,
   ThemeEditorButton,
   ThemeEditorProvider,
   ThemeEditorRootPanel,
   ThemeEditorDrawer,
   ThemeEditor,
-} from '@hypertheme-editor/chakra-ui-core'
-import { ThemeEditorColors } from '@hypertheme-editor/chakra-ui-colors'
-import { ThemeEditorFontSizes } from '@hypertheme-editor/chakra-ui-font-sizes'
-import { HyperThemeEditor } from '../src'
+} from '../src'
 
 export default {
   title: 'HyperThemeEditor/ThemeEditor Community',

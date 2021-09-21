@@ -16,7 +16,7 @@ Powerful visual theme editor for your next Chakra UI project.
 
 ## PRO Version
 
-HyperTheme Editor has also an extended version with more features:
+HyperTheme Editor has also a PRO version with more features:
 - Font Family Editor from Google Fonts
 - Line Heights Editor
 - Letter Spacing Editor

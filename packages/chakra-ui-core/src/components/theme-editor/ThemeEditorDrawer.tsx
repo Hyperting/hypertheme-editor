@@ -51,7 +51,7 @@ export const ThemeEditorDrawer: FC<ThemeEditorDrawerProps> = ({
   footerComponent = <ThemeEditorDrawerFooter />,
   ...rest
 }) => {
-  const bgColor = useColorModeValue('whiteAlpha.600', 'rgba(23,25,35,0.8)')
+  const bgColor = useColorModeValue('white', 'rgba(23,25,35,1)')
   const btnRef = useRef<any>()
   const initialFocusRef = useRef<any>()
   const isMobile = useIsMobile()
@@ -81,7 +81,6 @@ export const ThemeEditorDrawer: FC<ThemeEditorDrawerProps> = ({
       <DrawerContent
         bgColor={{ md: bgColor }}
         shadow="md"
-        backdropFilter={{ md: 'blur(25px)' }}
         fontFamily="Sora, sans-serif"
         lineHeight="1.5"
         zIndex="modal"

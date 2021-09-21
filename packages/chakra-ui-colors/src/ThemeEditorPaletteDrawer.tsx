@@ -130,7 +130,7 @@ const ThemeEditorPaletteDrawer: FC<ThemeEditorPaletteDrawerProps> = (props) => {
           py={{ base: 2, lg: 3 }}
         >
           <Box>
-            <Button size="lg" onClick={onClose} variant="outline">
+            <Button size="lg" onClick={onClose}>
               Cancel
             </Button>
           </Box>

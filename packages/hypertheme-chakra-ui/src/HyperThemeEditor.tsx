@@ -10,9 +10,9 @@ import { ThemeEditorFontSizes } from '@hypertheme-editor/chakra-ui-font-sizes'
 import { CgColorPicker } from 'react-icons/cg'
 import { ImFontSize } from 'react-icons/im'
 
-export type DefaultThemeEditorProps = ThemeEditorButtonProps
+export type HyperThemeEditorProps = ThemeEditorButtonProps
 
-export const DefaultThemeEditor: FC<DefaultThemeEditorProps> = (props) => {
+export const HyperThemeEditor: FC<HyperThemeEditorProps> = (props) => {
   return (
     <ThemeEditor>
       <ThemeEditorButton {...props} />

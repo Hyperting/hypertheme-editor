@@ -36,7 +36,7 @@ export type ThemeEditorDrawerProps = Omit<DrawerProps, 'children' | 'isOpen' | '
     ThemeEditorDrawerFooterProps,
     React.JSXElementConstructor<ThemeEditorDrawerFooterProps>
   >
-  additionalBody?: React.ReactNode
+  // additionalBody?: React.ReactNode
   isOpen?: boolean
   onClose?: () => void
 }

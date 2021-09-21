@@ -17,7 +17,6 @@ import { RiArrowGoBackFill, RiArrowGoForwardFill } from 'react-icons/ri'
 import { useRecoilState } from 'recoil'
 import { ThemeIcon, ColorModeToggle, BaseMenu, BaseMenuItem } from '../base'
 import { setThemeTokens } from '../../utils/updateThemeTokens'
-import ThemeSwitchDrawerButton from './ThemeSwitchDrawerButton'
 import { themeEditorState, useThemeEditor } from '../../hooks/useThemeEditor'
 
 export type ThemeEditorDrawerHeaderProps = {
@@ -85,7 +84,7 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
               fontSize="1rem"
               bg="transparent"
             > */}
-              Hyper Theme
+            Hyper Theme
             {/* </ThemeSwitchDrawerButton> */}
             <Flex alignItems="center">
               <ColorModeToggle p={0} w="auto" fontSize="0.875rem" mr={2} />

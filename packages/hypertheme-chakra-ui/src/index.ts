@@ -1,9 +1,9 @@
-import { DefaultThemeEditor, DefaultThemeEditorProps } from './DefaultThemeEditor'
+import { HyperThemeEditor, HyperThemeEditorProps } from './HyperThemeEditor'
 
 export * from '@hypertheme-editor/chakra-ui-core'
 export * from '@hypertheme-editor/chakra-ui-colors'
 export * from '@hypertheme-editor/chakra-ui-font-sizes'
 
-export { DefaultThemeEditor }
+export { HyperThemeEditor }
 
-export type { DefaultThemeEditorProps }
+export type { HyperThemeEditorProps as HyperThemeEditorProps }

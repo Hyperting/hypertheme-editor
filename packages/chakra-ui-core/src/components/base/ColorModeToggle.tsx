@@ -21,7 +21,7 @@ type ColorModeToggleProps = {
   ThemingProps
 
 const ColorModeToggle: FC<ColorModeToggleProps> = (props) => {
-  const { size = 'md', showLabel, colorScheme = 'gray', ...rest } = props
+  const { size = 'md', showLabel, colorScheme = 'gray', fontSize, ...rest } = props
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
@@ -33,7 +33,7 @@ const ColorModeToggle: FC<ColorModeToggleProps> = (props) => {
       {...rest}
     >
       {showLabel && (
-        <Text fontSize={rest.fontSize || size} textTransform="capitalize">
+        <Text fontSize={fontSize || size} textTransform="capitalize">
           {colorMode}
         </Text>
       )}

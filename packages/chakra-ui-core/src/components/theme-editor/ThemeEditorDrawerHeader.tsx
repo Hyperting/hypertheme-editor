@@ -88,7 +88,10 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
             {/* </ThemeSwitchDrawerButton> */}
             <Flex alignItems="center">
               <ColorModeToggle p={0} w="auto" fontSize="0.875rem" mr={2} />
-              <BaseMenu
+              <Button rightIcon={<GrPowerReset />} onClick={handleResetTheme} size="xs">
+                Reset
+              </Button>
+              {/* <BaseMenu
                 placement="bottom-start"
                 trigger={
                   <IconButton
@@ -114,7 +117,7 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
                 <BaseMenuItem icon={GrPowerReset} onClick={handleResetTheme}>
                   Reset theme
                 </BaseMenuItem>
-              </BaseMenu>
+              </BaseMenu> */}
             </Flex>
           </Box>
         </Flex>

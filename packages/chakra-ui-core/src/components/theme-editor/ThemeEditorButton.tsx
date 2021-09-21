@@ -1,8 +1,6 @@
 import React, { FC, useMemo } from 'react'
 import { Button, ButtonProps, ThemeProvider, Text, Divider } from '@chakra-ui/react'
 import ThemeIcon from '../base/ThemeIcon'
-import { ThemeEditorDrawer, ThemeEditorDrawerProps } from './ThemeEditorDrawer'
-import { theme } from '@hypertheme-editor/chakra-ui-theme'
 
 export type ThemeEditorButtonProps = {
   label?: string

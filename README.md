@@ -14,7 +14,7 @@ Powerful visual theme editor for your next Chakra UI project.
 - Unlimited exports
 
 
-## Extended Version
+## PRO Version
 
 HyperTheme Editor has also an extended version with more features:
 - Font Family Editor from Google Fonts
@@ -46,21 +46,21 @@ yarn add @hypertheme-editor/chakra-ui@rc
 Installation is super easy and fast:
 
 - Add the component `<ThemeEditorProvider />` just below the `<ChakraProvider />` component.
-- Add the component `<DefaultThemeEditor />`.
+- Add the component `<HyperThemeEditor />`.
 
 Here's an example:
 
 ```jsx
 import * as React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
-import { ThemeEditorProvider, DefaultThemeEditor } from '@hypertheme-editor/chakra-ui'
+import { ThemeEditorProvider, HyperThemeEditor } from '@hypertheme-editor/chakra-ui'
 import theme from './my-theme'
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <ThemeEditorProvider>
-        <DefaultThemeEditor pos="fixed" bottom={4} right={2} />
+        <HyperThemeEditor pos="fixed" bottom={4} right={2} />
       </ThemeEditorProvider>
     </ChakraProvider>
   )

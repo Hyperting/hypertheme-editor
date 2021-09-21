@@ -10,7 +10,7 @@ export const ThemeSwitchDrawerButton: FC<ThemeSwitchDrawerButtonProps> = (props)
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = useRef()
   const shadow = useColorModeValue('surface', 'surfaceDark')
-  const bgColor = useColorModeValue('whiteAlpha.600', 'blackAlpha.600')
+  const bgColor = useColorModeValue('white', 'gray.900')
 
   return (
     <>
@@ -21,7 +21,6 @@ export const ThemeSwitchDrawerButton: FC<ThemeSwitchDrawerButtonProps> = (props)
         shadow={shadow}
         bg={bgColor}
         rightIcon={<Icon as={CgSelect} />}
-        backdropFilter="blur(25px)"
         {...rest}
       >
         {children || 'Switch theme'}

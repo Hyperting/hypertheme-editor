@@ -15,7 +15,7 @@ import {
 } from '@hypertheme-editor/chakra-ui-core'
 import { ThemeEditorColors } from '@hypertheme-editor/chakra-ui-colors'
 import { ThemeEditorFontSizes } from '@hypertheme-editor/chakra-ui-font-sizes'
-import { DefaultThemeEditor } from '../src'
+import { HyperThemeEditor } from '../src'
 
 export default {
   title: 'HyperThemeEditor/ThemeEditor Community',
@@ -26,14 +26,14 @@ export default {
 export const DefaultEditor = (args) => (
   <ThemeEditorProvider>
     <Button colorScheme="blue">Ciao</Button>
-    <DefaultThemeEditor {...args} />
+    <HyperThemeEditor {...args} />
   </ThemeEditorProvider>
 )
 
 export const DefaultEditorWithHiddenCredits = (args) => (
   <ThemeEditorProvider>
     <Button colorScheme="blue">Ciao</Button>
-    <DefaultThemeEditor {...args} />
+    <HyperThemeEditor {...args} />
   </ThemeEditorProvider>
 )
 

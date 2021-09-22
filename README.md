@@ -1,4 +1,4 @@
-# HyperTheme Editor (Release Candidate)
+# HyperTheme Editor
 
 ![HyperTheme Editor screen shot](https://www.hyperthe.me/images/social-banner.jpg)
 
@@ -36,13 +36,13 @@ Documentation and guides can be found [here](https://hyperthe.me/documentation).
 Install with NPM:
 
 ```bash
-npm i @hypertheme-editor/chakra-ui@rc
+npm i @hypertheme-editor/chakra-ui
 ```
 
 or with Yarn:
 
 ```bash
-yarn add @hypertheme-editor/chakra-ui@rc
+yarn add @hypertheme-editor/chakra-ui
 ```
 
 ### 2. Basic setup
@@ -78,6 +78,10 @@ Congratulations! You have a working **theme editor** on your application.
 HyperTheme Editor comes also with all the building blocks necessary to create custom theme editor that works with Chakra UI.
 
 To learn more read the [documentation](https://hyperthe.me/documentation).
+
+## Contributing
+
+If you want to contribute to HyperTheme Editor, make sure to read the [contribution guide](CONTRIBUTING.md) first.
 
 ## License
 

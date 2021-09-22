@@ -27,6 +27,9 @@
     "use-debouncy": "^4.2.0"
   },
   "dependencies": {},
+  "devDependencies": {
+    "@hypertheme-editor/chakra-ui-core": "0.1.0-rc.9"
+  },
   "publishConfig": {
     "access": "public"
   }

@@ -62,9 +62,9 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap --use-workspaces",
     "clean": "lerna run clean",
-    "build": "lerna run build",
+    "build": "lerna run build --include-dependencies --stream",
     "release": "release-it",
     "release-rc": "release-it --preRelease=rc",
     "deploy": "yarn build && yarn release",

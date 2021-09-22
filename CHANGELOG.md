@@ -1,3 +1,11 @@
+## 0.1.0-rc.10 (2021-09-22)
+
+docs: added README
+docs: basic Contributing Guide
+fix: reset button style
+
+
+
 ## 0.1.0-rc.9 (2021-09-21)
 
 - Removed unused "Add Theme" button

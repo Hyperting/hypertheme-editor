@@ -1,3 +1,12 @@
+## 0.1.0 (2021-09-22)
+
+First Open Source version!
+
+- customizable ThemeEditor
+- create your custom panel editors
+
+
+
 ## 0.1.0-rc.10 (2021-09-22)
 
 docs: added README

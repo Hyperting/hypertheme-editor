@@ -41,7 +41,9 @@ yarn storybook
 Here's a list of the commands provided by this project:
 
 `yarn bootstrap`: install all the cross dependencies
+
 `yarn build`: build all the packages
+
 `yarn storybook`: run Storybook for components development
 
 ## Commit convention
@@ -56,9 +58,13 @@ category(scope or module): your commit message
 
 Where category is one of:
 
-- `feat`: changes that introduce new code or features
-- `fix`: changes that fix a bug (reference an issue if present)
-- `refactor`: any code related change that is not a fix, nor a feature
-- `docs:` changing existing or creating new documentation (README.md, etc.)
-- `chore`: all changes to the repository that do not fit into any of the above categories.
+`feat`: changes that introduce new code or features
+
+`fix`: changes that fix a bug (reference an issue if present)
+
+`refactor`: any code related change that is not a fix, nor a feature
+
+`docs:` changing existing or creating new documentation (README.md, etc.)
+
+`chore`: all changes to the repository that do not fit into any of the above categories.
 

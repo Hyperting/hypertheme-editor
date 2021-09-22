@@ -5,9 +5,16 @@ import ThemeIcon from '../base/ThemeIcon'
 export type ThemeEditorButtonProps = {
   label?: string
   onOpen?: () => void
+  isOpen?: boolean
 } & Omit<ButtonProps, 'children'>
 
-export const ThemeEditorButton: FC<ThemeEditorButtonProps> = ({ label, size, onOpen, ...rest }) => {
+export const ThemeEditorButton: FC<ThemeEditorButtonProps> = ({
+  label,
+  size,
+  onOpen,
+  isOpen,
+  ...rest
+}) => {
   const themeIconSize = useMemo(
     () => (typeof size === 'undefined' ? undefined : size !== 'xs' ? size : 'sm'),
     [size]

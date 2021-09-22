@@ -48,12 +48,13 @@ Here's a list of the commands provided by this project:
 
 HyperTheme follows the [Convential Commits specification](https://www.conventionalcommits.org/).
 
-Follow this convention for writing commits:
+Write the commit like this:
+
 ```
 category(scope or module): your commit message
 ```
 
-Category is one of:
+Wher category is one of:
 
 `feat`: changes that introduce new code or features
 

@@ -54,7 +54,7 @@ Write the commit like this:
 category(scope or module): your commit message
 ```
 
-Wher category is one of:
+Where category is one of:
 
 `feat`: changes that introduce new code or features
 

@@ -2,7 +2,7 @@
 
 Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).
 
-![Font Sizes Panel](http://localhost:3000/images/documentation/font-sizes-screen.png)
+![Font Sizes Panel](https://hyperthe.me/images/documentation/font-sizes-screen.png)
 
 This module is part of **[HyperTheme Editor](#hypertheme-editor)**, check it out before installing and using it.
 

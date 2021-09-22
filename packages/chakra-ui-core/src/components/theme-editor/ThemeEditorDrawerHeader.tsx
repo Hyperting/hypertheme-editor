@@ -10,12 +10,11 @@ import {
   Button,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { FaEllipsisH, FaPlus } from 'react-icons/fa'
-import { GrPowerReset } from 'react-icons/gr'
+import { FaRedo } from 'react-icons/fa'
 import { MdClose } from 'react-icons/md'
 import { RiArrowGoBackFill, RiArrowGoForwardFill } from 'react-icons/ri'
 import { useRecoilState } from 'recoil'
-import { ThemeIcon, ColorModeToggle, BaseMenu, BaseMenuItem } from '../base'
+import { ThemeIcon, ColorModeToggle } from '../base'
 import { setThemeTokens } from '../../utils/updateThemeTokens'
 import { themeEditorState, useThemeEditor } from '../../hooks/useThemeEditor'
 
@@ -88,7 +87,7 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
             {/* </ThemeSwitchDrawerButton> */}
             <Flex alignItems="center">
               <ColorModeToggle p={0} w="auto" fontSize="0.875rem" mr={2} />
-              <Button rightIcon={<GrPowerReset />} onClick={handleResetTheme} size="xs">
+              <Button rightIcon={<Icon as={FaRedo} />} onClick={handleResetTheme} size="xs">
                 Reset
               </Button>
               {/* <BaseMenu

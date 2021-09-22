@@ -1,3 +1,8 @@
+## 0.1.2 (2021-09-22)
+
+fix: isOpen prop is passed to ThemeEditorButton causing a warning
+
+
 ## 0.1.1 (2021-09-22)
 
 docs: fix packages README images

@@ -79,6 +79,7 @@ HyperTheme Editor comes also with all the building blocks necessary to create cu
 
 To learn more read the [documentation](https://hyperthe.me/documentation).
 
+
 ## Contributing
 
 If you want to contribute to HyperTheme Editor, make sure to read the [contribution guide](CONTRIBUTING.md) first.

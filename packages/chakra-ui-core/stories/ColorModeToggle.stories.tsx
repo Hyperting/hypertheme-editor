@@ -6,7 +6,7 @@ import { ThemeEditorProvider } from '../src'
 import ColorModeToggle from '../src/components/base/ColorModeToggle'
 
 export default {
-  title: 'HyperThemeEditor/ColorModeToggle',
+  title: 'ChakraUI/ColorModeToggle',
   component: ColorModeToggle,
   argTypes: {},
 } as ComponentMeta<typeof ColorModeToggle>

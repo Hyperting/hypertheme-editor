@@ -23,7 +23,7 @@
 // import { FaCog, FaSlidersH } from 'react-icons/fa'
 
 // export default {
-//   title: 'HyperThemeEditor/ThemeEditorDrawerButtonTest',
+//   title: 'ChakraUI/ThemeEditorDrawerButtonTest',
 //   component: ThemeEditorDrawerButton,
 //   argTypes: {},
 // } as ComponentMeta<typeof ThemeEditorDrawerButton>

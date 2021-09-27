@@ -1,0 +1,44 @@
+{
+  "name": "@hypertheme-editor/mui-core",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "author": "marco",
+  "license": "ISC",
+  "peerDependencies": {
+    "@chakra-ui/react": ">= 1.0.0",
+    "framer-motion": ">= 4",
+    "immer": "^9.0.6",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "recoil": "^0.4.1",
+    "react-icons": "^4.2.0"
+  },
+  "dependencies": {
+    "@hypertheme-editor/chakra-ui-theme": "^0.1.2",
+    "react-google-font-loader": "^1.1.0"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "release-it": {
+    "npm": false,
+    "git": {
+      "push": false
+    },
+    "github": {
+      "release": false
+    }
+  }
+}

@@ -10,7 +10,7 @@ import {
 } from '../src'
 
 export default {
-  title: 'HyperThemeEditor/ThemeEditorDrawerHeader',
+  title: 'ChakraUI/ThemeEditorDrawerHeader',
   component: ThemeEditorDrawerHeader,
   argTypes: {},
 } as ComponentMeta<typeof ThemeEditorDrawerHeader>

@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in contribute to HyperTheme Editor.
+Thanks for your interest in contributing to HyperTheme Editor.
 
 We're so glad you want to help! 💖
 
@@ -72,9 +72,9 @@ Where category is one of:
 
 ## Todo list
 
-HyperTheme Editor is in a `preview` state, it will be very helpful if you help with one of these tasks:
+HyperTheme Editor is in a `preview` state, it will be awesome if you want to help with one of these tasks:
 
 - [ ] **Tests**: we need tests, tests everywhere!
 - [ ] **Recoil issue**: when importing from `@hypertheme-editor/chakra-ui-core` and not from `@hypertheme-editor/chakra-ui` recoil causes a crash.
-- [ ] **Stories**: Storybook stories are in a _dirty_ state, we need a better structure and better stories.
+- [ ] **Stories**: Storybook stories are just a _draft_, we need a better structure and better stories.
 - [ ] **Material UI**: mui version is not implemented.

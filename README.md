@@ -45,7 +45,7 @@ or with Yarn:
 yarn add @hypertheme-editor/chakra-ui
 ```
 
-### 2. Basic setup
+### 2. Getting Started
 
 Installation is super easy and fast:
 

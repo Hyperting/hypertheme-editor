@@ -30,7 +30,7 @@ Visit [`hyperthe.me`](https://hyperthe.me) for more info.
 
 Documentation and guides can be found [here](https://hyperthe.me/documentation).
 
-## Basic Setup
+## Getting Started
 ### 1. Installation
 
 Install with NPM:
@@ -45,7 +45,7 @@ or with Yarn:
 yarn add @hypertheme-editor/chakra-ui
 ```
 
-### 2. Getting Started
+### 2. Setup
 
 Installation is super easy and fast:
 

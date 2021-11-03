@@ -57,7 +57,7 @@ export const ThemeEditorConfig: FC<Props> = () => {
       <Flex alignItems="center" justifyContent="space-between">
         <Box>
           <Text fontSize="0.875rem">CSS var prefix</Text>
-          <Text fontSize="xs" opacity={0.6}>
+          <Text fontSize="0.75rem" opacity={0.5}>
             Add a custom prefix for CSS variables
           </Text>
         </Box>

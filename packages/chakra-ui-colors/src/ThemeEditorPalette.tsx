@@ -69,7 +69,7 @@ const ThemeEditorPalette: FC<ThemeEditorPaletteProps> = ({
               bgColor={palette[paletteIndex] as string}
               fontSize="0.75rem"
               borderColor={key < 5 ? 'whiteAlpha.600' : 'whiteAlpha.300'}
-              cursor="pointer"
+              cursor={!disableEditDrawer ? 'pointer' : 'auto'}
               key={key}
             >
               {showIndex && (

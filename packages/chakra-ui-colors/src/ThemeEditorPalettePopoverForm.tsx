@@ -28,6 +28,7 @@ import {
 } from '@hypertheme-editor/chakra-ui-core'
 import ThemeEditorPaletteColorItem from './ThemeEditorPaletteColorItem'
 import { generatePalette } from './generateColorPalette'
+import { CgColorPicker } from 'react-icons/cg'
 
 type Props = {
   buttonProps?: ButtonProps
@@ -98,7 +99,7 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
     [formState]
   )
 
-  const handleCreateBrandColor = useCallback(() => {
+  const handleCreateCustomColor = useCallback(() => {
     try {
       const token = formState.name.toLowerCase()
       const newPalette = generatePalette(formState.color)
@@ -138,14 +139,23 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
       trigger="click"
     >
       <PopoverTrigger>
-        <Button size="xs" alignSelf="flex-start" px="0.5rem" {...buttonProps}>
-          <Icon as={FaPlus} mr="0.25rem" /> Add Color
+        <Button
+          size="md"
+          alignSelf="flex-start"
+          px="0.5rem"
+          mt="0.75rem"
+          isFullWidth
+          {...buttonProps}
+        >
+          <Icon as={CgColorPicker} mr="0.25rem" /> Add Color
         </Button>
       </PopoverTrigger>
       <PopoverContent minW="380px">
         {/* <PopoverArrow /> */}
         <PopoverCloseButton />
-        <PopoverHeader fontWeight="bold">Add Color</PopoverHeader>
+        <PopoverHeader fontWeight="bold" textAlign="left">
+          Add Color
+        </PopoverHeader>
         <PopoverBody>
           <Stack spacing={4} mt={4} mb={2}>
             {/* <Popover trigger="hover" placement="bottom-start">
@@ -212,7 +222,7 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
               Cancel
             </Button>
             <Button
-              onClick={handleCreateBrandColor}
+              onClick={handleCreateCustomColor}
               isDisabled={!isFormValid}
               colorScheme="primary"
               size="sm"

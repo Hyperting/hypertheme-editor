@@ -22,6 +22,7 @@ export const Sizes = (args) => {
   return (
     <ThemeEditorProvider>
       <Stack>
+        <ThemeIcon size="xs" />
         <ThemeIcon size="sm" />
         <ThemeIcon size="md" />
         <ThemeIcon size="lg" />

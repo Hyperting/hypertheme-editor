@@ -15,10 +15,7 @@ export const ThemeEditorButton: FC<ThemeEditorButtonProps> = ({
   isOpen,
   ...rest
 }) => {
-  const themeIconSize = useMemo(
-    () => (typeof size === 'undefined' ? undefined : size !== 'xs' ? size : 'sm'),
-    [size]
-  )
+  const themeIconSize = useMemo(() => (typeof size === 'undefined' ? undefined : size), [size])
 
   return (
     <Button onClick={onOpen} variant="solid" p="0.25rem" size={size} {...rest}>

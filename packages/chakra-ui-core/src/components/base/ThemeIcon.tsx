@@ -14,14 +14,13 @@ import { useThemeEditor } from '../../hooks/useThemeEditor'
 export type ThemeIconProps = {
   theme?: Theme
   colors?: {}[] // Pick<BackgroundProps, 'bg'>[]
-  size?: 'sm' | 'md' | 'lg'
+  size?: 'sm' | 'md' | 'lg' | 'xs'
 } & SimpleGridProps
 
 const ThemeIcon: FC<ThemeIconProps> = (props) => {
   const { theme } = useThemeEditor()
   const chakraTheme = useChakraTheme()
   const { colors, size, ...rest } = props
-  const shadow = useColorModeValue('surface', 'surfaceDark')
   const safeB64Bg = useColorModeValue(
     COLOR_PICKER_TRANSPARENT_SAFE_BG_B64[0],
     COLOR_PICKER_TRANSPARENT_SAFE_BG_B64[1]
@@ -29,10 +28,12 @@ const ThemeIcon: FC<ThemeIconProps> = (props) => {
 
   const iconSize = useMemo(() => {
     switch (size) {
+      case 'xs':
+        return 6
       case 'sm':
         return 8
       case 'lg':
-        return 20
+        return 14
       default:
         return 12
     }
@@ -40,10 +41,25 @@ const ThemeIcon: FC<ThemeIconProps> = (props) => {
 
   const iconSpacing = useMemo(() => {
     switch (size) {
+      case 'xs':
+        return 1
       case 'sm':
         return 1
       case 'lg':
-        return 3
+        return 2
+      default:
+        return 2
+    }
+  }, [size])
+
+  const iconBorder = useMemo(() => {
+    switch (size) {
+      case 'xs':
+        return 0.5
+      case 'sm':
+        return 1
+      case 'lg':
+        return 2
       default:
         return 2
     }
@@ -92,7 +108,6 @@ const ThemeIcon: FC<ThemeIconProps> = (props) => {
       {...rest}
     >
       <Box
-        shadow={shadow}
         boxSize="100%"
         borderRadius="full"
         overflow="hidden"
@@ -102,14 +117,13 @@ const ThemeIcon: FC<ThemeIconProps> = (props) => {
         <Box
           boxSize="100%"
           bg={iconColors[0][500]}
-          border={`${iconSpacing}px solid`}
+          border={`${iconBorder}px solid`}
           borderColor="rgba(220,220,220,0.4)"
           borderRadius="full"
         />
       </Box>
 
       <Box
-        shadow={shadow}
         boxSize="100%"
         borderRadius="full"
         overflow="hidden"
@@ -119,14 +133,13 @@ const ThemeIcon: FC<ThemeIconProps> = (props) => {
         <Box
           boxSize="100%"
           bg={iconColors[1][500]}
-          border={`${iconSpacing}px solid`}
+          border={`${iconBorder}px solid`}
           borderColor="rgba(220,220,220,0.4)"
           borderRadius="full"
         />
       </Box>
 
       <Box
-        shadow={shadow}
         boxSize="100%"
         borderRadius="full"
         overflow="hidden"
@@ -136,14 +149,13 @@ const ThemeIcon: FC<ThemeIconProps> = (props) => {
         <Box
           boxSize="100%"
           bg={iconColors[2][500]}
-          border={`${iconSpacing}px solid`}
+          border={`${iconBorder}px solid`}
           borderColor="rgba(220,220,220,0.4)"
           borderRadius="full"
         />
       </Box>
 
       <Box
-        shadow={shadow}
         boxSize="100%"
         borderRadius="full"
         overflow="hidden"
@@ -153,7 +165,7 @@ const ThemeIcon: FC<ThemeIconProps> = (props) => {
         <Box
           boxSize="100%"
           bg={iconColors[3][500]}
-          border={`${iconSpacing}px solid`}
+          border={`${iconBorder}px solid`}
           borderColor="rgba(220,220,220,0.4)"
           borderRadius="full"
         />

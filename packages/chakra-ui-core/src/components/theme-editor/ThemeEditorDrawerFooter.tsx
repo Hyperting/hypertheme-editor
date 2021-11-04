@@ -12,7 +12,7 @@ export const ThemeEditorDrawerFooter: FC<ThemeEditorDrawerFooterProps> = ({
   isMobile,
   actionButton = <ThemeDownloadButton borderRadius="6px" w={{ base: '100%', md: 'initial' }} />,
 }) => {
-  const bgColor = useColorModeValue('whiteAlpha.600', 'rgba(23,25,35,0.8)')
+  const bgColor = useColorModeValue('whiteAlpha.600', 'gray.900')
 
   return (
     <DrawerFooter

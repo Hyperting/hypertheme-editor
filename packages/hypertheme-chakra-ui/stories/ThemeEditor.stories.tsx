@@ -32,21 +32,21 @@ export default {
 
 export const DefaultEditor = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Ciao</Button>
+    <Button colorScheme="blue">Button</Button>
     <HyperThemeEditor {...args} />
   </ThemeEditorProvider>
 )
 
 export const DefaultEditorWithHiddenCredits = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Ciao</Button>
+    <Button colorScheme="blue">Button</Button>
     <HyperThemeEditor {...args} />
   </ThemeEditorProvider>
 )
 
 export const WithRootPanel = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Ciao</Button>
+    <Button colorScheme="blue">Button</Button>
     <ThemeEditor {...args}>
       <ThemeEditorButton />
       <ThemeEditorDrawer>
@@ -63,7 +63,7 @@ export const WithRootPanel = (args) => (
 
 export const WithoutRootPanel = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Ciao</Button>
+    <Button colorScheme="blue">Button</Button>
     <ThemeEditor {...args}>
       <ThemeEditorButton />
       <ThemeEditorDrawer>

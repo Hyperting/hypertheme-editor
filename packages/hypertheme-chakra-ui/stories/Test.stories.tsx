@@ -41,7 +41,7 @@
 // //   // })
 // //   return (
 // //     <ThemeEditorProvider>
-// //       <Button colorScheme="blue">Ciao</Button>
+// //       <Button colorScheme="blue">Button</Button>
 // //       <ThemeEditorDrawerButton {...args}>
 // //         <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
 // //           <ThemeEditorColors />
@@ -58,7 +58,7 @@
 
 // export const FreeVersion = (args) => (
 //   <ThemeEditorProvider>
-//     <Button colorScheme="blue">Ciao</Button>
+//     <Button colorScheme="blue">Button</Button>
 //     <ThemeEditorDrawerButton {...args}>
 //       <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
 //         <ThemeEditorColors />
@@ -73,7 +73,7 @@
 // export const ProVersion = (args) => (
 //   <ThemeEditorProvider>
 //     <Button colorScheme="blue" letterSpacing="wider">
-//       Ciao
+//       Button
 //     </Button>
 //     <ThemeEditorDrawerButton {...args} hideUpgradeToPro size="sm">
 //       <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">

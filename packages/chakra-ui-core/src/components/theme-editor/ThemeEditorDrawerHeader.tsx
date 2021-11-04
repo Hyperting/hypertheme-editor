@@ -53,7 +53,7 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
         h="full"
       >
         <Button
-          borderRadius="6px"
+          borderRadius="12px"
           boxSize={{ base: 12, lg: 14 }}
           onClick={onClose}
           fontSize="1.5rem"
@@ -86,8 +86,13 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
             Hyper Theme
             {/* </ThemeSwitchDrawerButton> */}
             <Flex alignItems="center">
-              <ColorModeToggle p={0} w="auto" fontSize="0.875rem" mr={2} />
-              <Button rightIcon={<Icon as={FaRedo} />} onClick={handleResetTheme} size="xs">
+              <ColorModeToggle p={0} w="auto" fontSize="0.875rem" mr={1} />
+              <Button
+                rightIcon={<Icon as={FaRedo} />}
+                onClick={handleResetTheme}
+                size="xs"
+                variant="ghost"
+              >
                 Reset
               </Button>
               {/* <BaseMenu

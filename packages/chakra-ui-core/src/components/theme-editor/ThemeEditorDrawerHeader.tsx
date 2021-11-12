@@ -30,6 +30,7 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
   const { canUndo, canRedo, undo, redo } = useThemeEditor()
   const [kitThemeState, setThemeState] = useRecoilState(themeEditorState)
   const shadow = useColorModeValue('surface', 'surfaceDark')
+  const bgColor = useColorModeValue('whiteAlpha.600', 'gray.900')
 
   const handleResetTheme = useCallback(() => {
     setThemeState({
@@ -67,10 +68,11 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
       <DrawerHeader
         d="flex"
         alignItems="center"
-        backgroundColor="rgba(0,0,0,0)"
+        backgroundColor={bgColor}
         pl={{ base: 3, lg: 6 }}
         pr={{ base: '75px', lg: '100px' }}
         py={{ base: 2, lg: 3 }}
+        shadow="sm"
       >
         <Flex alignItems="center" w="100%" flex="1">
           <ThemeIcon boxSize={{ base: 12, lg: 14 }} mr={{ base: 2, md: 3 }} shadow={shadow} />

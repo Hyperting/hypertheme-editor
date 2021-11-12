@@ -20,7 +20,7 @@ export default {
 
 export const ThemeEditorColorsWithRootPanel = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Ciao</Button>
+    <Button colorScheme="blue">Button</Button>
     <ThemeEditor {...args}>
       <ThemeEditorButton />
       <ThemeEditorDrawer>
@@ -34,7 +34,7 @@ export const ThemeEditorColorsWithRootPanel = (args) => (
 
 export const ThemeEditorColorsWithoutRootPanel = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Ciao</Button>
+    <Button colorScheme="blue">Button</Button>
     <ThemeEditor {...args}>
       <ThemeEditorButton />
       <ThemeEditorDrawer>

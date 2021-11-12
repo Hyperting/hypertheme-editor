@@ -23,7 +23,7 @@ export default {
 
 export const FreeVersionWithRootPanel = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Ciao</Button>
+    <Button colorScheme="blue">Button</Button>
     <ThemeEditor {...args}>
       <ThemeEditorButton />
       <ThemeEditorDrawer>
@@ -40,7 +40,7 @@ export const FreeVersionWithRootPanel = (args) => (
 
 export const FreeVersionWithoutRootPanel = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Ciao</Button>
+    <Button colorScheme="blue">Button</Button>
     <ThemeEditor {...args}>
       <ThemeEditorButton />
       <ThemeEditorDrawer>
@@ -54,7 +54,7 @@ export const FreeVersionWithoutRootPanel = (args) => (
 export const ProVersion = (args) => (
   <ThemeEditorProvider>
     <Button colorScheme="blue" letterSpacing="wider">
-      Ciao
+      Button
     </Button>
 
     <ThemeEditor {...args}>

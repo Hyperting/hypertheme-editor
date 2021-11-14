@@ -11,10 +11,7 @@ import {
 } from '@chakra-ui/react'
 import { MdClose } from 'react-icons/md'
 import { RiArrowGoBackFill, RiArrowGoForwardFill } from 'react-icons/ri'
-import {
-  ColorModeToggle,
-  useThemeEditor,
-} from '@hypertheme-editor/chakra-ui-core'
+import { ColorModeToggle, useThemeEditor } from '@hypertheme-editor/chakra-ui-core'
 import ThemeEditorPalette from './ThemeEditorPalette'
 
 type Props = {
@@ -43,6 +40,7 @@ export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocu
             mr={3}
             alignSelf="centrer"
             d={{ base: 'none', sm: 'grid' }}
+            disableEditDrawer
           />
         )}
         <Box>

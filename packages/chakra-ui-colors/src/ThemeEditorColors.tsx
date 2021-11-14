@@ -56,7 +56,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
     [setTheme, theme]
   )
 
-  const handleDeleteBrandColor = useCallback(
+  const handleDeleteCustomColor = useCallback(
     (token: string) => {
       if (theme?.colors && theme.colors[token]) {
         const newThemeColors = {
@@ -69,7 +69,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
     [setTheme, theme]
   )
 
-  const brandColorTokens = useMemo(() => {
+  const customColorTokens = useMemo(() => {
     if (!theme || !theme.colors) {
       return []
     }
@@ -79,11 +79,15 @@ export const ThemeEditorColors: FC<Props> = (props) => {
 
   return (
     <Accordion p={0} mr="-1rem" defaultIndex={0} allowToggle>
-      <ThemeEditorAccordionItem title="Brand" fontSize="lg">
-        {brandColorTokens.map((item, index) => {
+      <ThemeEditorAccordionItem
+        title="Custom colors"
+        fontSize="lg"
+        subtitle="Add your colors here (click 'Add Color')"
+      >
+        {customColorTokens.map((item, index) => {
           return (
             <ThemeEditorPaletteColorItem
-              key={`theme-brand-color-${item}`}
+              key={`theme-custom-color-${item}`}
               token={item}
               title={item}
               palette={typeof theme!.colors![item] === 'string' ? undefined : theme!.colors![item]}
@@ -94,17 +98,17 @@ export const ThemeEditorColors: FC<Props> = (props) => {
               }
               onChange={handleChangeColor}
               hasDelete
-              onDelete={handleDeleteBrandColor}
+              onDelete={handleDeleteCustomColor}
               showIndex
             />
           )
         })}
-        {brandColorTokens.length == 0 ? (
+        {customColorTokens.length == 0 ? (
           <EmptyBox
             w="100%"
             h="auto"
-            title="No brand colors"
-            subtitle="Add your first brand color:"
+            title="No custom colors"
+            subtitle="Add your first custom color:"
             spacing={1}
             icon={CgColorPicker}
           >

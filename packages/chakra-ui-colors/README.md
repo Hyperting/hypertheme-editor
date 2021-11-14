@@ -1,6 +1,6 @@
 # @hypertheme-editor/chakra-ui-colors
 
-Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).
+Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom custom colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).
 
 ![Colors Editor Panel](https://hyperthe.me/images/documentation/colors-editor-screen.png)
 

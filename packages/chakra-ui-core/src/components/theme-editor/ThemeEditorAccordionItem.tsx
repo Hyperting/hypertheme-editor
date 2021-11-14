@@ -77,7 +77,11 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
                   </Tag>
                 )}
               </Text>
-              {subtitle && <Text flex="1">{subtitle}</Text>}
+              {subtitle && (
+                <Text flex="1" fontSize="0.75rem">
+                  {subtitle}
+                </Text>
+              )}
             </Flex>
 
             {!isDisabled ? <AccordionIcon ml="0.5rem" /> : <ChakraIcon as={FaLock} />}

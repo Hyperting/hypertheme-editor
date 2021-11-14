@@ -1,14 +1,5 @@
 import React, { FC, ReactNode } from 'react'
-import {
-  Text,
-  useColorModeValue,
-  Heading,
-  Stack,
-  Link,
-  StackProps,
-  As,
-  Flex,
-} from '@chakra-ui/react'
+import { Text, useColorModeValue, Stack, Link, StackProps, As, Flex } from '@chakra-ui/react'
 import { FaHeart, FaSearch } from 'react-icons/fa'
 
 type Props = {

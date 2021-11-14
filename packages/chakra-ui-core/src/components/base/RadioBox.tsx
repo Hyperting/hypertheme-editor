@@ -1,16 +1,5 @@
 import React, { FC, HTMLProps } from 'react'
-import {
-  Box,
-  Flex,
-  useRadio,
-  Radio,
-  useColorModeValue,
-  BoxProps,
-  RadioProps,
-  ThemingProps,
-  UseRadioProps,
-  FlexProps,
-} from '@chakra-ui/react'
+import { Box, Flex, useRadio, Radio, useColorModeValue } from '@chakra-ui/react'
 
 const RadioBox: FC<any> = (props) => {
   const { colorScheme = 'gray', p, py = 5, px = 5, pb, pt, isDisabled, ...rest } = props

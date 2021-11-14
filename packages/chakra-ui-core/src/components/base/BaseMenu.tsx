@@ -10,7 +10,6 @@ import {
   Divider,
   Portal,
   useColorModeValue,
-  Button,
   MenuButtonProps,
 } from '@chakra-ui/react'
 import { FaChevronDown } from 'react-icons/fa'

@@ -1,16 +1,6 @@
-import {
-  Stack,
-  Text,
-  Switch,
-  Button,
-  useColorMode,
-  StackProps,
-  useColorModeValue,
-  Flex,
-  ThemingProps,
-} from '@chakra-ui/react'
+import { Stack, Text, useColorMode, StackProps, ThemingProps } from '@chakra-ui/react'
 import React, { FC } from 'react'
-import { FaMoon, FaSun } from 'react-icons/fa'
+import { FaSun } from 'react-icons/fa'
 import { RiMoonClearFill } from 'react-icons/ri'
 import { IconSwitch } from './IconSwitch'
 

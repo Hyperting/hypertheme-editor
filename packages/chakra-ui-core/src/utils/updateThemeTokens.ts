@@ -118,6 +118,7 @@ export const setThemeBorderRadiuses = (radii: Theme['radii']): void => {
 }
 
 export const setThemeTokens = (theme: Theme) => {
+  console.log(theme.config, 'sono la config')
   setThemeColors(theme.colors)
   setThemeTypograghyFontSizes(theme.fontSizes)
   setThemeTypographyFonts(theme.fonts)

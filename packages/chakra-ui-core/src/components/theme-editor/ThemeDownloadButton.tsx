@@ -100,7 +100,7 @@ const ThemeDownloadMenuButton = ({ downloading = false, ...rest }) => {
   return (
     <Button
       rightIcon={<FaChevronDown />}
-      size="lg"
+      size="md"
       colorScheme="primary"
       variant="solid"
       isLoading={downloading}

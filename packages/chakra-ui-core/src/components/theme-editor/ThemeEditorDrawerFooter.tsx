@@ -10,7 +10,7 @@ export type ThemeEditorDrawerFooterProps = {
 export const ThemeEditorDrawerFooter: FC<ThemeEditorDrawerFooterProps> = ({
   onClose,
   isMobile,
-  actionButton = <ThemeDownloadButton borderRadius="6px" w={{ base: '100%', md: 'initial' }} />,
+  actionButton = <ThemeDownloadButton borderRadius="8px" w={{ base: '100%', md: 'initial' }} />,
 }) => {
   const bgColor = useColorModeValue('whiteAlpha.600', 'gray.900')
 
@@ -28,7 +28,7 @@ export const ThemeEditorDrawerFooter: FC<ThemeEditorDrawerFooterProps> = ({
         onClick={onClose}
         variant="ghost"
         mr="1rem"
-        borderRadius="6px"
+        borderRadius="8px"
         d={{ base: 'none', md: 'flex' }}
       >
         Cancel

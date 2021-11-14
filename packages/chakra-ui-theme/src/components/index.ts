@@ -219,6 +219,7 @@ const components = {
       lg: {
         px: 6,
         h: 14,
+        borderRadius: 'lg',
       },
       xl: {
         px: 6,

@@ -21,12 +21,12 @@
     "immer": "^9.0.6",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
-    "recoil": "^0.4.1",
     "react-icons": "^4.2.0"
   },
   "dependencies": {
     "@hypertheme-editor/chakra-ui-theme": "^0.1.2",
-    "react-google-font-loader": "^1.1.0"
+    "react-google-font-loader": "^1.1.0",
+    "recoil": "^0.5.2"
   },
   "publishConfig": {
     "access": "public"

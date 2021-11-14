@@ -13,7 +13,7 @@ import {
 import { ThemeEditorColors } from '../src'
 
 export default {
-  title: 'HyperThemeEditor/Colors Panel',
+  title: 'HyperThemeEditor/chakra-ui-colors/Colors Panel',
   component: ThemeEditor,
   argTypes: {},
 } as ComponentMeta<typeof ThemeEditor>

@@ -25,7 +25,7 @@ import {
 } from '../src'
 
 export default {
-  title: 'HyperThemeEditor/ThemeEditor Community',
+  title: 'HyperThemeEditor/chakra-ui-core/ThemeEditor Community',
   component: ThemeEditor,
   argTypes: {},
 } as ComponentMeta<typeof ThemeEditor>

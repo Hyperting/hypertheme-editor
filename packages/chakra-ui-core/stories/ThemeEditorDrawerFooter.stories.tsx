@@ -12,7 +12,7 @@ import {
 } from '../src'
 
 export default {
-  title: 'HyperThemeEditor/ThemeEditorDrawerFooter',
+  title: 'HyperThemeEditor/chakra-ui-core/ThemeEditorDrawerFooter',
   component: ThemeEditorDrawerFooter,
   argTypes: {},
 } as ComponentMeta<typeof ThemeEditorDrawerFooter>

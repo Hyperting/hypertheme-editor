@@ -13,7 +13,7 @@ import {
 import { ThemeEditorFontSizes } from '../src'
 
 export default {
-  title: 'HyperThemeEditor/Font Sizes',
+  title: 'HyperThemeEditor/chakra-ui-font-sizes/Font Sizes',
   component: ThemeEditor,
   argTypes: {},
 } as ComponentMeta<typeof ThemeEditor>

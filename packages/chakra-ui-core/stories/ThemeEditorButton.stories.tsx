@@ -5,7 +5,7 @@ import { VStack } from '@chakra-ui/react'
 import { ThemeEditorButton, ThemeEditorProvider } from '../src'
 
 export default {
-  title: 'HyperThemeEditor/ThemeEditorButton',
+  title: 'HyperThemeEditor/chakra-ui-core/ThemeEditorButton',
   component: ThemeEditorButton,
   argTypes: {},
 } as ComponentMeta<typeof ThemeEditorButton>

@@ -5,7 +5,7 @@ import { Button, useDisclosure } from '@chakra-ui/react'
 import { defaultTheme, ThemeEditorProvider, ThemeIcon, ThemeResetPopup } from '../src'
 
 export default {
-  title: 'HyperThemeEditor/ThemeResetPopup',
+  title: 'HyperThemeEditor/chakra-ui-core/ThemeResetPopup',
   component: ThemeResetPopup,
   argTypes: {},
 } as ComponentMeta<typeof ThemeResetPopup>

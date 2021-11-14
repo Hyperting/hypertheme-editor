@@ -14,7 +14,7 @@ import {
 } from '../src'
 
 export default {
-  title: 'HyperThemeEditor/ThemeEditorDrawer',
+  title: 'HyperThemeEditor/chakra-ui-core/ThemeEditorDrawer',
   component: ThemeEditorDrawer,
   argTypes: {},
 } as ComponentMeta<typeof ThemeEditorDrawer>

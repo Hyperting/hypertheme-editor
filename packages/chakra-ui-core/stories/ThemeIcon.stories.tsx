@@ -5,7 +5,7 @@ import { Stack } from '@chakra-ui/react'
 import { defaultTheme, ThemeEditorProvider, ThemeIcon } from '../src'
 
 export default {
-  title: 'HyperThemeEditor/ThemeIcon',
+  title: 'HyperThemeEditor/chakra-ui-core/ThemeIcon',
   component: ThemeIcon,
   argTypes: {},
 } as ComponentMeta<typeof ThemeIcon>

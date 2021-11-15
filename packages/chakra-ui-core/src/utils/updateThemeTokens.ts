@@ -5,17 +5,17 @@ export const setThemeSingleColor = (token: string, value: string) => {
   document.documentElement.style.setProperty(`--chakra-colors-${token}`, value)
 }
 
-export const setThemeColor = (token: string, paletteKey: string | number, value: string) => {
+export const setThemePaletteColor = (token: string, paletteKey: string | number, value: string) => {
   document.documentElement.style.setProperty(`--chakra-colors-${token}-${paletteKey}`, value)
 }
 
-export const setThemeColorPalette = (
+export const setThemeColorsOfPalette = (
   token: string,
   newPalette: Record<string | number, string>
 ): void => {
   const paletteKeys = Object.keys(newPalette)
   for (const paletteKey of paletteKeys) {
-    setThemeColor(token, paletteKey, newPalette[paletteKey])
+    setThemePaletteColor(token, paletteKey, newPalette[paletteKey])
   }
 }
 
@@ -25,7 +25,7 @@ export const setThemeColors = (colors: Theme['colors']) => {
     if (typeof colors[token] === 'string') {
       setThemeSingleColor(token, colors[token])
     } else {
-      setThemeColorPalette(token, colors[token])
+      setThemeColorsOfPalette(token, colors[token])
     }
   }
 }

@@ -6,6 +6,7 @@ import BaseMenu from './BaseMenu'
 import BaseMenuItem from './BaseMenuItem'
 import ThemeIcon from './ThemeIcon'
 import ThemeResetPopup from './ThemeResetPopup'
+import { ElementsHighlighter } from './ElementsHighlighter'
 
 export {
   ColorModeToggle,
@@ -16,4 +17,5 @@ export {
   BaseMenuItem,
   ThemeIcon,
   ThemeResetPopup,
+  ElementsHighlighter,
 }

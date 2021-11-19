@@ -16,6 +16,7 @@ import { RgbaStringColorPicker } from 'react-colorful'
 import { colord, extend } from 'colord'
 import namesPlugin from 'colord/plugins/names'
 import { COLOR_PICKER_TRANSPARENT_SAFE_BG_B64 } from './constants'
+import { ElementsHighlighter } from '@hypertheme-editor/chakra-ui-core'
 
 extend([namesPlugin])
 
@@ -77,49 +78,53 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
       </Text>
       <Flex alignItems="center" p={p} px={px} pos="relative" minH="48px">
         <Popover trigger="hover" placement="bottom-start">
-          <PopoverTrigger>
-            <Box
-              borderRadius="full"
-              bgSize="cover"
-              bgImage={`url(data:image/png;base64,${safeB64Bg})`}
-              cursor="pointer"
-              transition="all 0.25s"
-              mr="0.75rem"
-              _hover={{
-                shadow: 'md',
-              }}
-            >
+          <ElementsHighlighter themeKey={`colors.${token}.${colorIndex}`}>
+            <PopoverTrigger>
               <Box
-                boxSize={8}
-                bg={currentValue}
-                shadow={shadow}
-                border="3px solid"
-                borderColor="rgba(220,220,220,0.4)"
                 borderRadius="full"
-                minW={8}
-              />
-            </Box>
-          </PopoverTrigger>
+                bgSize="cover"
+                bgImage={`url(data:image/png;base64,${safeB64Bg})`}
+                cursor="pointer"
+                transition="all 0.25s"
+                mr="0.75rem"
+                _hover={{
+                  shadow: 'md',
+                }}
+              >
+                <Box
+                  boxSize={8}
+                  bg={currentValue}
+                  shadow={shadow}
+                  border="3px solid"
+                  borderColor="rgba(220,220,220,0.4)"
+                  borderRadius="full"
+                  minW={8}
+                />
+              </Box>
+            </PopoverTrigger>
+          </ElementsHighlighter>
           <PopoverContent w="min-content">
             <PopoverBody p="0" w="min-content">
               <RgbaStringColorPicker color={rgbaString} onChange={setCurrentValue} />
             </PopoverBody>
           </PopoverContent>
         </Popover>
-        <Input
-          w="100%"
-          size="sm"
-          borderRadius="6px"
-          shadow={shadow}
-          cursor="pointer"
-          px="0.5rem"
-          pos="sticky"
-          left="0"
-          value={currentValue}
-          onChange={handleValueChange}
-          fontSize="0.875rem"
-          placeholder="Color code"
-        />
+        <ElementsHighlighter themeKey={`colors.${token}.${colorIndex}`}>
+          <Input
+            w="100%"
+            size="sm"
+            borderRadius="6px"
+            shadow={shadow}
+            cursor="pointer"
+            px="0.5rem"
+            pos="sticky"
+            left="0"
+            value={currentValue}
+            onChange={handleValueChange}
+            fontSize="0.875rem"
+            placeholder="Color code"
+          />
+        </ElementsHighlighter>
       </Flex>
     </Box>
   )

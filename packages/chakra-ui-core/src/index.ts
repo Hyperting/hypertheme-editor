@@ -2,6 +2,7 @@ import { theme } from '@hypertheme-editor/chakra-ui-theme'
 import { themeEditorState, ThemeEditorState, useThemeEditor } from './hooks/useThemeEditor'
 import { themeColorKeys } from './utils/defaultThemeColorKeys'
 
+export * from './utils/ElementsMap'
 export * from './utils/updateThemeTokens'
 export * from './utils/googleFontFamiliesState'
 export * from './utils/safeJsonParse'

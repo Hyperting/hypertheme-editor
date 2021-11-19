@@ -20,9 +20,8 @@ import {
   Flex,
   PopoverFooter,
 } from '@chakra-ui/react'
-import { FaPlus } from 'react-icons/fa'
 import {
-  setThemeColorPalette,
+  setThemeColorsOfPalette,
   setThemeSingleColor,
   useThemeEditor,
 } from '@hypertheme-editor/chakra-ui-core'
@@ -112,7 +111,7 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
       } as any
 
       if (formState.isPaletteColor) {
-        setThemeColorPalette(token, newPalette)
+        setThemeColorsOfPalette(token, newPalette)
       } else {
         setThemeSingleColor(token, formState.color)
       }

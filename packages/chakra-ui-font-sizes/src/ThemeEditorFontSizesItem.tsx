@@ -12,6 +12,7 @@ import {
   Input,
 } from '@chakra-ui/react'
 import { useDebouncyEffect } from 'use-debouncy'
+import { ElementsHighlighter } from '@hypertheme-editor/chakra-ui-core'
 
 export type ThemeEditorFontSizesItemProps = {
   size: string
@@ -68,7 +69,7 @@ const ThemeEditorFontSizesItem: FC<ThemeEditorFontSizesItemProps> = (props) => {
   }, [value])
 
   return (
-    <Box fontSize="1rem">
+    <ElementsHighlighter themeKey={`fontSizes.${size}`} fontSize="1rem">
       <Flex justifyContent="space-between" mt="0.5rem" alignItems="center">
         <Tag alignItems="center" minW="min-content" fontSize="0.75rem" px="0.5rem">
           {size}
@@ -122,7 +123,7 @@ const ThemeEditorFontSizesItem: FC<ThemeEditorFontSizesItemProps> = (props) => {
       >
         {sampleTitle}
       </Text>
-    </Box>
+    </ElementsHighlighter>
   )
 }
 

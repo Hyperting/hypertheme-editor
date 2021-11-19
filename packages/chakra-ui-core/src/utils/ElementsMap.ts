@@ -27,7 +27,6 @@ export class ElementsMap {
   }
 
   public trigger(data: ElementsMapEventData) {
-    console.log('lancio richiesta:', data)
     this.handlers.slice(0).forEach((h) => h(data))
   }
 

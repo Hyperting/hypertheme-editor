@@ -64,14 +64,12 @@ export const ThemeEditorDrawer: FC<ThemeEditorDrawerProps> = ({
   //     DRAWER_EXPANDED_INDEX_LOCAL_STORAGE_KEY,
   //     expandedIndex >= 0 ? expandedIndex : 0
   //   )
-  //   console.log(expandedIndex)
   // }
 
   return (
     <Drawer
       placement="right"
       finalFocusRef={btnRef}
-      // initialFocusRef={initialFocusRef}
       size="md"
       blockScrollOnMount={false}
       onClose={onClose!}

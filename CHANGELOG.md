@@ -1,3 +1,5 @@
+## 0.2.0-rc.0 (2021-11-19)
+
 ## 0.1.2 (2021-09-22)
 
 fix: isOpen prop is passed to ThemeEditorButton causing a warning

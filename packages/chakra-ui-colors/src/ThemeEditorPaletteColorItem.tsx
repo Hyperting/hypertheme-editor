@@ -103,7 +103,7 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
       </Text>
       <Flex alignItems="center" p={p} px={px} pos="relative" minH="48px">
         <Popover trigger="hover" placement="bottom-start">
-          <ElementsHighlighter themeKey={`colors.${token}${palette ? '.500' : ''}`}>
+          <ElementsHighlighter themeKeys={`colors.${token}${palette ? '.500' : ''}`}>
             <PopoverTrigger>
               <Box
                 borderRadius="full"
@@ -134,7 +134,13 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
             </PopoverBody>
           </PopoverContent>
         </Popover>
-        <ElementsHighlighter themeKey={`colors.${token}${palette ? '.500' : ''}`}>
+        <ElementsHighlighter
+          themeKeys={
+            palette && scale?.length && scale.length > 0
+              ? scale.map((s) => `colors.${token}.${s}`)
+              : `colors.${token}${palette ? '.500' : ''}`
+          }
+        >
           <Input
             w={palette && scale && scale.length > 0 ? 32 : '100%'}
             size="sm"

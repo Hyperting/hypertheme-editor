@@ -69,7 +69,7 @@ const ThemeEditorFontSizesItem: FC<ThemeEditorFontSizesItemProps> = (props) => {
   }, [value])
 
   return (
-    <ElementsHighlighter themeKey={`fontSizes.${size}`} fontSize="1rem">
+    <ElementsHighlighter themeKeys={`fontSizes.${size}`} fontSize="1rem">
       <Flex justifyContent="space-between" mt="0.5rem" alignItems="center">
         <Tag alignItems="center" minW="min-content" fontSize="0.75rem" px="0.5rem">
           {size}

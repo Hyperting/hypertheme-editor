@@ -78,7 +78,7 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
       </Text>
       <Flex alignItems="center" p={p} px={px} pos="relative" minH="48px">
         <Popover trigger="hover" placement="bottom-start">
-          <ElementsHighlighter themeKey={`colors.${token}.${colorIndex}`}>
+          <ElementsHighlighter themeKeys={`colors.${token}.${colorIndex}`}>
             <PopoverTrigger>
               <Box
                 borderRadius="full"
@@ -109,7 +109,7 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
             </PopoverBody>
           </PopoverContent>
         </Popover>
-        <ElementsHighlighter themeKey={`colors.${token}.${colorIndex}`}>
+        <ElementsHighlighter themeKeys={`colors.${token}.${colorIndex}`}>
           <Input
             w="100%"
             size="sm"

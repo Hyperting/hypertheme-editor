@@ -1,3 +1,8 @@
+## 0.2.0-rc.1 (2021-11-20)
+
+feat: multiple highlighter theme keys
+
+
 ## 0.2.0-rc.0 (2021-11-19)
 
 ## 0.1.2 (2021-09-22)

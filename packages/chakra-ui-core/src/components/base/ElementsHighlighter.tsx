@@ -18,13 +18,16 @@ export const ElementsHighlighter: FC<Props> = ({ themeKeys, ...rest }) => {
   )
 
   const onHover = useCallback((e) => {
+    const toRenderElements = {}
     for (const cssVarName of cssVarNames) {
       if (ElementsMap.getInstance().cssVarElementsMap['--chakra-' + cssVarName]) {
-        ElementsMap.getInstance().toRenderElements = {
-          [cssVarName]: ElementsMap.getInstance().cssVarElementsMap['--chakra-' + cssVarName],
-        }
+        toRenderElements[cssVarName] = ElementsMap.getInstance().cssVarElementsMap[
+          '--chakra-' + cssVarName
+        ]
       }
     }
+
+    ElementsMap.getInstance().toRenderElements = toRenderElements
   }, [])
 
   const onLeave = useCallback((e) => {

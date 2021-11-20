@@ -1,3 +1,8 @@
+## 0.2.0-rc.2 (2021-11-20)
+
+fix: highlighter return object
+
+
 ## 0.2.0-rc.1 (2021-11-20)
 
 feat: multiple highlighter theme keys

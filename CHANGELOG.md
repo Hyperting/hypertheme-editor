@@ -1,3 +1,8 @@
+## 0.1.3-rc.0 (2022-01-10)
+
+Fix: react v17 support
+
+
 ## 0.1.2 (2021-09-22)
 
 fix: isOpen prop is passed to ThemeEditorButton causing a warning

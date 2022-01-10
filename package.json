@@ -89,6 +89,7 @@
     "test-watch": "yarn test-watch:unit",
     "test": "yarn test:unit"
   },
+  "devDependencies": {},
   "release-it": {
     "plugins": {
       "release-it-yarn-workspaces": true,
@@ -97,7 +98,6 @@
         "launchEditor": true
       }
     },
-    "npm": false,
     "git": {
       "requireCleanWorkingDir": false,
       "requireBranch": "main",
@@ -107,6 +107,5 @@
       "release": true
     }
   },
-  "devDependencies": {},
   "version": "0.2.0-rc.2"
 }

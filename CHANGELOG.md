@@ -1,3 +1,8 @@
+## 0.1.3 (2022-01-11)
+
+fix: React 17 support 🎉
+
+
 ## 0.1.3-rc.0 (2022-01-10)
 
 Fix: react v17 support

@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import { ThemeProvider, useDisclosure } from '@chakra-ui/react'
 import { ThemeEditorDrawerProps } from './ThemeEditorDrawer'
 import { ThemeEditorButtonProps } from './ThemeEditorButton'
@@ -11,10 +11,17 @@ type ThemeEditorChild = React.ReactElement<
 
 export type ThemeEditorProps = {
   children: ThemeEditorChild[] | ThemeEditorChild
+  isThemeEditorDrawerOpen?: boolean
 }
 
-export const ThemeEditor: FC<ThemeEditorProps> = ({ children }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure()
+export const ThemeEditor: FC<ThemeEditorProps> = ({ children, isThemeEditorDrawerOpen }) => {
+  const [isOpen, setIsOpen] = useState(isThemeEditorDrawerOpen)
+  const onOpen = () => setIsOpen(true)
+  const onClose = () => setIsOpen(false)
+
+  useEffect(() => {
+    setIsOpen(isThemeEditorDrawerOpen)
+  }, [isThemeEditorDrawerOpen])
 
   return (
     <ThemeProvider theme={theme}>

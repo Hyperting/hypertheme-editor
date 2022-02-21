@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { Button } from '@chakra-ui/react'
 import { CgColorPicker, CgEditShadows, CgSpaceBetween } from 'react-icons/cg'
@@ -16,14 +16,15 @@ import {
 } from '../src'
 
 export default {
-  title: 'HyperThemeEditor/ThemeEditor',
+  title: 'HyperThemeEditor/chakra-ui-core/ThemeEditor',
   component: ThemeEditor,
   argTypes: {},
+  disclosureProps: {},
 } as ComponentMeta<typeof ThemeEditor>
 
 export const FreeVersionWithRootPanel = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Ciao</Button>
+    <Button colorScheme="blue">Button</Button>
     <ThemeEditor {...args}>
       <ThemeEditorButton />
       <ThemeEditorDrawer>
@@ -40,7 +41,7 @@ export const FreeVersionWithRootPanel = (args) => (
 
 export const FreeVersionWithoutRootPanel = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Ciao</Button>
+    <Button colorScheme="blue">Button</Button>
     <ThemeEditor {...args}>
       <ThemeEditorButton />
       <ThemeEditorDrawer>
@@ -54,7 +55,7 @@ export const FreeVersionWithoutRootPanel = (args) => (
 export const ProVersion = (args) => (
   <ThemeEditorProvider>
     <Button colorScheme="blue" letterSpacing="wider">
-      Ciao
+      Button
     </Button>
 
     <ThemeEditor {...args}>
@@ -85,3 +86,21 @@ export const ProVersion = (args) => (
     <ColorModeToggle />
   </ThemeEditorProvider>
 )
+
+export const ControlledThemeEditor = (args) => {
+  const [isOpen, setIsOpen] = useState(true)
+  const onClick = useCallback(() => setIsOpen(!isOpen), [isOpen])
+  const onClose = () => setIsOpen(false)
+
+  return (
+    <ThemeEditorProvider>
+      <Button colorScheme="blue" letterSpacing="wider" onClick={onClick}>
+        Click Me!
+      </Button>
+
+      <ThemeEditor isOpen={isOpen} onClose={onClose} {...args}>
+        <ThemeEditorDrawer />
+      </ThemeEditor>
+    </ThemeEditorProvider>
+  )
+}

@@ -16,7 +16,7 @@ import {
 } from '../src'
 
 export default {
-  title: 'HyperThemeEditor/chakra-ui-core/ThemeEditor',
+  title: 'HyperThemeEditor/ThemeEditor',
   component: ThemeEditor,
   argTypes: {},
   disclosureProps: {},
@@ -24,7 +24,7 @@ export default {
 
 export const FreeVersionWithRootPanel = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Button</Button>
+    <Button colorScheme="blue">Ciao</Button>
     <ThemeEditor {...args}>
       <ThemeEditorButton />
       <ThemeEditorDrawer>
@@ -41,7 +41,7 @@ export const FreeVersionWithRootPanel = (args) => (
 
 export const FreeVersionWithoutRootPanel = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Button</Button>
+    <Button colorScheme="blue">Ciao</Button>
     <ThemeEditor {...args}>
       <ThemeEditorButton />
       <ThemeEditorDrawer>
@@ -55,7 +55,7 @@ export const FreeVersionWithoutRootPanel = (args) => (
 export const ProVersion = (args) => (
   <ThemeEditorProvider>
     <Button colorScheme="blue" letterSpacing="wider">
-      Button
+      Ciao
     </Button>
 
     <ThemeEditor {...args}>

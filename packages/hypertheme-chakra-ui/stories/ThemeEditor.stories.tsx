@@ -27,7 +27,6 @@ export default {
   title: 'HyperThemeEditor/hypertheme-chakra-ui/ThemeEditor Community',
   component: ThemeEditor,
   argTypes: {},
-  isThemeEditorDrawerOpen: false,
 } as ComponentMeta<typeof ThemeEditor>
 
 export const DefaultEditor = (args) => (

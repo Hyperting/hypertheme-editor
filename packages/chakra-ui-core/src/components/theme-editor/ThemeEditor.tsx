@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { ThemeProvider, useDisclosure } from '@chakra-ui/react'
+import { ThemeProvider, useDisclosure, UseDisclosureProps } from '@chakra-ui/react'
 import { ThemeEditorDrawerProps } from './ThemeEditorDrawer'
 import { ThemeEditorButtonProps } from './ThemeEditorButton'
 import { theme } from '@hypertheme-editor/chakra-ui-theme'
@@ -11,10 +11,10 @@ type ThemeEditorChild = React.ReactElement<
 
 export type ThemeEditorProps = {
   children: ThemeEditorChild[] | ThemeEditorChild
-}
+} & UseDisclosureProps
 
-export const ThemeEditor: FC<ThemeEditorProps> = ({ children }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure()
+export const ThemeEditor: FC<ThemeEditorProps> = ({ children, ...disclosureProps }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure(disclosureProps)
 
   return (
     <ThemeProvider theme={theme}>

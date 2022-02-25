@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { Button } from '@chakra-ui/react'
 import { CgColorPicker, CgEditShadows, CgSpaceBetween } from 'react-icons/cg'
@@ -19,6 +19,7 @@ export default {
   title: 'HyperThemeEditor/ThemeEditor',
   component: ThemeEditor,
   argTypes: {},
+  disclosureProps: {},
 } as ComponentMeta<typeof ThemeEditor>
 
 export const FreeVersionWithRootPanel = (args) => (
@@ -85,3 +86,21 @@ export const ProVersion = (args) => (
     <ColorModeToggle />
   </ThemeEditorProvider>
 )
+
+export const ControlledThemeEditor = (args) => {
+  const [isOpen, setIsOpen] = useState(true)
+  const onClick = useCallback(() => setIsOpen(!isOpen), [isOpen])
+  const onClose = () => setIsOpen(false)
+
+  return (
+    <ThemeEditorProvider>
+      <Button colorScheme="blue" letterSpacing="wider" onClick={onClick}>
+        Click Me!
+      </Button>
+
+      <ThemeEditor isOpen={isOpen} onClose={onClose} {...args}>
+        <ThemeEditorDrawer />
+      </ThemeEditor>
+    </ThemeEditorProvider>
+  )
+}

@@ -1,3 +1,8 @@
+## 0.1.4-rc.0 (2022-02-25)
+
+feat: controlled ThemeEditorDrawer
+
+
 ## 0.1.3 (2022-01-11)
 
 fix: React 17 support 🎉

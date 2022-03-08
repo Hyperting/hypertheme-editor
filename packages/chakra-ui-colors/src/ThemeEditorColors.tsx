@@ -3,6 +3,7 @@ import { Accordion } from '@chakra-ui/react'
 import { CgColorPicker } from 'react-icons/cg'
 import {
   useThemeEditor,
+  useAccordionState,
   ThemeEditorAccordionItem,
   EmptyBox,
   themeColorKeys,
@@ -11,6 +12,7 @@ import {
 import ThemeEditorPaletteColorItem from './ThemeEditorPaletteColorItem'
 import { ThemeEditorPalettePopoverForm } from './ThemeEditorPalettePopoverForm'
 import { generatePalette } from './generateColorPalette'
+import { COLOR_EXPANDED_INDEX_LOCAL_STORAGE_KEY } from './constants'
 
 type Props = {
   //
@@ -18,6 +20,7 @@ type Props = {
 
 export const ThemeEditorColors: FC<Props> = (props) => {
   const { theme, setTheme } = useThemeEditor()
+  const [defaultIndex, setDefaultIndex] = useAccordionState(COLOR_EXPANDED_INDEX_LOCAL_STORAGE_KEY)
 
   const handleChangeColor = useCallback(
     ({ token, value }) => {
@@ -78,7 +81,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
   }, [theme])
 
   return (
-    <Accordion p={0} mr="-1rem" defaultIndex={0} allowToggle>
+    <Accordion p={0} mr="-1rem" index={defaultIndex} allowToggle onChange={setDefaultIndex}>
       <ThemeEditorAccordionItem
         title="Custom colors"
         fontSize="lg"

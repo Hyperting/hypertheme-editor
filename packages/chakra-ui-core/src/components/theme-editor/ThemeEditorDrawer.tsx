@@ -18,7 +18,8 @@ import CreditsBox from '../base/CreditsBox'
 import UpgradeBanner from '../base/UpgradeBanner'
 import { useIsBrowserCompatible } from '../../utils/isBrowserCompatible'
 import { ThemeEditorRootPanel } from './ThemeEditorRootPanel'
-// import { DRAWER_EXPANDED_INDEX_LOCAL_STORAGE_KEY } from '../../constants'
+import { DRAWER_EXPANDED_INDEX_LOCAL_STORAGE_KEY } from '../../constants'
+import { useAccordionState } from '../../hooks/useAccordionState'
 
 const mobileReadyItems = ['Colors']
 
@@ -56,15 +57,7 @@ export const ThemeEditorDrawer: FC<ThemeEditorDrawerProps> = ({
   const initialFocusRef = useRef<any>()
   const isMobile = useIsMobile()
   const isCompatible = useIsBrowserCompatible()
-  // const storedIndex = localStorage.getItem(DRAWER_EXPANDED_INDEX_LOCAL_STORAGE_KEY)
-  // const defaultIndex = storedIndex && parseInt(storedIndex) >= 0 ? parseInt(storedIndex) : 0
-
-  // const handleOnChangeIndex = (expandedIndex) => {
-  //   localStorage.setItem(
-  //     DRAWER_EXPANDED_INDEX_LOCAL_STORAGE_KEY,
-  //     expandedIndex >= 0 ? expandedIndex : 0
-  //   )
-  // }
+  const [defaultIndex, setDefaultIndex] = useAccordionState(DRAWER_EXPANDED_INDEX_LOCAL_STORAGE_KEY)
 
   return (
     <Drawer
@@ -104,7 +97,12 @@ export const ThemeEditorDrawer: FC<ThemeEditorDrawerProps> = ({
               This browser is not compatible, most of the features will not work.
             </Alert>
           )}
-          <ThemeEditorAccordion allowToggle borderRadius="md" defaultIndex={0}>
+          <ThemeEditorAccordion
+            allowToggle
+            borderRadius="md"
+            index={defaultIndex}
+            onChange={setDefaultIndex}
+          >
             {React.Children.map(React.Children.toArray(children), (child, index) => {
               const { icon, title, children, ...panelProps } = (child as ReactElement).props
               return (

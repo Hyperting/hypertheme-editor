@@ -45,7 +45,7 @@
     "@hypertheme-editor/chakra-ui-font-sizes": "^0.1.4-rc.0",
     "immer": "^9.0.6",
     "react-icons": "^4.2.0",
-    "recoil": "^0.4.1",
+    "recoil": "^0.7.0",
     "use-debouncy": "^4.2.0"
   },
   "publishConfig": {

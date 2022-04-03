@@ -1,3 +1,8 @@
+## 0.1.4-rc.2 (2022-04-03)
+
+chore: removed wrong api call
+
+
 ## 0.1.4-rc.1 (2022-04-03)
 
 - chore: update recoil dependency

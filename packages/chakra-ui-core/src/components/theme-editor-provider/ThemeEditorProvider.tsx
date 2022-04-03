@@ -1,7 +1,6 @@
 import React, { FC } from 'react'
 import { useTheme } from '@chakra-ui/react'
 import { RecoilRoot } from 'recoil'
-import { GoogleFontFamiliesStateInitializer } from './GoogleFontFamiliesStateInitializer'
 import { ThemeStateInitializer } from './ThemeStateInitializer'
 
 type Props = {
@@ -14,7 +13,6 @@ export const ThemeEditorProvider: FC<Props> = ({ children }) => {
   return (
     <RecoilRoot>
       <ThemeStateInitializer theme={chakraTheme} />
-      <GoogleFontFamiliesStateInitializer />
       {children}
     </RecoilRoot>
   )

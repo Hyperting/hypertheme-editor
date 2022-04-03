@@ -2,7 +2,8 @@
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { Stack } from '@chakra-ui/react'
-import { defaultTheme, ThemeEditorProvider, ThemeIcon } from '../src'
+import { ThemeEditorProvider, ThemeIcon } from '../src'
+import { theme as defaultTheme } from '@hypertheme-editor/chakra-ui-theme'
 
 export default {
   title: 'HyperThemeEditor/ThemeIcon',

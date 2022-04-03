@@ -3,7 +3,6 @@ import { themeEditorState, ThemeEditorState, useThemeEditor } from './hooks/useT
 import { themeColorKeys } from './utils/defaultThemeColorKeys'
 
 export * from './utils/updateThemeTokens'
-export * from './utils/googleFontFamiliesState'
 export * from './utils/safeJsonParse'
 export * from './components/base'
 export * from './components/config'

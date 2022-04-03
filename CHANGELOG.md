@@ -1,3 +1,8 @@
+## 0.1.4-rc.1 (2022-04-03)
+
+- chore: update recoil dependency
+
+
 ## 0.1.4-rc.0 (2022-02-25)
 
 feat: controlled ThemeEditorDrawer

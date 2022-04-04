@@ -1,3 +1,6 @@
+## 0.1.5 (2022-04-04)
+
+
 ## 0.1.4 (2022-04-04)
 
 feat: controlled ThemeEditor with `useDisclosure()` from Chakra UI (thanks to: @panbenson)

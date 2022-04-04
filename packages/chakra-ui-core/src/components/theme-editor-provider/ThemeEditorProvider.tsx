@@ -6,15 +6,16 @@ import { GoogleFontFamiliesStateInitializer } from '../../utils/GoogleFontFamili
 
 type Props = {
   children: React.ReactNode | React.ReactNode[]
+  disableGoogleFonts?: boolean
 }
 
-export const ThemeEditorProvider: FC<Props> = ({ children }) => {
+export const ThemeEditorProvider: FC<Props> = ({ children, disableGoogleFonts = true }) => {
   const chakraTheme = useTheme()
 
   return (
     <RecoilRoot>
       <ThemeStateInitializer theme={chakraTheme} />
-      <GoogleFontFamiliesStateInitializer />
+      {!disableGoogleFonts && <GoogleFontFamiliesStateInitializer />}
       {children}
     </RecoilRoot>
   )

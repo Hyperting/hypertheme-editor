@@ -11,10 +11,10 @@ export const ThemeColorBox: FC<Props> = ({ token, paletteIndex, ...props }) => {
   const { theme } = useThemeEditor()
 
   const color = useMemo(() => {
-    if (theme && theme.colors[token]) {
+    if (theme?.colors?.[token]) {
       if (typeof theme.colors[token] === 'string') {
         return theme.colors[token]
-      } else if (theme.colors[token][paletteIndex]) {
+      } else if (theme?.colors?.[token] && paletteIndex && theme.colors[token][paletteIndex]) {
         return theme.colors[token][paletteIndex]
       }
     }

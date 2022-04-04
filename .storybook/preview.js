@@ -1,6 +1,5 @@
 import * as React from 'react'
-import { ChakraProvider, extendTheme, ColorModeScript } from '@chakra-ui/react'
-import { theme } from '@hypertheme-editor/chakra-ui-theme'
+import { ChakraProvider } from '@chakra-ui/react'
 
 // import '@fontsource/sora/200.css'
 // import '@fontsource/sora/400.css'
@@ -21,7 +20,7 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <ChakraProvider theme={extendTheme(theme)}>
+    <ChakraProvider>
       <Story />
     </ChakraProvider>
   ),

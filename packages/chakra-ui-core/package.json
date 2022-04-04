@@ -25,7 +25,8 @@
     "react-icons": "^4.2.0"
   },
   "dependencies": {
-    "@hypertheme-editor/chakra-ui-theme": "^0.1.4-rc.3"
+    "@hypertheme-editor/chakra-ui-theme": "^0.1.4-rc.3",
+    "react-google-font-loader": "^1.1.0"
   },
   "publishConfig": {
     "access": "public"

@@ -1,3 +1,10 @@
+## 0.1.4 (2022-04-04)
+
+feat: controlled ThemeEditor with `useDisclosure()` from Chakra UI (thanks to: @panbenson)
+fix: removied not necessary API calls on initialization
+
+
+
 ## 0.1.4-rc.4 (2022-04-04)
 
 

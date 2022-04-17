@@ -5,7 +5,7 @@ chore: bumping version to 0.1.5
 ## 0.1.4 (2022-04-04)
 
 - feat: controlled ThemeEditor with `useDisclosure()` from Chakra UI (thanks to: @panbenson)
-- fix: removied not necessary API calls on initialization
+- fix: removed not necessary API calls during initialization
 
 ## 0.1.4-rc.4 (2022-04-04)
 

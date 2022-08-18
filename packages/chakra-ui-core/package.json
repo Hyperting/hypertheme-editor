@@ -1,6 +1,6 @@
 {
     "name": "@hypertheme-editor/chakra-ui-core",
-    "version": "0.2.0-dev.2",
+    "version": "0.2.0-dev.3",
     "description": "",
     "main": "lib/index.js",
     "module": "lib/index.esm.js",
@@ -24,7 +24,7 @@
         "react-icons": "^4.2.0"
     },
     "dependencies": {
-        "@hypertheme-editor/chakra-ui-theme": "^0.2.0-dev.2",
+        "@hypertheme-editor/chakra-ui-theme": "^0.2.0-dev.3",
         "react-google-font-loader": "^1.1.0",
         "recoil": "^0.5.2"
     },

@@ -2,7 +2,7 @@
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { Button, useDisclosure } from '@chakra-ui/react'
-import { defaultTheme, ThemeEditorProvider, ThemeIcon, ThemeResetPopup } from '../src'
+import { ThemeEditorProvider, ThemeIcon, ThemeResetPopup } from '../src'
 
 export default {
   title: 'HyperThemeEditor/chakra-ui-core/ThemeResetPopup',
@@ -16,7 +16,7 @@ export const Basic = (args) => {
   return (
     <ThemeEditorProvider>
       <Button onClick={onOpen}>Open theme reset popup</Button>
-      <ThemeResetPopup isOpen={isOpen} onClose={onClose} />
+      {/* <ThemeResetPopup isOpen={isOpen} onClose={onClose} /> */}
     </ThemeEditorProvider>
   )
 }

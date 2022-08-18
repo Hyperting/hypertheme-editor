@@ -1,36 +1,36 @@
 {
-  "name": "@hypertheme-editor/chakra-ui-font-sizes",
-  "version": "0.2.0-rc.2",
-  "description": "",
-  "main": "lib/index.js",
-  "module": "lib/index.esm.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "lib"
-  ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c",
-    "start": "rollup -c -w"
-  },
-  "author": "marco",
-  "license": "ISC",
-  "peerDependencies": {
-    "@chakra-ui/react": ">= 1.0.0",
-    "@hypertheme-editor/chakra-ui-core": "0.2.0-rc.2",
-    "framer-motion": ">= 4",
-    "react": ">=16.8.6",
-    "react-dom": ">=16.8.6",
-    "recoil": "^0.5.2",
-    "immer": "^9.0.6",
-    "react-icons": "^4.2.0",
-    "use-debouncy": "^4.2.0"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@hypertheme-editor/chakra-ui-core": "0.2.0-rc.2"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+    "name": "@hypertheme-editor/chakra-ui-font-sizes",
+    "version": "0.2.0-rc.2",
+    "description": "",
+    "main": "lib/index.js",
+    "module": "lib/index.esm.js",
+    "types": "lib/index.d.ts",
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "rollup -c",
+        "start": "rollup -c -w"
+    },
+    "author": "marco",
+    "license": "ISC",
+    "peerDependencies": {
+        "@chakra-ui/react": ">= 1.0.0",
+        "@hypertheme-editor/chakra-ui-core": "0.2.0-rc.2",
+        "framer-motion": ">= 4",
+        "react": ">=16.8.6",
+        "react-dom": ">=16.8.6",
+        "recoil": "^0.5.2",
+        "immer": "^9.0.6",
+        "react-icons": "^4.2.0",
+        "use-debouncy": "^4.2.0"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@hypertheme-editor/chakra-ui-core": "0.2.0-rc.2"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
 }

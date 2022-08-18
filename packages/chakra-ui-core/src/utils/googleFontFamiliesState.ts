@@ -1,6 +1,5 @@
 import { atom, DefaultValue, useRecoilState, useRecoilValue } from 'recoil'
 import { GOOGLE_FONTS_LOCAL_STORAGE_KEY } from '../constants'
-import { safeJsonParse } from './safeJsonParse'
 
 export type GoogleFont = {
   family: string

@@ -1,10 +1,9 @@
 import React, { FC, useEffect, useMemo } from 'react'
 import GoogleFontLoader, { Font } from 'react-google-font-loader'
 import { useRecoilState } from 'recoil'
-import { API_ENDPOINT, GOOGLE_FONTS_LOCAL_STORAGE_KEY } from '../../constants'
-import { useThemeEditor } from '../../hooks/useThemeEditor'
-import { GoogleFont, googleFontFamiliesState } from '../../utils/googleFontFamiliesState'
-import { safeJsonParse } from '../../utils/safeJsonParse'
+import { safeJsonParse, useThemeEditor } from '@hypertheme-editor/chakra-ui-core'
+import { API_ENDPOINT, GOOGLE_FONTS_LOCAL_STORAGE_KEY } from '../constants'
+import { GoogleFont, googleFontFamiliesState } from './googleFontFamiliesState'
 
 const GOOGLE_FONTS_API_ENDPOINT = `${API_ENDPOINT}/google-fonts`
 

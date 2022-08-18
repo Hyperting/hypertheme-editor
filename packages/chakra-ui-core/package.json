@@ -1,6 +1,6 @@
 {
     "name": "@hypertheme-editor/chakra-ui-core",
-    "version": "0.2.0-dev.1",
+    "version": "0.2.0-dev.2",
     "description": "",
     "main": "lib/index.js",
     "module": "lib/index.esm.js",
@@ -24,11 +24,12 @@
         "react-icons": "^4.2.0"
     },
     "dependencies": {
-        "@hypertheme-editor/chakra-ui-theme": "^0.2.0-dev.1",
+        "@hypertheme-editor/chakra-ui-theme": "^0.2.0-dev.2",
         "react-google-font-loader": "^1.1.0",
         "recoil": "^0.5.2"
     },
     "publishConfig": {
-        "access": "public"
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
     }
 }

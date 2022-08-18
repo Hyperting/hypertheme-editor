@@ -1,3 +1,8 @@
+## 0.2.0-dev.4 (2022-08-18)
+
+refactor (WIP): update to Chakra UI v2
+
+
 ## 0.2.0-dev.3 (2022-08-18)
 
 chore: bump to React v18

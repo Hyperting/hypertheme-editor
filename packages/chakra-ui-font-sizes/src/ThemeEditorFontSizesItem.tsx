@@ -117,7 +117,7 @@ const ThemeEditorFontSizesItem: FC<ThemeEditorFontSizesItemProps> = (props) => {
       <Text
         alignItems="center"
         minW="min-content"
-        d="block"
+        display="block"
         fontSize={currentValue}
         whiteSpace="nowrap"
       >

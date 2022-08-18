@@ -44,7 +44,7 @@ export const ThemeEditorConfig: FC<Props> = () => {
             size="lg"
             color={initialColorMode == 'light' ? 'yellow.400' : 'yellow.600'}
             bgColor={initialColorMode == 'light' ? 'gray.200' : 'blue.600'}
-            d="flex"
+            display="flex"
             isChecked={initialColorMode == 'dark'}
             value={initialColorMode}
             falseIcon={FaSun}

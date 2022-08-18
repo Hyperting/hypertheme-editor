@@ -66,7 +66,7 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
       </Flex>
 
       <DrawerHeader
-        d="flex"
+        display="flex"
         alignItems="center"
         backgroundColor={bgColor}
         pl={{ base: 3, lg: 6 }}

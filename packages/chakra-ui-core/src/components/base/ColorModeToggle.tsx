@@ -31,7 +31,7 @@ const ColorModeToggle: FC<ColorModeToggleProps> = (props) => {
         size={size}
         color={colorMode == 'light' ? 'yellow.400' : 'yellow.600'}
         bgColor={colorMode == 'light' ? 'gray.200' : 'blue.600'}
-        d="flex"
+        display="flex"
         isChecked={colorMode == 'dark'}
         value={colorMode}
         falseIcon={FaSun}

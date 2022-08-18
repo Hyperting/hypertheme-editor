@@ -16,19 +16,19 @@
     "author": "marco",
     "license": "ISC",
     "peerDependencies": {
-        "@chakra-ui/react": ">= 1.0.0",
+        "@chakra-ui/react": ">= 2.0.0",
         "framer-motion": ">= 4",
         "react": ">=18",
         "react-dom": ">=18"
     },
     "devDependencies": {
         "@babel/core": "^7.14.6",
-        "@chakra-ui/react": "^1.6.7",
+        "@chakra-ui/react": "^2.2.8",
         "@emotion/react": "^11.4.0",
         "@emotion/styled": "^11.3.0",
         "@rollup/plugin-commonjs": "^19.0.0",
         "@rollup/plugin-node-resolve": "^13.0.0",
-        "@types/react": "^17.0.14",
+        "@types/react": "^18.0.17",
         "babel-eslint": "10.1.0",
         "babel-loader": "^8.2.2",
         "framer-motion": "^4.1.17",

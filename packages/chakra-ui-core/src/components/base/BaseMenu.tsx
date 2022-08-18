@@ -28,7 +28,7 @@ const BaseMenu: FC<BaseMenuProps> = (props) => {
 
   const List = useCallback(() => {
     return (
-      <MenuList p={0} d="flex" flexDir="column" overflow="hidden" shadow={shadow} zIndex={1}>
+      <MenuList p={0} display="flex" flexDir="column" overflow="hidden" shadow={shadow} zIndex={1}>
         {subtitle && (
           <>
             <Flex justifyContent="space-between" p="0.5rem">
@@ -38,7 +38,7 @@ const BaseMenu: FC<BaseMenuProps> = (props) => {
           </>
         )}
         <Stack spacing="0.5rem" p="0.5rem">
-          {children}
+          {children as any}
         </Stack>
       </MenuList>
     )

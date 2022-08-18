@@ -19,7 +19,7 @@ export const ThemeEditorDrawerFooter: FC<ThemeEditorDrawerFooterProps> = ({
       textAlign="left"
       boxShadow="xl"
       backgroundColor={bgColor}
-      d={isMobile ? 'none' : 'flex'}
+      display={isMobile ? 'none' : 'flex'}
       px={{ base: 3, lg: 6 }}
       py={{ base: 2, lg: 3 }}
     >
@@ -29,7 +29,7 @@ export const ThemeEditorDrawerFooter: FC<ThemeEditorDrawerFooterProps> = ({
         variant="ghost"
         mr="1rem"
         borderRadius="8px"
-        d={{ base: 'none', md: 'flex' }}
+        display={{ base: 'none', md: 'flex' }}
       >
         Cancel
       </Button>

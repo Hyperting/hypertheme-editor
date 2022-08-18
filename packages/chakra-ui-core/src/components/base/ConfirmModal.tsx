@@ -52,7 +52,7 @@ export const ConfirmModal: FC<Props> = ({
     >
       <ModalOverlay />
       <ModalContent overflow="hidden" fontFamily="Sora">
-        <ModalHeader shadow={shadow} alignItems="center" d="flex">
+        <ModalHeader shadow={shadow} alignItems="center" display="flex">
           <Heading fontSize="xl" color={`${colorScheme}.500`}>
             {title}
           </Heading>

@@ -53,7 +53,7 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
           >
             {Icon && (
               <Circle
-                boxSize="25px"
+                size="25px"
                 bgColor={`${colorScheme}.200`}
                 color={`${colorScheme}.600`}
                 fontSize="0.875rem"
@@ -63,7 +63,7 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
               </Circle>
             )}
             <Flex direction="column" textAlign="left" w="full">
-              <Text flex="1" fontWeight="bold" d="flex" justifyContent="space-between">
+              <Text flex="1" fontWeight="bold" display="flex" justifyContent="space-between">
                 {title}
                 {tag && (
                   <Tag
@@ -99,7 +99,7 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
                 },
               }}
             >
-              {children}
+              {children as any}
             </Box>
           </Collapse>
         </>

@@ -25,7 +25,7 @@ export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocu
 
   return (
     <DrawerHeader
-      d="flex"
+      display="flex"
       alignItems="center"
       backgroundColor="rgba(0,0,0,0)"
       px={{ base: 3, lg: 6 }}
@@ -39,7 +39,7 @@ export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocu
             h={{ base: 10, md: 10 }}
             mr={3}
             alignSelf="centrer"
-            d={{ base: 'none', sm: 'grid' }}
+            display={{ base: 'none', sm: 'grid' }}
             disableEditDrawer
           />
         )}

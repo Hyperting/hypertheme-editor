@@ -36,7 +36,7 @@ const BaseListItem: FC<BaseListItemProps> = ({
   return (
     <Box
       w="auto"
-      d="flex"
+      display="flex"
       pos="relative"
       borderRadius="md"
       overflow="hidden"
@@ -62,7 +62,7 @@ const BaseListItem: FC<BaseListItemProps> = ({
           {title && (
             <Text
               fontSize="md"
-              d="flex"
+              display="flex"
               alignContent="space-between"
               textOverflow="ellipsis"
               overflow="scroll"

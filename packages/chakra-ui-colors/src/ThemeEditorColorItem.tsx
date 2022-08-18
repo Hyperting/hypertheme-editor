@@ -10,6 +10,7 @@ import {
   PopoverTrigger,
   PopoverContent,
   PopoverBody,
+  Button,
 } from '@chakra-ui/react'
 import { useDebouncyEffect } from 'use-debouncy'
 import { RgbaStringColorPicker } from 'react-colorful'
@@ -80,7 +81,7 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
         <Popover trigger="hover" placement="bottom-start">
           <ElementsHighlighter themeKeys={`colors.${token}.${colorIndex}`}>
             <PopoverTrigger>
-              <Box
+              <Button
                 borderRadius="full"
                 bgSize="cover"
                 bgImage={`url(data:image/png;base64,${safeB64Bg})`}
@@ -100,7 +101,7 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
                   borderRadius="full"
                   minW={8}
                 />
-              </Box>
+              </Button>
             </PopoverTrigger>
           </ElementsHighlighter>
           <PopoverContent w="min-content">

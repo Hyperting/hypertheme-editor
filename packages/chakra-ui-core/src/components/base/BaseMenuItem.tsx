@@ -35,7 +35,7 @@ const BaseMenuItem: FC<BaseMenuItemProps> = ({
   return (
     <MenuItem
       w="auto"
-      d="flex"
+      display="flex"
       flexDir="column"
       bgSize="cover"
       pos="relative"
@@ -64,7 +64,7 @@ const BaseMenuItem: FC<BaseMenuItemProps> = ({
 
           <Heading
             fontSize="md"
-            d="flex"
+            display="flex"
             alignContent="space-between"
             textOverflow="ellipsis"
             overflow="scroll"

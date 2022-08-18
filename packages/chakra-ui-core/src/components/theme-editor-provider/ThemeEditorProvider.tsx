@@ -14,9 +14,11 @@ export const ThemeEditorProvider: FC<Props> = ({ children, disableGoogleFonts = 
 
   return (
     <RecoilRoot>
-      <ThemeStateInitializer theme={chakraTheme} />
-      {!disableGoogleFonts && <GoogleFontFamiliesStateInitializer />}
-      {children}
+        <>
+        <ThemeStateInitializer theme={chakraTheme} />
+        {!disableGoogleFonts && <GoogleFontFamiliesStateInitializer />}
+        {children}
+        </>
     </RecoilRoot>
   )
 }

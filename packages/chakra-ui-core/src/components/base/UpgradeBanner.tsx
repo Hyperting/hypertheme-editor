@@ -56,7 +56,7 @@ const UpgradeBanner: FC<Props> = ({
           alignItems="center"
           justifyContent="center"
           mr={3}
-          d={{ base: 'none', sm: 'flex' }}
+          display={{ base: 'none', sm: 'flex' }}
         >
           <Box as={IconComp} fontSize={{ base: 'md', md: 'md' }} color={`${colorScheme}.500`} />
         </Flex>

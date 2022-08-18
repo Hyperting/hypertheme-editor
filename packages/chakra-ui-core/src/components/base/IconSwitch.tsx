@@ -78,7 +78,7 @@ export const IconSwitch = forwardRef<IconSwitchProps, 'input'>((props, ref) => {
     () => ({
       alignItems: 'center',
       justifyContent: 'center',
-      d: 'flex',
+      display: 'flex',
       ...styles.thumb,
     }),
     [styles.thumb]

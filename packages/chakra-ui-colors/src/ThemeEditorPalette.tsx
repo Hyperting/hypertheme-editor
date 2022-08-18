@@ -76,7 +76,7 @@ const ThemeEditorPalette: FC<ThemeEditorPaletteProps> = ({
                 <Text
                   color={token.indexOf('white') >= 0 ? 'gray.500' : palette[scale[9 - key]]}
                   size="xs"
-                  d={{ base: 'none', md: 'inline' }}
+                  display={{ base: 'none', md: 'inline' }}
                 >
                   {paletteIndex}
                 </Text>

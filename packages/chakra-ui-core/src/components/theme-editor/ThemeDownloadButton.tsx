@@ -1,5 +1,14 @@
 import React, { FC, useCallback, useState } from 'react'
-import { Button, ButtonProps, Icon, CircularProgress, Divider, useToast } from '@chakra-ui/react'
+import {
+  Button,
+  ButtonProps,
+  Icon,
+  CircularProgress,
+  Divider,
+  useToast,
+  Text,
+  Box,
+} from '@chakra-ui/react'
 import { FaChevronDown, FaDownload } from 'react-icons/fa'
 import { SiJavascript, SiTypescript } from 'react-icons/si'
 import BaseMenu from '../base/BaseMenu'
@@ -99,6 +108,7 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
 const ThemeDownloadMenuButton = ({ downloading = false, ...rest }) => {
   return (
     <Button
+      as={Box}
       rightIcon={<FaChevronDown />}
       size="md"
       colorScheme="primary"

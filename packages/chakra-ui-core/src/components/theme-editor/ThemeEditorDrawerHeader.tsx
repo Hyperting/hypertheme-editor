@@ -9,10 +9,13 @@ import {
   ButtonGroup,
   Button,
   useColorModeValue,
+  HStack,
+  useColorMode,
+  Heading,
 } from '@chakra-ui/react'
 import { FaRedo } from 'react-icons/fa'
 import { MdClose } from 'react-icons/md'
-import { RiArrowGoBackFill, RiArrowGoForwardFill } from 'react-icons/ri'
+import { BsArrow90DegLeft, BsArrow90DegRight } from 'react-icons/bs'
 import { useRecoilState } from 'recoil'
 import { ThemeIcon, ColorModeToggle } from '../base'
 import { setThemeTokens } from '../../utils/updateThemeTokens'
@@ -30,8 +33,8 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
   const { canUndo, canRedo, undo, redo } = useThemeEditor()
   const [kitThemeState, setThemeState] = useRecoilState(themeEditorState)
   const shadow = useColorModeValue('surface', 'surfaceDark')
-  const bgColor = useColorModeValue('whiteAlpha.600', 'gray.900')
-
+  const bgColor = useColorModeValue('white', 'gray.900')
+  const { colorMode } = useColorMode()
   const handleResetTheme = useCallback(() => {
     setThemeState({
       ...kitThemeState,
@@ -46,22 +49,28 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
     <Box pos="relative">
       {/* button as first element to let autofocus on open */}
       <Flex
-        py={{ base: 2, lg: 3 }}
+        py={{ base: 2, lg: 6 }}
         pos="absolute"
         right={{ base: 3, lg: 6 }}
         top={{ base: 0, lg: 0 }}
-        alignItems="center"
+        alignItems="flex-start"
         h="full"
       >
         <Button
-          borderRadius="12px"
-          boxSize={{ base: 12, lg: 14 }}
+          borderRadius="md"
+          variant="outline"
+          boxShadow="0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.2)"
+          size="sm"
           onClick={onClose}
-          fontSize="1.5rem"
-          p="0.5rem"
+          fontSize="1rem"
+          // p="0.5rem"
+          color={colorMode == 'light' ? 'gray.600' : 'white'}
+          bgColor={colorMode == 'light' ? 'white' : 'gray.700'}
+          border="none"
+          p={2}
           ref={initialFocusRef}
         >
-          <MdClose />
+          <Icon as={MdClose} h="18px" w="18px" />
         </Button>
       </Flex>
 
@@ -71,12 +80,11 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
         backgroundColor={bgColor}
         pl={{ base: 3, lg: 6 }}
         pr={{ base: '75px', lg: '100px' }}
-        py={{ base: 2, lg: 3 }}
-        shadow="sm"
+        py={{ base: 0, lg: 6 }}
       >
         <Flex alignItems="center" w="100%" flex="1">
-          <ThemeIcon boxSize={{ base: 12, lg: 14 }} mr={{ base: 2, md: 3 }} shadow={shadow} />
-          <Box>
+          <ThemeIcon boxSize={{ base: 16, lg: 20 }} mr={{ base: 2, md: 3 }} shadow={shadow} />
+          <Flex flexDir="column" justifyContent="center" h="80px">
             {/* <ThemeSwitchDrawerButton
               variant="ghost"
               boxShadow="none"
@@ -85,18 +93,63 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
               fontSize="1rem"
               bg="transparent"
             > */}
-            Hyper Theme
+            <Heading
+              d="flex"
+              alignItems="center"
+              fontSize={{ base: '1.25rem', lg: '1.5rem' }}
+              h={{ lg: '60%' }}
+              mb={{ base: 1, lg: 0 }}
+            >
+              Hyper Theme
+            </Heading>
             {/* </ThemeSwitchDrawerButton> */}
-            <Flex alignItems="center">
+            <HStack align="end" h="fit-content" spacing={1}>
               <ColorModeToggle p={0} w="auto" fontSize="0.875rem" mr={1} />
-              <Button
+              <ButtonGroup
+                size="xs"
+                borderRadius="md"
+                boxShadow="0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.2)"
+                isAttached
+                overflow="hidden"
+              >
+                <IconButton
+                  icon={<BsArrow90DegLeft />}
+                  fontSize="16px"
+                  height="27px"
+                  width="27px"
+                  aria-label="undo"
+                  disabled={!canUndo}
+                  onClick={undo}
+                  variant="outline"
+                  border="none"
+                  color={colorMode == 'light' ? 'gray.600' : 'gray.100'}
+                  bgColor={colorMode == 'light' ? 'white' : 'gray.700'}
+                  _focus={{ border: 'none' }}
+                />
+                <Divider orientation="vertical" height="27px" />
+                <IconButton
+                  icon={<BsArrow90DegRight />}
+                  fontSize="16px"
+                  height="27px"
+                  width="27px"
+                  aria-label="redo"
+                  disabled={!canRedo}
+                  onClick={redo}
+                  variant="outline"
+                  border="none"
+                  color={colorMode == 'light' ? 'gray.600' : 'gray.100'}
+                  bgColor={colorMode == 'light' ? 'white' : 'gray.700'}
+                  _focus={{ border: 'none' }}
+                />
+              </ButtonGroup>
+              {/* <Button
                 rightIcon={<Icon as={FaRedo} />}
                 onClick={handleResetTheme}
                 size="xs"
                 variant="ghost"
               >
                 Reset
-              </Button>
+              </Button> */}
               {/* <BaseMenu
                 placement="bottom-start"
                 trigger={
@@ -124,26 +177,9 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
                   Reset theme
                 </BaseMenuItem>
               </BaseMenu> */}
-            </Flex>
-          </Box>
+            </HStack>
+          </Flex>
         </Flex>
-
-        <ButtonGroup size="sm" borderRadius="md" isAttached overflow="hidden">
-          <IconButton
-            icon={<RiArrowGoBackFill />}
-            aria-label="undo"
-            disabled={!canUndo}
-            onClick={undo}
-          />
-
-          <Divider orientation="vertical" />
-          <IconButton
-            icon={<RiArrowGoForwardFill />}
-            aria-label="redo"
-            disabled={!canRedo}
-            onClick={redo}
-          />
-        </ButtonGroup>
       </DrawerHeader>
     </Box>
   )

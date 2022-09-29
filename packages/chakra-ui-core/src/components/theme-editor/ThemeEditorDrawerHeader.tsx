@@ -13,7 +13,7 @@ import {
   useColorMode,
   Heading,
 } from '@chakra-ui/react'
-import { FaRedo } from 'react-icons/fa'
+import { BsArrowClockwise } from 'react-icons/bs'
 import { MdClose } from 'react-icons/md'
 import { BsArrow90DegLeft, BsArrow90DegRight } from 'react-icons/bs'
 import { useRecoilState } from 'recoil'
@@ -103,8 +103,8 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
               Hyper Theme
             </Heading>
             {/* </ThemeSwitchDrawerButton> */}
-            <HStack align="end" h="fit-content" spacing={1}>
-              <ColorModeToggle p={0} w="auto" fontSize="0.875rem" mr={1} />
+            <HStack align="center" h="fit-content" spacing={1.5}>
+              <ColorModeToggle p={0} w="auto" fontSize="0.875rem" />
               <ButtonGroup
                 size="xs"
                 borderRadius="md"
@@ -142,14 +142,21 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
                   _focus={{ border: 'none' }}
                 />
               </ButtonGroup>
-              {/* <Button
-                rightIcon={<Icon as={FaRedo} />}
+              <IconButton
+                aria-label="reset"
+                icon={<BsArrowClockwise />}
                 onClick={handleResetTheme}
-                size="xs"
-                variant="ghost"
-              >
-                Reset
-              </Button> */}
+                fontSize="15px"
+                size="sm"
+                height="27px"
+                w="10px"
+                variant="outline"
+                border="none"
+                color={colorMode == 'light' ? 'gray.600' : 'gray.100'}
+                bgColor={colorMode == 'light' ? 'white' : 'gray.700'}
+                _focus={{ border: 'none' }}
+                boxShadow="0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.2)"
+              />
               {/* <BaseMenu
                 placement="bottom-start"
                 trigger={

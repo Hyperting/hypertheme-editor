@@ -1,4 +1,4 @@
-import { DrawerFooter, Button, useColorModeValue } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 import React, { FC } from 'react'
 import { ThemeDownloadButton } from '.'
 
@@ -12,18 +12,24 @@ export const ThemeEditorDrawerFooter: FC<ThemeEditorDrawerFooterProps> = ({
   isMobile,
   actionButton = <ThemeDownloadButton borderRadius="8px" w={{ base: '100%', md: 'initial' }} />,
 }) => {
-  const bgColor = useColorModeValue('whiteAlpha.600', 'gray.900')
+  // const bgColor = useColorModeValue('whiteAlpha.600', 'gray.900')
 
   return (
-    <DrawerFooter
-      textAlign="left"
-      boxShadow="xl"
-      backgroundColor={bgColor}
+    <Flex position="fixed" justifyContent="center" bottom={6} w="100%">
+      {actionButton}
+    </Flex>
+  )
+}
+
+/* 
+<DrawerFooter
+      backgroundColor="none"
       d={isMobile ? 'none' : 'flex'}
       px={{ base: 3, lg: 6 }}
       py={{ base: 2, lg: 3 }}
+      justifyContent="center"
     >
-      <Button
+       <Button
         size="md"
         onClick={onClose}
         variant="ghost"
@@ -34,6 +40,4 @@ export const ThemeEditorDrawerFooter: FC<ThemeEditorDrawerFooterProps> = ({
         Cancel
       </Button>
       {actionButton}
-    </DrawerFooter>
-  )
-}
+    </DrawerFooter> */

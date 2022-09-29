@@ -10,6 +10,8 @@ import {
   Box,
 } from '@chakra-ui/react'
 import { FaChevronDown, FaDownload } from 'react-icons/fa'
+import { HiArrowDown } from 'react-icons/hi'
+
 import { SiJavascript, SiTypescript } from 'react-icons/si'
 import BaseMenu from '../base/BaseMenu'
 import BaseMenuItem from '../base/BaseMenuItem'
@@ -109,16 +111,18 @@ const ThemeDownloadMenuButton = ({ downloading = false, ...rest }) => {
   return (
     <Button
       as={Box}
-      rightIcon={<FaChevronDown />}
       size="md"
       colorScheme="primary"
       variant="solid"
+      borderRadius="3xl"
       isLoading={downloading}
       disabled={downloading}
       w="full"
+      px={8}
+      py={8}
       {...rest}
     >
-      <Icon as={FaDownload} mr="0.5rem" /> Export
+      <Icon boxSize={4} mb={1} mr={2} as={HiArrowDown} /> Export theme
     </Button>
   )
 }

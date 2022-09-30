@@ -17,6 +17,7 @@ import BaseMenu from '../base/BaseMenu'
 import BaseMenuItem from '../base/BaseMenuItem'
 import { API_ENDPOINT } from '../../constants'
 import { useThemeEditor } from '../../hooks/useThemeEditor'
+import { transform } from '@babel/core'
 
 const GENERATE_THEME_ENDPOINT = `${API_ENDPOINT}/generate-theme`
 
@@ -26,6 +27,29 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
   const [downloading, setDownloading] = useState<boolean>(false)
   const { theme } = useThemeEditor()
   const toast = useToast()
+
+  // Prende le keys di un oggetto e le trasforma in un array di stringhe
+  console.log('theme', theme)
+  const arrayP = ['blur', 'colors']
+  const getKeys = (obj) => {
+    return Object.keys(obj)
+  }
+  console.log('obj to array', getKeys(theme))
+
+  // Prende un array di stringhe e lo trasforma in un oggetto
+  const objectify = (array) => {
+    return array.reduce((obj, item) => {
+      if (theme !== undefined) {
+        console.log('obj', obj)
+        console.log('themeobj', theme[item])
+        console.log('item', item)
+        obj[item] = theme[item]
+        return obj
+      }
+    }, {})
+  }
+
+  console.log('object', objectify(arrayP))
 
   const handleDownload = useCallback(
     (language: string) => async () => {
@@ -122,7 +146,7 @@ const ThemeDownloadMenuButton = ({ downloading = false, ...rest }) => {
       py={8}
       {...rest}
     >
-      <Icon boxSize={4} mb={1} mr={2} as={HiArrowDown} /> Export theme
+      <Icon boxSize={4} mr={1.5} as={HiArrowDown} /> Export theme
     </Button>
   )
 }

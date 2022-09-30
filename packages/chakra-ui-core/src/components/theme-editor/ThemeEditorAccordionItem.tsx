@@ -62,7 +62,8 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
                 <Icon />
               </Circle>
             )}
-            <Flex direction="column" textAlign="left" w="full">
+            <Flex direction="column" textAlign="left" w="full" >
+               
               <Text flex="1" fontWeight="bold" d="flex" justifyContent="space-between">
                 {title}
                 {tag && (

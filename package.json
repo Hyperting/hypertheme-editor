@@ -35,6 +35,7 @@
         "babel-eslint": "10.1.0",
         "babel-jest": "^27.3.1",
         "babel-loader": "^8.2.2",
+        "chakra-ui-steps": "^1.7.4",
         "cpy-cli": "^3.1.1",
         "enzyme": "^3.11.0",
         "enzyme-to-json": "^3.6.2",
@@ -91,7 +92,9 @@
         "test-watch": "yarn test-watch:unit",
         "test": "yarn test:unit"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "lerna": "^5.5.2"
+    },
     "release-it": {
         "plugins": {
             "release-it-yarn-workspaces": true,

@@ -17,6 +17,7 @@
         "@babel/core": "^7.16.0",
         "@babel/preset-env": "^7.16.0",
         "@babel/preset-typescript": "^7.16.0",
+        "@chakra-ui/icons": "^2.0.10",
         "@chakra-ui/react": "^1.6.7",
         "@emotion/react": "^11.4.0",
         "@emotion/styled": "^11.3.0",

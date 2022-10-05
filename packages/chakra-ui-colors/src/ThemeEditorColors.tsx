@@ -1,5 +1,5 @@
 import React, { FC, useCallback, useMemo } from 'react'
-import { Accordion } from '@chakra-ui/react'
+import { Accordion, Box, Circle } from '@chakra-ui/react'
 import { CgColorPicker } from 'react-icons/cg'
 import {
     useThemeEditor,
@@ -14,9 +14,8 @@ import { generatePalette } from './generateColorPalette'
 
 //my modifications
 import { StepperContainer } from './StepperContainer'
-
-
-
+import { IconStepperContainer } from './IconStepperContainer'
+import { BiGridVertical } from 'react-icons/bi'
 type Props = {
     //
 } & Partial<ThemeEditorRootPanelProps>
@@ -83,16 +82,19 @@ export const ThemeEditorColors: FC<Props> = (props) => {
     }, [theme])
 
     return (
-        <Accordion p={0} mr="-1rem" defaultIndex={0} allowToggle theme={theme}>
-            <StepperContainer>
+        <Accordion p={0} mr="-1rem" defaultIndex={0} allowToggle >
+            <StepperContainer >
                 <ThemeEditorAccordionItem
+
                     title="Custom colors"
                     fontSize="lg"
                     subtitle="Add your colors here (click 'Add Color')"
                     border='none'
+
                 >
                     {customColorTokens.map((item, index) => {
-                        return (
+                        //added a box with the bi-grid icon
+                        return (<IconStepperContainer ><Box pos='absolute' bgColor='gray.300' width='16px' height='16px' borderRadius='50%' marginLeft='-1.3em' marginTop='2.4em' display='flex' justifyContent='center' alignItems='center' zIndex='10'><BiGridVertical size='90%' color='white' /></Box>
                             <ThemeEditorPaletteColorItem
                                 key={`theme-custom-color-${item}`}
                                 token={item}
@@ -108,7 +110,9 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                                 onDelete={handleDeleteCustomColor}
                                 showIndex
 
-                            />
+
+
+                            /></IconStepperContainer>
                         )
                     })}
                     {customColorTokens.length == 0 ? (
@@ -130,7 +134,8 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                 </ThemeEditorAccordionItem>
             </StepperContainer>
             <StepperContainer>
-                <ThemeEditorAccordionItem title="Tint" fontSize="lg" border='none' >
+                <ThemeEditorAccordionItem title="Tint" fontSize="lg" border='none'
+                >
 
                     <ThemeEditorPaletteColorItem
                         token="blue"
@@ -139,6 +144,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                         value={`${theme?.colors?.blue[500]}`}
                         onChange={handleChangeColor}
                         showIndex
+                        borderBottom='2px solid gray.300'
                     />
                     <ThemeEditorPaletteColorItem
                         token="red"
@@ -147,6 +153,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                         value={`${theme?.colors?.red[500]}`}
                         onChange={handleChangeColor}
                         showIndex
+
                     />
                     <ThemeEditorPaletteColorItem
                         token="green"
@@ -155,6 +162,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                         value={`${theme?.colors?.green[500]}`}
                         onChange={handleChangeColor}
                         showIndex
+
                     />
                     <ThemeEditorPaletteColorItem
                         token="orange"
@@ -163,6 +171,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                         value={`${theme?.colors?.orange[500]}`}
                         onChange={handleChangeColor}
                         showIndex
+
                     />
                     <ThemeEditorPaletteColorItem
                         token="yellow"
@@ -171,6 +180,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                         value={`${theme?.colors?.yellow[500]}`}
                         onChange={handleChangeColor}
                         showIndex
+
                     />
                     <ThemeEditorPaletteColorItem
                         token="purple"

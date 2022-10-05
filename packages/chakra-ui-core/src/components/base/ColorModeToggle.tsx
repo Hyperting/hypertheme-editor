@@ -5,41 +5,41 @@ import { RiMoonClearFill } from 'react-icons/ri'
 import { IconSwitch } from './IconSwitch'
 
 type ColorModeToggleProps = {
-  size?: 'sm' | 'md' | 'lg'
-  showLabel?: boolean
+    size?: 'sm' | 'md' | 'lg'
+    showLabel?: boolean
 } & StackProps &
-  ThemingProps
+    ThemingProps
 
 const ColorModeToggle: FC<ColorModeToggleProps> = (props) => {
-  const { size = 'md', showLabel, colorScheme = 'gray', fontSize, ...rest } = props
-  const { colorMode, toggleColorMode } = useColorMode()
+    const { size = 'md', showLabel, colorScheme = 'gray', fontSize, ...rest } = props
+    const { colorMode, toggleColorMode } = useColorMode()
 
-  return (
-    <Stack
-      direction="row"
-      alignItems="center"
-      justifyContent="center"
-      display="inline-flex"
-      {...rest}
-    >
-      {showLabel && (
-        <Text fontSize={fontSize || size} textTransform="capitalize">
-          {colorMode}
-        </Text>
-      )}
-      <IconSwitch
-        size={size}
-        color={colorMode == 'light' ? 'yellow.400' : 'yellow.600'}
-        bgColor={colorMode == 'light' ? 'gray.200' : 'blue.600'}
-        d="flex"
-        isChecked={colorMode == 'dark'}
-        value={colorMode}
-        falseIcon={FaSun}
-        trueIcon={RiMoonClearFill}
-        onChange={toggleColorMode}
-      />
-    </Stack>
-  )
+    return (
+        <Stack
+            direction="row"
+            alignItems="center"
+            justifyContent="center"
+            display="inline-flex"
+            {...rest}
+        >
+            {showLabel && (
+                <Text fontSize={fontSize || size} textTransform="capitalize">
+                    {colorMode}
+                </Text>
+            )}
+            <IconSwitch
+                size={size}
+                color={colorMode == 'light' ? 'yellow.400' : 'yellow.600'}
+                bgColor={colorMode == 'light' ? 'gray.200' : 'blue.600'}
+                d="flex"
+                isChecked={colorMode == 'dark'}
+                value={colorMode}
+                falseIcon={FaSun}
+                trueIcon={RiMoonClearFill}
+                onChange={toggleColorMode}
+            />
+        </Stack>
+    )
 }
 
 export default ColorModeToggle

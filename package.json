@@ -91,7 +91,9 @@
         "test-watch": "yarn test-watch:unit",
         "test": "yarn test:unit"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "lerna": "^5.5.2"
+    },
     "release-it": {
         "plugins": {
             "release-it-yarn-workspaces": true,

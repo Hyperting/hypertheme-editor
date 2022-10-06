@@ -17,7 +17,7 @@ import { useDebouncyEffect } from 'use-debouncy'
 import { RgbaStringColorPicker } from 'react-colorful'
 import { colord, extend } from 'colord'
 import namesPlugin from 'colord/plugins/names'
-import { FaTrashAlt } from 'react-icons/fa'
+import { HiOutlineTrash } from 'react-icons/hi'
 import { COLOR_PICKER_TRANSPARENT_SAFE_BG_B64 } from './constants'
 import ThemeEditorPalette from './ThemeEditorPalette'
 import { ElementsHighlighter } from '@hypertheme-editor/chakra-ui-core'
@@ -98,7 +98,7 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
 
     return (
         <Box w="100%" {...rest} >
-            <Text m={1} p={p} px={px} fontSize="0.875rem" textTransform="capitalize" color='gray.400'>
+            <Text m={0} p={0} px={px} fontSize="0.875rem" textTransform="capitalize" color='gray.400'>
                 {title}
             </Text>
             <Flex alignItems="center" p={p} px={px} pos="relative" minH="48px" ml='0.5em'>
@@ -142,9 +142,10 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
                     }
                 >
                     <Input
-                        w={palette && scale && scale.length > 0 ? 32 : '100%'}
-                        //size="sm"
-                        size='md'
+                        //  w={palette && scale && scale.length > 0 ? 32 : '100%'}
+                        width='162px'
+                        height='40px'
+                        // size='sm'
                         variant='filled'
                         borderRadius="6px"
                         //shadow={shadow}
@@ -166,7 +167,8 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
                 )}
                 {hasDelete && (
                     <Button
-                        size="xs"
+                        size="xl"
+
                         aria-label="remove color"
                         variant="ghost"
                         onClick={handleDelete}
@@ -177,7 +179,9 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
                             opacity: 1,
                         }}
                     >
-                        <Icon as={FaTrashAlt} fontSize="0.75rem" />
+                        <Icon as={HiOutlineTrash} //fontSize="0.75rem" 
+
+                        />
                     </Button>
                 )}
             </Flex>

@@ -1,5 +1,5 @@
 import React, { FC, useCallback, useMemo } from 'react'
-import { Accordion, Box, Circle } from '@chakra-ui/react'
+import { Accordion, Box, Circle, useColorMode, useColorModeValue } from '@chakra-ui/react'
 import { CgColorPicker } from 'react-icons/cg'
 import {
     useThemeEditor,
@@ -13,8 +13,8 @@ import { ThemeEditorPalettePopoverForm } from './ThemeEditorPalettePopoverForm'
 import { generatePalette } from './generateColorPalette'
 
 //my modifications
-import { StepperContainer } from './StepperContainer'
-import { IconStepperContainer } from './IconStepperContainer'
+import { StepperContainer } from './Stepper/StepperContainer'
+import { IconStepperContainer } from './Stepper/IconStepperContainer'
 import { BiGridVertical } from 'react-icons/bi'
 type Props = {
     //
@@ -81,20 +81,24 @@ export const ThemeEditorColors: FC<Props> = (props) => {
         return Object.keys(theme.colors).filter((item) => themeColorKeys.indexOf(item) === -1)
     }, [theme])
 
+
+
     return (
-        <Accordion p={0} mr="-1rem" defaultIndex={0} allowToggle >
+        <Accordion p={1} ml='1.2em' mr='1.2em' mdefaultIndex={0} allowToggle  >
             <StepperContainer >
                 <ThemeEditorAccordionItem
-
+                    color='gray.600'
+                    fontSize="md"
                     title="Custom colors"
-                    fontSize="lg"
-                    subtitle="Add your colors here (click 'Add Color')"
+                    mr={3} mt={1} ml={3}
+                    subtitle="Manage your colors"
                     border='none'
+
 
                 >
                     {customColorTokens.map((item, index) => {
                         //added a box with the bi-grid icon
-                        return (<IconStepperContainer ><Box pos='absolute' bgColor='gray.300' width='16px' height='16px' borderRadius='50%' marginLeft='-1.3em' marginTop='2.4em' display='flex' justifyContent='center' alignItems='center' zIndex='10'><BiGridVertical size='90%' color='white' /></Box>
+                        return (<IconStepperContainer ><Box pos='absolute' bgColor='gray.400' width='16px' height='16px' borderRadius='50%' marginLeft='-1.9em' marginTop='2.5em' display='flex' justifyContent='center' alignItems='center' zIndex='10'><BiGridVertical size='90%' /></Box>
                             <ThemeEditorPaletteColorItem
                                 key={`theme-custom-color-${item}`}
                                 token={item}
@@ -109,6 +113,9 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                                 hasDelete
                                 onDelete={handleDeleteCustomColor}
                                 showIndex
+                                mt='-1'
+
+
 
 
 
@@ -134,7 +141,8 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                 </ThemeEditorAccordionItem>
             </StepperContainer>
             <StepperContainer>
-                <ThemeEditorAccordionItem title="Tint" fontSize="lg" border='none'
+                <ThemeEditorAccordionItem title="Tint" color='gray.600'
+                    fontSize="md" border='none' mr={3} mt={1} ml={3}
                 >
 
                     <ThemeEditorPaletteColorItem
@@ -216,7 +224,8 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                     />
                 </ThemeEditorAccordionItem></StepperContainer>
             <StepperContainer>
-                <ThemeEditorAccordionItem title="Grayscale" fontSize="lg" border='none' >
+                <ThemeEditorAccordionItem title="Grayscale" color='gray.600'
+                    fontSize="md" border='none' mr={3} mt={1} ml={3}>
                     <ThemeEditorPaletteColorItem
                         token="gray"
                         title="Gray"
@@ -227,7 +236,8 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                     />
                 </ThemeEditorAccordionItem></StepperContainer>
             <StepperContainer>
-                <ThemeEditorAccordionItem title="Alpha" fontSize="lg" border='none' >
+                <ThemeEditorAccordionItem title="Alpha" color='gray.600'
+                    fontSize="md" border='none' mr={3} mt={1} ml={3} >
 
                     <ThemeEditorPaletteColorItem
                         title="WhiteAlpha"

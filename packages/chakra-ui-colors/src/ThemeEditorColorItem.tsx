@@ -10,7 +10,9 @@ import {
     PopoverTrigger,
     PopoverContent,
     PopoverBody,
-    Circle
+
+    Icon,
+    Tooltip
 } from '@chakra-ui/react'
 import { useDebouncyEffect } from 'use-debouncy'
 import { RgbaStringColorPicker } from 'react-colorful'
@@ -19,7 +21,7 @@ import namesPlugin from 'colord/plugins/names'
 import { COLOR_PICKER_TRANSPARENT_SAFE_BG_B64 } from './constants'
 import { ElementsHighlighter } from '@hypertheme-editor/chakra-ui-core'
 //
-import { FaLink } from 'react-icons/fa'
+//import { CopyToClipboard } from "react-copy-to-clipboard";
 import { BiCopy } from 'react-icons/bi'
 
 extend([namesPlugin])
@@ -43,6 +45,16 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
     ...rest
 }) => {
     const [currentValue, setCurrentValue] = useState<string | undefined>(value)
+    const [isCopied, setCopied] = useState(false);
+    //copy function
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setCopied(false);
+        }, 3000);
+
+        return () => clearTimeout(timeout);
+    }, [isCopied]);
+    //  
 
     const rgbaString = useMemo(() => {
         if (!currentValue) {
@@ -58,7 +70,8 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
     )
 
     const handleValueChange: React.ChangeEventHandler<HTMLInputElement> = useCallback((event) => {
-        setCurrentValue(event.target.value)
+        setCurrentValue(event.target.value),
+            setCopied(false);
     }, [])
 
     useDebouncyEffect(
@@ -74,6 +87,9 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
     useEffect(() => {
         setCurrentValue(value)
     }, [value])
+
+
+
 
     return (
         <Box w="100%" {...rest} >
@@ -94,6 +110,7 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
                                 _hover={{
                                     shadow: 'md',
                                 }}
+
                             >
                                 <Box
                                     boxSize={8}
@@ -130,14 +147,31 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
                         pos="sticky"
                         left="0"
                         value={currentValue}
+
                         onChange={handleValueChange}
+
                         fontSize="0.875rem"
                         placeholder="Color code"
                         border='none'
 
                     />
                 </ElementsHighlighter>
-                <Circle ><BiCopy color='gray' /></Circle>
+                <Tooltip
+                    label={isCopied ? "Copied!" : "Copy"}
+                    aria-label="Copy"
+                    openDelay={500}
+                    closeOnMouseDown
+                    hasArrow
+                    placement='bottom'
+
+                >
+                    <Icon as={BiCopy} color='gray.400' _hover={{ color: 'green.500' }} _active={{ color: 'green.700' }}></Icon>
+                </Tooltip>
+                {/* <CopyToClipboard text={currentValue} onCopy={() => setCopied(true)}>
+                        <Icon as={BiCopy} color='gray.400' _hover={{ color: 'green.500' }} _active={{ color: 'green.700' }}></Icon>
+                    </CopyToClipboard> */}
+
+
             </Flex>
         </Box>
     )

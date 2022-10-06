@@ -48,17 +48,18 @@ const ThemeEditorPalette: FC<ThemeEditorPaletteProps> = ({
                 closeOnMouseDown
                 hasArrow
                 isDisabled={disableEditDrawer}
+
             >
                 <SimpleGrid
                     columns={5}
                     //textAlign="center"
-                    //spacing={1}
+                    spacing={1}
                     overflow="hidden"
                     w="100%"
                     //borderRadius="6px"
 
                     p={0}
-                    h={12}
+                    h={10}
                     //border="1px solid"
                     borderColor={borderColor}
                     onClick={onOpen}
@@ -67,9 +68,10 @@ const ThemeEditorPalette: FC<ThemeEditorPaletteProps> = ({
                     {scale.map((paletteIndex, key) => (
                         <Center
                             // shadow={shadow}
-                            w='1.9em'
-                            h='1.9em'
-                            mb='2px'
+                            w='17.39px'
+
+                            h='17.39px'
+                            // mb='2px'
                             pr='0'
                             bgColor={palette[paletteIndex] as string}
                             fontSize="0.75rem"

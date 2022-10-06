@@ -29,7 +29,7 @@ import ThemeEditorPaletteColorItem from './ThemeEditorPaletteColorItem'
 import { generatePalette } from './generateColorPalette'
 
 import { FaPlus } from 'react-icons/fa'
-import { IconStepperContainer } from './IconStepperContainer'
+import { IconStepperContainer } from './Stepper/IconStepperContainer'
 
 
 type Props = {
@@ -131,7 +131,7 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
     const isFormValid = useMemo(() => formState.name && formState.color, [formState])
 
     return (
-        <IconStepperContainer >
+        <IconStepperContainer>
             <Popover
                 isOpen={isOpen}
                 initialFocusRef={initialFocusRef}
@@ -146,17 +146,19 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
                 <PopoverTrigger>
 
                     <Button
-                        width='20%'
-                        height='35px'
+                        width='72px'
+                        height='32px'
                         boxShadow='md'
                         rounded='md'
                         bgColor='#EBF7F0'
                         color='#6FCF97'
                         alignSelf="flex-start"
-                        px="2.5rem"
-                        // mt="0.75rem"
+                        //px="2.5rem"
+                        //mt="0.75rem"
+                        p='16px 8px 16px 8px'
                         mt='1.9rem'
                         ml='0.5em'
+                        mb='1em'
                         isFullWidth
                         {...buttonProps}
 

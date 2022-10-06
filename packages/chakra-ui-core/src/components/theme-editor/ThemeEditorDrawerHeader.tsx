@@ -22,12 +22,14 @@ import { setThemeTokens } from '../../utils/updateThemeTokens'
 import { themeEditorState, useThemeEditor } from '../../hooks/useThemeEditor'
 
 export type ThemeEditorDrawerHeaderProps = {
+  title?: string
   onClose?: () => void
   initialFocusRef?: MutableRefObject<HTMLButtonElement>
   children?: React.ReactNode
 }
 
 export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
+  title = 'Hyper Theme',
   onClose,
   initialFocusRef,
   children,
@@ -105,7 +107,7 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
                 h={{ lg: '60%' }}
                 mb={{ base: 1, lg: 0 }}
               >
-                Hyper Theme
+                {title}
               </Heading>
               {/* </ThemeSwitchDrawerButton> */}
               <HStack align="center" h="fit-content" spacing={1.5}>

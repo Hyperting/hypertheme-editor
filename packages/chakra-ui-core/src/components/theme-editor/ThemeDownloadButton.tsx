@@ -18,6 +18,7 @@ import BaseMenuItem from '../base/BaseMenuItem'
 import { API_ENDPOINT } from '../../constants'
 import { useThemeEditor } from '../../hooks/useThemeEditor'
 import { transform } from '@babel/core'
+import { BsArrowRight } from 'react-icons/bs'
 
 const GENERATE_THEME_ENDPOINT = `${API_ENDPOINT}/generate-theme`
 
@@ -29,15 +30,15 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
   const toast = useToast()
 
   // Prende le keys di un oggetto e le trasforma in un array di stringhe
-  console.log('theme', theme)
+  /*   console.log('theme', theme)
   const arrayP = ['blur', 'colors']
   const getKeys = (obj) => {
     return Object.keys(obj)
   }
-  console.log('obj to array', getKeys(theme))
+  console.log('obj to array', getKeys(theme)) */
 
   // Prende un array di stringhe e lo trasforma in un oggetto
-  const objectify = (array) => {
+  /* const objectify = (array) => {
     return array.reduce((obj, item) => {
       if (theme !== undefined) {
         console.log('obj', obj)
@@ -49,7 +50,7 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
     }, {})
   }
 
-  console.log('object', objectify(arrayP))
+  console.log('object', objectify(arrayP)) */
 
   const handleDownload = useCallback(
     (language: string) => async () => {
@@ -75,7 +76,6 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
           })
           return
         }
-
         const resultBlob = await result.blob()
         const url = window.URL.createObjectURL(resultBlob)
         const a = document.createElement('a')
@@ -101,6 +101,25 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
   )
 
   return (
+    <Button
+      size="md"
+      colorScheme="primary"
+      variant="solid"
+      borderRadius="3xl"
+      isLoading={downloading}
+      disabled={downloading}
+      w="fit-content"
+      px={10}
+      onClick={handleDownload('ts')}
+      {...rest}
+    >
+      Export <Icon boxSize={4} ml={2} as={BsArrowRight} />
+    </Button>
+  )
+}
+
+/* 
+ return (
     <BaseMenu
       hasPortal={false}
       offset={[0, 10] as any}
@@ -129,24 +148,4 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
       </BaseMenuItem>
     </BaseMenu>
   )
-}
-
-const ThemeDownloadMenuButton = ({ downloading = false, ...rest }) => {
-  return (
-    <Button
-      as={Box}
-      size="md"
-      colorScheme="primary"
-      variant="solid"
-      borderRadius="3xl"
-      isLoading={downloading}
-      disabled={downloading}
-      w="full"
-      px={8}
-      py={8}
-      {...rest}
-    >
-      <Icon boxSize={4} mr={1.5} as={HiArrowDown} /> Export theme
-    </Button>
-  )
-}
+*/

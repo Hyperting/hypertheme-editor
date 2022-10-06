@@ -7,6 +7,7 @@ import {
   DrawerContent,
   DrawerProps,
   useColorModeValue,
+  Text,
 } from '@chakra-ui/react'
 import { IconType } from 'react-icons'
 import ThemeEditorAccordion from './ThemeEditorAccordion'

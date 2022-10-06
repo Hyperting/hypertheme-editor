@@ -15,11 +15,20 @@ import {
   chakra,
   useCheckboxGroup,
   Box,
+  Button,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Icon,
 } from '@chakra-ui/react'
-import React, { FC } from 'react'
+import React, { FC, useCallback, useEffect, useRef, useState } from 'react'
+import { MdKeyboardArrowDown } from 'react-icons/md'
 import { ThemeEditorDrawerHeaderProps } from '.'
+
 import { useThemeEditor } from '../../hooks/useThemeEditor'
 import { ThemeEditorDrawerHeader } from './ThemeEditorDrawerHeader'
+import { ThemeDownloadButton } from './ThemeDownloadButton'
 
 export type ThemeExportDrawerProps = {
   isOpen: boolean
@@ -77,9 +86,10 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
   const { value, getCheckboxProps } = useCheckboxGroup({
     defaultValue: [],
   })
+  const [selectedLanguage, setSelectedLanguage] = useState('ts')
   console.log('theme', theme)
-  console.log('editable', editableProperties)
-  console.log('selected values', value)
+  /* console.log('editable', editableProperties)
+  console.log('selected values', value) */
 
   return (
     <Drawer isOpen={isOpen} onClose={onClose} size="md">
@@ -109,6 +119,9 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
             }
           )}
         <DrawerBody bgColor="rgba(0,0,0,0)" justify="center">
+          <Flex>
+            <Text></Text>
+          </Flex>
           <Grid w="100%" templateColumns="repeat(2, 1fr)" templateRows="repeat(5, 1fr)" gap={4}>
             {getKeys(editableProperties).map((key, index) => {
               return (
@@ -119,7 +132,30 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
             })}
           </Grid>
         </DrawerBody>
-        <DrawerFooter></DrawerFooter>
+        <DrawerFooter>
+          <Flex justifyContent="space-between" w="100%">
+            <Menu>
+              <MenuButton as={Button} rightIcon={<Icon as={MdKeyboardArrowDown} />}>
+                {selectedLanguage === 'ts' ? 'TypeScript' : 'JavaScript'}
+              </MenuButton>
+              <MenuList>
+                <MenuItem
+                  value="ts"
+                  onClick={(e) => setSelectedLanguage((e.target as HTMLInputElement).value)}
+                >
+                  TypeScript
+                </MenuItem>
+                <MenuItem
+                  value="js"
+                  onClick={(e) => setSelectedLanguage((e.target as HTMLInputElement).value)}
+                >
+                  JavaScript
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </Flex>
+          <ThemeDownloadButton />
+        </DrawerFooter>
       </DrawerContent>
     </Drawer>
   )
@@ -154,7 +190,7 @@ const ThemeProperty = (props) => {
         borderRadius="2xl"
         w="40px"
         h="40px"
-        colorScheme="primary"
+        colorscheme="primary"
         bgColor={state.isChecked ? 'primary.500' : checkboxBgColor}
         {...getCheckboxProps()}
       >

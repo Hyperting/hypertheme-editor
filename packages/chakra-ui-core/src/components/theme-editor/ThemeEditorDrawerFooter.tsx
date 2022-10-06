@@ -10,7 +10,7 @@ export type ThemeEditorDrawerFooterProps = {
 }
 export const ThemeEditorDrawerFooter: FC<ThemeEditorDrawerFooterProps> = ({
   isMobile,
-  actionButton = <ThemeDownloadButton borderRadius="8px" w={{ base: '100%', md: 'initial' }} />,
+  // actionButton = <ThemeDownloadButton borderRadius="8px" w={{ base: '100%', md: 'initial' }} />,
 }) => {
   // const bgColor = useColorModeValue('whiteAlpha.600', 'gray.900')
   const { isOpen, onOpen, onClose } = useDisclosure()

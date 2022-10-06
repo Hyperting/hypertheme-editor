@@ -80,6 +80,7 @@ export const IconSwitch = forwardRef<IconSwitchProps, 'input'>((props, ref) => {
       justifyContent: 'center',
       d: 'flex',
       ...styles.thumb,
+      bgColor: props.value == 'light' ? 'gray.100' : 'gray.800',
     }),
     [styles.thumb]
   )
@@ -134,3 +135,32 @@ export const IconSwitch = forwardRef<IconSwitchProps, 'input'>((props, ref) => {
     </chakra.label>
   )
 })
+
+{
+  /* <chakra.label
+      {...getRootProps()}
+      className={cx('chakra-switch', props.className)}
+      sx={containerStyles}
+    >
+      <input className="chakra-switch__input" {...getInputProps({}, ref)} />
+      <chakra.span {...getCheckboxProps()} className="chakra-switch__track" sx={trackStyles}>
+        <chakra.span
+          __css={thumbStyles}
+          className="chakra-switch__thumb"
+          data-checked={dataAttr(state.isChecked)}
+          data-hover={dataAttr(state.isHovered)}
+        >
+          {!state.isChecked ? (
+            <Icon as={FalseIcon} fontSize={iconSize} sx={iconStyle} />
+          ) : (
+            <Icon as={TrueIcon} fontSize={iconSize} sx={iconStyle} />
+          )}
+        </chakra.span>
+      </chakra.span>
+      {children && (
+        <chakra.span className="chakra-switch__label" {...getLabelProps()} sx={labelStyles}>
+          {children}
+        </chakra.span>
+      )}
+    </chakra.label> */
+}

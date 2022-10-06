@@ -33,10 +33,14 @@ export const themeEditorState = atom<ThemeEditorState>({
   default: { initialTheme: undefined, currentTheme: undefined, undoable: [], undone: [] },
   effects_UNSTABLE: [
     ({ onSet, setSelf }) => {
+      console.log('onSet', onSet, 'setSelf', setSelf)
       onSet((newValue) => {
+        console.log('newValue', newValue)
         if (newValue instanceof DefaultValue) {
           //
+          console.log('newValue in if', newValue)
         } else {
+          console.log('else')
           localStorage.setItem(
             THEME_STATE_LOCAL_STORAGE_KEY,
             JSON.stringify({

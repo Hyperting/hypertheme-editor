@@ -1,5 +1,6 @@
-import { Button, Flex, useDisclosure } from '@chakra-ui/react'
+import { Button, Flex, Icon, useDisclosure } from '@chakra-ui/react'
 import React, { FC } from 'react'
+import { AiOutlineArrowDown } from 'react-icons/ai'
 import { ThemeDownloadButton } from '.'
 import { ThemeExportDrawer } from './ThemeExportDrawer'
 
@@ -24,6 +25,7 @@ export const ThemeEditorDrawerFooter: FC<ThemeEditorDrawerFooterProps> = ({
         variant="solid"
         borderRadius="3xl"
         w="full"
+        leftIcon={<Icon as={AiOutlineArrowDown} pos="relative" bottom={0.5} />}
         px={8}
         py={8}
       >

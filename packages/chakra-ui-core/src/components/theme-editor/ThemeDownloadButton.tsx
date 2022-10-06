@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useState } from 'react'
+import React, { FC, useCallback, useEffect, useState } from 'react'
 import {
   Button,
   ButtonProps,
@@ -16,17 +16,28 @@ import { SiJavascript, SiTypescript } from 'react-icons/si'
 import BaseMenu from '../base/BaseMenu'
 import BaseMenuItem from '../base/BaseMenuItem'
 import { API_ENDPOINT } from '../../constants'
-import { useThemeEditor } from '../../hooks/useThemeEditor'
+import { Theme, useThemeEditor } from '../../hooks/useThemeEditor'
 import { transform } from '@babel/core'
 import { BsArrowRight } from 'react-icons/bs'
 
 const GENERATE_THEME_ENDPOINT = `${API_ENDPOINT}/generate-theme`
 
-type Props = {} & ButtonProps
+type Props = {
+  baseTheme: any
+  selectedProperties: string[] | number[]
+  selectAll: boolean
+  selectedLanguage: string
+} & ButtonProps
 
-export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
+export const ThemeDownloadButton: FC<Props> = ({
+  baseTheme,
+  selectedProperties,
+  selectAll,
+  selectedLanguage,
+  ...rest
+}) => {
   const [downloading, setDownloading] = useState<boolean>(false)
-  const { theme } = useThemeEditor()
+  let { theme, setTheme } = useThemeEditor()
   const toast = useToast()
 
   // Prende le keys di un oggetto e le trasforma in un array di stringhe
@@ -38,7 +49,7 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
   console.log('obj to array', getKeys(theme)) */
 
   // Prende un array di stringhe e lo trasforma in un oggetto
-  /* const objectify = (array) => {
+  const objectify = (array) => {
     return array.reduce((obj, item) => {
       if (theme !== undefined) {
         console.log('obj', obj)
@@ -50,7 +61,11 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
     }, {})
   }
 
-  console.log('object', objectify(arrayP)) */
+  // TO UNCOMMENT ONCE THE API IS READY
+  /* useEffect(() => {
+    const newTheme = objectify(selectedProperties)
+    setTheme({ newTheme, ...baseTheme })
+  }, []) */
 
   const handleDownload = useCallback(
     (language: string) => async () => {
@@ -85,6 +100,7 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
         a.click()
         a.remove()
       } catch (error) {
+        console.log('wee error', error)
         // show an alert here
         // toast({
         //   title: 'Error during the download.',
@@ -110,7 +126,7 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
       disabled={downloading}
       w="fit-content"
       px={10}
-      onClick={handleDownload('ts')}
+      onClick={handleDownload(selectedLanguage)}
       {...rest}
     >
       Export <Icon boxSize={4} ml={2} as={BsArrowRight} />

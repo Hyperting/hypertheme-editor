@@ -1,9 +1,5 @@
 {
   "name": "root",
-  "publishConfig": {
-    "access": "restricted",
-    "registry": "http://localhost:4873"
-  },
   "workspaces": {
     "packages": [
       "packages/*"

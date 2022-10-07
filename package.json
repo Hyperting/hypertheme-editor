@@ -51,9 +51,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "recoil": "^0.4.1",
-    "release-it": "14.11.5",
-    "release-it-lerna-changelog": "3.1.0",
-    "release-it-yarn-workspaces": "2.0.1",
+    "release-it": "^15.3.0",
+    "release-it-lerna-changelog": "^5.0.0",
+    "release-it-yarn-workspaces": "^3.0.0",
     "rollup": "^2.53.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-typescript2": "^0.30.0",
@@ -83,9 +83,7 @@
         "launchEditor": true
       }
     },
-    "npm": {
-      "allowSameVersion": true
-    },
+    "npm": false,
     "git": {
       "requireCleanWorkingDir": false,
       "requireBranch": [
@@ -101,5 +99,5 @@
   "devDependencies": {
     "lerna": "^5.5.2"
   },
-  "version": "0.1.5"
+  "version": "0.1.6-rc.0"
 }

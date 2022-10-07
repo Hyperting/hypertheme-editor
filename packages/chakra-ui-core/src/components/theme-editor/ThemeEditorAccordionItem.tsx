@@ -53,7 +53,7 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
           >
             {Icon && (
               <Circle
-                boxSize="25px"
+                size="25px"
                 bgColor={`${colorScheme}.200`}
                 color={`${colorScheme}.600`}
                 fontSize="0.875rem"

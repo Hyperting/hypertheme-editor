@@ -19,6 +19,8 @@ import {
     useDisclosure,
     Flex,
     PopoverFooter,
+    useColorMode,
+    useColorModeValue,
 } from '@chakra-ui/react'
 import {
     setThemeColorsOfPalette,
@@ -129,7 +131,7 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
     }, [formState.color, formState.isPaletteColor, formState.name, onClose, setTheme, theme])
 
     const isFormValid = useMemo(() => formState.name && formState.color, [formState])
-
+    const bgColor = useColorModeValue('#EBF7F0', '#FFFFFF')
     return (
         <IconStepperContainer>
             <Popover
@@ -150,7 +152,7 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
                         height='32px'
                         boxShadow='md'
                         rounded='md'
-                        bgColor='#EBF7F0'
+                        bgColor='bgColor'
                         color='#6FCF97'
                         alignSelf="flex-start"
                         //px="2.5rem"

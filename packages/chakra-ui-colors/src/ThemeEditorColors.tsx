@@ -1,5 +1,5 @@
 import React, { FC, useCallback, useMemo } from 'react'
-import { Accordion, Box, Circle, useColorMode, useColorModeValue } from '@chakra-ui/react'
+import { Accordion, Box, Circle, Icon, useColorMode, useColorModeValue } from '@chakra-ui/react'
 import { CgColorPicker } from 'react-icons/cg'
 import {
     useThemeEditor,
@@ -16,6 +16,8 @@ import { generatePalette } from './generateColorPalette'
 import { StepperContainer } from './Stepper/StepperContainer'
 import { IconStepperContainer } from './Stepper/IconStepperContainer'
 import { BiGridVertical } from 'react-icons/bi'
+import { GrAnalytics } from 'react-icons/gr'
+
 type Props = {
     //
 } & Partial<ThemeEditorRootPanelProps>
@@ -81,7 +83,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
         return Object.keys(theme.colors).filter((item) => themeColorKeys.indexOf(item) === -1)
     }, [theme])
 
-
+    const { colorMode } = useColorMode()
 
     return (
         <Accordion p={1} ml='1.2em' mr='1.2em' mdefaultIndex={0} allowToggle  >
@@ -90,15 +92,17 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                     color='gray.600'
                     fontSize="md"
                     title="Custom colors"
-                    mr={3} mt={1} ml={3}
+                    mt={1} ml={3}
                     subtitle="Manage your colors"
                     border='none'
+                    shadow='none'
+
 
 
                 >
                     {customColorTokens.map((item, index) => {
                         //added a box with the bi-grid icon
-                        return (<IconStepperContainer ><Box pos='absolute' bgColor='gray.400' width='16px' height='16px' borderRadius='50%' marginLeft='-1.9em' marginTop='2.5em' display='flex' justifyContent='center' alignItems='center' zIndex='10'><BiGridVertical size='90%' /></Box>
+                        return (<IconStepperContainer ><Box pos='absolute' bgColor={colorMode === 'light' ? 'gray.400' : 'gray'} width='16px' height='16px' borderRadius='50%' marginLeft='-1.9em' marginTop='2.5em' display='flex' justifyContent='center' alignItems='center' zIndex='10'><BiGridVertical size='90%' color={colorMode === 'light' ? 'white' : 'white'} /></Box>
                             <ThemeEditorPaletteColorItem
                                 key={`theme-custom-color-${item}`}
                                 token={item}
@@ -142,7 +146,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
             </StepperContainer>
             <StepperContainer>
                 <ThemeEditorAccordionItem title="Tint" color='gray.600'
-                    fontSize="md" border='none' mr={3} mt={1} ml={3}
+                    fontSize="md" border='none' mt={1} ml={3}
                 >
 
                     <ThemeEditorPaletteColorItem
@@ -225,7 +229,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                 </ThemeEditorAccordionItem></StepperContainer>
             <StepperContainer>
                 <ThemeEditorAccordionItem title="Grayscale" color='gray.600'
-                    fontSize="md" border='none' mr={3} mt={1} ml={3}>
+                    fontSize="md" border='none' mt={1} ml={3}>
                     <ThemeEditorPaletteColorItem
                         token="gray"
                         title="Gray"
@@ -237,7 +241,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                 </ThemeEditorAccordionItem></StepperContainer>
             <StepperContainer>
                 <ThemeEditorAccordionItem title="Alpha" color='gray.600'
-                    fontSize="md" border='none' mr={3} mt={1} ml={3} >
+                    fontSize="md" border='none' mt={1} ml={3} >
 
                     <ThemeEditorPaletteColorItem
                         title="WhiteAlpha"

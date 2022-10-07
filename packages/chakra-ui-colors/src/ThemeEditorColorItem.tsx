@@ -157,7 +157,7 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
                     />
                 </ElementsHighlighter>
                 <Tooltip
-                    label={isCopied ? "Copied!" : "Copy"}
+                    //label={isCopied ? "Copied!" : "Copy"}
                     aria-label="Copy"
                     openDelay={500}
                     closeOnMouseDown

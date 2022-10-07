@@ -21,6 +21,7 @@ export type ThemeEditorPaletteDrawerProps = {
     showIndex?: boolean
 } & Omit<DrawerProps, 'children'>
 
+
 const ThemeEditorPaletteDrawer: FC<ThemeEditorPaletteDrawerProps> = (props) => {
     const {
         onClose,
@@ -140,7 +141,7 @@ const ThemeEditorPaletteDrawer: FC<ThemeEditorPaletteDrawerProps> = (props) => {
                     py={{ base: 2, lg: 3 }}
                 >
                     <Box>
-                        <Button size="lg" onClick={onClose}>
+                        <Button size="md" onClick={onClose}>
                             Cancel
                         </Button>
                     </Box>

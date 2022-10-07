@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "private": "true",
+  "private": true,
   "workspaces": {
     "packages": [
       "packages/*"
@@ -83,7 +83,9 @@
         "launchEditor": true
       }
     },
-    "npm": true,
+    "npm": {
+      "allowSameVersion": true
+    },
     "git": {
       "requireCleanWorkingDir": false,
       "requireBranch": [

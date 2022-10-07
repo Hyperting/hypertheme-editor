@@ -83,7 +83,7 @@
         "launchEditor": true
       }
     },
-    "npm": false,
+    "npm": true,
     "git": {
       "requireCleanWorkingDir": false,
       "requireBranch": [
@@ -99,5 +99,5 @@
   "devDependencies": {
     "lerna": "^5.5.2"
   },
-  "version": "0.1.6-rc.0"
+  "version": "0.1.5"
 }

@@ -2,16 +2,16 @@ import { Colors } from '@chakra-ui/react'
 
 const colors: Colors = {
   primary: {
-    50: '#FBE5FF',
-    100: '#F3D4FF',
-    200: '#D6BEFB',
-    300: '#BB9CF5',
-    400: '#A280EB',
-    500: '#7F58DE',
-    600: '#6140BE',
-    700: '#472C9F',
-    800: '#301C80',
-    900: '#20106A',
+    50: '#ffffff',
+    100: '#d1d2fa',
+    200: '#babbf8',
+    300: '#a3a4f6',
+    400: '#8b8df4',
+    500: '#5D5FEF',
+    600: '#2f31ea',
+    700: '#171ae8',
+    800: '#1517d1',
+    900: '#1012a3',
   },
   secondary: {
     50: '#EAFDED',

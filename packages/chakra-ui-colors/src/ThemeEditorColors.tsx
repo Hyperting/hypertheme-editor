@@ -3,6 +3,7 @@ import { Accordion, Box, Circle, Icon, useColorMode, useColorModeValue } from '@
 import { CgColorPicker } from 'react-icons/cg'
 import {
     useThemeEditor,
+    useAccordionState,
     ThemeEditorAccordionItem,
     EmptyBox,
     themeColorKeys,
@@ -11,6 +12,7 @@ import {
 import ThemeEditorPaletteColorItem from './ThemeEditorPaletteColorItem'
 import { ThemeEditorPalettePopoverForm } from './ThemeEditorPalettePopoverForm'
 import { generatePalette } from './generateColorPalette'
+import { COLOR_EXPANDED_INDEX_LOCAL_STORAGE_KEY } from './constants'
 
 //my modifications
 import { StepperContainer } from './Stepper/StepperContainer'
@@ -25,6 +27,7 @@ type Props = {
 
 export const ThemeEditorColors: FC<Props> = (props) => {
     const { theme, setTheme } = useThemeEditor()
+    const [defaultIndex, setDefaultIndex] = useAccordionState(COLOR_EXPANDED_INDEX_LOCAL_STORAGE_KEY)
 
     const handleChangeColor = useCallback(
         ({ token, value }) => {

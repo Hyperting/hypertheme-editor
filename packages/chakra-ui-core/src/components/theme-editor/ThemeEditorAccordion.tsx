@@ -1,10 +1,9 @@
 import React, { FC } from 'react'
-import { AccordionProps, Accordion, useColorModeValue, Stack, StackProps } from '@chakra-ui/react'
+import { AccordionProps, Accordion, useColorModeValue, Stack } from '@chakra-ui/react'
 
 export type ThemeEditorAccordionProps = {
     children?: any
-} & AccordionProps &
-    StackProps
+} & AccordionProps
 
 export const ThemeEditorAccordion: FC<ThemeEditorAccordionProps> = (props) => {
     const { children, ...rest } = props

@@ -1,36 +1,29 @@
 import {
-  Checkbox,
   Drawer,
   DrawerBody,
   DrawerContent,
-  DrawerFooter,
   Flex,
   Grid,
   GridItem,
   Heading,
   useColorModeValue,
   Text,
-  useCheckbox,
-  ChakraProvider,
-  chakra,
   useCheckboxGroup,
-  Box,
   Button,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Icon,
   useColorMode,
-  HStack,
 } from '@chakra-ui/react'
-import React, { FC, useCallback, useEffect, useRef, useState } from 'react'
-import { MdKeyboardArrowDown } from 'react-icons/md'
+import React, { FC, useState } from 'react'
 import { ThemeEditorDrawerHeaderProps } from '.'
 
 import { useThemeEditor } from '../../hooks/useThemeEditor'
 import { ThemeEditorDrawerHeader } from './ThemeEditorDrawerHeader'
-import { ThemeDownloadButton } from './ThemeDownloadButton'
+import { ThemeProperty } from './ThemeProperty'
+import { ThemeExportDrawerFooter } from './ThemeExportDrawerFooter'
+import { BiPaint } from 'react-icons/bi'
+import { AiOutlineFontSize, AiOutlineRadiusUpright } from 'react-icons/ai'
+import { BsFonts } from 'react-icons/bs'
+import { CgEditShadows, CgFontSpacing, CgFormatLineHeight, CgSpaceBetween } from 'react-icons/cg'
+import { FaBold } from 'react-icons/fa'
 
 export type ThemeExportDrawerProps = {
   isOpen: boolean
@@ -60,7 +53,7 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
     space,
     ...baseTheme
   } = theme as any
-  const themeLabels = [
+  /* const themeLabels = [
     'Colors',
     'Font',
     'Font Sizes',
@@ -70,6 +63,17 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
     'Shadows',
     'Radii',
     'Space',
+  ] */
+  const themeLabels = [
+    { title: 'Colors', icon: BiPaint },
+    { title: 'Font', icon: BsFonts },
+    { title: 'Font Sizes', icon: AiOutlineFontSize },
+    { title: 'Font Weight', icon: FaBold },
+    { title: 'Line Height', icon: CgFormatLineHeight },
+    { title: 'Letter Spacing', icon: CgFontSpacing },
+    { title: 'Shadows', icon: CgEditShadows },
+    { title: 'Radii', icon: AiOutlineRadiusUpright },
+    { title: 'Space', icon: CgSpaceBetween },
   ]
   const editableProperties = {
     colors,
@@ -104,16 +108,16 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
             {
               onClose,
               children: (
-                <Flex flexDir="column" justifyContent="flex-start" h="80px">
-                  <Text fontSize="1.1rem" fontWeight="normal" color="gray.400" pt={1.5}>
+                <Flex flexDir="column" justifyContent="flex-start">
+                  <Text fontSize="1rem" fontWeight="normal" color="gray.400">
                     Export
                   </Text>
                   <Heading
                     d="flex"
                     alignItems="center"
-                    fontSize={{ base: '1.25rem', lg: '1.5rem' }}
+                    fontSize="1.25rem"
                     h={{ lg: '50%' }}
-                    mb={{ base: 1, lg: 0 }}
+                    mb={1}
                     pt={0.5}
                   >
                     Hyper Theme
@@ -147,7 +151,8 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
                   <ThemeProperty
                     {...getCheckboxProps({
                       value: key,
-                      label: themeLabels[index],
+                      label: themeLabels[index].title,
+                      icon: themeLabels[index].icon,
                       selected: selectAll,
                     })}
                   />
@@ -156,120 +161,8 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
             })}
           </Grid>
         </DrawerBody>
-        <DrawerFooter
-          borderTop="1px solid"
-          borderColor={colorMode === 'light' ? 'gray.50' : 'gray.700'}
-          bgColor={colorMode === 'light' ? 'white' : 'gray.800'}
-        >
-          <Flex justifyContent="space-between" w="100%">
-            <Menu>
-              <MenuButton
-                as={Button}
-                px="8px"
-                transform="translateX(-8px)"
-                variant="ghost"
-                color={colorMode === 'light' ? 'gray.500' : 'gray.200'}
-                rightIcon={<Icon as={MdKeyboardArrowDown} />}
-              >
-                <HStack>
-                  <Flex
-                    alignItems="center"
-                    justifyContent="center"
-                    borderRadius="2xl"
-                    w="32px"
-                    h="32px"
-                    colorscheme="primary"
-                    bgColor={colorMode === 'light' ? 'gray.100' : 'gray.900'}
-                  >
-                    <Icon
-                      w="14px"
-                      h="14px"
-                      color={colorMode === 'light' ? 'gray.600' : 'gray.200'}
-                    />
-                  </Flex>
-                  <Text>{selectedLanguage === 'ts' ? 'TypeScript' : 'JavaScript'}</Text>
-                </HStack>
-              </MenuButton>
-              <MenuList>
-                <MenuItem
-                  value="ts"
-                  borderRadius="md"
-                  onClick={(e) => setSelectedLanguage((e.target as HTMLInputElement).value)}
-                >
-                  TypeScript
-                </MenuItem>
-                <MenuItem
-                  value="js"
-                  borderRadius="md"
-                  onClick={(e) => setSelectedLanguage((e.target as HTMLInputElement).value)}
-                >
-                  JavaScript
-                </MenuItem>
-              </MenuList>
-            </Menu>
-          </Flex>
-          <ThemeDownloadButton
-            baseTheme={baseTheme}
-            selectedProperties={value as string[] | number[]}
-            selectAll={selectAll}
-            selectedLanguage={selectedLanguage}
-          />
-        </DrawerFooter>
+        <ThemeExportDrawerFooter baseTheme={baseTheme} value={value} selectAll={selectAll} />
       </DrawerContent>
     </Drawer>
-  )
-}
-
-const ThemeProperty = (props) => {
-  const { state, getCheckboxProps, getInputProps, getLabelProps, htmlProps } = useCheckbox(props)
-  const { colorMode } = useColorMode()
-  const bgColor = useColorModeValue('white', 'gray.800')
-  const checkboxBgColor = useColorModeValue('gray.100', 'gray.900')
-  const checked = state.isChecked || props.selected
-
-  return (
-    <chakra.label
-      display="flex"
-      flexDir="column"
-      bg="primary.50"
-      outline={checked ? '3px solid' : 'unset'}
-      outlineColor={checked ? (colorMode === 'light' ? 'primary.300' : 'primary.700') : 'unset'}
-      boxShadow={
-        !checked ? '0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.2)' : 'unset'
-      }
-      bgColor={checked ? (colorMode === 'light' ? 'primary.200' : 'primary.900') : bgColor}
-      rounded="lg"
-      p={4}
-      cursor="pointer"
-      {...htmlProps}
-    >
-      <input {...getInputProps()} hidden />
-      <Flex
-        alignItems="center"
-        justifyContent="center"
-        borderRadius="2xl"
-        w="40px"
-        h="40px"
-        colorscheme="primary"
-        bgColor={
-          checked ? (colorMode === 'light' ? 'primary.500' : 'primary.600') : checkboxBgColor
-        }
-        {...getCheckboxProps()}
-      >
-        <Icon
-          w="20px"
-          h="20px"
-          color={checked ? 'gray.200' : colorMode === 'light' ? 'gray.600' : 'gray.200'}
-        />
-      </Flex>
-      <Text
-        mt={2}
-        fontWeight="bold"
-        color={checked ? 'primary.500' : colorMode === 'light' ? 'gray.600' : 'gray.200'}
-        {...getLabelProps()}
-      >
-        {props.label}
-      </Text>
-    </chakra.label>
   )
 }

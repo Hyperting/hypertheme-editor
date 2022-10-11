@@ -39,6 +39,8 @@ export const ThemeDownloadButton: FC<Props> = ({
   const [downloading, setDownloading] = useState<boolean>(false)
   let { theme, setTheme } = useThemeEditor()
   const toast = useToast()
+  console.log('theme', theme)
+  console.log('baseTheme', baseTheme)
 
   // Prende le keys di un oggetto e le trasforma in un array di stringhe
   /*   console.log('theme', theme)
@@ -62,10 +64,20 @@ export const ThemeDownloadButton: FC<Props> = ({
   }
 
   // TO UNCOMMENT ONCE THE API IS READY
-  /* useEffect(() => {
+  /*  useEffect(() => {
     const newTheme = objectify(selectedProperties)
-    setTheme({ newTheme, ...baseTheme })
-  }, []) */
+    if (selectedProperties.length > 0) {
+      setTheme({ newTheme, ...baseTheme })
+    } else {
+      setTheme({ ...baseTheme })
+    }
+  }, [theme, setTheme, baseTheme]) */
+  const { colors, ...others } = theme as Theme
+  const { blue, ...otherColors } = colors as any
+
+  useEffect(() => {
+    setTheme({ colors: { blue: '', ...otherColors }, ...others })
+  }, [])
 
   const handleDownload = useCallback(
     (language: string) => async () => {

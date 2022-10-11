@@ -135,7 +135,7 @@ export const ThemeEditorDrawer: FC<ThemeEditorDrawerProps> = ({
           React.cloneElement<ThemeEditorDrawerFooterProps>(
             footerComponent as React.ReactElement<ThemeEditorDrawerFooterProps>,
             {
-              onClose,
+              // onClose,
               isMobile,
             }
           )}

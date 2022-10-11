@@ -5,9 +5,9 @@ import { ThemeDownloadButton } from '.'
 import { ThemeExportDrawer } from './ThemeExportDrawer'
 
 export type ThemeEditorDrawerFooterProps = {
-  onClose?: () => void
+  // onClose?: () => void
   isMobile?: boolean
-  actionButton?: React.ReactNode
+  // actionButton?: React.ReactNode
 }
 export const ThemeEditorDrawerFooter: FC<ThemeEditorDrawerFooterProps> = ({
   isMobile,
@@ -17,16 +17,23 @@ export const ThemeEditorDrawerFooter: FC<ThemeEditorDrawerFooterProps> = ({
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Flex position="fixed" justifyContent="center" bottom={6} w="100%" px={8}>
+    <Flex
+      display={isMobile ? 'none' : 'flex'}
+      position="fixed"
+      justifyContent="center"
+      bottom={6}
+      w="100%"
+      px={8}
+    >
       <Button
         onClick={onOpen}
         size="md"
         colorScheme="primary"
         variant="solid"
         borderRadius="3xl"
-        w="full"
+        w="fit-content"
         leftIcon={<Icon as={AiOutlineArrowDown} pos="relative" bottom={0.5} />}
-        px={8}
+        px={10}
         py={8}
       >
         Export theme

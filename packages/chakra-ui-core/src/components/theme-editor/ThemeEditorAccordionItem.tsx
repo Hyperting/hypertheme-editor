@@ -17,7 +17,7 @@ import {
     Icon as ChakraIcon,
 } from '@chakra-ui/react'
 import { FaLock, FaPlus } from 'react-icons/fa'
-import { StarPopoverComponent } from '../../../../chakra-ui-colors/src/Popover/PopoverComponent'
+
 
 
 
@@ -56,8 +56,8 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
                         height={title == 'Colors' ? '76px' : '56px'}
                         mb={title == 'Colors' ? '-0.2em' : ''}
                         boxShadow={isExpanded ? 'base' : 'none'}
-                        bgColor={colorMode == 'light' ? 'white' : '#2B2B3B'}
-                        color={colorMode == 'light' ? 'gray' : 'white'}
+                        bgColor={isExpanded && colorMode == 'dark' ? '#2B2B3B' : ''}
+                        color={colorMode == 'light' ? 'gray.700' : 'white'}
                         p={{ base: 3, sm: 4 }}
                         // borderRadius={rest.borderRadius || 'md'}
                         borderRadius='12px'

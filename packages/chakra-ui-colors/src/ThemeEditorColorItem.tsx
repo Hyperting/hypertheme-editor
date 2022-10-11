@@ -12,7 +12,10 @@ import {
     PopoverBody,
 
     Icon,
-    Tooltip
+    Tooltip,
+    useColorMode,
+    toast,
+    useToast
 } from '@chakra-ui/react'
 import { useDebouncyEffect } from 'use-debouncy'
 import { RgbaStringColorPicker } from 'react-colorful'
@@ -20,8 +23,7 @@ import { colord, extend } from 'colord'
 import namesPlugin from 'colord/plugins/names'
 import { COLOR_PICKER_TRANSPARENT_SAFE_BG_B64 } from './constants'
 import { ElementsHighlighter } from '@hypertheme-editor/chakra-ui-core'
-//
-//import { CopyToClipboard } from "react-copy-to-clipboard";
+
 import { BiCopy } from 'react-icons/bi'
 
 extend([namesPlugin])
@@ -45,15 +47,10 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
     ...rest
 }) => {
     const [currentValue, setCurrentValue] = useState<string | undefined>(value)
-    const [isCopied, setCopied] = useState(false);
-    //copy function
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setCopied(false);
-        }, 3000);
+    const toast = useToast()
 
-        return () => clearTimeout(timeout);
-    }, [isCopied]);
+    //copy function
+
     //  
 
     const rgbaString = useMemo(() => {
@@ -70,8 +67,8 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
     )
 
     const handleValueChange: React.ChangeEventHandler<HTMLInputElement> = useCallback((event) => {
-        setCurrentValue(event.target.value),
-            setCopied(false);
+        setCurrentValue(event.target.value)
+
     }, [])
 
     useDebouncyEffect(
@@ -89,14 +86,29 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
     }, [value])
 
 
+    const { colorMode } = useColorMode()
+
+    const copyToClipBoard = async () => {
+        if ("clipboard" in navigator) {
+            await navigator.clipboard.writeText(currentValue || '');
+            toast({
+                title: 'Copied!',
+                variant: 'success',
+                position: 'top-right',
+                duration: 2000
+            })
+        } else {
+            document.execCommand("copy", true, currentValue || '');
+        }
+    }
 
 
     return (
         <Box w="100%" {...rest} >
             { /* <Text mb={1} p={p} px={px} fontSize="0.875rem" textTransform="capitalize">
-                {title}
+                {title} bgColor={colorMode === 'light' ? 'white' : '#1E1E2F'}
             </Text>*/}
-            <Flex alignItems="center" p={p} px={px} pos="relative" minH="40px" width='100%' justifyContent='space-between'>
+            <Flex alignItems="center" p={p} px={px} pos="relative" minH="40px" width='100%' justifyContent='space-between'  >
                 <Popover trigger="hover" placement='bottom-start' >
                     <ElementsHighlighter themeKeys={`colors.${token}.${colorIndex}`} >
                         <PopoverTrigger >
@@ -135,13 +147,16 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
                 </Text>
                 <ElementsHighlighter themeKeys={`colors.${token}.${colorIndex}`}>
                     <Input
+                        id="myInput"
                         width='270px'
+                        height='40px'
                         variant='filled'
                         //w="100%"
-                        //size="sm"
-                        size='md'
-                        borderRadius="6px"
-                        shadow={shadow}
+
+                        size='sm'
+                        borderRadius="8px"
+                        // shadow={shadow}
+                        bgColor={colorMode == 'light' ? 'gray.200' : '#14141F'}
                         cursor="pointer"
                         px="0.5rem"
                         pos="sticky"
@@ -152,21 +167,14 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
 
                         fontSize="0.875rem"
                         placeholder="Color code"
-                        border='none'
+
 
                     />
                 </ElementsHighlighter>
-                <Tooltip
-                    //label={isCopied ? "Copied!" : "Copy"}
-                    aria-label="Copy"
-                    openDelay={500}
-                    closeOnMouseDown
-                    hasArrow
-                    placement='bottom'
 
-                >
-                    <Icon as={BiCopy} color='gray.400' _hover={{ color: 'green.500' }} _active={{ color: 'green.700' }}></Icon>
-                </Tooltip>
+                <Icon as={BiCopy} color='gray.400' _hover={{ color: 'green.500' }} _active={{ color: 'green.700' }}
+                    onClick={copyToClipBoard}></Icon>
+
                 {/* <CopyToClipboard text={currentValue} onCopy={() => setCopied(true)}>
                         <Icon as={BiCopy} color='gray.400' _hover={{ color: 'green.500' }} _active={{ color: 'green.700' }}></Icon>
                     </CopyToClipboard> */}
@@ -177,4 +185,4 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
     )
 }
 
-export default ThemeEditorColorItem
+export default ThemeEditorColorItem;

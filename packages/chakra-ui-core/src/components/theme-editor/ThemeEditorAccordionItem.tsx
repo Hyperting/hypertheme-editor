@@ -17,6 +17,9 @@ import {
     Icon as ChakraIcon,
 } from '@chakra-ui/react'
 import { FaLock, FaPlus } from 'react-icons/fa'
+import { StarPopoverComponent } from '../../../../chakra-ui-colors/src/Popover/PopoverComponent'
+
+
 
 export type ThemeEditorAccordionItemProps = {
     title?: string
@@ -50,10 +53,17 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
                 <>
                     <AccordionButton
                         //changes
+                        height={title == 'Colors' ? '76px' : '56px'}
+                        mb={title == 'Colors' ? '-0.2em' : ''}
                         boxShadow={isExpanded ? 'base' : 'none'}
+                        bgColor={colorMode == 'light' ? 'white' : '#2B2B3B'}
+                        color={colorMode == 'light' ? 'gray' : 'white'}
                         p={{ base: 3, sm: 4 }}
-                        borderRadius={rest.borderRadius || 'md'}
+                        // borderRadius={rest.borderRadius || 'md'}
+                        borderRadius='12px'
                         _hover={{ bgColor: hoverBgColor }}
+
+
 
                     >
                         {Icon && (
@@ -91,10 +101,14 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
                                 </Text>
                             )}
 
+
                         </Flex>
                         {title == "Custom colors" && isExpanded && (
+
                             <Circle bgColor={colorMode === 'light' ? 'green.100' : 'gray.900'} w='30px' h='30px'> <ChakraIcon as={FaPlus} color='green.400' size='40%' /></Circle>
+
                         )}
+
                         {!isDisabled ? <AccordionIcon ml="0.5rem" /> : <ChakraIcon as={FaLock} />}
                     </AccordionButton>
                     <Collapse in={isExpanded && !isDisabled} unmountOnExit={unmountOnExit}>

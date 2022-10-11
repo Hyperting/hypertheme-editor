@@ -12,6 +12,7 @@ import {
     PopoverBody,
     Button,
     Icon,
+    useColorMode,
 } from '@chakra-ui/react'
 import { useDebouncyEffect } from 'use-debouncy'
 import { RgbaStringColorPicker } from 'react-colorful'
@@ -95,7 +96,7 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
     //   }
     //   // eslint-disable-next-line react-hooks/exhaustive-deps
     // }, [debouncedValue])
-
+    const { colorMode } = useColorMode()
     return (
         <Box w="100%" {...rest} >
             <Text m={0} p={0} px={px} fontSize="0.875rem" textTransform="capitalize" color='gray.400'>
@@ -157,6 +158,7 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
                         value={currentValue}
                         onChange={handleValueChange}
                         fontSize="0.875rem"
+                        bgColor={colorMode == 'light' ? '' : '#14141F'}
                         placeholder="Color code"
                     />
                 </ElementsHighlighter>
@@ -178,10 +180,9 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
                             color: 'red.500',
                             opacity: 1,
                         }}
-                    >
-                        <Icon as={HiOutlineTrash} //fontSize="0.75rem" 
 
-                        />
+                    >
+                        <Icon as={HiOutlineTrash} color={colorMode == 'light' ? 'gray' : 'gray.100'} />
                     </Button>
                 )}
             </Flex>

@@ -9,6 +9,7 @@ import {
     DrawerFooter,
     Box,
     SimpleGrid,
+    useColorMode,
 } from '@chakra-ui/react'
 import { BaseListItem, useThemeEditor } from '@hypertheme-editor/chakra-ui-core'
 import ThemeEditorColorItem from './ThemeEditorColorItem'
@@ -84,7 +85,7 @@ const ThemeEditorPaletteDrawer: FC<ThemeEditorPaletteDrawerProps> = (props) => {
         },
         [setTheme, theme]
     )
-
+    const { colorMode } = useColorMode()
     return (
         <Drawer
             placement="right"
@@ -105,11 +106,15 @@ const ThemeEditorPaletteDrawer: FC<ThemeEditorPaletteDrawerProps> = (props) => {
                 <DrawerBody pos="relative" px={{ base: 3, lg: 6 }} py={3}  >
                     <SimpleGrid columns={1} spacing={{ base: 3, lg: 4 }} >
                         {scale.map((paletteIndex, key) => (
-                            <Box borderBottom='1px' borderColor='gray.200' boxShadow='sm'>
+                            <Box borderBottom='1px'
+                                borderColor={colorMode == 'light' ? 'gray.200' : 'rgba(255, 255, 255, 0.1)'}
+                            //boxShadow='sm'
+
+                            >
                                 <BaseListItem
                                     key={`palette-item-${key}`}
                                     //shadow={shadow}
-                                    bgColor={bgColor2}
+                                    bgColor={colorMode == 'light' ? 'white' : 'gray.900'}
                                     overflow="visible"
 
                                 >

@@ -30,7 +30,6 @@ import {
 import ThemeEditorPaletteColorItem from './ThemeEditorPaletteColorItem'
 import { generatePalette } from './generateColorPalette'
 
-import { FaPlus } from 'react-icons/fa'
 import { IconStepperContainer } from './Stepper/IconStepperContainer'
 
 
@@ -165,7 +164,8 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
                         {...buttonProps}
 
                     >
-                        <Icon as={FaPlus} mr="0.25rem" /> Add
+                        {/*<Icon as={FaPlus} mr="0.25rem" /> Add*/}
+                        {props.children}
                     </Button>
                 </PopoverTrigger>
                 <PopoverContent minW="380px" zIndex='10000'

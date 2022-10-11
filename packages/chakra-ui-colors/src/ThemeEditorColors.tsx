@@ -16,10 +16,11 @@ import { generatePalette } from './generateColorPalette'
 import { StepperContainer } from './Stepper/StepperContainer'
 import { IconStepperContainer } from './Stepper/IconStepperContainer'
 import { BiGridVertical } from 'react-icons/bi'
-import { GrAnalytics } from 'react-icons/gr'
+import { FaPlus } from 'react-icons/fa'
+
 
 type Props = {
-    //
+
 } & Partial<ThemeEditorRootPanelProps>
 
 export const ThemeEditorColors: FC<Props> = (props) => {
@@ -86,7 +87,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
     const { colorMode } = useColorMode()
 
     return (
-        <Accordion p={1} ml='1.2em' mr='1.2em' mdefaultIndex={0} allowToggle  >
+        <Accordion p={1} ml='1.2em' mr='1.2em' mdefaultIndex={0} allowToggle>
             <StepperContainer >
                 <ThemeEditorAccordionItem
                     color='gray.600'
@@ -140,7 +141,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                             <ThemeEditorPalettePopoverForm buttonProps={{ colorScheme: 'primary', size: 'sm' }} />
                         </EmptyBox>
                     ) : (
-                        <ThemeEditorPalettePopoverForm />
+                        <ThemeEditorPalettePopoverForm > <Icon as={FaPlus} mr="0.25rem" />Add</ThemeEditorPalettePopoverForm>
                     )}
                 </ThemeEditorAccordionItem>
             </StepperContainer>

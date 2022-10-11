@@ -8,6 +8,7 @@ import {
     ButtonGroup,
     Button,
     Text,
+    useColorMode,
 } from '@chakra-ui/react'
 //import { MdClose } from 'react-icons/md'
 //import { RiArrowGoBackFill, RiArrowGoForwardFill } from 'react-icons/ri'
@@ -23,7 +24,7 @@ type Props = {
 
 export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocusRef, token }) => {
     const { canUndo, canRedo, undo, redo, theme } = useThemeEditor()
-
+    const { colorMode } = useColorMode()
     return (
         <DrawerHeader
             d="flex"
@@ -52,9 +53,9 @@ export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocu
                     ml="1rem"
                     mr='1rem'
                     ref={initialFocusRef}
-                    bg='white'
-                    boxShadow='xs'
 
+                    boxShadow='xs'
+                    bg={colorMode == 'light' ? 'white' : '#2B2B3Bs'}
                 >
                     <BiArrowBack />
                 </Button>
@@ -69,11 +70,12 @@ export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocu
                             <IconButton
                                 //icon={<RiArrowGoBackFill />}
                                 icon={<BsArrow90DegLeft />}
-                                bg='white'
+
                                 aria-label="undo"
                                 disabled={!canUndo}
                                 onClick={undo}
                                 border='1px solid #bcbcbc'
+                                bg={colorMode == 'light' ? 'white' : '#2B2B3Bs'}
                             />
 
                             <Divider orientation="vertical" />
@@ -83,7 +85,7 @@ export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocu
                                 aria-label="redo"
                                 disabled={!canRedo}
                                 onClick={redo}
-                                bg='white'
+                                bg={colorMode == 'light' ? 'white' : '#2B2B3B'}
                                 border='1px solid #bcbcbc'
                             />
                         </ButtonGroup>

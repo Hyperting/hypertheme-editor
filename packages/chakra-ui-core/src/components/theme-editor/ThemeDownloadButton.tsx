@@ -72,12 +72,29 @@ export const ThemeDownloadButton: FC<Props> = ({
       setTheme({ ...baseTheme })
     }
   }, [theme, setTheme, baseTheme]) */
+
   const { colors, ...others } = theme as Theme
   const { blue, ...otherColors } = colors as any
 
-  useEffect(() => {
+  // Funziona perchè invio tutto il tema
+  /* useEffect(() => {
+    setTheme(theme as Theme)
+  }, []) */
+
+  // Funziona perchè invio tutte le proprietà del tema anche se in colors > blue > il valore l'ho cambiata a stringa vuota
+  /* useEffect(() => {
     setTheme({ colors: { blue: '', ...otherColors }, ...others })
-  }, [])
+  }, []) */
+
+  // Non funziona perchè non invio più la proprietà blue di colors
+  /* useEffect(() => {
+    setTheme({ colors: { ...otherColors }, ...others })
+  }, []) */
+
+  // Non funziona perchè ho tolto colors dalle proprietà da inviare
+  /* useEffect(() => {
+    setTheme({ ...others })
+  }, []) */
 
   const handleDownload = useCallback(
     (language: string) => async () => {

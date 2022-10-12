@@ -79,7 +79,7 @@ export interface useThemeEditorReturn {
    * set the current theme
    * @param theme - the new theme that will be setted
    */
-  setTheme: (theme: Theme) => void
+  setTheme: (theme: any) => void
   canUndo: boolean
   undo: () => void
   canRedo: boolean
@@ -97,7 +97,7 @@ export const useThemeEditor = (): useThemeEditorReturn => {
   )
 
   const setTheme = useCallback(
-    (theme: Theme) => {
+    (theme: any) => {
       let newPatches: Patch[] = []
       let newInversePatches: Patch[] = []
 

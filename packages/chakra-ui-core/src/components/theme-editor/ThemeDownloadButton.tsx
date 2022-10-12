@@ -37,10 +37,9 @@ export const ThemeDownloadButton: FC<Props> = ({
   ...rest
 }) => {
   const [downloading, setDownloading] = useState<boolean>(false)
-  let { theme, setTheme } = useThemeEditor()
+  let { theme } = useThemeEditor()
+  const [newTheme, setNewTheme] = useState(baseTheme)
   const toast = useToast()
-  console.log('theme', theme)
-  console.log('baseTheme', baseTheme)
 
   // Prende le keys di un oggetto e le trasforma in un array di stringhe
   /*   console.log('theme', theme)
@@ -63,38 +62,10 @@ export const ThemeDownloadButton: FC<Props> = ({
     }, {})
   }
 
-  // TO UNCOMMENT ONCE THE API IS READY
-  /*  useEffect(() => {
-    const newTheme = objectify(selectedProperties)
-    if (selectedProperties.length > 0) {
-      setTheme({ newTheme, ...baseTheme })
-    } else {
-      setTheme({ ...baseTheme })
-    }
-  }, [theme, setTheme, baseTheme]) */
-
-  const { colors, ...others } = theme as Theme
-  const { blue, ...otherColors } = colors as any
-
-  // Funziona perchè invio tutto il tema
-  /* useEffect(() => {
-    setTheme(theme as Theme)
-  }, []) */
-
-  // Funziona perchè invio tutte le proprietà del tema anche se in colors > blue > il valore l'ho cambiata a stringa vuota
-  /* useEffect(() => {
-    setTheme({ colors: { blue: '', ...otherColors }, ...others })
-  }, []) */
-
-  // Non funziona perchè non invio più la proprietà blue di colors
-  /* useEffect(() => {
-    setTheme({ colors: { ...otherColors }, ...others })
-  }, []) */
-
-  // Non funziona perchè ho tolto colors dalle proprietà da inviare
-  /* useEffect(() => {
-    setTheme({ ...others })
-  }, []) */
+  useEffect(() => {
+    const selected = objectify(selectedProperties)
+    setNewTheme({ ...selected, ...baseTheme })
+  }, [selectedProperties])
 
   const handleDownload = useCallback(
     (language: string) => async () => {
@@ -106,7 +77,7 @@ export const ThemeDownloadButton: FC<Props> = ({
             Accept: 'application/json',
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ theme, language }),
+          body: JSON.stringify({ theme: { ...newTheme }, language }),
         })
 
         if (!result.ok) {
@@ -142,7 +113,7 @@ export const ThemeDownloadButton: FC<Props> = ({
         setDownloading(false)
       }
     },
-    [theme, toast]
+    [theme, newTheme, toast]
   )
 
   return (

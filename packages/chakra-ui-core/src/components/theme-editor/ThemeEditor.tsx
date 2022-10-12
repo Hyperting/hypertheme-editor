@@ -3,28 +3,34 @@ import { ThemeProvider, useDisclosure, UseDisclosureProps } from '@chakra-ui/rea
 import { ThemeEditorDrawerProps } from './ThemeEditorDrawer'
 import { ThemeEditorButtonProps } from './ThemeEditorButton'
 import { theme } from '@hypertheme-editor/chakra-ui-theme'
+import { RecoilRoot } from 'recoil'
+
 
 type ThemeEditorChild = React.ReactElement<
-  ThemeEditorButtonProps | ThemeEditorDrawerProps,
-  React.JSXElementConstructor<ThemeEditorButtonProps | ThemeEditorDrawerProps>
+    ThemeEditorButtonProps | ThemeEditorDrawerProps,
+    React.JSXElementConstructor<ThemeEditorButtonProps | ThemeEditorDrawerProps>
 >
 
 export type ThemeEditorProps = {
-  children: ThemeEditorChild[] | ThemeEditorChild
+    children: ThemeEditorChild[] | ThemeEditorChild
 } & UseDisclosureProps
 
 export const ThemeEditor: FC<ThemeEditorProps> = ({ children, ...disclosureProps }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure(disclosureProps)
+    const { isOpen, onOpen, onClose } = useDisclosure(disclosureProps)
 
-  return (
-    <ThemeProvider theme={theme}>
-      {React.Children.map(React.Children.toArray(children), (child, index) => {
-        return React.cloneElement(child as any, {
-          isOpen,
-          onOpen,
-          onClose,
-        })
-      })}
-    </ThemeProvider>
-  )
+    return (
+
+
+        <ThemeProvider theme={theme}>
+
+            {React.Children.map(React.Children.toArray(children), (child, index) => {
+                return React.cloneElement(child as any, {
+                    isOpen,
+                    onOpen,
+                    onClose,
+                })
+            })}
+        </ThemeProvider>
+
+    )
 }

@@ -30,7 +30,7 @@ import {
 import ThemeEditorPaletteColorItem from './ThemeEditorPaletteColorItem'
 import { generatePalette } from './generateColorPalette'
 
-import { IconStepperContainer } from './Stepper/IconStepperContainer'
+
 import { FaPlus } from 'react-icons/fa'
 
 
@@ -133,52 +133,52 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
     const isFormValid = useMemo(() => formState.name && formState.color, [formState])
     const bgColor = useColorModeValue('#EBF7F0', '#FFFFFF')
     return (
-        <IconStepperContainer>
-            <Popover
-                isOpen={isOpen}
-                initialFocusRef={initialFocusRef}
-                onOpen={onOpen}
-                onClose={onClose}
-                placement="bottom"
-                closeOnBlur={false}
-                trigger="click"
+
+        <Popover
+            isOpen={isOpen}
+            initialFocusRef={initialFocusRef}
+            onOpen={onOpen}
+            onClose={onClose}
+            placement="bottom"
+            closeOnBlur={false}
+            trigger="click"
 
 
-            >
-                <PopoverTrigger>
+        >
+            <PopoverTrigger>
 
-                    <Button
-                        width='72px'
-                        height='32px'
-                        boxShadow='md'
-                        rounded='md'
-                        bgColor='bgColor'
-                        color='#6FCF97'
-                        alignSelf="flex-start"
-                        //px="2.5rem"
-                        //mt="0.75rem"
-                        p='16px 8px 16px 8px'
-                        mt='1.9rem'
-                        ml='0.5em'
-                        mb='1em'
-                        isFullWidth
-                        {...buttonProps}
+                <Button
+                    width='72px'
+                    height='32px'
+                    boxShadow='md'
+                    rounded='md'
+                    bgColor='bgColor'
+                    color='#6FCF97'
+                    alignSelf="flex-start"
+                    //px="2.5rem"
+                    //mt="0.75rem"
+                    p='16px 8px 16px 8px'
+                    mt='1.9rem'
+                    ml='0.5em'
+                    mb='1em'
+                    isFullWidth
+                    {...buttonProps}
 
-                    >
-                        {/* <Icon as={FaPlus} mr="0.25rem" /> Add */}
-                        {props.children}
-                    </Button>
-                </PopoverTrigger>
-                <PopoverContent minW="380px" zIndex='10000'
                 >
-                    {/* <PopoverArrow /> */}
-                    <PopoverCloseButton />
-                    <PopoverHeader fontWeight="bold" textAlign="left">
-                        Add Color
-                    </PopoverHeader>
-                    <PopoverBody zIndex='1000'>
-                        <Stack spacing={4} mt={4} mb={2}>
-                            {/* <Popover trigger="hover" placement="bottom-start">
+                    <Icon as={FaPlus} mr="0.25rem" /> Add
+
+                </Button>
+            </PopoverTrigger>
+            <PopoverContent minW="380px" zIndex='10000'
+            >
+                {/* <PopoverArrow /> */}
+                <PopoverCloseButton />
+                <PopoverHeader fontWeight="bold" textAlign="left">
+                    Add Color
+                </PopoverHeader>
+                <PopoverBody zIndex='1000'>
+                    <Stack spacing={4} mt={4} mb={2}>
+                        {/* <Popover trigger="hover" placement="bottom-start">
             <PopoverTrigger>
               <Box
                 boxSize={8}
@@ -200,60 +200,61 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
             </PopoverContent>
           </Popover> */}
 
-                            <TextInput
-                                label="Color name"
-                                placeholder="Color name"
-                                name="name"
-                                id="name"
-                                value={formState?.name}
-                                onChange={handleInputChange}
-                                ref={initialFocusRef}
-                            // border='none'
+                        <TextInput
+                            label="Color name"
+                            placeholder="Color name"
+                            name="name"
+                            id="name"
+                            value={formState?.name}
+                            onChange={handleInputChange}
+                            ref={initialFocusRef}
+                        // border='none'
 
+                        />
+
+                        <Flex alignItems="center">
+                            <ThemeEditorPaletteColorItem
+                                title="New color"
+                                token="newColor"
+                                palette={tempPalette}
+                                onChange={handleColorChange}
+                                textAlign="left"
+                                w="100%"
                             />
-
-                            <Flex alignItems="center">
-                                <ThemeEditorPaletteColorItem
-                                    title="New color"
-                                    token="newColor"
-                                    palette={tempPalette}
-                                    onChange={handleColorChange}
-                                    textAlign="left"
-                                    w="100%"
+                            <Flex direction="column" w="auto" ml={2}>
+                                <FormLabel htmlFor="is-palette-color" fontSize="sm" mr={0}>
+                                    Palette
+                                </FormLabel>
+                                <Switch
+                                    id="is-palette-color"
+                                    name="isPaletteColor"
+                                    isChecked={formState?.isPaletteColor}
+                                    onChange={handleInputChange}
+                                    colorScheme="primary"
+                                    size="md"
+                                    alignSelf="flex-end"
                                 />
-                                <Flex direction="column" w="auto" ml={2}>
-                                    <FormLabel htmlFor="is-palette-color" fontSize="sm" mr={0}>
-                                        Palette
-                                    </FormLabel>
-                                    <Switch
-                                        id="is-palette-color"
-                                        name="isPaletteColor"
-                                        isChecked={formState?.isPaletteColor}
-                                        onChange={handleInputChange}
-                                        colorScheme="primary"
-                                        size="md"
-                                        alignSelf="flex-end"
-                                    />
-                                </Flex>
                             </Flex>
-                        </Stack>
-                    </PopoverBody>
-                    <PopoverFooter>
-                        <ButtonGroup d="flex" justifyContent="flex-end">
-                            <Button onClick={onClose} size="sm">
-                                Cancel
-                            </Button>
-                            <Button
-                                onClick={handleCreateCustomColor}
-                                isDisabled={!isFormValid}
-                                colorScheme="primary"
-                                size="sm"
-                            >
-                                Create color
-                            </Button>
-                        </ButtonGroup>
-                    </PopoverFooter>
-                </PopoverContent>
-            </Popover></IconStepperContainer>
+                        </Flex>
+                    </Stack>
+                </PopoverBody>
+                <PopoverFooter>
+                    <ButtonGroup d="flex" justifyContent="flex-end">
+                        <Button onClick={onClose} size="sm">
+                            Cancel
+                        </Button>
+                        <Button
+                            onClick={handleCreateCustomColor}
+                            isDisabled={!isFormValid}
+                            colorScheme="primary"
+                            size="sm"
+                        >
+                            Create color
+                        </Button>
+                    </ButtonGroup>
+                </PopoverFooter>
+            </PopoverContent>
+        </Popover>
+
     )
 }

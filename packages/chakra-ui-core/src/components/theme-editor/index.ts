@@ -1,5 +1,6 @@
 import { ThemeDownloadButton } from './ThemeDownloadButton'
 import { ThemeEditorDrawer } from './ThemeEditorDrawer'
+
 import {
   ThemeEditorButton,
   ThemeEditorButtonProps as ThemeEditorButtonPropsToExport,
@@ -14,7 +15,7 @@ import {
 } from './ThemeEditorRootPanel'
 import ThemeEditorAccordion from './ThemeEditorAccordion'
 import ThemeEditorAccordionItem from './ThemeEditorAccordionItem'
-
+import { PopoverComponent } from './Popover/PopoverComponent'
 import { ThemeEditor, ThemeEditorProps as ThemeEditorPropsToExport } from './ThemeEditor'
 import {
   ThemeEditorDrawerFooter,
@@ -33,7 +34,7 @@ export {
   ThemeEditorRootPanel,
   ThemeEditorAccordion,
   ThemeEditorAccordionItem,
-
+PopoverComponent
 
 }
 

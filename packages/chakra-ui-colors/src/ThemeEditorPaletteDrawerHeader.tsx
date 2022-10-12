@@ -75,7 +75,8 @@ export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocu
                                 disabled={!canUndo}
                                 onClick={undo}
                                 border='1px solid #bcbcbc'
-                                bg={colorMode == 'light' ? 'white' : '#2B2B3Bs'}
+                                bg={colorMode == 'light' ? 'white' : 'gray.700'}
+                                mr='-0.5px'
                             />
 
                             <Divider orientation="vertical" />

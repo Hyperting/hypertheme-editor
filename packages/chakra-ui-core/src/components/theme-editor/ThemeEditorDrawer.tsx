@@ -21,12 +21,13 @@ import { useIsBrowserCompatible } from '../../utils/isBrowserCompatible'
 import { ThemeEditorRootPanel } from './ThemeEditorRootPanel'
 import { DRAWER_EXPANDED_INDEX_LOCAL_STORAGE_KEY } from '../../constants'
 import { useAccordionState } from '../../hooks/useAccordionState'
+import { RecoilRoot } from 'recoil'
 
 const mobileReadyItems = ['Colors']
 
 export type ThemeEditorDrawerProps = Omit<DrawerProps, 'children' | 'isOpen' | 'onClose'> & {
     children?:
-    | ReactElement<{ icon: IconType; title: string } & Record<string, any>>[]
+    | ReactElement<{ icon: IconType; title: string, subtitle: string } & Record<string, any>>[]
     | ReactElement<{ icon: IconType; title: string } & Record<string, any>>
     hideUpgradeToPro?: boolean
     hideCredits?: boolean
@@ -61,6 +62,7 @@ export const ThemeEditorDrawer: FC<ThemeEditorDrawerProps> = ({
     const [defaultIndex, setDefaultIndex] = useAccordionState(DRAWER_EXPANDED_INDEX_LOCAL_STORAGE_KEY)
 
     return (
+
         <Drawer
             placement="right"
             finalFocusRef={btnRef}
@@ -105,12 +107,13 @@ export const ThemeEditorDrawer: FC<ThemeEditorDrawerProps> = ({
                         onChange={setDefaultIndex}
                     >
                         {React.Children.map(React.Children.toArray(children), (child, index) => {
-                            const { icon, title, children, ...panelProps } = (child as ReactElement).props
+                            const { icon, title, subtitle, children, ...panelProps } = (child as ReactElement).props
                             return (
                                 <ThemeEditorAccordionItem
                                     key={`theme-editor-item-${index}`}
                                     icon={icon}
                                     title={title}
+                                    subtitle={subtitle}
                                     fontSize="lg"
                                     unmountOnExit={true}
                                     isDisabled={isMobile && mobileReadyItems.indexOf(title) == -1}

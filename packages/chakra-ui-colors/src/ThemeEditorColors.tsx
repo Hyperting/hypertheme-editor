@@ -18,7 +18,7 @@ import { COLOR_EXPANDED_INDEX_LOCAL_STORAGE_KEY } from './constants'
 import { StepperContainer } from './Stepper/StepperContainer'
 import { IconStepperContainer } from './Stepper/IconStepperContainer'
 import { BiGridVertical } from 'react-icons/bi'
-import { FaPlus } from 'react-icons/fa'
+
 
 
 type Props = {
@@ -90,7 +90,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
     const { colorMode } = useColorMode()
 
     return (
-        <Accordion p={1} ml='1.2em' mr='1.2em' mdefaultIndex={0} allowToggle>
+        <Accordion p={1} ml='1.2em' mr='1.2em' mdefaultIndex={0} allowToggle >
             <StepperContainer >
                 <ThemeEditorAccordionItem
                     color='gray.600'
@@ -138,13 +138,13 @@ export const ThemeEditorColors: FC<Props> = (props) => {
                             subtitle="Add your first custom color:"
                             spacing={1}
                             icon={CgColorPicker}
-
+                            zIndex='100000'
 
                         >
                             <ThemeEditorPalettePopoverForm buttonProps={{ colorScheme: 'primary', size: 'sm' }} />
                         </EmptyBox>
                     ) : (
-                        <ThemeEditorPalettePopoverForm > <Icon as={FaPlus} mr="0.25rem" />Add</ThemeEditorPalettePopoverForm>
+                        <IconStepperContainer> <ThemeEditorPalettePopoverForm /></IconStepperContainer>
                     )}
                 </ThemeEditorAccordionItem>
             </StepperContainer>

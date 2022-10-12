@@ -15,10 +15,10 @@ import {
     Flex,
     Collapse,
     Icon as ChakraIcon,
+
 } from '@chakra-ui/react'
 import { FaLock, FaPlus } from 'react-icons/fa'
-
-
+import { PopoverComponent } from './Popover/PopoverComponent'
 
 
 export type ThemeEditorAccordionItemProps = {
@@ -30,8 +30,12 @@ export type ThemeEditorAccordionItemProps = {
     unmountOnExit?: boolean
 } & AccordionItemProps &
     Pick<ThemingProps, 'colorScheme'>
+//
+
+
 
 export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (props) => {
+
     const {
         title = 'Accordion title',
         subtitle,
@@ -47,14 +51,21 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
     const hoverBgColor = useColorModeValue('gray.200', 'gray.700')
     const bgColor = useColorModeValue(`${colorScheme}.200`, `${colorScheme}.900`)
     const { colorMode } = useColorMode()
+    const ref = React.useRef()
+
+
+
+
+
     return (
-        <AccordionItem isDisabled={isDisabled} {...rest} >
+        <AccordionItem isDisabled={isDisabled} {...rest}   >
             {({ isExpanded }) => (
                 <>
                     <AccordionButton
                         //changes
                         height={title == 'Colors' ? '76px' : '56px'}
                         mb={title == 'Colors' ? '-0.2em' : ''}
+
                         boxShadow={isExpanded ? 'base' : 'none'}
                         bgColor={isExpanded && colorMode == 'dark' ? '#2B2B3B' : ''}
                         color={colorMode == 'light' ? 'gray.700' : 'white'}
@@ -96,19 +107,24 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
                             </Text>
                             {subtitle && !isExpanded && (
 
-                                <Text flex="1" fontSize="0.75rem">
+                                <Text flex="1"
+                                    fontSize="15px"
+                                    // fontSize="0.75rem" 
+                                    color='#B1B5C3'>
                                     {subtitle}
                                 </Text>
                             )}
-
+                            <Text flex="1" fontSize="15px" color='#B1B5C3'>
+                                {title == 'Colors' ? 'Change colors, create new one, generate palette..' : ''}
+                            </Text>
 
                         </Flex>
                         {title == "Custom colors" && isExpanded && (
-
-                            <Circle bgColor={colorMode === 'light' ? 'green.100' : 'gray.900'} w='30px' h='30px'> <ChakraIcon as={FaPlus} color='green.400' size='40%' /></Circle>
-
+                            // <PopoverComponent>
+                            <Circle bgColor={colorMode === 'light' ? 'green.100' : 'gray.900'} w='30px' h='30px' > <ChakraIcon as={FaPlus} color='green.400' size='40%' />
+                            </Circle>
+                            // </PopoverComponent>
                         )}
-
                         {!isDisabled ? <AccordionIcon ml="0.5rem" /> : <ChakraIcon as={FaLock} />}
                     </AccordionButton>
                     <Collapse in={isExpanded && !isDisabled} unmountOnExit={unmountOnExit}>
@@ -135,3 +151,6 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
 }
 
 export default ThemeEditorAccordionItem
+
+
+

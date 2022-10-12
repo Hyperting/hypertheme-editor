@@ -2,10 +2,9 @@
 import React, { useCallback, useState } from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { Button } from '@chakra-ui/react'
-import { CgColorPicker, CgEditShadows, CgSpaceBetween } from 'react-icons/cg'
+import { CgColorPicker } from 'react-icons/cg'
 import { ImFontSize } from 'react-icons/im'
-import { BiText } from 'react-icons/bi'
-import { MdRoundedCorner } from 'react-icons/md'
+
 import ColorModeToggle from '../src/components/base/ColorModeToggle'
 import {
     ThemeEditorButton,

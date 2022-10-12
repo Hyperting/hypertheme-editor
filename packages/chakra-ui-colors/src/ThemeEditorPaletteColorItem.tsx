@@ -144,7 +144,7 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
                 >
                     <Input
                         //  w={palette && scale && scale.length > 0 ? 32 : '100%'}
-                        width='162px'
+                        width='10.125rem'
                         height='40px'
                         // size='sm'
                         variant='filled'
@@ -182,7 +182,7 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
                         }}
 
                     >
-                        <Icon as={HiOutlineTrash} color={colorMode == 'light' ? 'gray' : 'gray.100'} />
+                        <Icon size='lg' as={HiOutlineTrash} color={colorMode == 'light' ? 'gray.300' : 'gray.100'} />
                     </Button>
                 )}
             </Flex>

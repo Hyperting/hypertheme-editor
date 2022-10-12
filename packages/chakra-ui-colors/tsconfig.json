@@ -27,7 +27,7 @@
   },
   "include": [
     "src"
-,  "../chakra-ui-core/src/components/theme-editor/ThemeEditorDrawerHeader.tsx"  ],
+,  "../chakra-ui-core/src/components/theme-editor/ThemeEditorDrawerHeader.tsx", "../chakra-ui-core/src/components/theme-editor/Popover"  ],
   "exclude": [
       "node_modules",
       "lib",

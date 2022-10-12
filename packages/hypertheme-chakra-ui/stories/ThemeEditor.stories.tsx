@@ -4,23 +4,24 @@ import { ComponentMeta } from '@storybook/react'
 import { Button } from '@chakra-ui/react'
 import { CgColorPicker, CgEditShadows, CgSpaceBetween } from 'react-icons/cg'
 import { ImFontSize } from 'react-icons/im'
-import { BiText } from 'react-icons/bi'
-import { MdRoundedCorner } from 'react-icons/md'
-import //   ThemeEditorButton,
-    // ThemeEditorProvider,
-    //   ThemeEditorRootPanel,
-    //   ThemeEditorDrawer,
-    //   ThemeEditor,
-    '@hypertheme-editor/chakra-ui-core'
-import { ThemeEditorColors } from '@hypertheme-editor/chakra-ui-colors'
-import { ThemeEditorFontSizes } from '@hypertheme-editor/chakra-ui-font-sizes'
+
 import {
-    HyperThemeEditor,
     ThemeEditorButton,
     ThemeEditorProvider,
     ThemeEditorRootPanel,
     ThemeEditorDrawer,
     ThemeEditor,
+} from
+    '@hypertheme-editor/chakra-ui-core'
+import { ThemeEditorColors } from '@hypertheme-editor/chakra-ui-colors'
+import { ThemeEditorFontSizes } from '@hypertheme-editor/chakra-ui-font-sizes'
+import {
+    HyperThemeEditor,
+    //     ThemeEditorButton,
+    //     ThemeEditorProvider,
+    //     ThemeEditorRootPanel,
+    //     ThemeEditorDrawer,
+    //     ThemeEditor,
 } from '../src'
 
 export default {
@@ -43,13 +44,13 @@ export const DefaultEditorWithHiddenCredits = (args) => (
     </ThemeEditorProvider>
 )
 
-export const WithRootPanel = (args) => (
+export const WithRootPanel = (args: any) => (
     <ThemeEditorProvider>
         <Button colorScheme="blue">Button</Button>
         <ThemeEditor {...args}>
             <ThemeEditorButton />
             <ThemeEditorDrawer>
-                <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
+                <ThemeEditorRootPanel icon={CgColorPicker} title="Colors" >
                     <ThemeEditorColors />
                 </ThemeEditorRootPanel>
                 <ThemeEditorRootPanel icon={ImFontSize} title="Font Sizes">
@@ -60,7 +61,7 @@ export const WithRootPanel = (args) => (
     </ThemeEditorProvider>
 )
 
-export const WithoutRootPanel = (args) => (
+export const WithoutRootPanel = (args: any) => (
     <ThemeEditorProvider>
         <Button colorScheme="blue">Button</Button>
         <ThemeEditor {...args}>

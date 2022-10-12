@@ -182,7 +182,7 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
                         }}
 
                     >
-                        <Icon size='lg' as={HiOutlineTrash} color={colorMode == 'light' ? 'gray.300' : 'gray.100'} />
+                        <Icon size='lg' as={HiOutlineTrash} color={colorMode == 'light' ? 'gray' : 'gray.100'} />
                     </Button>
                 )}
             </Flex>

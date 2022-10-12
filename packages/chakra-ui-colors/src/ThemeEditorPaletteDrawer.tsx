@@ -97,14 +97,16 @@ const ThemeEditorPaletteDrawer: FC<ThemeEditorPaletteDrawerProps> = (props) => {
             {...rest}
 
         >
-            <DrawerContent bgColor={bgColor} shadow="md" fontFamily="Sora, sans-serif" >
+            <DrawerContent bgColor={bgColor2}
+                //shadow={bgColor2} 
+                fontFamily="Sora, sans-serif" >
                 <ThemeEditorPaletteDrawerHeader
                     token={token}
                     onClose={onClose}
                     initialFocusRef={closeBtnRef}
                 />
                 <DrawerBody pos="relative" px={{ base: 3, lg: 6 }} py={3}  >
-                    <SimpleGrid columns={1} spacing={{ base: 3, lg: 4 }} >
+                    <SimpleGrid columns={1} spacing={{ base: 1, lg: 2 }} >
                         {scale.map((paletteIndex, key) => (
                             <Box borderBottom='1px'
                                 borderColor={colorMode == 'light' ? 'gray.200' : 'rgba(255, 255, 255, 0.1)'}
@@ -114,7 +116,7 @@ const ThemeEditorPaletteDrawer: FC<ThemeEditorPaletteDrawerProps> = (props) => {
                                 <BaseListItem
                                     key={`palette-item-${key}`}
                                     //shadow={shadow}
-                                    bgColor={colorMode == 'light' ? 'white' : 'gray.900'}
+                                    bgColor={bgColor2}
                                     overflow="visible"
 
                                 >

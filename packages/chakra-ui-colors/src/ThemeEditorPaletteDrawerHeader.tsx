@@ -66,28 +66,42 @@ export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocu
                     </Text>
                     <Flex alignItems="center" >
                         <ColorModeToggle p={0} w="auto" fontSize="0.875rem" mr='0.5rem' />
-                        <ButtonGroup size="xs" borderRadius="md" isAttached overflow="hidden" boxShadow='md'>
-                            <IconButton
-                                //icon={<RiArrowGoBackFill />}
-                                icon={<BsArrow90DegLeft />}
 
+                        <ButtonGroup
+                            size="xs"
+                            borderRadius="md"
+                            boxShadow="0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.2)"
+                            isAttached
+                            overflow="hidden"
+                        >
+                            <IconButton
+                                icon={<BsArrow90DegLeft />}
+                                fontSize="16px"
+                                height="27px"
+                                width="27px"
                                 aria-label="undo"
                                 disabled={!canUndo}
                                 onClick={undo}
-                                border='1px solid #bcbcbc'
-                                bg={colorMode == 'light' ? 'white' : 'gray.700'}
-                                mr='-0.5px'
+                                variant="outline"
+                                border="none"
+                                color={colorMode == 'light' ? 'gray.600' : 'gray.100'}
+                                bgColor={colorMode == 'light' ? 'white' : 'gray.700'}
+                                _focus={{ border: 'none' }}
                             />
-
-                            <Divider orientation="vertical" />
+                            <Divider orientation="vertical" height="27px" />
                             <IconButton
-                                // icon={<RiArrowGoForwardFill />}
                                 icon={<BsArrow90DegRight />}
+                                fontSize="16px"
+                                height="27px"
+                                width="27px"
                                 aria-label="redo"
                                 disabled={!canRedo}
                                 onClick={redo}
-                                bg={colorMode == 'light' ? 'white' : '#2B2B3B'}
-                                border='1px solid #bcbcbc'
+                                variant="outline"
+                                border="none"
+                                color={colorMode == 'light' ? 'gray.600' : 'gray.100'}
+                                bgColor={colorMode == 'light' ? 'white' : 'gray.700'}
+                                _focus={{ border: 'none' }}
                             />
                         </ButtonGroup>
                     </Flex>

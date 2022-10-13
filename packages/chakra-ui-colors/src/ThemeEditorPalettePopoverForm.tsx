@@ -132,6 +132,7 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
 
     const isFormValid = useMemo(() => formState.name && formState.color, [formState])
     const bgColor = useColorModeValue('#EBF7F0', '#FFFFFF')
+    const { colorMode } = useColorMode()
     return (
 
         <Popover
@@ -173,7 +174,7 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
             >
                 {/* <PopoverArrow /> */}
                 <PopoverCloseButton />
-                <PopoverHeader fontWeight="bold" textAlign="left">
+                <PopoverHeader fontWeight="bold" textAlign="left" >
                     Add Color
                 </PopoverHeader>
                 <PopoverBody zIndex='1000'>
@@ -208,6 +209,7 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
                             value={formState?.name}
                             onChange={handleInputChange}
                             ref={initialFocusRef}
+
                         // border='none'
 
                         />
@@ -220,9 +222,10 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
                                 onChange={handleColorChange}
                                 textAlign="left"
                                 w="100%"
+
                             />
-                            <Flex direction="column" w="auto" ml={2}>
-                                <FormLabel htmlFor="is-palette-color" fontSize="sm" mr={0}>
+                            <Flex direction="column" w="auto" ml={2} >
+                                <FormLabel htmlFor="is-palette-color" fontSize="sm" mr={0} >
                                     Palette
                                 </FormLabel>
                                 <Switch
@@ -240,7 +243,7 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
                 </PopoverBody>
                 <PopoverFooter>
                     <ButtonGroup d="flex" justifyContent="flex-end">
-                        <Button onClick={onClose} size="sm">
+                        <Button onClick={onClose} size="sm" color={colorMode == 'light' ? 'gray' : 'gray.200'}>
                             Cancel
                         </Button>
                         <Button
@@ -248,13 +251,14 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
                             isDisabled={!isFormValid}
                             colorScheme="primary"
                             size="sm"
+                            color='gray.200'
                         >
                             Create color
                         </Button>
                     </ButtonGroup>
                 </PopoverFooter>
             </PopoverContent>
-        </Popover>
+        </Popover >
 
     )
 }

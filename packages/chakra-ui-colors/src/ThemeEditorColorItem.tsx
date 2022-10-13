@@ -148,7 +148,7 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
                 <ElementsHighlighter themeKeys={`colors.${token}.${colorIndex}`}>
                     <Input
                         id="myInput"
-                        width='270px'
+                        width='16.875rem'
                         height='40px'
                         variant='filled'
                         //w="100%"

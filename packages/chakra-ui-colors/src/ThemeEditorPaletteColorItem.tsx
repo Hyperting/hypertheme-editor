@@ -102,7 +102,7 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
             <Text m={0} p={0} px={px} fontSize="0.875rem" textTransform="capitalize" color='gray.400'>
                 {title}
             </Text>
-            <Flex alignItems="center" p={p} px={px} pos="relative" minH="48px" ml='0.5em'>
+            <Flex alignItems="center" p={p} px={px} pos="relative" minH="48px" ml='0.5em' mr='-1.7rem' >
                 <Popover trigger="hover" placement="bottom-start">
                     <ElementsHighlighter themeKeys={`colors.${token}${palette ? '.500' : ''}`}>
                         <PopoverTrigger>
@@ -143,7 +143,7 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
                     }
                 >
                     <Input
-                        //  w={palette && scale && scale.length > 0 ? 32 : '100%'}
+                        // w={palette && scale && scale.length > 0 ? 32 : '100%'}
                         width='10.125rem'
                         height='40px'
                         // size='sm'
@@ -165,11 +165,11 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
                 {palette && scale && scale.length > 0 && (
                     <ThemeEditorPalette palette={palette} token={token}
                         // showIndex={showIndex} 
-                        mx={3} />
+                        mx={6} />
                 )}
                 {hasDelete && (
                     <Button
-                        size="xl"
+                        size='xl'
 
                         aria-label="remove color"
                         variant="ghost"

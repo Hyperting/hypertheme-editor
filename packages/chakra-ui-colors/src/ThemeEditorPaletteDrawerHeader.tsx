@@ -55,7 +55,7 @@ export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocu
                     ref={initialFocusRef}
 
                     boxShadow='xs'
-                    bg={colorMode == 'light' ? 'white' : '#2B2B3Bs'}
+                    bgColor={colorMode == 'light' ? 'white' : 'gray.700'}
                 >
                     <BiArrowBack />
                 </Button>

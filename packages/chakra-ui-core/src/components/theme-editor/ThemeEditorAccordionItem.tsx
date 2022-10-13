@@ -108,13 +108,13 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
                             {subtitle && !isExpanded && (
 
                                 <Text flex="1"
-                                    fontSize="15px"
+                                    fontSize="0.938rem"
                                     // fontSize="0.75rem" 
                                     color='#B1B5C3'>
                                     {subtitle}
                                 </Text>
                             )}
-                            <Text flex="1" fontSize="15px" color='#B1B5C3'>
+                            <Text flex="1" fontSize="0.938rem" color='#B1B5C3'>
                                 {title == 'Colors' ? 'Change colors, create new one, generate palette..' : ''}
                             </Text>
 

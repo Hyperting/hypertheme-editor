@@ -154,7 +154,7 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
                         cursor="pointer"
                         px="0.5rem"
                         pos="sticky"
-                        left="0"
+                        ml={2}
                         value={currentValue}
                         onChange={handleValueChange}
                         fontSize="0.875rem"
@@ -175,11 +175,12 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
                         variant="ghost"
                         onClick={handleDelete}
                         px="0.5rem"
-                        opacity={0.8}
+                        opacity='0.7'
                         _hover={{
-                            // color: 'red.500',
-                            opacity: 1,
+                            //color: 'red.500',
+                            opacity: '0.8'
                         }}
+                        _active={{ opacity: '1', border: 'none', boxShadow: 'none' }}
 
                     >
                         <Icon size='lg' as={HiOutlineTrash}

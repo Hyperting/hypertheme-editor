@@ -77,7 +77,7 @@ export const ThemeDownloadButton: FC<Props> = ({
             Accept: 'application/json',
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ theme: { ...newTheme }, language }),
+          body: JSON.stringify({ theme: selectAll ? theme : { ...newTheme }, language }),
         })
 
         if (!result.ok) {

@@ -7,62 +7,62 @@ import { ImFontSize } from 'react-icons/im'
 
 import ColorModeToggle from '../src/components/base/ColorModeToggle'
 import {
-    ThemeEditorButton,
-    ThemeEditorProvider,
-    ThemeEditorRootPanel,
-    ThemeEditorDrawer,
-    ThemeEditor,
+  ThemeEditorButton,
+  ThemeEditorProvider,
+  ThemeEditorRootPanel,
+  ThemeEditorDrawer,
+  ThemeEditor,
 } from '../src'
-import { ThemeEditorColors } from '../../chakra-ui-colors/src/ThemeEditorColors'
+import { ThemeEditorColors } from '../../hypertheme-chakra-ui/src'
 
 export default {
-    title: 'HyperThemeEditor/chakra-ui-core/ThemeEditor',
-    component: ThemeEditor,
-    argTypes: {},
-    disclosureProps: {},
+  title: 'HyperThemeEditor/chakra-ui-core/ThemeEditor',
+  component: ThemeEditor,
+  argTypes: {},
+  disclosureProps: {},
 } as ComponentMeta<typeof ThemeEditor>
 
 export const FreeVersionWithRootPanel = (args) => (
-    <ThemeEditorProvider>
-        <Button colorScheme="blue">Button</Button>
-        <ThemeEditor {...args}>
-            <ThemeEditorButton />
-            <ThemeEditorDrawer>
-                <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
-                    <ThemeEditorColors />
-                </ThemeEditorRootPanel>
-                <ThemeEditorRootPanel icon={ImFontSize} title="Font Sizes">
-                    {/*    <ThemeEditorFontSizes /> */}
-                </ThemeEditorRootPanel>
-            </ThemeEditorDrawer>
-        </ThemeEditor>
-    </ThemeEditorProvider>
+  <ThemeEditorProvider>
+    <Button colorScheme="blue">Button</Button>
+    <ThemeEditor {...args}>
+      <ThemeEditorButton />
+      <ThemeEditorDrawer>
+        <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
+          <ThemeEditorColors />
+        </ThemeEditorRootPanel>
+        <ThemeEditorRootPanel icon={ImFontSize} title="Font Sizes">
+          {/*    <ThemeEditorFontSizes /> */}
+        </ThemeEditorRootPanel>
+      </ThemeEditorDrawer>
+    </ThemeEditor>
+  </ThemeEditorProvider>
 )
 
 export const FreeVersionWithoutRootPanel = (args) => (
-    <ThemeEditorProvider>
-        <Button colorScheme="blue">Button</Button>
-        <ThemeEditor {...args}>
-            <ThemeEditorButton />
-            <ThemeEditorDrawer>
-                {/* <ThemeEditorColors icon={CgColorPicker} title="Colors" />
+  <ThemeEditorProvider>
+    <Button colorScheme="blue">Button</Button>
+    <ThemeEditor {...args}>
+      <ThemeEditorButton />
+      <ThemeEditorDrawer>
+        {/* <ThemeEditorColors icon={CgColorPicker} title="Colors" />
         <ThemeEditorFontSizes icon={ImFontSize} title="Font Sizes" /> */}
-            </ThemeEditorDrawer>
-        </ThemeEditor>
-    </ThemeEditorProvider>
+      </ThemeEditorDrawer>
+    </ThemeEditor>
+  </ThemeEditorProvider>
 )
 
 export const ProVersion = (args) => (
-    <ThemeEditorProvider>
-        <Button colorScheme="blue" letterSpacing="wider">
-            Button
-        </Button>
+  <ThemeEditorProvider>
+    <Button colorScheme="blue" letterSpacing="wider">
+      Button
+    </Button>
 
-        <ThemeEditor {...args}>
-            <ThemeEditorButton />
-            <ThemeEditorButton label="Try it" size="sm" />
-            <ThemeEditorDrawer hideUpgradeToPro hideCredits>
-                {/* <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
+    <ThemeEditor {...args}>
+      <ThemeEditorButton />
+      <ThemeEditorButton label="Try it" size="sm" />
+      <ThemeEditorDrawer hideUpgradeToPro hideCredits>
+        {/* <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
           <ThemeEditorColors />
         </ThemeEditorRootPanel>
 
@@ -81,26 +81,26 @@ export const ProVersion = (args) => (
         <ThemeEditorRootPanel icon={CgSpaceBetween} title="Space">
           <ThemeEditorSpacing />
         </ThemeEditorRootPanel> */}
-            </ThemeEditorDrawer>
-        </ThemeEditor>
-        <ColorModeToggle />
-    </ThemeEditorProvider>
+      </ThemeEditorDrawer>
+    </ThemeEditor>
+    <ColorModeToggle />
+  </ThemeEditorProvider>
 )
 
 export const ControlledThemeEditor = (args) => {
-    const [isOpen, setIsOpen] = useState(true)
-    const onClick = useCallback(() => setIsOpen(!isOpen), [isOpen])
-    const onClose = () => setIsOpen(false)
+  const [isOpen, setIsOpen] = useState(true)
+  const onClick = useCallback(() => setIsOpen(!isOpen), [isOpen])
+  const onClose = () => setIsOpen(false)
 
-    return (
-        <ThemeEditorProvider>
-            <Button colorScheme="blue" letterSpacing="wider" onClick={onClick}>
-                Click Me!
-            </Button>
+  return (
+    <ThemeEditorProvider>
+      <Button colorScheme="blue" letterSpacing="wider" onClick={onClick}>
+        Click Me!
+      </Button>
 
-            <ThemeEditor isOpen={isOpen} onClose={onClose} {...args}>
-                <ThemeEditorDrawer />
-            </ThemeEditor>
-        </ThemeEditorProvider>
-    )
+      <ThemeEditor isOpen={isOpen} onClose={onClose} {...args}>
+        <ThemeEditorDrawer />
+      </ThemeEditor>
+    </ThemeEditorProvider>
+  )
 }

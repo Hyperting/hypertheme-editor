@@ -15,14 +15,11 @@ import {
 } from './ThemeEditorRootPanel'
 import ThemeEditorAccordion from './ThemeEditorAccordion'
 import ThemeEditorAccordionItem from './ThemeEditorAccordionItem'
-import { PopoverComponent } from './Popover/PopoverComponent'
 import { ThemeEditor, ThemeEditorProps as ThemeEditorPropsToExport } from './ThemeEditor'
 import {
   ThemeEditorDrawerFooter,
   ThemeEditorDrawerFooterProps as ThemeEditorDrawerFooterPropsToExport,
 } from './ThemeEditorDrawerFooter'
-
-
 
 export {
   ThemeEditor,
@@ -34,8 +31,6 @@ export {
   ThemeEditorRootPanel,
   ThemeEditorAccordion,
   ThemeEditorAccordionItem,
-PopoverComponent
-
 }
 
 export type ThemeEditorProps = ThemeEditorPropsToExport

@@ -77,7 +77,7 @@ const ColorModeToggle: FC<ColorModeToggleProps> = (props) => {
               _focus={{ border: 'none' }}
             >
               <Icon
-                boxSize="12px"
+                boxSize={size === 'sm' ? '12px' : size === 'md' ? '16px' : '20px'}
                 color={
                   value == 'light'
                     ? colorMode == 'light'

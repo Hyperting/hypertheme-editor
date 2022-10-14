@@ -57,7 +57,7 @@ const ThemeEditorPalette: FC<ThemeEditorPaletteProps> = ({
                     overflow="hidden"
                     w="100%"
                     //borderRadius="6px"
-
+                    mr='-1.5em'
                     p={0}
                     h={10}
                     //border="1px solid"

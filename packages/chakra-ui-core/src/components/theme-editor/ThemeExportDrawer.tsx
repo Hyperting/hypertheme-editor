@@ -53,17 +53,6 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
     space,
     ...baseTheme
   } = theme as any
-  /* const themeLabels = [
-    'Colors',
-    'Font',
-    'Font Sizes',
-    'Font Weight',
-    'Line Height',
-    'Letter Spacing',
-    'Shadows',
-    'Radii',
-    'Space',
-  ] */
   const themeLabels = [
     { title: 'Colors', icon: BiPaint },
     { title: 'Font', icon: BsFonts },
@@ -89,15 +78,13 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
   const getKeys = (obj) => {
     return Object.keys(obj)
   }
+  console.log(' getKeys')
   const { value, setValue, getCheckboxProps } = useCheckboxGroup({
-    defaultValue: [],
+    defaultValue: [...getKeys(editableProperties)],
   })
-  const [selectedLanguage, setSelectedLanguage] = useState('ts')
-  const [selectAll, setSelectAll] = useState(false)
   console.log('theme', theme)
-  const { colorMode } = useColorMode()
-  /* console.log('editable', editableProperties)
-  console.log('selected values', value) */
+  console.log('editable', editableProperties)
+  console.log('values', value)
 
   return (
     <Drawer isOpen={isOpen} onClose={onClose} size="md">
@@ -137,9 +124,11 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
               _focus={{ border: 'none' }}
               _hover={{ textDecoration: 'underline' }}
               onClick={() => {
-                setSelectAll(!selectAll)
-                setValue([])
+                value.length < getKeys(editableProperties).length
+                  ? setValue([...getKeys(editableProperties)])
+                  : setValue([])
               }}
+              on
             >
               Select all
             </Button>
@@ -153,7 +142,6 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
                       value: key,
                       label: themeLabels[index].title,
                       icon: themeLabels[index].icon,
-                      selected: selectAll,
                     })}
                   />
                 </GridItem>
@@ -161,7 +149,7 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
             })}
           </Grid>
         </DrawerBody>
-        <ThemeExportDrawerFooter baseTheme={baseTheme} value={value} selectAll={selectAll} />
+        <ThemeExportDrawerFooter baseTheme={baseTheme} value={value} />
       </DrawerContent>
     </Drawer>
   )

@@ -25,37 +25,23 @@ const GENERATE_THEME_ENDPOINT = `${API_ENDPOINT}/generate-theme`
 type Props = {
   baseTheme: any
   selectedProperties: string[] | number[]
-  selectAll: boolean
   selectedLanguage: string
 } & ButtonProps
 
 export const ThemeDownloadButton: FC<Props> = ({
   baseTheme,
   selectedProperties,
-  selectAll,
   selectedLanguage,
   ...rest
 }) => {
   const [downloading, setDownloading] = useState<boolean>(false)
   let { theme } = useThemeEditor()
-  const [newTheme, setNewTheme] = useState(baseTheme)
+  const [editableTheme, setEditableTheme] = useState(baseTheme)
   const toast = useToast()
 
-  // Prende le keys di un oggetto e le trasforma in un array di stringhe
-  /*   console.log('theme', theme)
-  const arrayP = ['blur', 'colors']
-  const getKeys = (obj) => {
-    return Object.keys(obj)
-  }
-  console.log('obj to array', getKeys(theme)) */
-
-  // Prende un array di stringhe e lo trasforma in un oggetto
   const objectify = (array) => {
     return array.reduce((obj, item) => {
       if (theme !== undefined) {
-        console.log('obj', obj)
-        console.log('themeobj', theme[item])
-        console.log('item', item)
         obj[item] = theme[item]
         return obj
       }
@@ -64,7 +50,7 @@ export const ThemeDownloadButton: FC<Props> = ({
 
   useEffect(() => {
     const selected = objectify(selectedProperties)
-    setNewTheme({ ...selected, ...baseTheme })
+    setEditableTheme({ ...selected, ...baseTheme })
   }, [selectedProperties])
 
   const handleDownload = useCallback(
@@ -77,7 +63,7 @@ export const ThemeDownloadButton: FC<Props> = ({
             Accept: 'application/json',
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ theme: selectAll ? theme : { ...newTheme }, language }),
+          body: JSON.stringify({ theme: { ...editableTheme }, language }),
         })
 
         if (!result.ok) {
@@ -113,7 +99,7 @@ export const ThemeDownloadButton: FC<Props> = ({
         setDownloading(false)
       }
     },
-    [theme, newTheme, toast]
+    [theme, editableTheme, toast]
   )
 
   return (
@@ -123,7 +109,7 @@ export const ThemeDownloadButton: FC<Props> = ({
       variant="solid"
       borderRadius="3xl"
       isLoading={downloading}
-      disabled={downloading}
+      disabled={downloading || selectedProperties.length === 0}
       w="fit-content"
       px={10}
       onClick={handleDownload(selectedLanguage)}

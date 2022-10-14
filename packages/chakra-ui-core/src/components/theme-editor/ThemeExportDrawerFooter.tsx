@@ -19,7 +19,6 @@ import { ThemeDownloadButton } from './ThemeDownloadButton'
 type ThemeExportDrawerFooterProps = {
   baseTheme: any
   value: any
-  selectAll: boolean
 }
 
 export const ThemeExportDrawerFooter: FC<ThemeExportDrawerFooterProps> = (props) => {
@@ -82,7 +81,6 @@ export const ThemeExportDrawerFooter: FC<ThemeExportDrawerFooterProps> = (props)
       <ThemeDownloadButton
         baseTheme={props.baseTheme}
         selectedProperties={props.value as string[] | number[]}
-        selectAll={props.selectAll}
         selectedLanguage={selectedLanguage}
       />
     </DrawerFooter>

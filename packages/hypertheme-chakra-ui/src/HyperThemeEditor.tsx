@@ -16,8 +16,8 @@ export const HyperThemeEditor: FC<HyperThemeEditorProps> = (props) => {
     return (
         <ThemeEditor>
             <ThemeEditorButton {...props} />
-            <ThemeEditorDrawer>
-                <ThemeEditorColors icon={CgColorPicker} title="Colors" />
+            <ThemeEditorDrawer  >
+                <ThemeEditorColors icon={CgColorPicker} title="Colors" subtitle='Change colors, create new one, generate palette..' />
                 <ThemeEditorFontSizes icon={ImFontSize} title="Font Sizes" />
             </ThemeEditorDrawer>
         </ThemeEditor>

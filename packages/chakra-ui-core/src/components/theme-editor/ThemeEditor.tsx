@@ -3,7 +3,7 @@ import { ThemeProvider, useDisclosure, UseDisclosureProps } from '@chakra-ui/rea
 import { ThemeEditorDrawerProps } from './ThemeEditorDrawer'
 import { ThemeEditorButtonProps } from './ThemeEditorButton'
 import { theme } from '@hypertheme-editor/chakra-ui-theme'
-import { RecoilRoot } from 'recoil'
+
 
 
 type ThemeEditorChild = React.ReactElement<
@@ -28,6 +28,7 @@ export const ThemeEditor: FC<ThemeEditorProps> = ({ children, ...disclosureProps
                     isOpen,
                     onOpen,
                     onClose,
+
                 })
             })}
         </ThemeProvider>

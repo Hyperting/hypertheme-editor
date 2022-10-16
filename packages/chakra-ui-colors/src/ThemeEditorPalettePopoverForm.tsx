@@ -21,6 +21,7 @@ import {
     PopoverFooter,
     useColorMode,
     useColorModeValue,
+    Box,
 } from '@chakra-ui/react'
 import {
     setThemeColorsOfPalette,
@@ -31,11 +32,11 @@ import ThemeEditorPaletteColorItem from './ThemeEditorPaletteColorItem'
 import { generatePalette } from './generateColorPalette'
 
 
-import { FaPlus } from 'react-icons/fa'
 
 
 type Props = {
     buttonProps?: ButtonProps
+    triggerComponent?: React.ReactElement
 }
 
 const initialFormValues = {
@@ -57,7 +58,7 @@ const TextInput: FC<InputProps & { label?: string; ref: any }> = React.forwardRe
 )
 
 export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
-    const { buttonProps } = props
+    const { buttonProps, triggerComponent } = props
 
     const { onOpen, onClose, isOpen } = useDisclosure()
     const [tempPalette, setTempPalette] = useState<Record<number, string> | undefined>(undefined)
@@ -145,33 +146,18 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
             trigger="click"
 
 
+
         >
-            <PopoverTrigger>
+            <PopoverTrigger >
+                <Box onClick={(e) => e.stopPropagation()}>
 
-                <Button
-                    width='72px'
-                    height='32px'
-                    boxShadow='md'
-                    rounded='md'
-                    bgColor='bgColor'
-                    color='#6FCF97'
-                    alignSelf="flex-start"
-                    //px="2.5rem"
-                    //mt="0.75rem"
-                    p='16px 8px 16px 8px'
-                    mt='1.9rem'
-                    ml='0.5em'
-                    mb='1em'
-                    isFullWidth
-                    {...buttonProps}
+                    {triggerComponent && <>{triggerComponent} </>}
 
-                >
-                    <Icon as={FaPlus} mr="0.25rem" /> Add
 
-                </Button>
+                </Box>
             </PopoverTrigger>
             <PopoverContent minW="380px" zIndex='10000'
-            >
+                onClick={(e) => e.stopPropagation()}>
                 {/* <PopoverArrow /> */}
                 <PopoverCloseButton />
                 <PopoverHeader fontWeight="bold" textAlign="left" >
@@ -209,9 +195,6 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
                             value={formState?.name}
                             onChange={handleInputChange}
                             ref={initialFocusRef}
-
-                        // border='none'
-
                         />
 
                         <Flex alignItems="center">

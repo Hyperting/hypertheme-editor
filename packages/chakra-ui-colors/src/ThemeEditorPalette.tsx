@@ -22,6 +22,7 @@ export type ThemeEditorPaletteProps = {
     token: string
     showIndex?: boolean
     disableEditDrawer?: boolean
+
 } & Omit<SimpleGridProps, 'onChange'>
 
 const ThemeEditorPalette: FC<ThemeEditorPaletteProps> = ({

@@ -175,16 +175,16 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
                         variant="ghost"
                         onClick={handleDelete}
                         px="0.5rem"
-                        opacity='0.7'
+                        opacity='0.8'
                         _hover={{
                             //color: 'red.500',
-                            opacity: '0.8'
+                            opacity: '1'
                         }}
-                        _active={{ opacity: '1', border: 'none', boxShadow: 'none' }}
+                        _active={{ border: 'none', boxShadow: 'none' }}
 
                     >
                         <Icon size='lg' as={HiOutlineTrash}
-                            color={colorMode == 'light' ? 'gray' : 'white'}
+                            color={colorMode == 'light' ? 'gray.400' : 'white'}
 
                         />
                     </Button>

@@ -6,6 +6,7 @@ export type ThemeEditorRootPanelProps = {
     icon: IconType
     title: string
 
+
 } & ThemeEditorAccordionItemProps
 
 export const ThemeEditorRootPanel: FC<ThemeEditorRootPanelProps> = () => {

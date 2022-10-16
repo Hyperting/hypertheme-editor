@@ -21,7 +21,7 @@ import { useIsBrowserCompatible } from '../../utils/isBrowserCompatible'
 import { ThemeEditorRootPanel } from './ThemeEditorRootPanel'
 import { DRAWER_EXPANDED_INDEX_LOCAL_STORAGE_KEY } from '../../constants'
 import { useAccordionState } from '../../hooks/useAccordionState'
-import { RecoilRoot } from 'recoil'
+
 
 const mobileReadyItems = ['Colors']
 
@@ -49,6 +49,7 @@ export const ThemeEditorDrawer: FC<ThemeEditorDrawerProps> = ({
     hideCredits,
     onClose,
     isOpen,
+
     children,
     headerComponent = <ThemeEditorDrawerHeader />,
     footerComponent = <ThemeEditorDrawerFooter />,
@@ -105,6 +106,7 @@ export const ThemeEditorDrawer: FC<ThemeEditorDrawerProps> = ({
                         borderRadius="md"
                         index={defaultIndex}
                         onChange={setDefaultIndex}
+
                     >
                         {React.Children.map(React.Children.toArray(children), (child, index) => {
                             const { icon, title, subtitle, children, ...panelProps } = (child as ReactElement).props
@@ -117,6 +119,8 @@ export const ThemeEditorDrawer: FC<ThemeEditorDrawerProps> = ({
                                     fontSize="lg"
                                     unmountOnExit={true}
                                     isDisabled={isMobile && mobileReadyItems.indexOf(title) == -1}
+
+
                                 >
                                     {(child as ReactElement).type === ThemeEditorRootPanel
                                         ? children

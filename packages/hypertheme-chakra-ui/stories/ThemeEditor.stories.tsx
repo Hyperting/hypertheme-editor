@@ -50,7 +50,7 @@ export const WithRootPanel = (args: any) => (
         <ThemeEditor {...args}>
             <ThemeEditorButton />
             <ThemeEditorDrawer>
-                <ThemeEditorRootPanel icon={CgColorPicker} title="Colors" >
+                <ThemeEditorRootPanel icon={CgColorPicker} title="Colors" subtitle='Change colors, create new one, generate palette..'>
                     <ThemeEditorColors />
                 </ThemeEditorRootPanel>
                 <ThemeEditorRootPanel icon={ImFontSize} title="Font Sizes">
@@ -67,7 +67,7 @@ export const WithoutRootPanel = (args: any) => (
         <ThemeEditor {...args}>
             <ThemeEditorButton />
             <ThemeEditorDrawer>
-                <ThemeEditorColors icon={CgColorPicker} title="Colors" />
+                <ThemeEditorColors icon={CgColorPicker} title="Colors" subtitle='Change colors, create new one, generate palette..' />
                 <ThemeEditorFontSizes icon={ImFontSize} title="Font Sizes" />
             </ThemeEditorDrawer>
         </ThemeEditor>

@@ -119,6 +119,8 @@ const ThemeEditorPaletteDrawer: FC<ThemeEditorPaletteDrawerProps> = (props) => {
                                     bgColor={bgColor2}
                                     overflow="visible"
 
+
+
                                 >
                                     <ThemeEditorColorItem
                                         width='100%'
@@ -126,7 +128,6 @@ const ThemeEditorPaletteDrawer: FC<ThemeEditorPaletteDrawerProps> = (props) => {
                                         flexDirection='row'
                                         justifyContent='space-between'
                                         alignItems='center'
-
                                         title={`${token.toLowerCase()}.${paletteIndex}`}
                                         token={token}
                                         colorIndex={paletteIndex as number}

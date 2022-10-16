@@ -175,9 +175,7 @@ const ThemeEditorColorItem: FC<ThemeEditorColorItemProps> = ({
                 <Icon as={BiCopy} color={colorMode == 'light' ? 'gray' : 'white'} opacity='0.6' _hover={{ opacity: '0.8' }} _active={{ opacity: '1' }}
                     onClick={copyToClipBoard}></Icon>
 
-                {/* <CopyToClipboard text={currentValue} onCopy={() => setCopied(true)}>
-                        <Icon as={BiCopy} color='gray.400' _hover={{ color: 'green.500' }} _active={{ color: 'green.700' }}></Icon>
-                    </CopyToClipboard> */}
+
 
 
             </Flex>

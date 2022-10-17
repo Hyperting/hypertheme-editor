@@ -62,7 +62,8 @@ export const ThemeEditorAccordionItem: FC<ThemeEditorAccordionItemProps> = (prop
                         boxShadow={isExpanded ? 'base' : 'none'}
                         bgColor={isExpanded && colorMode == 'dark' ? '#2B2B3B' : ''}
                         color={colorMode == 'light' ? 'gray.700' : 'white'}
-                        p={{ base: 3, sm: 4 }}
+                        p={{ base: 2, sm: 3 }}
+                        //p='16px'
                         borderRadius="12px"
                         _hover={{ bgColor: hoverBgColor }}
                         height={customHeight}

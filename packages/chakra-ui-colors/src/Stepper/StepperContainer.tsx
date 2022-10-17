@@ -23,7 +23,7 @@ export const StepperContainer: FC<Props> = (props) => {
             marginRight='1.2rem'
             paddingLeft='0.3rem'
             paddingBottom='0'
-            _before={{ content: `""`, position: "absolute", right: "100%", mt: '-0.5em', height: '112.15%', width: '2px', backgroundColor: colorMode }}
+            _before={{ content: `""`, position: "absolute", right: "100%", mt: '-0.5em', height: '111%', width: '2px', backgroundColor: colorMode }}
             _after={{ content: `""`, position: "absolute", left: "calc(-1.9px)", top: "1.3em", width: "16px", height: "6px", borderLeft: `solid 2px ${colorMode}`, borderBottom: `solid 2px ${colorMode}`, borderRadius: "0 0 0 6px", borderEndColor: ` ${colorMode}`, borderLeftColor: ` ${colorMode}` }}
             _last={{ _before: { height: "1.8em", mt: '-0.5em' } }}
             _first={{ _before: { mt: '-0.8em', height: '130%', _after: { top: '2.5em' } } }}

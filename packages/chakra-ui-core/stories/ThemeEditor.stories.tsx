@@ -2,10 +2,9 @@
 import React, { useCallback, useState } from 'react'
 import { ComponentMeta } from '@storybook/react'
 import { Button } from '@chakra-ui/react'
-import { CgColorPicker, CgEditShadows, CgSpaceBetween } from 'react-icons/cg'
+import { CgColorPicker } from 'react-icons/cg'
 import { ImFontSize } from 'react-icons/im'
-import { BiText } from 'react-icons/bi'
-import { MdRoundedCorner } from 'react-icons/md'
+
 import ColorModeToggle from '../src/components/base/ColorModeToggle'
 import {
   ThemeEditorButton,
@@ -14,6 +13,7 @@ import {
   ThemeEditorDrawer,
   ThemeEditor,
 } from '../src'
+import { ThemeEditorColors } from '../../hypertheme-chakra-ui/src'
 
 export default {
   title: 'HyperThemeEditor/chakra-ui-core/ThemeEditor',
@@ -28,12 +28,12 @@ export const FreeVersionWithRootPanel = (args) => (
     <ThemeEditor {...args}>
       <ThemeEditorButton />
       <ThemeEditorDrawer>
-        {/* <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
+        <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
           <ThemeEditorColors />
         </ThemeEditorRootPanel>
         <ThemeEditorRootPanel icon={ImFontSize} title="Font Sizes">
-          <ThemeEditorFontSizes />
-        </ThemeEditorRootPanel> */}
+          {/*    <ThemeEditorFontSizes /> */}
+        </ThemeEditorRootPanel>
       </ThemeEditorDrawer>
     </ThemeEditor>
   </ThemeEditorProvider>

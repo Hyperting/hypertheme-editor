@@ -2052,6 +2052,20 @@
   dependencies:
     "@chakra-ui/utils" "1.8.2"
 
+"@chakra-ui/icon@3.0.10":
+  version "3.0.10"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/icon/-/icon-3.0.10.tgz#1a11b5edb42a8af7aa5b6dec2bf2c6c4df1869fc"
+  integrity sha512-utO569d9bptEraJrEhuImfNzQ8v+a8PsQh8kTsodCzg8B16R3t5TTuoqeJqS6Nq16Vq6w87QbX3/4A73CNK5fw==
+  dependencies:
+    "@chakra-ui/shared-utils" "2.0.1"
+
+"@chakra-ui/icons@^2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/icons/-/icons-2.0.10.tgz#61aeb44c913c10e7ff77addc798494e50d66c760"
+  integrity sha512-hxMspvysOay2NsJyadM611F/Y4vVzJU/YkXTxsyBjm6v/DbENhpVmPnUf+kwwyl7dINNb9iOF+kuGxnuIEO1Tw==
+  dependencies:
+    "@chakra-ui/icon" "3.0.10"
+
 "@chakra-ui/image@1.0.20":
   version "1.0.20"
   resolved "https://registry.yarnpkg.com/@chakra-ui/image/-/image-1.0.20.tgz#18057ca248f17c813ad60812ac4c7965a1de1fda"
@@ -2276,6 +2290,11 @@
   dependencies:
     "@chakra-ui/form-control" "1.4.1"
     "@chakra-ui/utils" "1.8.2"
+
+"@chakra-ui/shared-utils@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/shared-utils/-/shared-utils-2.0.1.tgz#41e314e42c96039e8ffb265e73145cf755813ab4"
+  integrity sha512-NXDBl/u4wrSNp0ON5R3r3evkRurrAz2yuO7neooaG+O5HEenVouGqm4CsXd6lUAPmjwiGzA0LQFNCt0Hj92dXg==
 
 "@chakra-ui/skeleton@1.1.18":
   version "1.1.18"
@@ -6688,6 +6707,11 @@ boolify@^1.0.0:
   resolved "https://registry.yarnpkg.com/boolify/-/boolify-1.0.1.tgz#b5c09e17cacd113d11b7bb3ed384cc012994d86b"
   integrity sha1-tcCeF8rNET0Rt7s+04TMASmU2Gs=
 
+bootstrap@^5.2.2:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.2.2.tgz#834e053eed584a65e244d8aa112a6959f56e27a0"
+  integrity sha512-dEtzMTV71n6Fhmbg4fYJzQsw1N29hJKO1js5ackCgIpDcGid2ETMGC6zwSYw09v05Y+oRdQ9loC54zB1La3hHQ==
+
 boxen@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/boxen/-/boxen-4.2.0.tgz#e411b62357d6d6d36587c8ac3d5d974daa070e64"
@@ -7149,6 +7173,11 @@ ccount@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ccount/-/ccount-1.1.0.tgz#246687debb6014735131be8abab2d93898f8d043"
   integrity sha512-vlNK021QdI7PNeiUh/lKkC/mNHHfV0m/Ad5JoI0TYtlBnJAslM/JIkm/tGC88bkLIwO6OQ5uV6ztS6kVAtCDlg==
+
+chakra-ui-steps@^1.7.4:
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/chakra-ui-steps/-/chakra-ui-steps-1.7.4.tgz#9174c87b66f530f83ad7ab2568e5dd450b1e5576"
+  integrity sha512-EAHW04azBL0Vz0vR9uMJ92qTKeOc86gbHGXoeRd8wAKcTyQOf7vK5eyS4BUWq8Bflb2ZXVAdLhJtVumNerEuzg==
 
 chalk@2.4.2, chalk@^2.0.0, chalk@^2.1.0, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"

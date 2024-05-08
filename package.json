@@ -77,7 +77,6 @@
     "copy-readme": "cpy ./README.md ./packages/hypertheme-chakra-ui",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "bootstrap": "lerna bootstrap --use-workspaces",
     "clean": "lerna run clean",
     "build": "lerna run build --include-dependencies --stream && npm run copy-readme",
     "release": "release-it",

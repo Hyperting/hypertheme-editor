@@ -1,6 +1,5 @@
-import React, { FC, useCallback, useMemo, useState, useEffect } from 'react'
+import React, { FC, useCallback, useMemo, useState } from 'react'
 import {
-  Box,
   Flex,
   Tag,
   Text,
@@ -13,6 +12,7 @@ import {
 } from '@chakra-ui/react'
 import { useDebouncyEffect } from 'use-debouncy'
 import { ElementsHighlighter } from '@hypertheme-editor/chakra-ui-core'
+import { ThemeEditorFontSizeSlider } from './ThemeEditorFontSizeSlider'
 
 export type ThemeEditorFontSizesItemProps = {
   size: string
@@ -27,46 +27,46 @@ const ThemeEditorFontSizesItem: FC<ThemeEditorFontSizesItemProps> = (props) => {
   const [currentValue, setCurrentValue] = useState<string>(value)
 
   const cssValue = useMemo(() => {
-    return window && currentValue
-      ? (window as any).CSSStyleValue.parse('font-size', currentValue)
-      : undefined
+    if (!window) {
+      return (window as any).CSSStyleValue.parse('font-size', '0rem')
+    } else if (!currentValue?.length) {
+      return (window as any).CSSStyleValue.parse('font-size', '0rem')
+    } else {
+      return (window as any).CSSStyleValue.parse('font-size', currentValue)
+    }
   }, [currentValue])
 
-  const handleSliderChange = useCallback(
-    (newValue: number) => {
-      setCurrentValue(`${newValue}${cssValue.unit}`)
-    },
-    [cssValue.unit]
-  )
-
-  const handleInputChange = useCallback<React.ChangeEventHandler<HTMLInputElement>>(
+  const handleInputChange = useCallback(
     (event) => {
-      setCurrentValue(`${event.target.value}${cssValue.unit}`)
+      setCurrentValue(`${!event?.target?.value ? 0 : event.target.value}${cssValue?.unit}`)
     },
-    [cssValue.unit]
+    [cssValue?.unit, setCurrentValue]
   )
 
   const handleUnitChange = useCallback<React.ChangeEventHandler<HTMLSelectElement>>(
     (event) => {
-      if (cssValue.unit === 'px' && (event.target.value === 'em' || event.target.value === 'rem')) {
-        setCurrentValue(`${cssValue.value / 16}${event.target.value}`)
-      } else if (
-        (cssValue.unit === 'em' || cssValue.unit === 'rem') &&
-        event.target.value === 'px'
-      ) {
-        setCurrentValue(`${(cssValue.value * 16).toFixed(0)}${event.target.value}`)
+      if (!cssValue?.unit) {
+        setCurrentValue(`${cssValue?.value || 0}rem`)
       } else {
-        setCurrentValue(`${cssValue.value}${event.target.value}`)
+        if (
+          cssValue?.unit === 'px' &&
+          (event.target.value === 'em' || event.target.value === 'rem')
+        ) {
+          setCurrentValue(`${cssValue?.value / 16}${event.target.value}`)
+        } else if (
+          (cssValue?.unit === 'em' || cssValue?.unit === 'rem') &&
+          event.target.value === 'px'
+        ) {
+          setCurrentValue(`${(cssValue?.value * 16).toFixed(0)}${event.target.value}`)
+        } else {
+          setCurrentValue(`${cssValue?.value}${event.target.value}`)
+        }
       }
     },
-    [cssValue.unit, cssValue.value]
+    [cssValue?.unit, cssValue?.value]
   )
 
-  useDebouncyEffect(() => onChange({ size, value: currentValue }), 500, [currentValue])
-
-  useEffect(() => {
-    setCurrentValue(value)
-  }, [value])
+  useDebouncyEffect(() => onChange({ size, value: cssValue?.value }), 500, [cssValue])
 
   return (
     <ElementsHighlighter themeKeys={`fontSizes.${size}`} fontSize="1rem">
@@ -74,20 +74,7 @@ const ThemeEditorFontSizesItem: FC<ThemeEditorFontSizesItemProps> = (props) => {
         <Tag alignItems="center" minW="min-content" fontSize="0.75rem" px="0.5rem">
           {size}
         </Tag>
-        <Slider
-          aria-label="slider-ex-1"
-          min={0}
-          max={cssValue.unit === 'px' ? 100 : 10}
-          step={cssValue.unit === 'px' ? 1 : 0.001}
-          mx="1rem"
-          value={cssValue.value}
-          onChange={handleSliderChange}
-        >
-          <SliderTrack>
-            <SliderFilledTrack bg="primary.500" />
-          </SliderTrack>
-          <SliderThumb />
-        </Slider>
+        <ThemeEditorFontSizeSlider cssValue={cssValue} setCurrentValue={setCurrentValue} />
         <Flex alignItems="center">
           <Input
             borderRadius="6px"
@@ -96,15 +83,16 @@ const ThemeEditorFontSizesItem: FC<ThemeEditorFontSizesItemProps> = (props) => {
             fontSize="0.875rem"
             w="70px"
             type="number"
-            value={cssValue.value}
-            onChange={handleInputChange}
+            value={cssValue?.value}
+            onChange={(e) => handleInputChange(e)}
+            onWheel={(e) => e.currentTarget.blur()}
           />
           <Select
             size="sm"
             w="70px"
             ml="0.5rem"
             borderRadius="6px"
-            value={cssValue.unit}
+            value={cssValue?.unit ? cssValue?.unit : 'rem'}
             onChange={handleUnitChange}
             fontSize="0.875rem"
           >

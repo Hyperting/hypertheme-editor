@@ -1,6 +1,5 @@
-import React, { FC } from 'react'
+import React, { FC, useCallback } from 'react'
 import {
-  BoxProps,
   useColorModeValue,
   Center,
   Text,
@@ -9,7 +8,7 @@ import {
   Tooltip,
   SimpleGridProps,
 } from '@chakra-ui/react'
-import { extend } from 'colord'
+import { extend, colord } from 'colord'
 import namesPlugin from 'colord/plugins/names'
 import ThemeEditorPaletteDrawer from './ThemeEditorPaletteDrawer'
 
@@ -38,6 +37,28 @@ const ThemeEditorPalette: FC<ThemeEditorPaletteProps> = ({
   const { onOpen, onClose, isOpen } = useDisclosure()
   const shadow = useColorModeValue('surface', 'surfaceDark')
   const borderColor = useColorModeValue('blackAlpha.100', 'whiteAlpha.100')
+
+  const complemetaryFontColor = useCallback(
+    (scale: number, key: number) => {
+      const shade = palette?.[scale]
+
+      if (!shade) {
+        return token.indexOf('white') >= 0 ? 'gray.500' : palette[scale[9 - key]]
+      }
+
+      const colordShade = colord(shade)
+      const brightness = colordShade.brightness()
+
+      if (brightness > 0.71) {
+        const darkShade = colordShade.invert().darken(2)
+        return darkShade.toHex()
+      } else {
+        const lightShade = colordShade.invert().lighten(1)
+        return lightShade.toHex()
+      }
+    },
+    [token, palette, scale]
+  )
 
   return (
     <>
@@ -74,7 +95,7 @@ const ThemeEditorPalette: FC<ThemeEditorPaletteProps> = ({
             >
               {showIndex && (
                 <Text
-                  color={token.indexOf('white') >= 0 ? 'gray.500' : palette[scale[9 - key]]}
+                  color={complemetaryFontColor(Number(paletteIndex), key)}
                   size="xs"
                   d={{ base: 'none', md: 'inline' }}
                 >

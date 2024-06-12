@@ -7,6 +7,7 @@ import {
   DrawerContent,
   DrawerProps,
   useColorModeValue,
+  Text,
 } from '@chakra-ui/react'
 import { IconType } from 'react-icons'
 import ThemeEditorAccordion from './ThemeEditorAccordion'
@@ -134,7 +135,7 @@ export const ThemeEditorDrawer: FC<ThemeEditorDrawerProps> = ({
           React.cloneElement<ThemeEditorDrawerFooterProps>(
             footerComponent as React.ReactElement<ThemeEditorDrawerFooterProps>,
             {
-              onClose,
+              // onClose,
               isMobile,
             }
           )}

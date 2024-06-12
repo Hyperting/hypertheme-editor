@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useState } from 'react'
+import React, { FC, useCallback, useEffect, useState } from 'react'
 import {
   Button,
   ButtonProps,
@@ -10,20 +10,48 @@ import {
   Box,
 } from '@chakra-ui/react'
 import { FaChevronDown, FaDownload } from 'react-icons/fa'
+import { HiArrowDown } from 'react-icons/hi'
+
 import { SiJavascript, SiTypescript } from 'react-icons/si'
 import BaseMenu from '../base/BaseMenu'
 import BaseMenuItem from '../base/BaseMenuItem'
 import { API_ENDPOINT } from '../../constants'
-import { useThemeEditor } from '../../hooks/useThemeEditor'
+import { Theme, useThemeEditor } from '../../hooks/useThemeEditor'
+import { transform } from '@babel/core'
+import { BsArrowRight } from 'react-icons/bs'
 
 const GENERATE_THEME_ENDPOINT = `${API_ENDPOINT}/generate-theme`
 
-type Props = {} & ButtonProps
+type Props = {
+  baseTheme: any
+  selectedProperties: string[] | number[]
+  selectedLanguage: string
+} & ButtonProps
 
-export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
+export const ThemeDownloadButton: FC<Props> = ({
+  baseTheme,
+  selectedProperties,
+  selectedLanguage,
+  ...rest
+}) => {
   const [downloading, setDownloading] = useState<boolean>(false)
-  const { theme } = useThemeEditor()
+  let { theme } = useThemeEditor()
+  const [editableTheme, setEditableTheme] = useState(baseTheme)
   const toast = useToast()
+
+  const objectify = (array) => {
+    return array.reduce((obj, item) => {
+      if (theme !== undefined) {
+        obj[item] = theme[item]
+        return obj
+      }
+    }, {})
+  }
+
+  useEffect(() => {
+    const selected = objectify(selectedProperties)
+    setEditableTheme({ ...selected, ...baseTheme })
+  }, [selectedProperties])
 
   const handleDownload = useCallback(
     (language: string) => async () => {
@@ -35,7 +63,7 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
             Accept: 'application/json',
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ theme, language }),
+          body: JSON.stringify({ theme: { ...editableTheme }, language }),
         })
 
         if (!result.ok) {
@@ -49,7 +77,6 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
           })
           return
         }
-
         const resultBlob = await result.blob()
         const url = window.URL.createObjectURL(resultBlob)
         const a = document.createElement('a')
@@ -59,6 +86,7 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
         a.click()
         a.remove()
       } catch (error) {
+        console.log('wee error', error)
         // show an alert here
         // toast({
         //   title: 'Error during the download.',
@@ -71,10 +99,29 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
         setDownloading(false)
       }
     },
-    [theme, toast]
+    [theme, editableTheme, toast]
   )
 
   return (
+    <Button
+      size="md"
+      colorScheme="primary"
+      variant="solid"
+      borderRadius="3xl"
+      isLoading={downloading}
+      disabled={downloading || selectedProperties.length === 0}
+      w="fit-content"
+      px={10}
+      onClick={handleDownload(selectedLanguage)}
+      {...rest}
+    >
+      Export <Icon boxSize={4} ml={2} as={BsArrowRight} />
+    </Button>
+  )
+}
+
+/* 
+ return (
     <BaseMenu
       hasPortal={false}
       offset={[0, 10] as any}
@@ -103,22 +150,4 @@ export const ThemeDownloadButton: FC<Props> = ({ ...rest }) => {
       </BaseMenuItem>
     </BaseMenu>
   )
-}
-
-const ThemeDownloadMenuButton = ({ downloading = false, ...rest }) => {
-  return (
-    <Button
-      as={Box}
-      rightIcon={<FaChevronDown />}
-      size="md"
-      colorScheme="primary"
-      variant="solid"
-      isLoading={downloading}
-      disabled={downloading}
-      w="full"
-      {...rest}
-    >
-      <Icon as={FaDownload} mr="0.5rem" /> Export
-    </Button>
-  )
-}
+*/

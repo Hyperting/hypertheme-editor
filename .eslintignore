@@ -1,7 +1,0 @@
-node_modules
-.next
-build
-webpack.config.js
-rollup.config.js
-build/
-src/core/graphql.ts

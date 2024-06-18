@@ -80,7 +80,7 @@
     "clean": "lerna run clean",
     "build": "lerna run build --include-dependencies --stream && npm run copy-readme",
     "release": "release-it",
-    "release-rc": "release-it --preRelease=rc",
+    "release-rc": "dotenv -- release-it --preRelease=rc",
     "release-dev": "dotenv -- release-it --preRelease=dev",
     "deploy": "yarn build && yarn release",
     "deploy-rc": "yarn build && yarn release-rc",
@@ -119,5 +119,5 @@
       "tokenRef": "NODE_ENV=GITHUB_AUTH"
     }
   },
-  "version": "0.2.0-rc.2"
+  "version": "0.2.0-rc.3"
 }

@@ -81,7 +81,7 @@
     "build": "lerna run build --include-dependencies --stream && npm run copy-readme",
     "release": "release-it",
     "release-rc": "release-it --preRelease=rc",
-    "release-dev": "release-it --preRelease=dev",
+    "release-dev": "dotenv -- release-it --preRelease=dev",
     "deploy": "yarn build && yarn release",
     "deploy-rc": "yarn build && yarn release-rc",
     "deploy-dev": "yarn build && yarn release-dev",
@@ -91,14 +91,15 @@
     "test": "yarn test:unit"
   },
   "devDependencies": {
-    "lerna": "^5.5.2"
+    "lerna": "^5.5.2",
+    "dotenv-cli": "^4.0.0"
   },
   "release-it": {
     "plugins": {
       "release-it-yarn-workspaces": true,
       "release-it-lerna-changelog": {
         "infile": "CHANGELOG.md",
-        "launchEditor": true
+        "launchEditor": false
       }
     },
     "npm": {
@@ -108,12 +109,14 @@
       "requireCleanWorkingDir": false,
       "requireBranch": [
         "main",
-        "support/0.1.x"
+        "support/0.1.x",
+        "release/0.2.0"
       ],
       "push": false
     },
     "github": {
-      "release": true
+      "release": true,
+      "tokenRef": "NODE_ENV=GITHUB_AUTH"
     }
   },
   "version": "0.2.0-dev.2"

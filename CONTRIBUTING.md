@@ -20,10 +20,10 @@ git clone https://github.com/<your_github_username>/hypertheme-editor.git
 cd hypertheme-editor
 ```
 
-3. Bootstrap all dependencies and cross dependencies by running:
+3. Install all dependencies by running:
 
 ```bash
-yarn bootstrap
+yarn
 ```
 
 4. Build the project:
@@ -41,8 +41,6 @@ yarn storybook
 ## Project Commands
 
 Here's a list of the commands provided by this project:
-
-`yarn bootstrap`: install all the cross dependencies
 
 `yarn build`: build all the packages
 

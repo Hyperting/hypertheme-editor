@@ -33,10 +33,14 @@ export const themeEditorState = atom<ThemeEditorState>({
   default: { initialTheme: undefined, currentTheme: undefined, undoable: [], undone: [] },
   effects_UNSTABLE: [
     ({ onSet, setSelf }) => {
+      console.log('onSet', onSet, 'setSelf', setSelf)
       onSet((newValue) => {
+        console.log('newValue', newValue)
         if (newValue instanceof DefaultValue) {
           //
+          console.log('newValue in if', newValue)
         } else {
+          console.log('else')
           localStorage.setItem(
             THEME_STATE_LOCAL_STORAGE_KEY,
             JSON.stringify({
@@ -75,7 +79,7 @@ export interface useThemeEditorReturn {
    * set the current theme
    * @param theme - the new theme that will be setted
    */
-  setTheme: (theme: Theme) => void
+  setTheme: (theme: any) => void
   canUndo: boolean
   undo: () => void
   canRedo: boolean
@@ -93,7 +97,7 @@ export const useThemeEditor = (): useThemeEditorReturn => {
   )
 
   const setTheme = useCallback(
-    (theme: Theme) => {
+    (theme: any) => {
       let newPatches: Patch[] = []
       let newInversePatches: Patch[] = []
 

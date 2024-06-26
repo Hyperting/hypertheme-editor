@@ -1,29 +1,29 @@
 {
-    "name": "@hypertheme-editor/chakra-ui-theme",
-    "version": "0.2.1",
-    "description": "",
-    "main": "lib/index.js",
-    "module": "lib/index.esm.js",
-    "types": "lib/index.d.ts",
-    "files": [
-        "lib"
-    ],
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "rollup -c",
-        "start": "rollup -c -w"
-    },
-    "author": "marco",
-    "license": "ISC",
-    "peerDependencies": {
-        "@chakra-ui/react": ">= 1.0.0",
-        "framer-motion": ">= 4",
-        "react": ">=16.8.6",
-        "react-dom": ">=16.8.6"
-    },
-    "dependencies": {},
-    "publishConfig": {
-        "access": "public",
-        "registry": "https://registry.npmjs.org/"
-    }
+  "name": "@hypertheme-editor/chakra-ui-theme",
+  "version": "0.2.2-dev",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "author": "marco",
+  "license": "ISC",
+  "peerDependencies": {
+    "@chakra-ui/react": ">= 1.0.0",
+    "framer-motion": ">= 4",
+    "react": ">=16.8.6",
+    "react-dom": ">=16.8.6"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public",
+    "registry": "http://localhost:4873/"
+  }
 }

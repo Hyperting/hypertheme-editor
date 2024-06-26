@@ -1,0 +1,2416 @@
+{
+	"name": "@hypertheme-editor/chakra-ui-colors",
+	"versions": {
+		"0.1.0-rc.3": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.0-rc.3",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.0-rc.3",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "f79d3f7dcce81b455059a43efcac8c0131093fe1",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.3.tgz",
+				"fileCount": 15,
+				"integrity": "sha512-IAhi9qSbW53QfIvRadlk1FepNZrtaHoGYJCc6DiHjkbMdeWv71BbliUlSnEfDcb5YwzBNJM/t9dO5bzTAJxghw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQD9iGGVoHhniXvBCKwnW/BZzOnKwuvVu+PsjyNLgQT71QIga6wDYecrjiJwFJhRXNAhmYA5bKoiPfufqoXUDweWAhI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 7119188,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQHgeCRA9TVsSAnZWagAAXwcQAJZks0AroaVxKEc1q8dS\nU6QyhpGWr1z7LKSsSa1shcPujWUk6Zhc1M3OoCUq0Gy9ML5v44stmrIkDyVC\nEhEZpwEM8BFBy8ZcbnUXdwAZyaKNnW9cvkLfCj57gvmIUrUnyabu2IZ1JdlR\nHVCnuRDk8i2QuhcDAS4wJUsS95LoepFaYoIBbKEF1QAJQViadZULznNNGyiR\nKjvSP142gooOe3NwENxXljRr1GfIjh1DEKMULVtZ1bqyM+zKWNr2u3V73HqA\nQmToIEBy5OBJ8DnUtdxml7cGzHdIUu5EcAEFB9Rt3q7oYd20lJrzKtHvvvwN\nyGMZrPFqrnPvDcneSSad/w5ZaPSjMU22PwOzWzMloj32QJ0DmmUGnnniBJJU\n3kl9XH3mbKuENuzF3nAMT6n8Z0t7amGOsxwEDjTu72bT/BvNP2uPrCNSfw18\nE6z+i04mmFzs/SKQTcNtQdVM6b2nw1OE4VqIDgaGxbaaCkjHFTL8EQUmilEo\n4cF2/B6xdwUTONynbloqrsThL2XILWiWCVFhVU03UIEwR4SlpVKII61so63e\nOkjZ5Iw3OqjAbSqiKHCUtPHn//s4rUsQWvBdNHRId/VaoHmmLwTJ3xT/1o9Z\nKL1xlQeN8gMnetKG2O5Bf0L1Wa543PAoi4RttSD7MH3gQRadFCllXm08bbSK\n4Rs4\r\n=Nfex\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.0-rc.3_1631615006533_0.9903939507513411",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.4": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.0-rc.4",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.0-rc.4",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "3af6fd24d17b4bff8865aaacd9f68dc39f309c03",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.4.tgz",
+				"fileCount": 15,
+				"integrity": "sha512-hEYdgltPJeqrPPWh8kYEqiI8stjbT+RiAUz+TAfyE8MPVvmBFspSB1XDR3kQIsyV1ZUIqyXS5MYdXj2WKUezoQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQChMOQo0Poh6CyUShqBZC2wGFyFvdftLSGuZIE8l+hKeAIgUXlGK1dzRrH7VOiLFQU95c3P5t5muaZL0gCeHen2wyY=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 249918,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQIB+CRA9TVsSAnZWagAACwoP/03+SIemnyb0t26HOD1z\ncnsVDCzzk+0KrL6/ahDd1GN435wO2uwve18kqfG9iVbSg4R0KBkrcANAnClv\nxnoQjae2fRL5YD0GR25z/WP8VVhFj9ChqPSBjkBsZNyhQBfjBCtFCyogZXHV\nKMuHUtd3HlWmUAQkLPhHQbW7/aWxUCc3apoMiPHPCobKwvO0amGU1Jc2YGPU\nl8ygH0vLKvs60VqlTvg+LSUH5zZD1ThtYzwaomoVeZEbr4lnGZpssYsT/P7i\nNL8yb5DVg0sQsXPiM4R4O/vecdtHty+jRCoSyX/WjVrpzPF9HnMszc7jjPBj\nRNsNUkR/2Qf2Xrdzu3jbJOgZcqBqdL/Mm3yt4dxs/mEaU7YNBjDTWAa+nML3\nWpQfcXgTxlgzhtxqYNv2V0dFvLD8Daz6LRJ7M7ERszkm+oxwoFgIhkvJetPn\na9wDNwSdi0tq4GDuuI+9pF+YLHQ5iaFE9Ph9xK/iuJde3wm1UaznytvTK/aI\ntbmLn9M7Iv0R5I43/H4/wFqI36U8xMMphcRkQGKs75s2i+pn3bNGgqYfrAtP\nmGLVqW21VDNxbLtBOmszAgpu7wahAadDrbaJOLy9SrDi0S1UC123x0fa6pEx\nFSv35e6VWtWp/qb9QwywEOz36DKSIAK8/Tta8VxAfjTsnBEaRueLDbi7ODzp\nnExN\r\n=foAa\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.0-rc.4_1631617149944_0.16080278614091403",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.5": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.0-rc.5",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.0-rc.5",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "c2a20a5500f25da6c739d27171377a5989fc73f3",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.5.tgz",
+				"fileCount": 15,
+				"integrity": "sha512-hsHSW7uQRVlVHxh3WcNdTlqwvYaMFAXRVCEmA7ec0pWKMBRFhKTDm+fBCv8n/D65BLKRLTgPBvgsuy3fIXYtuQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIGb+Ek0CZnVD4/4za3aB2LkIbpIJ2SD4DwNe89fl6LINAiBlOG76F5tSS0++pxqBrk3Dy7bB6wGVxishTdG7si8bVQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 249918,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQIRsCRA9TVsSAnZWagAATw0P/RoW8us4/86RrpV6bTu7\nWfh7lzF/wml24oLiE/fNWaZJKtiag8Xg9W62Dl8Nx5fXGCbrFbv75FCNTPOY\nF5r5ESLbjWlCmDkhnlCTUQVxBsukTzhD5KQGYHURYULX/GVybdSquo0keeOc\nFjij3QsyK/IevwST9Y14VQlRIRATBHA+Gs4jyCPoH/2cwx4AsGWswedTwHki\nQBc6ogGyhTX1865CKUSYMjPv/rgaZbnlek1WwJcDfbJmcCgj6CHjSULaeJLi\nZIO1uDr2+Q+2sEI5UC6N5jE5l+Rn+jrfYo1XdAqaMxj2GdL8nrvTRGrUvgvX\nlJEZaImmFgAzzQrOYt9hZfR8oBE2Q5opjEZkwrZO+5M6EK/ff/ryO4Q6Tcti\nsLvuIQUfVEpBSZQ7//Ci5HMw0m/yeYSY0IBFqeEC7l2jbk3VQteV74b2qZ5Z\nneCH5okGuYEY62Cbu84NlgMeg8QmCfJX/u0+V0IwGfyycm95S3/d6vlMgmz5\nYgYUHl5jSjsNdORsFFUEd83Qd+u9Vmr0R5JPt7EKiMxyaCSxDmCWtMRaMvAo\n1TEYS7Nc/bcKEXdA+/ncIrlosvmwqFZSvD+29jJGrRJ0+Dngy3UFaRaM8HY0\ne06G2F5heHLTHZgDDuzS1G/dfpK0GdRFm2Uh2riz7iXZ1Z1UOZO68s9ou/4i\nTUub\r\n=ToVj\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.5"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.0-rc.5_1631618156715_0.7488339808328399",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.6": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.0-rc.6",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.0-rc.6",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "e8b9aafe8f3d3b437d80f8a81dbc077f98336ee7",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.6.tgz",
+				"fileCount": 15,
+				"integrity": "sha512-bpFiUOqvgNFQ1BwivF2lXW5K+28Zcdy/qDXltUX4YmESua5E8VZ+pvMbMjCgQ3DeVmQKiEVJqXlBKAnkuSi1+w==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCZ58C09qSQBeBqeRSGU/buSYIFimJ6zeGyZ25VB7I5DgIhANYFpFd84IrSCZcgc3ZzxTLKiOhkQSvGKUEjnbFQ3SGI",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 249918,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQfF+CRA9TVsSAnZWagAAou0P+QHg3/tzaO/qPHQ+MXnp\nyYjHgmZrSm7fxG96UpVZXQCcyhZyxAa5tvFnM1dthghg2ggU8aoM+6Kz3NTt\nl6+CIWU9a1Y+hxmYKHpk6J6uo17P4bxqYPKChjC5gTezrthx4BpSMtKPgUdY\nS4ZzggM5gxQZAsOBix2Oh1qe4/lR09xI6vWeTbrykjNj3Dt5pIR/Uu/kfgnQ\n58988Z+0dz4MSZig5t8yIgN29tGlXeJoP2mefsz+xjjqj1vvRQRDNrnZYqFF\n8TAIcbBmS+CL1YvdX9tGhqb+LIo42031+dM7zZsn01gYPS5ml4I2tlc5wjX0\n5ymC4Wca2DN3HMlpxbCKKpuOawEhlK4sL4+0s71HKKZqArwmxINY6H7sb0k4\n+r5zhbYVRKQgFD//oQ463h0s2PWofOSp0LWHsevA6pvJHcz3mN5IM6RyD5L6\nne3cLredrF29CcsYR9D9HNMRzEqpv/0IFoF4qbXXJQXuPJjo6V0YxKFfGKp1\neYK8mJI7Gsm0iTn/gZv7jjmTio8eHBrOd88k/1Baegle4S+H06pf8uYw1obb\nfTCo4mVku2ueqG88WJ1DHFXxSqc+2B7IzkqeJDNI19bPuhYSoVOnc02NM5jv\nBM+DhVLXHy2o15zq79K506fu8ynAZT0CpWbgc5T7grzd8uHFG75wvysjQgbz\nI2i3\r\n=hJ6R\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.6"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.0-rc.6_1631711614037_0.9797166300500328",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.7": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.0-rc.7",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.0-rc.7",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "9ce784ef62afea14f1c0cdf97bf70be80657f655",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.7.tgz",
+				"fileCount": 15,
+				"integrity": "sha512-KsW7yLS0X/IjyTDoTJugoDgDAHwGmeUpOYAxWol9iLN67ZGuNbdcFM9ceQ0VBqhd+1nosLviE2ajts9AwffxwA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDUU5FETrxWUuszmOl5SybZwa37I6y0NpkWVVWB82flIQIhAKz3ENDwkNu5rQeP0O/tC8SCtHdPOMeyzqTFSVE/J+Mg",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 249918,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQfeMCRA9TVsSAnZWagAA09AP/RCvgCYcN02lWJtQBGcS\nn57POQMcYjSsfQJr78FjiprBFtK6fcsL/r8Td83ZzD1hm0tIHGBOYXY3GQBZ\nV/fHIUD/QbgbQCmIOFT1LbgQ/NvMq0TEJBGIkK4pMBE8yLxLUwg8s73JvJtJ\n0BkM/Q2NW5x8vf4qLdD2ydWWSJ0C5pWj7DkQwlC1DU4S7fvCcjw5e+ApaOw6\nR9ErPhuox6AhmINaSdO7OmdxYB7n1bc94KbYgQs76+zYaPFAHVcnUSoKtrcL\nnmx5j9ufXVm0kE5YqJQG7PIxBoQZty4IZs7eoU0GabVw7nKjHnpabFsYtay9\nRyJblSk9P+IQd9w5BSHqpT8toAoW1AK/GKVIZFOYQjrLbJumYcKlZGZ1SCoB\nWRzlaYNQXTvEI9tB+t2HcJA0vXcGEhRfV7938cX2KBtoDt1C2m6S508ukayA\nnpsRKI25zUY7X+tjcLw/qJ7/j64nEPfPlcllqltKXHl7kZ4u3FqRLGMP8S7H\n2pM9QLPb8Hi7I0o29JkiGjRa+itGHCiQ5Fhom7RzkLGl5Woa2MAcH8eCH0eh\ngS3lcSczZmTM66aDDohqOMS0C1a8XO/AxCHaOdOoaGqMFbg/qh2VyA9YugbE\ndEKEECP06lLeO/9Wg2+rukS1TuUMfGJhMwv0zC5kGyReg82y5Nzp/EddESsY\nyuph\r\n=ZYny\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.7"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.0-rc.7_1631713163835_0.03839156452463155",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.8": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.0-rc.8",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.0-rc.8",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "53390f3e5cd650b9129b3de2d18285253a686f04",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.8.tgz",
+				"fileCount": 15,
+				"integrity": "sha512-F7atbW/yuclL06jhc85BsZBvOStDsW9jttb43oi3FChE+HpHNaT/z9jw2aokKdX0jQzQ+vWwqGDvx7ObLAZPfw==",
+				"signatures": [
+					{
+						"sig": "MEQCICdNCUvsSbmue7yQKdyVlX2qqY2OcGfY1Y0nX2KGk1yUAiBQ76tL0MImdEyFnZGDClSpzJDZLquxcHVJwCIQsNqS/A==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 249918
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.8"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.0-rc.8_1632214594738_0.4636668929687726",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.9": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.0-rc.9",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.0-rc.9",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "9c4ff3354036f92ac0eb3c5f3fa7eebf8311c723",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.9.tgz",
+				"fileCount": 15,
+				"integrity": "sha512-6WBa+Yz5wpe7N308Swkgok5fEGSc/nNR+yx9fvz36Y+FyNdHxFYMZ/rk1RBJe7XBbqZbdCAsY+tuMcPaBmMp2w==",
+				"signatures": [
+					{
+						"sig": "MEYCIQD0S9MQHotuC2OHqQwgye4rt2jdquIgePzswXeYK/GeYAIhALyHqMnZY1kMkUrcdsY3ndaSRzVaa68Ya8AOnNRJQkEc",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 249878
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.9"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.0-rc.9_1632221177851_0.328414412140033",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.10": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.0-rc.10",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.0-rc.10",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "ca3eff0601635cea7534a8a99bfc1f5b892c804c",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.10.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-GTQoFGMXsi8rVPQT3S8dCkfNv4cWYGOVOAwrp0sO/3wZ7Lh5RbJDsF3F0caPzGk9wUqtwtgWr0vnCPg87VbaSQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDj+iiXHpv6x7nshhukENAYv76PCY6/gfZm87ob3S1u+AIhAKI6Ze6woTsPCddQXjZh/P2vZHUnHIDUSXok1S5DfMw6",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 251540
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.10"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.10"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.0-rc.10_1632322258306_0.2729466784238048",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "1c4add69d0758df46dd9991b8e8fcca2ffd816b5",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-aOXI61hSYaKkwI7T0PrmRYtXolPay5xXtfEwpbWJ0pAlNAOtEdrlg+4G1ROh3KeYMC/KJvyfX7Z9gvi4UgAXKQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIDK97Oop2XusaLiknfyYcqu3svPa49XgCEJaV3t3R1O9AiBIt2SDM8sRiCX9vc2rKpOOuNg6GOXCtof80cHn38VK2w==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 251522
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.0"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.0_1632323350206_0.11964691542907158",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.1": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.1",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.1",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "51d4a8fa0762782ecb9b1c0e1d79e995a32d886a",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.1.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-kpPUqzQa5CfgE17aQHg2JxLjwT7sv49Sk/Qaz9ZHeSJFkb/UUyI5mizRAOHcbRgy1ITneDh5u2OUGiDp1WpuLA==",
+				"signatures": [
+					{
+						"sig": "MEQCIDv3Qecm/IE7tdAUKEp1VpAESkoIXuUxgbhDOKV4Lc/2AiBQXopTJmfxYI1LzyHe0Fhm8n+P54QfmWhaGyXzgfsyQA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 251520
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.1"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.1_1632325399430_0.688923376236283",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.2": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.2",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.2",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "64372d90332c0d9000c5fad1ba65d47a4968e50b",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.2.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-+1KLyOZgqyioncb2qfzRZbPqyEf7iSHZ8fj45v6M1wumPkqW08/D1n787VakuDD80wrMIM4kBak78wXxdr3WcA==",
+				"signatures": [
+					{
+						"sig": "MEQCIGpR2iVZtW49axR3yOcnDqWamvGIn6doz0LFHPg24YCoAiAWy2Nn0nO0sxCB0rE/87+zScRlZjKS54r5OYumENEChg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 251520
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.2"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.2_1632336496721_0.40938472491135736",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-rc.0": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.2.0-rc.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.2.0-rc.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "44eb59406a6619f4a3897e75342d4e850491c52d",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-rc.0.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-xLPONSsuz9MlfehziQ2rvMvFLmmPxm/CNFsdmiudyXQCH8MkxklhF8Sru2mKFwpU5uUyUm7t83xQ6a+Ky1pxBw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCYyMs37N8u0WXCy0k4TG1t7H6B2BWRv+lEuxhgf21jxwIhANUcB8TM2XvrBc4PWb2bqJxxnRWzROfjI3iih83XIzky",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 253044,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhl/19CRA9TVsSAnZWagAAspAP/2m/AUapq2TmqEXfoNMw\necuq4eU94b0bEjimW2icvLQKVha+zQaXEQPwqCgPu5lEyY4s8wausvlRXK1C\nzq7Fx0DEs2KvsrMYDPDOFEHAaVYyFw/ysGa0zniQ/WxqLCxnA5xg8+Nn026r\nvPu6Y91NQLa+HVLxLAaswbPMOGV32mfGUf4ixm0MbQIpznY8ee/tHwdxh8PW\nvZ3SLymQFQHL6NTQLZ3MW7edE1fTVG5yMS/C9KJg4zcdm+VPRt9Q4Gn9brNC\n80F1/q33dNzyznjwD967Q7ePifnneRXYvtnbxmzDe3K7Dq40oFRN6oVUbzH9\nN5p9t1iCNc4tlZWggo/iQ2wjPEQHOPLl6XVmugsh0A5VB0ex00XwUKY5Q86L\nSE5y3m9h8dchS2y3d9w7+4KCKw0MHpNOoBg06Aafe61dZUy7B2BDbbYq5DLv\nu3iDscjv+W5PocabI9iCOZtFMYZ3/6BO2wP7lcdy5RE873Q2GHK66c8cYBSx\nZakJniAm33602B/FlqDefhW93jZnKV+1MfDgeArrXr9JsdLicqzzRxhrFh25\n+xaaUPsZyItzBE9M41RYrU/QXDwjS/f4CQtZ6IK/MIfEVakpMxBa69z5KCCd\nPklY92+Mui1gQ1tHBU9mdA4kx9kNFH2j5tJkxTU6G4VlkIdGDMdcloZdZAH/\n8oh1\r\n=lKcI\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom custom colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-rc.0"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-rc.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.2.0-rc.0_1637350781809_0.5597954149673663",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-rc.1": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.2.0-rc.1",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.2.0-rc.1",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "ce71365488a79fd70d667316b84fd60a97a18e82",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-rc.1.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-ydDVGHS+9+5Nl6OyPpYb5YWRH3+WJeiMT9OB8fvqgFtIPSqEND0Kpspb01+3Dc93ojoiaURvUb0ZonuSuYvnxw==",
+				"signatures": [
+					{
+						"sig": "MEUCID1uaWIKfbpDauVndPtxPSJsqOELrwETKs80Rx+HUIJxAiEA+pFXREwVN+N8YM1ygXqK+lguZSdNBT1li+pWFne84wU=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 253460,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhmOvOCRA9TVsSAnZWagAAQnMP/RPqrdwWmGSkF5hKJEiq\ntBVu+fk5R5apN9RubUAvn0ad/R+e3dNJhOF9czVrGdFviTBh2OUNt18P4xNp\nwfF9sWUnCz91Wq5nfU9oPiFgt57JFx28mMOxKwwxF0TCpclI1ZGBLN+St78U\nkO28laUXcskr3dh9BlmiQOgCPjDJtHXry5w+kONlRO+e9joNe+mvYzjrK9hq\nLNjG2V/2Hh8y64RJcn/XBB99uaY1P0jNrdvrJF/qvM/AiNh9wgmeh5o9jAu4\n0OxblZbxfVxyNokz0Ka5SDRwgG3A4M7QtPnQOqt0aD0d+Hm4Lxs/PDPyFkOK\nC8lKMjtslPuTJ6CK2C12lYgJTJk7mrkWi8g4AkAjvfuAwgtNh7PIj/u0IKH6\nlmfI4TMwWaxzmlOVZXMZAl2InvsmrlSSKpGIxAANCWBpjjPd07Liyd43Mw1u\nheBT99wYDMsGlgaEQqLcuGcLes8S8SyheN+KiPBfwo/i/58ayZ/0xXGI371T\nxUstQN3sBpYCdCl/A6VJu649Nd3NkiVhlvFkQq7x2VtBXql6IOa+suhm2lSK\nsgcNtkD5wWm7qPqpWG/ThBIiGagKx21hqNxO1WXq4IO7PhcoY0Uv9/J1Lj0e\nj/ShqPMob7YKQJyd96kyDAvAXfr0znUMe3UUJqXZHwzTxTYr3gnLS8HuHyk5\nMWeY\r\n=Xe/4\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom custom colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-rc.1"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-rc.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.2.0-rc.1_1637411789845_0.038258810010404876",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-rc.2": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.2.0-rc.2",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.2.0-rc.2",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "3d179823533860485d4f6b6a34649d021624c24c",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-rc.2.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-WkU/YjtCnn/HsCypbVjT6j/Ka9NpBJNEvdiRrWJsq9A2zlXeLSCn6fWxYr448Zpzuzdt8NfYhlWYUH8Thfj0BQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIEDCl3B1l3r0pa/F/tSVbtRYsu8kz323w/hAhPtmK3cjAiAI2KerSSxSDMm93uywWGg9rQnVdGHykIBpANtAPB4MPg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 253460,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhmPEcCRA9TVsSAnZWagAAhdsP/2ExqF6Ofny/y4TRHlTN\n6bsFOWPBBBjZAmRxsmvE/lLT1sFpUI/p0Y9/sMV/ggoYL4XbHy0ds/Sagk2y\nK4tJld50TFxwV/9qrTqYgx1VHtuxVl2mosrGcIPNKRkUSuQUqC162h6MmBnu\nSDZ0ssnS2N66WwkH6N6SFL3Sf6e9QXO1F7P0kVEX7plE1ZJJZgm64VjulKEp\nZEVk1RCte5/8XXINA1qtmjYm3kvxAgI29Wu6HQMpv6udQqAHKX3pcu2RMkaj\noKrXLTc7bkuMmrKgp07Yktr8NPs5ojsB3Ip+G6hqSadGlmNa63WmWpzAndpR\npavpt/rI+f9IlvQD2l8LjiaV+7FHiMsfdYbq7nzAH4GDy+H9CtW0F5REMtLR\nGeS/gC3CRV7L84NhKft4PB7bPhtlAFTtE6bxjfBgWEygQKWIaOTRLz5CgFn+\norgq3MSMkeKlUnT/kE3vRtg54z0mEpc86f1Vgcb1e0CyyWPnKQP6g41PTt1b\nV6ZaTfUmgPZ3/e/ID28JwpF9+Xkz337MmXY4AusomFh4OsRb20a1iaMentQH\nDxYwADpaENR4ijcOkzsZstbmEF7OgxnPihyN1E8or3LkcFPNPK8lZDppchta\n/zWvvhaU2opLqtdsPhEnu64/xd1oyDVEKbvAeY6iJmhJO3WpucGKEmAx8OxD\nGh8H\r\n=XaNs\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom custom colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-rc.2"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-rc.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.2.0-rc.2_1637413147855_0.39560832251673594",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.3-rc.0": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.3-rc.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.3-rc.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "8adfd6e5dda4c3dbd6f6a8f451d3d0894cbcb155",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.3-rc.0.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-mcb6gKfHhpD0cQkrj5iho8/SX/4oCoEDknzYikCC7Gf95g3uvW/ALt5S2kJ+jYWkvWrIGaGWECDdQcLIsM1xVg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC0TyQF26dM9EgI95g6DMRp2Iy7GsM1IAi1VCg6g7F7twIhANVsuBSJL0WhQCrnpnBYIkpAW2r5oVx9pIQX0SDsMETO",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 251538,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh3DzqCRA9TVsSAnZWagAAhUoQAJwd2DcNZDnlbPxC9Uov\nJ5+ce+WL6U4Nx6m1Ku7BSjsj2P0FtSVs/FTY03AG3EUSl3auKROjufnQA3Mp\n/ubxl6uxECaxQKMNeKYL8tZb2OAQxO5b2vq3K9WWPK8Qqan209P3ZLs3MrXR\nSjHDACcEdPMhPvR2Sfeur2cdJOEmMUlXuRlAC7hn85TAcOknQEcoikcYcb5Q\nfWTRC3FKeVNWemh/Z3Jm6fkFmmXireNm1iRAwyAWrfcFhbX9/KUyuJxNRba5\nTi6MZwGmM7Jh9kv+SQobwbUI/L+CtTRuGQsRQVwk2QfcoIuUgDaJM8Y86ODg\nRsdIDjQwFHuGU0EKyVKz8aQ1aCrfPsyZF4GvqS8Oms4RFbQVybxbXZ84W+SO\nPUZrzm9dsdpi4fB59rhDlSf/fb/okoy7v9sBFvymF9AqJvwRLHJaEC8xv7H0\nEUx5r3aLB5EZJx00m5uwjhDlcmL+0uFVAYCR/h1TLPhF63ExOhs70ywU1WIt\n0mfh1NcIOnpEh+bggAY4qbnvq+JrCR0uhKpyyvslnM/fBYP/G464a7C2gWro\nxT7Nn2PvqYL/tfSk1lr/hMYf9c0QDxu4TwpKaqB1CrtuiRHhEPxgLErv03Xe\nAex2omymtzc90EwPghdCaSCAO/ivD+EC8RIUUK1ylRY0nKR2lneI5fIzYDY/\nhS+K\r\n=JfWj\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.3-rc.0"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.3-rc.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.3-rc.0_1641823466420_0.8438058018676",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.3": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.3",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.3",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "f13cad727bd6d74f2df1f96ae00fb787c5df21f7",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.3.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-zd3M8AZVZKrlNydHbfxuSGLKgZi4uyeFfFvs9cB4xiAb+tjqb5eGBe2TTocMq/tH3NssmMwzXeFK4jo8BUxLfA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCDqJ5GYfthOvcZqedNj7q4AAAU6nY4xs+JQmByWjKyYgIgbK2VF3S7NeFR3ggvoQdbmt7m0ex6Db9laNH1xsrWW/Q=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 251523,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh3d0ACRA9TVsSAnZWagAA8REP/3Wifxe1DM8th8Rmmcgi\nQH5M0VZlUnTW7nhIpEABtYT9HPo3IfH7reSsfTR+KUZ9GI2DlQ4D4hMHcSYa\n8NieCLbCbG1PM9Qb69MbYLTFnBo/1o/J0ID7132o3WoFOAWVYmt9xkssKwDm\nrSBd2NmJkTzQGiw/kP+JcLZA7IWZKCBryGFuZdxQnRm0q2ljrgK7BX45U9WK\nXvuMkLhr8i71Za0ld1rIeN9sBTOfpndb0mdixCjOteubozKM/NYS1WxHJLlC\nl95iAJioexHZRsokXtjtPQhGw8fNTb+rveidwGDHeHyC4JJtDVtLFx2QOQL8\nib7rBaxP0Tf+MHi1pI9mk3kOwEbwpyApBt6fNl25d/Mpn6eDfTSIWq9UTMhs\nL75o2vpAyKYcKyBW3vOERaAJUfVmN8SYSdtY52hCPvuql/Rh4+7/EaikPszn\nw8nfXV78zdbkZJDJ0Mc7wKznVf0UxnQ9szI121xQ+Lxeoe0pBIM2T/lz7ya/\nJk4F1howLbXNpDPMlaBg0TxIquZ3Ctc+qnsqFl34MoRdsQEzt5mdcWP9TNAX\nAy1dpA3jlxZtZ60998sfRasf+pdvxC3ITTLnKTuSYZ5w3sCFXs+YhnHqgjVb\n0K6XHMuME3NHKSbWMyoIdIHiTDmIhTYkWBfIIP0Ym4OSAN5whDku+KIFptgz\nrska\r\n=4T4H\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.3"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.3_1641929983915_0.4568197506618066",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.0": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.4-rc.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.4-rc.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "c4f677cd7be4902373434d583d924988ef2e54ba",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.4-rc.0.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-lA9Tw3qHVPopsMN50ZL1SIjZcGvCcYdyOpjmF9NrT6k0vLaq9h75lIHOALWrZNmfp2yFnKiadr1Qxkvtbd+43A==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDnr8zNLNRcyuDFQnTfxRGkLX+CMnBWghvlUlFhwdiE9AIgYXvdf3be1pS5pQ1/E0HJf1uyssiqJRwHyfWtKRXQc5A=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 251538,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiGKQyACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmr6+RAAhjtGAdwnHe79HQmaA8dXeiUeWYQ9OGIXpVKUmNK4vZJy/yL/\r\nUwKEUeYRtMx4u2dHIsc8JIlUZXgO80wmzz2gpmDrt7eSqu6Bmj93oXJql8eN\r\nIoewpRp4YRsnZ2o8IRWNCcXQY6c3XOPG6c3b9w81vmr0TPOkupJXnGfd3uht\r\nr5CoYA1jmAy5EbQP8fDNmEc1cZghmNO+WLsOlaREt1xJ0iTJyavb0nSKPnPk\r\nO4d5lSCOdX2LWt1JqrHTEjEw9a717ItGy9PwFQ1d/YNUHqZOZNI+9xZBc5ni\r\nyWtv1PptCHHq74a/M9y+jY8jnKBKwePalomdkaHPHZAnS5OGHVgHPn7x7dt+\r\n22ETZdjeHNBtid4ZZhhYpzGApi04oDgajriqNfj7LnVFnzL895Ep44wIqA3m\r\nMc7uXgTr56gt0cEprgR78fbLEN/3xeroyZnaErRT3QAlxqr7k6XyMF4W76K2\r\nNWiRyaAIEF7KhLar50lywD9ObJrW1pwC0pytjnHP8nB3fZfMswNae7FndNZF\r\ngecHc7bxxBCQSdl70ZCLkILHP0QTKg6M1sxKSTJFhPrMw+oiXrw+/c67OKie\r\nd4/weGktYnjt8m84/Jf49UAwVk3XJ6pG7L6WRy32hZvFGQ4Y/ipmKrV+uFlJ\r\nS1konp8+OIfzT7CN3/a3wbHqKlTcOp1r2Aw=\r\n=It+b\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.0"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.4-rc.0_1645782066122_0.4272923712947614",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.1": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.4-rc.1",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.4-rc.1",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "ae24e453f873b6e446894e6d08933cdc3559924f",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.4-rc.1.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-/TzfU/0wbzHNB55qN7jHuRzFkoxgMu49rrjqQxZDK/7DSTKlzEhSJP9HLV37W5P3fPheOFyaRZ+gpB+8MXNK/g==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDErGOmwkAhVWm70MI4Odw1Fq9LIFujpvMqrG17pcXqeAIgeenaXO8WPqZEbrDyc4hvtv8UOsytEIqCftI/9QOLiZg=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 251538,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSdVtACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmp7/g//enr/R4k4GOXtskeAv791ED0QIHrKgJJdtBbV3wU3AxUq9ctT\r\nDvlQWdfWPOqrmGEqmBJiz2CDULnvC0uf4dg40a6/93knJI099ygnt4n/GgO8\r\nRKMIHAO4vpwZrR5T2aQndIp4YgfG3GPz6n8DwfALayWb7X7/QcLaKkpgxqux\r\n6l2QEyO5R6opNzVsAaNyO3qdBZvT1812nYe9GchEo2APer7a4qRPzcAcOKpv\r\nWdhYE3pXpFE95wduVXv24vezJZ8eFoVAJaKGovsG8H3DupKNZRGgZ45tqXJS\r\njWv6zEm3V3bwP2KVgh3n+J/ODyMaHyO/ruTHtJcEqLjSGWr3uT7HOOQgptlN\r\nYKtd7axm1q0QQD2l4wiRrQoNDd6bw8ESYGxhFa7UJGM5N1Z07Ld3iCuh/DtF\r\nh+rCwCn6Asva7NjnUkpZBQkbSITAbSM7xs9G0J2GTfz/fhVQDjFkqWd6oVIh\r\nb8Hb76pz5ckHUEifODS/RSFCMdUePFjrveTA0yAfWWWy1sfxpTL1o1OU1C5e\r\nba1/YgWfRLKHnA0gqrdQTOd4HrbTNrZZ0Xy4LtcOH+yCkDcNylEcS9QZFubj\r\nBLxWgxCHlNREi8+JEpg50jjKBm+T+kioXaJOZmCnopvcf0KNNxriVP6iwv7i\r\n49ePtq8PIEGMSLzr1RSV69WLJZHYMsyQoK8=\r\n=HUL8\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.1"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.7.0",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.4-rc.1_1649005932953_0.16288637595640854",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.2": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.4-rc.2",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.4-rc.2",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "2198b802675e05a2a6d47ebb35a674ccbf713b73",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.4-rc.2.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-6c4WW1KJaPWhNiA9N/IHBpOdeUxXFP/2jCfALW6Hm7lE+zXjShaFI2VEEjI/xqrRHwqSs3TeOeFCEEzN66sgbw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCZOEVXxTShhm5DATK9Haxrfmpyiy3rvLcEQ6p46GXzHAIhAIsLXrY+OjMymXBPHgio2OcuXYiOUfsoxozXE/8AyxRS",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 251538,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSe5CACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqZwhAAlmJGAoFYsP1ybvcVYwq/BxGyIx1HpZ2i/Pav7tzjJXy7Y1Q9\r\np9TYP3UYA3yg7937K+XEqMTPwz4oKhPiAnvMACk7xhuAZtnDwpts1HBZkpdv\r\ncVJZy2B0ATyENIYCU2YIpCgopiBawfTaWzpF5uklqkNWy3FbVYJHw/u+9eUI\r\nPiBQiGf5mJJRqMUwE4C57aWpRL2sIgg3wxQTWUuGPHlAg7RAfqkueBnkgYDn\r\ng4WXI1bPZ/gLQSvCacskZR/D8m95zve7OYU+2GiJLN/6bNvQM12lbLg1CwVL\r\nnzbq7fY7mpHDvCpwSFduB+hCpJMFhTz5vppK9g0Ij99cDGVIdHRyAtKbXOIB\r\nDvpzPCq0MKThfQ3WF615RKAkv5LefBU7+eHmF5ZLH9rfTyrSNCjDngqf83r7\r\nwG29ssaorOpbBP9aATwClgi4GAF/XEckGJ9lqovbYtT5+Gm4WI7goysPQF0m\r\nzRldTxH8GdYgI264wsZ7OKXUFggecrB4pbR8b6mNJTFKos5Yco/7KimZ3cw6\r\n/KvZFICJhddhUM8z6T/6ABEABt6KnM3Bj1QhPaLr1bzrKQaRysPGV4M3pdwr\r\nqPhIo4lvwdQpgPWj7FM+H6q3yQTI74mperKK2N8/qfkWmLJbnVQc4UQEcE0y\r\n7jFoK0BEF5Zh6bZj0NMA5Fut2PwChNOqdo0=\r\n=EyMj\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.2"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.7.0",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.4-rc.2_1649012290215_0.39884145265055215",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.3": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.4-rc.3",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.4-rc.3",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "3658fb76648cf9a2e4ce8040d346d8bef345ffd1",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.4-rc.3.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-yNqV5Jje5sGoZ6IaYe5TAU3ta6bfBkbH47B7lgJ1nJzahCH2H9oM3trz0/n5+FYQAGSQS39avzqHHHPtYpuV/A==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDkhqrvsHdVdwnLohzzVELr5NFZ/vCX4tP3XtFQHjERmwIgDDDqbnKHaZZh257wLzrrqjK5wrUZZZrGuH5OFByLmCo=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 251538,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSgGeACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqAiQ/+MHRlLNsokN2PiEmGDyZNACJs3FKNVF4lGUUBbfiAmY107cXn\r\nrN3x3Ok83Bo9MhSXny8SqEHd1VUwKReaWFnZEvp5opcJSRLmLvgpd3ai0SpJ\r\nVqMHHTtR2+uayxg24FyPAypx8pY/Atw4NZtGYAefVHY3lwTUysSE2nauYd4l\r\nspd9Ot0X+7S26e9gCPizCV+lvp0cz7vIypIJDGjIv4YqiYkVhmlmUmS1fZeV\r\ngJfbTQ+Jjs/qeuXXnu2a5sIU4RGjZS5vtZdb8v9wG646gn3HSF7ZH5YVQZNx\r\nDPXE5YR29+UKgle73U0qS6SDb0l7MeZg+r+NaCwE/lgt809ao/txstdTSbNw\r\nyjk5oV7taOVJfz1mayV8Lml6w7rMKmTY2RtL6ZbDlIIcnPYvIv9jjCxLPou3\r\nFzYL+oJ+jpUY/CR+TnoNilPf1OTsi/qHCZyrRrmXRJfudcewcBMHElM44Tca\r\nfyx3o7JXvpqIRLGj/gnewP2umUgM8renyVY8b1UbzF7TPCZ2KJ3MBsfOcMdr\r\nDNV8/IeeSRis3Yn+VDTtn6fyJqjbD6F3R0LxUM6n4LJ733p8pD4OjGU5mAt7\r\nlbc/lg9yKSTXF4/XH0lSPQDU1+QR0qTeO8JIhYnaOvmTjx48hZgiuouB7A6d\r\nZlEzg4poEAjk4d4UWPoAKofnBMwMliZL/40=\r\n=Z2hn\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.3"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.4-rc.3_1649017246717_0.5602028111194854",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.4": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.4-rc.4",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.4-rc.4",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "0d759439e810a54ff141cb5959eff513c3c3c14d",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.4-rc.4.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-1xuW87KCSY1vWvGM+Xt5XhULVgMOUI29Bb/WM/4AFdPtY6Dno1p13gfymM9zCskZzBUgzr088PEh6rc1RHaJOw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCPv7H07AFGx3gzyOxC5qxi9gwz5TtfKRYgIGG2JnUB+gIhAOb0JMhnECGzylzPvf3wlusMEYYgyH0zg9hGTOEYKnqQ",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 251678,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSrNqACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrZuxAAklyHozDtxeB4rKsFg0MksY4iuQmw/6LTXBaosEreeg1GBMDM\r\nxAFkPnozvbmBIvoxBGIypFd9lHLMI6Vl0ztBM5ge5JXlH+9ePdYmrKOs8MQs\r\nbq+Irw8Xct7ACAVbcArOxBbSb0XA+ISpLruLD7COZaxBtvjm7athx8Z4gvXb\r\nqMoLqTuvKlUs/5Zx8MPbIto+VDijCHwrM7oCgJTtnuNZq93JAu6sk91vLKqj\r\n/vnxYk/q29xzi3B6lPamS1RBWwMcIBKfItbpn/0NqgnBP/mj1V7C2NDKzBMU\r\nA4YwABEQ8lHwY7ecCv2n3bVDfYeBnZJMRgB0bqDCZMl4CjdXpabYkhPqYQWM\r\nifXd80Swi+6vsYBnJ5tXi8Ve2jOrPqO8OTdQUfvoRUTcrFFFSW/3hB/AujII\r\nYxnFZ5f5csJyIV030rwtatlJsmW2434Eh6ZCtXeSU7POBBQAymulrWXOzQWe\r\nFPwEdyYGYy69UIOsPpE+njwrZu+gFJa3LzoGXXdPAJGaV9MkseTyfRFwhYSs\r\n1DhL8HWvJchwJGTdq9sqkWupl3v00Kb1Y42Roa9TbBEpmjSNEGbD8sxuH+K+\r\nAjg/iadmND2tdu75IpcqUChHdQK3GWfeoCV0vhUL2mZhoIsq+s5WVpaZGed6\r\nBdMv+p/0uoJIJ0ELsqGu+pP0xmFEtKW2vFw=\r\n=vNKf\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.4"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.4-rc.4_1649062761950_0.4837867807328542",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.4",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.4",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "cd957596a84b20de05721126b90ca8f2ce9133af",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.4.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-dE7NtrlwoTbq55/AryizWtrIEsrTfh4JntPA9HKvGAFx5a/w/gskMwFMHi7dYJYawqEsaMDMTiL7zsOr+Yen/g==",
+				"signatures": [
+					{
+						"sig": "MEUCIQC1y9invIfk+VqXOsxPyUrgdjVveReQfdE1dfvtGAgV7AIgLmmNsO6akyeZ98JAenncd/GV1t9aAAWVQw5EIvub4YA=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 251663,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSsBJACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmoc1g//WBK+A6EPgaxExonMROR2zqQKRiESHvKbI6VY3Z0WCavowMwz\r\n1OQhg4gn2NmoCg6eEbpOIoLBh3Cvn8wSkIuY2ijxaDWHSOzx+5Ix0xz4YQVK\r\nl/KQaPb9O74DpBwJ+yrR428OJh+46rx7z+J0QiY7loC+Z8uclCdvk75tEvZ4\r\nHaAUMAl8t38e+cPnPKNCoFtqdQAfNueK7cT5P5r5O5Q13jno4ud18U5PTQQ+\r\nniCO0182ay5IaWhNfhus+JZdB7Cdzqk4EYEIFV37e3uDEbAT5orPs5yaAdX0\r\nxN7cgPCTOuczdwrpIVPL8Bwig0s6Hn9BpMarro08XZJtxwpMYqzKV7YDIvu5\r\nzpOQ7raLSmf5tv46SSn+ARVxdYY9sc0tM7LMbSiHSip0SRWzEzWXF8cLPIEM\r\nZc9irMGI+XRvR/nZnn8gESHFwZOkREmdj/6PyL0CvD7AmdaRyuVRug7ktmg8\r\nf8KsLmtsiAeW+SvUXLqSn3b5Jo53GdQkrK/BB5F5p6btTWGHdmIb2DZf3OYw\r\nbod69mBr4A4hMxrd6DcIHQWHYOGE2RmKMk6J3cCorbElZoHCltKNPSvWIFd1\r\nYkpXIwnlgRC/bAbwyRJ/c3G6/ap516peAK2WsQuKD3UY5+vuQVMLQE2AXI5c\r\nVCCrUAMtuBbUSOzmZivG9F62YODxeTJHSjI=\r\n=isQk\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.4"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.4_1649066056893_0.7726677149394965",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.5": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.5",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.5",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "368f1d14ea430553f66361e842b8373de26e6b5e",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.5.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-+BqxFPmpHEX38eDEBw7NeYv40xXZsHagEorhPI9DxaVlPoBkZcaTOcojIAad/+WNRNQtEIsZ2sk6E4UMIPbFJQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDRrtR9NPBb42kmTlgMfMHyPhQM924TfVuB97OsdvTDnQIhAM9560BzVnJzrZwhi8r1UsuFGQS7Y7HNDl21MF++m2iH",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 251663,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSsLVACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmoJNQ/6Ajhk9mocnUP2POx8NIcn2dY2llVqDa2WO+sd7T5HLjDDv8xJ\r\nCVshDxU8nvIXfF77tj5yHxE6pANALigQS6jhw/51qfEqgdNLFzvvzY2Jy0Cs\r\nkf2mXReHDpX2uF7I0+G+csCcujxzNIzvag/D2m9UFbf0jc8XyheigyVAeSeP\r\nI2c/YRseuruoKVCD20YMXQYKA36fy9tJwdna+qF9zJC5ypBT6PfYXrTjNDvW\r\nS0RKEqEQ5E13QWc06VkXC3ih2/60bY/9r+aV4q1dArlhqhtdxCgYI9f50KTn\r\ne71C8MDW6KnQql/+TGTonVKMxX25etlZZgoQSyU/UlP2hxPGuBQ1gHhlZIhU\r\nj3hF/bW5gBvEJlgMFbIFT1uyC2y+JIRIgSTw/sKd4cxBgy7UX8QPzro/WhHf\r\nMfQLThfklJvSEU9KbLG3CVg0k4ucx5dEm+2RcFZNtD6WLKUHE7+zaYZpNvfu\r\nxkuQRs7qxbR05hQGyJ43JjE44yLde8FL4Hpf86QJ8H2n2FnHafeSsY9Sxl8g\r\ngaG9TtVtoGVVH/2w7ro0ofXbeJR+ZIHGaQ8wsSYpnIKycm7U9p+nZdQuGv83\r\nZt1ALoPANmfRA9Hm49eb1zUGdUj4/1MyIe3/4k6eefFz4VzbHAbhjfoFUoxw\r\nZDFPR+2Z+ZSbxZcBnuFJXAbI7QyMim7BRRU=\r\n=64v7\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.5"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.5"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.5_1649066709045_0.3442836727543943",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-dev.1": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.2.0-dev.1",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.2.0-dev.1",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "1028d2d11f71b4bf935ea1606b3e20ada89f9d2e",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-dev.1.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-udK2cLuwbzg1Jht8xoT3X+bvtz1YSbb5yr6qYNmL9RZVUfGLOH9LB69uf61FVO9iAfUNnxkqjqVQi0CJ3jL/IA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCo2Z8J04HS5lPd9rXjXrymlwxFxbypyOr+qMBhsw9yRgIhAMKHP/Kc4KaMmeuWY0pfcS5D8GVtlGutBQr61H09giOC",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 253618,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi/hU2ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrP1A/+KQgFK7F4BXTtdxZ37YpQN9gbd5Gi9Q23dmyPNV5lC2Ni26WE\r\nSSa99GoWftevjz8fTbj3msNzXv7ntDr7o6L+dYhUJGscvuW4xKzbfxHMbCr3\r\nrEHtA2+3B041CnRPEZTDMDChqU5cny9DT7RfCv0CAM/KobF6jDNBRbegCI2I\r\nr9e7RbGPrtmClB7JP5s0tS5KLWOrPaSnUSQNUFfQVPt/G8wpaddVzU3TOcoM\r\nx8Zskgd42eo3Ate+xcLolX9eCkCbq2YV4U7yWOeIVSP1QG0Liba5Gm3fkP1g\r\nIIHBHHFpNJB3TLPN6Z1gLjzks2oYrdkM50AwyLfsxKhl13mPy0iMxZ3DRLYf\r\nm+At/DucS3dddaZ75ZMpWumunBG2tPW+pcYA18L2J3QD5iPOWuScfYuRj+Rs\r\nmhWAXwU/tYm/n9S+UJwqPS8EnsGhj09BXqspXRcZRrE9jBEsh7ZGGac9g8Ve\r\nAjhlm1OEnLE+oyyzjGiDAsXuxXQWRbim4I8x5NSzHFJEU/lsRMKtQemwbL/Q\r\nBI8UEIu/+Va/QRlw9uoZ0Ch2I7D9PLSZ0gJ2L5VssZ45WW+4V16XtarHkhuw\r\ntIyv7WhJLjVmy7kZBimzPvqE4pF4Gh6VLeOvX2Xn0V+KeENBwJz8usvbZDua\r\nxHk5ViKEsmcqdu/yTYqcxXLHp0MySdFZfgE=\r\n=q+C/\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.17",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom custom colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.20.0",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.1"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=16.8.6",
+				"react-dom": ">=16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.2.0-dev.1_1660818742638_0.3746986808589441",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-dev.2": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.2.0-dev.2",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.2.0-dev.2",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "eee9b663e8294d3a954974daed92c3324952edad",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-dev.2.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-G38kBq6yZrjD+uzejHwpLx/N6+RAWAUzdwYXU8/HpVa2z1IKyzcaZG/3ZvkyVFK/j+Ll55Otq/X6bWU+PQcN2w==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCmyPyvK8iLM0yVzPNizwxNb8MEgW1oHE7HWEdJKXYnlgIgYVXfDo//FgkWMn9JZjJoXWkyYeRTETXS6bnPwLr9HRg=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 253618,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi/hhGACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmq3qBAAloJFtXgHBxVd8u6ShrqRQuRCyyWNb+v0kaI708KnRXHhYR9y\r\nJ9B5s3J/isF8Zjdlby1BNtIzRg1I1tn2/KiVzE2Fbu9lp56iNhurhn3oqTAS\r\n0hhNiFu8fTTy8OFKGuJJwMLB1KBEUT824Dft+IKOqR2JVtqBmsmkrG24xv7F\r\nlZedy2SeiNVlCODlm30Eze0vPhds5QJBq+90/ItH+u0177qAbdHN8YH1piCT\r\nmw77j+aseF1W5EKS60hHdHdbX4MYnapZe8PeRM5K2esa2B8ggkwrjr/QiVWH\r\ns/pwc1YGjTVb46mrNVZ1okMNN4ukwDrLvBlWMaGVtmVUZe4/omYfJhnaYvZz\r\n4hpMoOSCreWhRx7o0apuPDCoafwsU/SlXGB8sca11j2CIeHVmWxJxLKywOOs\r\neVt05K6tPy9zVrd8hn81c3kvKMJ0S6Le4P3p68VrQ+Pg6djFDj47wT5O8lSv\r\numXe32cJP7s7hfg0TOaZ0GLRCncYbYLL5ty4tUPkb7oZ15fd1CfF7fsH6oR7\r\nEZuYebQV3Kr6jWH9sNdrJyGypXcQrx5jmGiwzVfjuyF2SMyupiznNbPsHc56\r\nhpXN5jjuns1fmg+eFwF49jMyXon9oGI2kuJH9l4jTHgIdFBK/WulgyzoRHQ1\r\nVpT3t432Wl7xJswnEt/nOzUZxMx1bbsIyEs=\r\n=gXYo\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.17",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom custom colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.20.0",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.2"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=16.8.6",
+				"react-dom": ">=16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.2.0-dev.2_1660819526399_0.8887834846051936",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-dev.3": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.2.0-dev.3",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.2.0-dev.3",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "a598b326ff50f6c6fe08cc8bfff86c17eba2a65b",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-dev.3.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-TwilHJu7BfzvfjIqXv1Au6ckk0u6RR8UzNaVk9U1BFIcstcppTGHmQB4qisbnk3MfgIXi58bz19l8SI++1X0vA==",
+				"signatures": [
+					{
+						"sig": "MEUCIDN9M7iVb7ixhYfmSQAdv4lNPPHuRfSNb2nqoSsUHF1MAiEA4YUCT52/tvKtJ/UTFm+hTWpDpDZ3cqjJKCQZaWVIxec=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 253610,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi/jLDACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpvkxAAoE7WXb3CQo1cj3K9tTclpdAWwOz1woFWU88bqm+loq0HzIiu\r\nvLrT2xuYe3kwtKvNoDrvx8lUqcslf+8Zv0O8JhlJ5e096fS2Gs2KFqH8G8hD\r\nnglMdWJ76rS0K3/dnlsHC91ITmFFvXWNJYZE2I7WqNwaUQzRJsCx0fTumLJN\r\njmRvxhw2Orl2NLwK6/GOs6RCMoYq4jSUzDr/bNHD4aPl7O4efEFz3r+VGH9V\r\nZYMP+QObAc1Yhzgsy6fAC6M1lyfv3h+KN7acs3gQgLfjtvFpDCmgqDWzQi7T\r\n0SmLoZ3h5TayS5dGhhSBXDsVG+9BiEjCCizyN/SfwDOaa3q6pPb6vZMnKHib\r\n7NgunOGpzLChiWGjI6nFbi8FEy/2/HSSnveoXi8sYRO0v+czw6LbrTzYZlt8\r\nhiBbQwHVg30EzXv6FTz9k7f/do5G5bVMoWpHu7eWkOIGYc0ay6U4K2InDmhs\r\nXHLOvfGJxfuqGNckjK456IHWHteuyyxJEggc5XtX4HoDwxP1wD99p7wjaHYn\r\nQXtDJNFhvsYRgCERmPqjpberqpWPhWhy/9XGBLgvf6qJvrJxycONw3cNGHfx\r\nWrrSWJWpe77Thgeco9Fm8Z1SehSjd6Olf6xGhiFtTwZ+FS9ymVFE0ZWn2fDs\r\niPF2xcNFOGkxuM+WJLvI6CryRWKMP3gQ/p0=\r\n=/xsQ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.17",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom custom colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.20.0",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.3"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=18",
+				"react-dom": ">=18",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.2.0-dev.3_1660826307164_0.3824480062504987",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-dev.4": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.2.0-dev.4",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.2.0-dev.4",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "d77e737506259bd077c53d14f7e1dcfaf575b041",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-dev.4.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-RtheFSU6dIrlzdKQdBbUI2dnWKI2In6KsZIUo1c8pzhyMF7MdzBw55wH82nJYVeoDioNK9uGg/AxkdyqUeqs/g==",
+				"signatures": [
+					{
+						"sig": "MEQCIB6d0FCxXEN9Bz7Y2U9UXo3CwIuxSnPPbedx+KazdEs7AiBs/z3v2QxP/UasyQF2V+Y7+eRY768u1hYXueFVQ6CCZw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 253664,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi/kclACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqAlg//TQAk3ZcL3kHHxFS7bzjGEOX6gS5naDt5ZmpRIbdMdXbnNTzO\r\nI40M8JS8Nb8XGTV0O20yc4a3mbux87Emfw6JPYL1nvRvP0vW4gnDdBzpC9g6\r\n9BirCuwtA5yX0CNSO9iWwD/C7FB/7fFrI3kYu+fzJNohtTfRU8Q5yCDp2rzg\r\nmO2c6Q26gz5Ek3O8Ei+hMg4LdIqlvu28nl4KxI6x6m2N2+VRPtpgHnEyHznm\r\nchrH2pJGHW0voY85BiZ1FfskeWgvoFBOJb5gs9fnoEvLy9h6n6zpFUcN3bsc\r\ne5L8ntEOln9GqGzeZJRMCE+BIIRia+OP8cq4Rxxf0Y0P2BxbkowafUYh8W2Q\r\nWWSqvCjy3eAypxZ1vQSoSCewRSvrU8i4B1tSZ9Fs6EH01wDtWscvKco50rYY\r\nqg5E+3HKCpY0Rt8pHJUuBRdVmzzz9uxUGaUV/OJS1bTyQopeqjNvVnQ6cWDr\r\npOp3dAXF2jVIPJxNcM33oIod/c7xOr+xSzJQkGhzPdX8E32wD1T2dD1KasDd\r\nthtqq0DCtJAelkU24W5RVOc+lKTXlSUJW6aoyBy0BWjxKZd7DSRorbnGIE/r\r\nWLeOEWLaUCMAolduNJMs8p9+544Ls/Bg2OCb+6f30acf7Je+D+uwSKrnpU6E\r\ngRAFD6FQ41y1eoM6hjfgw4BAS18LoUxknrM=\r\n=k6Od\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.17",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom custom colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.20.0",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.4"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=18",
+				"react-dom": ">=18",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 2.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.2.0-dev.4_1660831525447_0.3089295616162353",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.6-rc.0": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.1.6-rc.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.1.6-rc.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "7478ae478fda3c77f76f5defcaf8436bf2fdd6a8",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.6-rc.0.tgz",
+				"fileCount": 16,
+				"integrity": "sha512-DLbgqoXpJqEwktxsP+I09DpzOLlKe8Py/NM9hHZfdCAyXJ6+mI9HmT/A0rDx/HuR+d/aRtEBEAoof++aZFQIWA==",
+				"signatures": [
+					{
+						"sig": "MEUCIHSLu6h0qxZp7a7w8Bg3ad0tgg5MV884XfsZr0DHQry5AiEA/wxYVkTlQGwgg0g2lS3hMqsG1XSE3hVxaUf2DuCdT9E=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 258008,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjQDNkACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmognQ/9HVMBKFgAMo24YSBBofzfUhlRCCz5POVAU1/sekRuRs/npMLP\r\nerVF55wj0GGYkdWalQpYbGE5WEfJgEG5+uKjNB9XhRoo5iCiBiFiQRhpQH3z\r\noJzImVO0bjFHt6rZVfWfcJqogclDW/pg5KH6u0WiVIqZDy6ISN7oTeLMSi6r\r\nGBgeIhKLrLmDTNVFQLbp588MwTqEjVXLiQn8tgzUbo0nfDQi4loC58jOLgBl\r\nkKCi5dZdA9icPnpQnueIdglwsOlTobF+eyeDVT2uMvGoX3FT5PIb1Q4T+2vo\r\ngmW9fa3Oso+pMyLmVLyQ5lB3YQgZnvkPT2rUyyUAXP5i+L5EKtIEmhMDETZH\r\n/ZCdDIBdiLqDbF/4rlyVm6qInEFRX8ERHOCQYYI8v74KtI+s/c3C7dt5LAJ8\r\n3hkUS8bW0ouDdxUDwCDkxF1e80/brv4X9EjvpGYGpTvivQ7+LyvE56tpIpWA\r\nBVPvzB086Xi9QRS0KSl5YrU0GOLAzD50NP6cDOPWmlb2DNVoyTHkhz19h/2j\r\nGiGuo/7I9CHZKWJzExH/6ijiDTqSwdlMDTLF8O/EnJmDqiG9NbeX6gDgAwFk\r\n9cYla9equFQhj2wNhLolLy9af8jlNKXZsnNvm9EVIWVFj16aBNaofSLoz0X/\r\npl5tbopHhj0cZDVFdM8ABRF52ld0zJVuTPQ=\r\n=fI6b\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.16",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom brand colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.12",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.6-rc.0"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.6.rc-0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.1.6-rc.0_1665151843881_0.06701176339457304",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.2.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.2.0",
+			"maintainers": [
+				{
+					"name": "sandra.bote",
+					"email": "sandra.bote@hyperting.com"
+				},
+				{
+					"name": "marconalon",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "f78362a345921b8e15b7a772163e82023be560eb",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0.tgz",
+				"fileCount": 29,
+				"integrity": "sha512-0gFgods4W8UiXH2gPTnM+cBTU0ZiQBihZSS2Dr+4/oUIfDwjw2/5L6KCqQt2YPLGxrZXK9rBIn31Em4oS5Yoxw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQClUrGirqauYeXEe2QejQ+pEaeW7Wy1HRLhQEPfyNTo4gIga/dKUJk0G7uXe1brCH4RtO7wDq0DCRYotyDZRb25qrw=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 258445
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"gitHead": "b0582e816e73679e802ff721c7ea583580ae00b6",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "sandra.bote",
+				"email": "sandra.bote@hyperting.com"
+			},
+			"_npmVersion": "10.7.0",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom custom colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "22.2.0",
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=16.8.6",
+				"react-dom": ">=16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-colors_0.2.0_1718706290574_0.075262575089311",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.1": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.2.1",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom custom colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"main": "lib/index.js",
+			"module": "lib/index.esm.js",
+			"types": "lib/index.d.ts",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"peerDependencies": {
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.1",
+				"framer-motion": ">= 4",
+				"react": ">=16.8.6",
+				"react-dom": ">=16.8.6",
+				"immer": "^9.0.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0"
+			},
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.1"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org"
+			},
+			"gitHead": "ceda78b5f1cc72c6b87e054ca70aa37ac317926c",
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.2.1",
+			"_nodeVersion": "16.18.1",
+			"_npmVersion": "8.19.2",
+			"dist": {
+				"integrity": "sha512-R2/7Qu1edFyWLgMFBXTO/ndH9qlVcLtoZPgKHySIWNf3PnMLzmX+nblmyMZy7CE4O2P6Kr2aGh47Q9QO9gagtw==",
+				"shasum": "6ab6adf3d1a6401aed122bd4b568d06305590153",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.1.tgz",
+				"fileCount": 29,
+				"unpackedSize": 258445,
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCAaZKatcH4KGY60fYDZKRJlL1tLYtPCXTC7KjVVAvMkwIgOXXl8ml2UHitjwAoU3cW3kZUP4uHuFMPjEdCRxt6b74="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "sandra.bote",
+				"email": "sandra.bote@hyperting.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "sandra.bote",
+					"email": "sandra.bote@hyperting.com"
+				},
+				{
+					"name": "marconalon",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/chakra-ui-colors_0.2.1_1718715568040_0.8930751399363832"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.2.2-dev": {
+			"name": "@hypertheme-editor/chakra-ui-colors",
+			"version": "0.2.2-dev",
+			"description": "Change all [Chakra UI](https://chakra-ui.com/) theme colors, create custom custom colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).",
+			"main": "lib/index.js",
+			"module": "lib/index.esm.js",
+			"types": "lib/index.d.ts",
+			"files": [
+				"lib"
+			],
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"peerDependencies": {
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.2-dev",
+				"framer-motion": ">= 4",
+				"react": ">=16.8.6",
+				"react-dom": ">=16.8.6",
+				"immer": "^9.0.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0"
+			},
+			"dependencies": {
+				"colord": "^2.1.0",
+				"react-colorful": "^5.2.3"
+			},
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.2-dev"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "http://localhost:4873/"
+			},
+			"_id": "@hypertheme-editor/chakra-ui-colors@0.2.2-dev",
+			"readmeFilename": "README.md",
+			"gitHead": "ceda78b5f1cc72c6b87e054ca70aa37ac317926c",
+			"_nodeVersion": "22.2.0",
+			"_npmVersion": "10.7.0",
+			"dist": {
+				"integrity": "sha512-9lEjIBnKQ9k16kJDQc/zmXBSi9ikZuQfvBUvFXTeoq3dQGt5o27JOCZvj3mVdCN2lfZQbl9X6JQSqL5Ela7xbA==",
+				"shasum": "cda82ba859ba283df250219b88994517b2719e80",
+				"tarball": "http://localhost:4873/@hypertheme-editor/chakra-ui-colors/-/@hypertheme-editor/chakra-ui-colors-0.2.2-dev.tgz"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"created": "2021-09-14T10:23:26.485Z",
+		"modified": "2024-06-26T14:02:42.774Z",
+		"0.1.0-rc.3": "2021-09-14T10:23:26.780Z",
+		"0.1.0-rc.4": "2021-09-14T10:59:10.098Z",
+		"0.1.0-rc.5": "2021-09-14T11:15:56.921Z",
+		"0.1.0-rc.6": "2021-09-15T13:13:34.185Z",
+		"0.1.0-rc.7": "2021-09-15T13:39:24.092Z",
+		"0.1.0-rc.8": "2021-09-21T08:56:34.909Z",
+		"0.1.0-rc.9": "2021-09-21T10:46:18.023Z",
+		"0.1.0-rc.10": "2021-09-22T14:50:58.451Z",
+		"0.1.0": "2021-09-22T15:09:10.406Z",
+		"0.1.1": "2021-09-22T15:43:19.578Z",
+		"0.1.2": "2021-09-22T18:48:16.978Z",
+		"0.2.0-rc.0": "2021-11-19T19:39:41.997Z",
+		"0.2.0-rc.1": "2021-11-20T12:36:30.047Z",
+		"0.2.0-rc.2": "2021-11-20T12:59:08.060Z",
+		"0.1.3-rc.0": "2022-01-10T14:04:26.594Z",
+		"0.1.3": "2022-01-11T19:39:44.133Z",
+		"0.1.4-rc.0": "2022-02-25T09:41:06.250Z",
+		"0.1.4-rc.1": "2022-04-03T17:12:13.122Z",
+		"0.1.4-rc.2": "2022-04-03T18:58:10.392Z",
+		"0.1.4-rc.3": "2022-04-03T20:20:46.872Z",
+		"0.1.4-rc.4": "2022-04-04T08:59:22.130Z",
+		"0.1.4": "2022-04-04T09:54:17.030Z",
+		"0.1.5": "2022-04-04T10:05:09.209Z",
+		"0.2.0-dev.1": "2022-08-18T10:32:22.936Z",
+		"0.2.0-dev.2": "2022-08-18T10:45:26.584Z",
+		"0.2.0-dev.3": "2022-08-18T12:38:27.384Z",
+		"0.2.0-dev.4": "2022-08-18T14:05:25.639Z",
+		"0.1.6-rc.0": "2022-10-07T14:10:44.194Z",
+		"0.2.0": "2024-06-18T10:24:50.784Z",
+		"0.2.1": "2024-06-18T12:59:28.237Z",
+		"0.2.2-dev": "2024-06-26T14:02:42.774Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"rc": "0.1.4-rc.4",
+		"dev": "0.2.0-dev.4",
+		"latest": "0.2.2-dev"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"21f711610f9b2dc0824a9b90a6231d74\"",
+			"fetched": 1719412229987
+		}
+	},
+	"_distfiles": {
+		"chakra-ui-colors-0.1.0-rc.3.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.3.tgz",
+			"sha": "f79d3f7dcce81b455059a43efcac8c0131093fe1",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.0-rc.4.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.4.tgz",
+			"sha": "3af6fd24d17b4bff8865aaacd9f68dc39f309c03",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.0-rc.5.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.5.tgz",
+			"sha": "c2a20a5500f25da6c739d27171377a5989fc73f3",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.0-rc.6.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.6.tgz",
+			"sha": "e8b9aafe8f3d3b437d80f8a81dbc077f98336ee7",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.0-rc.7.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.7.tgz",
+			"sha": "9ce784ef62afea14f1c0cdf97bf70be80657f655",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.0-rc.8.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.8.tgz",
+			"sha": "53390f3e5cd650b9129b3de2d18285253a686f04",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.0-rc.9.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.9.tgz",
+			"sha": "9c4ff3354036f92ac0eb3c5f3fa7eebf8311c723",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.0-rc.10.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0-rc.10.tgz",
+			"sha": "ca3eff0601635cea7534a8a99bfc1f5b892c804c",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.0.tgz",
+			"sha": "1c4add69d0758df46dd9991b8e8fcca2ffd816b5",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.1.tgz",
+			"sha": "51d4a8fa0762782ecb9b1c0e1d79e995a32d886a",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.2.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.2.tgz",
+			"sha": "64372d90332c0d9000c5fad1ba65d47a4968e50b",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.2.0-rc.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-rc.0.tgz",
+			"sha": "44eb59406a6619f4a3897e75342d4e850491c52d",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.2.0-rc.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-rc.1.tgz",
+			"sha": "ce71365488a79fd70d667316b84fd60a97a18e82",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.2.0-rc.2.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-rc.2.tgz",
+			"sha": "3d179823533860485d4f6b6a34649d021624c24c",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.3-rc.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.3-rc.0.tgz",
+			"sha": "8adfd6e5dda4c3dbd6f6a8f451d3d0894cbcb155",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.3.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.3.tgz",
+			"sha": "f13cad727bd6d74f2df1f96ae00fb787c5df21f7",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.4-rc.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.4-rc.0.tgz",
+			"sha": "c4f677cd7be4902373434d583d924988ef2e54ba",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.4-rc.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.4-rc.1.tgz",
+			"sha": "ae24e453f873b6e446894e6d08933cdc3559924f",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.4-rc.2.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.4-rc.2.tgz",
+			"sha": "2198b802675e05a2a6d47ebb35a674ccbf713b73",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.4-rc.3.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.4-rc.3.tgz",
+			"sha": "3658fb76648cf9a2e4ce8040d346d8bef345ffd1",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.4-rc.4.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.4-rc.4.tgz",
+			"sha": "0d759439e810a54ff141cb5959eff513c3c3c14d",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.4.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.4.tgz",
+			"sha": "cd957596a84b20de05721126b90ca8f2ce9133af",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.5.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.5.tgz",
+			"sha": "368f1d14ea430553f66361e842b8373de26e6b5e",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.2.0-dev.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-dev.1.tgz",
+			"sha": "1028d2d11f71b4bf935ea1606b3e20ada89f9d2e",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.2.0-dev.2.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-dev.2.tgz",
+			"sha": "eee9b663e8294d3a954974daed92c3324952edad",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.2.0-dev.3.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-dev.3.tgz",
+			"sha": "a598b326ff50f6c6fe08cc8bfff86c17eba2a65b",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.2.0-dev.4.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0-dev.4.tgz",
+			"sha": "d77e737506259bd077c53d14f7e1dcfaf575b041",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.1.6-rc.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.6-rc.0.tgz",
+			"sha": "7478ae478fda3c77f76f5defcaf8436bf2fdd6a8",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.2.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.0.tgz",
+			"sha": "f78362a345921b8e15b7a772163e82023be560eb",
+			"registry": "npmjs"
+		},
+		"chakra-ui-colors-0.2.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.2.1.tgz",
+			"sha": "6ab6adf3d1a6401aed122bd4b568d06305590153",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"chakra-ui-colors-0.2.2-dev.tgz": {
+			"shasum": "cda82ba859ba283df250219b88994517b2719e80",
+			"version": "0.2.2-dev"
+		}
+	},
+	"_rev": "8-8e60c08f3bf88891",
+	"_id": "@hypertheme-editor/chakra-ui-colors",
+	"readme": "# @hypertheme-editor/chakra-ui-colors\n\nChange all [Chakra UI](https://chakra-ui.com/) theme colors, create custom custom colors and generate color palettes with [HyperTheme Editor](#hypertheme-editor).\n\n![Colors Editor Panel](https://hyperthe.me/images/documentation/colors-editor-screen.png)\n\nThis module is part of **[HyperTheme Editor](#hypertheme-editor)**, check it out before installing and using it.\n\n## Import\n\n```jsx\nimport { ThemeEditorFontSizes } from '@hypertheme-editor/chakra-ui-font-sizes'\n```\n\n## Usage\n\nThemeEditorColors works with the [`ThemeEditorDrawer` component](https://hyperthe.me/documentation/components/ThemeEditorDrawer).\n\nPut the `ThemeEditColors` component as a children of `ThemeEditorDrawer` and set `icon` and `title` props like in this example:\n\n```jsx live=true\nfunction MyThemeEditor(props) {\n  return (\n    <ThemeEditor>\n      <ThemeEditorButton {...props} />\n      <ThemeEditorDrawer>\n        <ThemeEditorFontSizes icon={ImFontSize} title=\"Font Sizes\" />\n      </ThemeEditorDrawer>\n    </ThemeEditor>\n  )\n}\n```\n\n## HyperTheme Editor\n\n![HyperTheme Editor screen shot](https://www.hyperthe.me/images/social-banner.jpg)\n\nPowerful visual theme editor for your next Chakra UI project.\n\nLearn more about it on the website: [`hyperthe.me`](https://hyperthe.me).\n\n### Documentation\n\nRead the HyperTheme Editor [documentation here](https://hyperthe.me/documentation).\n\n## License\n\nHyperTheme Editor is licensed under the [MIT License](https://github.com/Hyperting/hypertheme-editor/blob/main/LICENSE) by [Hyperting S.r.l.](https://hyperting.com)."
+}

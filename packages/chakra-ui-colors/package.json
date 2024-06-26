@@ -1,39 +1,39 @@
 {
-    "name": "@hypertheme-editor/chakra-ui-colors",
-    "version": "0.2.1",
-    "description": "",
-    "main": "lib/index.js",
-    "module": "lib/index.esm.js",
-    "types": "lib/index.d.ts",
-    "files": [
-        "lib"
-    ],
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "rollup -c",
-        "start": "rollup -c -w"
-    },
-    "author": "marco",
-    "license": "ISC",
-    "peerDependencies": {
-        "@chakra-ui/react": ">= 1.0.0",
-        "@hypertheme-editor/chakra-ui-core": "0.2.1",
-        "framer-motion": ">= 4",
-        "react": ">=16.8.6",
-        "react-dom": ">=16.8.6",
-        "immer": "^9.0.6",
-        "react-icons": "^4.2.0",
-        "use-debouncy": "^4.2.0"
-    },
-    "dependencies": {
-        "colord": "^2.1.0",
-        "react-colorful": "^5.2.3"
-    },
-    "devDependencies": {
-        "@hypertheme-editor/chakra-ui-core": "0.2.1"
-    },
-    "publishConfig": {
-        "access": "public",
-        "registry": "https://registry.npmjs.org"
-    }
+  "name": "@hypertheme-editor/chakra-ui-colors",
+  "version": "0.2.2-dev",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "author": "marco",
+  "license": "ISC",
+  "peerDependencies": {
+    "@chakra-ui/react": ">= 1.0.0",
+    "@hypertheme-editor/chakra-ui-core": "0.2.2-dev",
+    "framer-motion": ">= 4",
+    "react": ">=16.8.6",
+    "react-dom": ">=16.8.6",
+    "immer": "^9.0.6",
+    "react-icons": "^4.2.0",
+    "use-debouncy": "^4.2.0"
+  },
+  "dependencies": {
+    "colord": "^2.1.0",
+    "react-colorful": "^5.2.3"
+  },
+  "devDependencies": {
+    "@hypertheme-editor/chakra-ui-core": "0.2.2-dev"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "http://localhost:4873/"
+  }
 }

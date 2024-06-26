@@ -1,0 +1,29 @@
+storage: ./storage
+auth:
+  htpasswd:
+    file: ./htpasswd
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
+packages:
+  "@*/*":
+    access: $all
+    publish: $authenticated
+    proxy: npmjs
+  "chakra-admin":
+    access: $all
+    publish: $authenticated
+    proxy:
+  "ca-i18n":
+    access: $all
+    publish: $authenticated
+    proxy:
+  "ca-theme":
+    access: $all
+    publish: $authenticated
+    proxy:
+  "**":
+    access: $all
+    publish: $authenticated
+    proxy: npmjs
+log: { type: stdout, format: pretty, level: http }

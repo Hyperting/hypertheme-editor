@@ -1,0 +1,2289 @@
+{
+	"name": "@hypertheme-editor/chakra-ui-core",
+	"versions": {
+		"0.1.0-rc.3": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.0-rc.3",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.0-rc.3",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "2d2bcc01402f68ed1d8c7c8047b9225e8c83b217",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.3.tgz",
+				"fileCount": 65,
+				"integrity": "sha512-AZ2OMl2bC3pWsLJdVFhC5KSI41hCSge8xPdOykJ6mMnf/AHkoQ+Zp57T1tWWzCfEZkkw88r8CwZcguB1dhOG1A==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC4xv43+QisEYUSZ4riJ250d5JNoWlNsCxpHAaqpR0Q5gIhAI+QkjDjWxNz/+SJMCQxxciPT0edy5yVtvMxwD4Xxtpt",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 11835588,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQHgoCRA9TVsSAnZWagAAEz4P/0a02jeYGLgFYdG8V9wn\nVziP2oKz43iFqgC9BHm9uyH2YJm2qYzNv5hVfRJ1ylqXKUXTJftMvfD9Ryrl\nvYZF2VgRKaoN7zqN1f/BJkspAm5v/dcRQ2/iaj82Rj6AgLdET4e4Jf53JWTk\nmttCteyKPcHpaOoc+srZuPPfKSjzB9pXmQ8oPvKjRyDD5ezrxImMdTKPHZoZ\n7a/OrdF3oA5uX/vrae9VWvLK4i3BLQ/xEqOD+9arqnn+8Cu6NyrNanLQas1p\n6u4LJcLaH/nZTXu0sbMdrLvbNbM3Iy7nYnpSNdOXJnKuTRUNcwE6lJdWAEBa\nc/8dm410SXNC9u0ALY/O+kF87E8O5HMAsWVmqVb1vHU3evqwR2yFyWVXFjex\nV7R5fQy11dA3Ra4HTHTHxj40TnPKNs20T1ybRE1eLu1sIwXay8CRI065j1eI\nHmU9pvnZXkJTytxMCoCRooGQoCV2mM4m1yWU335Xn1iEtIE2CgXTZ20SpJpN\nv9qTBuMnKGONVLd+LfZGnsfaaADyPddlfOO03Jro3WUzoJgrFa/mIGUwN6vn\nbS5t2hAYisB3syAyNUy2a1WJrGuR+39wADHgr0phQ6Nwehdlz8dimyJVlgGw\nSntbpYg+si5lX8Cg2liX8rUxHh80Y1hBet+ouP0+gWxKNwW7B9g9zwIjEF5G\nq5Av\r\n=CMVt\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.0-rc.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.0-rc.3_1631615016762_0.5977435513838867",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.4": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.0-rc.4",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.0-rc.4",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "3ca65acc1a6c8822665ac24d83db27a1ac9d729d",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.4.tgz",
+				"fileCount": 65,
+				"integrity": "sha512-wuJuAvmq8LPbhg4vGKi7PJTwsfBvSPWhgdWfdQuAiK2nOr/utvwQXShEZVZHKmBc23DWF7Lf+E9MvkvGZYgSmw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDa8t0BbgMaEKzxkWXbknc+hJ4IHeb2zh3rEYqpDOgE6AIgcAEeGf+Za8nEmUGYZpZyuUtRSc1zr28qpzlaYbas0nI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 554435,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQICBCRA9TVsSAnZWagAAXPMP/24N0Amgpn7Oa7lSPfWn\nPBF4yaV/HYdyU02k8fTzS7sY5LMBAK8o+nbmIkrBk6lstFj2JdpH9RQQO4iq\nulpouvcTOMEwQ+mN7qV1NLeKsrzK5kT3Mon4WT+TdUafSQPBiVtGnSsBTZL1\n1C1cWfE4tGCaHAD5XnmgQTg8mzY1mvm8rBJdLup3K6sA0yoAMejl4qUVmGAv\no20zcSLKuGqhmgcOlkaMOgmtxUyd0GY7/kCcKi9LCiVR6JEixqh01DRNIqUa\n0OBh/76rOpPv0oU6LsAkX/w4X+5O+aSqBVnHcyRqmaBpkkO1RygT6uHSbtgh\nGi4wh4aZ4csAhC8DP63CwmCvfyYKC9k+LZfQODiRkMDWu8jfeHakAe2Szxi3\n7g4j+95fmEp6l+ZMDqKlXpXEohPZDxqhirhZk71yLijUHyld6GtkNCjnbH3G\nifQofIuCXOyxv5rshAVDTyCG5doVYVIvLj30TGuegTSwAgU0nx2KTYVub+dH\nJYiyCQKmjR3RegpcaI3ck6oOSk05pQ8rR0pDUQetT3Rq66RcVL3G9V6ioAaw\nN7vmZvHOGVSbAAWulCn3zN+J6pYvaIJzxCXLPR3x3HbMZtZKNgr4l/ch7SGG\nljKpC8VAXxQsPXwVke08vOPceLSIxZQmh9mSvQ9kkmr6vjRgvTimGt7cP5XT\nlHsQ\r\n=gJAg\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.0-rc.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.0-rc.4_1631617153343_0.016751841070721918",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.5": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.0-rc.5",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.0-rc.5",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "3f861c6cd4acb0ae18b161be33a954ac030e144a",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.5.tgz",
+				"fileCount": 65,
+				"integrity": "sha512-byQKj+2e9iqwN16LsW8TwD4Zl7I59mf1Ukt9X33v3nKwBuRRWdq6LMxXPT9u3y7V4mrkkPL4j2/Lr5EslbZOsw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCDT7WeX45u5mRsXrfBcHkIJHceuSKjUxYRUgGi/AizfwIhAILkbWlowGt75h0avb47Zqf217kzDF/w/zmjWhWmx/s5",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 554435,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQIRwCRA9TVsSAnZWagAAv+kQAI7AK77PjWr/RUeGF/vx\nKTHUOqm47pdsNF/RQxfiLo8habjNyO2BLzh1Uf7mboZ+pyRLkcQXaBt5ZHdb\nVveQwa+Oi3iVjDNnMLxsfo9KwRJRDsrD0VzAyJCwU3+IdQf92EoUYJpZPPLz\nVqZoZZ1QADXpPmG8eOMTnrU+UkRsOhRvKVmysEA5gbAE0aZESGwecBy+TVZU\nL/bOtQxJHm7ML79EYfJjeB6Poe8bUqhIAKWTsowBsnW5bbI/HdHigezsHYaN\npCCLdlnH0FFMiWXXeOyxogGCMzU7+CD4eDNmBrDwo69h4naTdI9kuninpc7B\nS4vklnsfjYcBDTPH0FhUZ7c4Y5q5z+P4QT6JbTjauP/IJMVtDnSLfp/hPbyq\nWOiKUdbrW2nQi4E+RKfq0F4Jc89O7/OtIkK/qGbrPOQ+jVN87qiNy5dec8aJ\nOnhUuSCvKST9gwqjAIfBHYgbRNsp1rN7DHlSfSfzexqTqS6bVDLpBPC5xvBA\n15OAnNadRsfJFDqz/DbSRYve/HONVPb/UaBVocugyNlN0ZMs0/8++w08rABK\nEhNf5HzK9b5IZyJ9P0Or+hpzHapIyDTZwyUnadUjTCaB9XKLttRILo3fdLN/\njxjylCdyDw+H6UkkufmmhLSbsLu2M6U9S3T+heGuhVqfDN9EIbF0ERc9aDb3\nV968\r\n=ZZE1\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.0-rc.5"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.0-rc.5_1631618160086_0.8004385695660077",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.6": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.0-rc.6",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.0-rc.6",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "5498877ebe3213f795757438b89890e03237ed0c",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.6.tgz",
+				"fileCount": 65,
+				"integrity": "sha512-+n8+q0TxfwgjQFglFpOcp6gHdAwj5DUbYjYtg85EKZW4xZ2MRn5efDptktRmGWjPtn3pZiaLGsPE8Okk3LRtPQ==",
+				"signatures": [
+					{
+						"sig": "MEUCICjzMgBS4CLW3dVNFJARHhtEx8MqCOrDhZc1WU5hMbOgAiEAoZmCStPFKggNqsu1yEhBp0Kz7tSzBtZFs2PL31WJk9U=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 554435,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQfGBCRA9TVsSAnZWagAAdJ0P/0/cBVS77NIz6wl9qS7Y\nD0XmPFQXtVWa67lP0S09qgt6H1t2uUgJIB9Ehr0n9gDWCf+xAmw6xHgolfK2\nhG5J7Uj4AhGmb2qmBVukzi0LgsSJLRJJdZ05McuFFkjT880XYr+/JOBYAiMZ\nEdqqfg+dVDnJraO/Id/WKRl7NkDX0BRtQ1uuJrvTerVqsV4zA9BLCMfmgl9R\njzjM1IIrXCbZs2hT1wGNlC36fvrgGvMPiygyJms44ZnfR8IRM58ir1RFMljv\nXw7LPpegelQxgnY6ftlmAC6Y3XBBo2LJyLYwF4gEOgbPDvpU/fIIYMy5+INe\ntTXPl4UoQvZhmu5tCRS4J90Fb9YrHKhVja78S4i9/H15ZVFdPkgwU+u2Q8Cj\nCjSoNsYWSDfo92Gmh21/pmofrjFs/gk3/z5sni9kFdEktC9p9tjX2Oz009fV\nTbs3gWlXc5e7alMz9Ji8vFpBaGOQKyqCPVzK2EORjYA9erx/jEOJgglO/yFm\nHmiohNQu3LvjfqRiQCXzDhYr8N3TkmlFTs95WR9vZSpF7CqEJLVUHJ2zqgfC\ncpO4zcuMrs+YFdbdP43gdcWaWeXo0/JHMWVnQlUmSOmxf+CnfkJ9xinBUeU9\nCHhfhxMB+ikfvTvZ1DMV1pc+f0aLM5idJzSJq9iSYxta6Mt4PwB/imjAwW9h\nW2T9\r\n=8WAD\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.0-rc.6"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.0-rc.6_1631711617535_0.7678411946578014",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.7": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.0-rc.7",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.0-rc.7",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "23e3328c07ba7c14aa6aadf58273f54e10e724f7",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.7.tgz",
+				"fileCount": 65,
+				"integrity": "sha512-xEvftQxPkCAsvXcPzY/vpNHhAdrtEcGYTxEESMGSmf92FQJPolg7HnlTU2ELje3DUsTsBbWiIRSYRvredu+7jQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIH+MluQBMmf4zmlkwIXM2UndoAanXRe439Mh3vFRKb9+AiAUS0GlVy7Rpyys5RywmnnPA7dhURxumHz0qHiUM77EIA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 554435,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQfePCRA9TVsSAnZWagAAeoAP+QAk348hGeMWB4tQdraj\nsrA7zRfm8JInipjmQKBprMOrjCAglw8dzTFzoUiJY2HlG2AfvDLiTTfc+gSt\nsVtvd4y6+tg8tgh8MDAvsrVvSjrhtvgLzWyY/Q88ULT3ocmdNIRZMWtaG5v3\nDvw+GwzODA0CJG+qKFurpjTKKZbD9XowDKnKxLwt+b7o9FQfBMo0P6TsNOB/\nSwreTd1T1/AMNUvHy7WZ5CC7fRnFgZNDy3ZDj17dRvAAq9CSJ8/WdepdMLNK\nCaZniI94/RM7Ux+Vv6GgrNmO15PXQEM+hPJxrxL96FbS4KshZDTSmcmBV67s\nIJSXXi82OAGaKcKh7XdDj2Nacvxa3NC/govLWG3B1KqYgs44/S6xhq/KQlgO\nWc6cpQuANYDMDLbna2gHrRhCMA+hNU56wGC7XNFag9p0G8LD2fE6G1OKWSK1\nugEwcUdBsyVOY+QgWgxvaLEttk4y9FprMdg2HnymVOxGIVBfk3PpVyUxaeO5\nCX+RK3KLZF67UiD/RUdMZCaZpsAzZ0LMQrc/g6TPZ5Sxeq6fGt10QN7hM71l\nFcdwpJpIb0CsBE3EzI97hLodHvFIuJgXmIe+ipeu8zaDvNRyfS1JXQpzgMtr\nCNEkH8jMqsE/wivaWEXX/uYGK10SH0fpPavHKo3I+SZBAJVkT/23SbN1msFY\nc7+m\r\n=6yIK\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.0-rc.7"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.0-rc.7_1631713167334_0.835310290897834",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.8": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.0-rc.8",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.0-rc.8",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "a72be26aa9810a480f881ea717279877aaed7dd1",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.8.tgz",
+				"fileCount": 65,
+				"integrity": "sha512-VEeMJRNg4V8QbicEloaUwMevFANUSc0vU3uSO7UadbDIVcrIAxBGzXzt4gSI7JF5KZCMd+fwixVQKYg4fyDPdg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQD5qr+IZtlHlL5iz+JyeVp1rsz4Pw6pf8/qU/GpTEE6/wIhAM1tUhZFXjATqkZkSzFMed6r636LZVqIEzsGA+rZXkMl",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 553820
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.0-rc.8"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.0-rc.8_1632214596520_0.32464232904259926",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.9": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.0-rc.9",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.0-rc.9",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "0529ddfc6a74d79506b9e03440c2a017f2313604",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.9.tgz",
+				"fileCount": 65,
+				"integrity": "sha512-TlbOBAFjNH64ieOzn6V9a7a2foHb/JMP1dZr2zjcPB5rqK5eZyaDnhTXRiKS4iEf3XrW/1Lppxf0F5YtAZ+wtQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIFNj6TB6MAZ9xR5dgQP1DG9VmMAbnR/bZtk7dzcQxxWkAiEAr1TN7EesSyrAQjKaqJi/QvdlW+FZ94j4i/hMkMMAoVM=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 552628
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.0-rc.9"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.0-rc.9_1632221180060_0.21073116736025854",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.10": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.0-rc.10",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.0-rc.10",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "960adcaae43c52456b8314eec634832220cad6de",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.10.tgz",
+				"fileCount": 54,
+				"integrity": "sha512-+IhFf/D4Mde38LBXRai1fyi4tq+sLLLFWhV6YUD9Rt+oWqJP0yRkztiNIWFg1xwMYChDZe4fUsmly82AUG3kug==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDeXNqQhn4ECppW+H81kleOovs/iQnk2nlF4EXz1wRyCgIgF61HGFE0EmMKqomRa3rwz3/kfpU1qgeJfKmboU8eCQw=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 542412
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.0-rc.10"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.0-rc.10_1632322260085_0.7409515778564386",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "505beb1a3117afd70d35af64fecc15137ccb0aeb",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0.tgz",
+				"fileCount": 54,
+				"integrity": "sha512-Bpd63vomasq0+AUtOG+e4HVrYvGQXWxMTVeV0QD39Ek75yOR58Fs2m1EdyjcgJ0ktxZ9MKmscVqzW2k/hp6A8Q==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDotpbWFwKBn1ilKxmARoX/RlVKFp+dqmXBQO1Ymj2ioAIhAMIcqGnPBDJkRo8ydCnjD30c2z8ke7s1HFRdi5khzukT",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 542400
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.0"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.0_1632323352512_0.2412707992525429",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.1": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.1",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.1",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "250df0a49a2996c1d5fef03e405672ed1c4eef96",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.1.tgz",
+				"fileCount": 54,
+				"integrity": "sha512-+GMmo4YDZIPW2uM44u9ZC8TpMMfLD+ef8yFAcgvnl+DeicC+dfIs7Dq134/RJD4KuiiTxmnfIs9iqKaW0zYrCw==",
+				"signatures": [
+					{
+						"sig": "MEUCIDKOaF9PDNIp1fF3e2q7cr5V0aVpWgOGIKy7TsP9BI04AiEA+1HdUd/SKLqacFdV4SmiqZ1yc23vxj8pbbqSAgtDvUo=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 542400
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.1"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.1_1632325401222_0.7452125233596347",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.2": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.2",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.2",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "5b957b1371d0f1a581bd2667b95f8b7eea35a3c7",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.2.tgz",
+				"fileCount": 54,
+				"integrity": "sha512-Mov+NrQ8zmdmtJ8Xx9vq/3pZRgXnAvXuG3rdeN9H7bQ4fZZ/qY+n+NQZL6BP8t2ktsYQqWLh5Yni7BYpVRkOAQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC2f1LgI/xHiRaM9TS1lmdAp3sTNDjRjeIfTRqHigG6vAIhANSLWhKhmK95auteqyTAyBjKlGjmBuIjRj6gUQ/YTmGV",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 542473
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.2"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.2_1632336498875_0.8005642363671925",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-rc.0": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.2.0-rc.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.2.0-rc.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "2840898c6bf886f5e4ada2e1e9f63d56d8418baf",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-rc.0.tgz",
+				"fileCount": 56,
+				"integrity": "sha512-r0Cc/fpNVIt7mHOPb83aJdVg2vyMSi1bQkV20Lh1pug9Ep6ES4XpUuOwXEpTgL6Zf/xQFtsZYwB0J2WKRbK1Hw==",
+				"signatures": [
+					{
+						"sig": "MEQCIEDROmhtsesOlMY0bnF0N6iYzb5MInB6ASPakSf4ZSAWAiAXCrDZa+33OCSsDEyGEY+mGJz4v0fOFT478xRBpKKvtw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1980377
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"recoil": "^0.5.2",
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.2.0-rc.0"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.2.0-rc.0_1637350786080_0.14942014369292433",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-rc.1": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.2.0-rc.1",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.2.0-rc.1",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "f2b398c9d28b612e0263da89c3a75c88862d1f36",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-rc.1.tgz",
+				"fileCount": 56,
+				"integrity": "sha512-D2jVfxzJKxjz/mH9ouhGRqYzivLWDdRy93M7/hiD3H0zIVFFCxYPObRdbEstgvLq6fqRf/0+VMEQl1nijZKN4A==",
+				"signatures": [
+					{
+						"sig": "MEUCIE8tOsmi3RX4CNhmijBCTE9053ccfIL0V3ARsuLQAeXqAiEAvDnwxSEaCRyfL39EyQ1GjJljjW5MZnnYAxxy3ciuYsc=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1981193,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhmOvSCRA9TVsSAnZWagAAeBwP/jnwdlIt5o2k1eeqHXZv\nBRSsfHRc4HhmcKPAmI1zWg9M/CzwZbjppFrMUXzGszMA8RKakcCmdcP2rMaK\nEy2NvA4+wcBQ4EVLzcSoXYnLsTVo726aewbyrykR5Npjo66lGmui9wIUeXCI\nIOyNNeSwlM7kH2u/iHrIefYZqOhGufAH9wMQ6DKt2aY7E1C8ciSYHZWDsvu8\nYkvMEHvXwk2avdCmIZiK0VBetDUT2kOVIDsLgnDGMVtgSe53loEM3M+O7xjx\nlRhfSlQapy0pUPbzWbUtBiGWwqIJFRDIL3hVGYhUx6P14Upn4wwIWSXoHfTl\nnBaftBfXp3gpkEj7dqMNblspAG8RF976xQdlW/GPPOvzM441+2Py8zvueZCa\nL/UAgDuVkAibQ8i0FUvtHm0A+iG74HctBOqITBOloqkwHaSkmCAjSf3vKunE\n7NM5vdF2s7djy/+6jkOgyG9yezJWxizD7PTd8LDPpsOgxn1IAlmBmjxPGBIX\n/476/wDcXTL4+leXw3WAbKdXYPn67vFpteBXePoGDRrAxgPTny9KZvGfrtef\nk8kwAlzt2aqZZEgkLYlvmISinQzftQ/hIibBwyBIgN5Oe+CxxtH14d+rcdOK\nttHiYphy35t3h61qVyRqwGFLt5RK+2SXPFKNb5G16JG5/2s8U39W9hJMjDzi\n5hTU\r\n=uejc\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"recoil": "^0.5.2",
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.2.0-rc.1"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.2.0-rc.1_1637411793977_0.9581990184648275",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-rc.2": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.2.0-rc.2",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.2.0-rc.2",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "3d876bee99083ed756b3274a951e38a827c9eafe",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-rc.2.tgz",
+				"fileCount": 56,
+				"integrity": "sha512-PKZun5/GKXVH6u5e4hu6q9Jnz/8fB8bbmD8cl5mMgWrRN2tALbER3Cb0lnFNRpuqbV1cW8J0CiuNFjv4Zt1BnQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDCfQpAA3xicPYD5pacwk7aFdBO4wwygsJv3KrKlEUUhgIgMRENR/9ke1DWIRrtkOFy1DsU6/YjyQGJXT4RWSdipfg=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1981197,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhmPEgCRA9TVsSAnZWagAAYzQP/i7IkyLE/7EqFt7uCuJM\nyCGPs0pINpY42Opwm/R1lnPzdvJfgBfP/koZBcpp7Ibmp35XhLkxj24n2sR+\n5OBLCle52AzcTrVJp2UNklxsRsvI9YiYQzK1MVA8N035t3KaiCp3qkiCpIrX\nW0GwbUcUj2rtiE50yyoXBF3wriEI6el1u7iObYlro6GjvMYnsrsXV9oH5U5H\ne3RP/opEPuViHSoHMA5M89vvPHjHfiz/3c7QO2L9Yx+G1K7S23lQ2wuYvAAW\nD/vRKp2w2xWs9Rrdhu0YZ9owJMkLrPQCpbtt8oYkzI1sC2zmYkvJvWgfxkPY\nylCs4OYJy3KFPKI3hAFkxsjGYEUjrmzdK2ddEXAgF+TN8LFcnFyV4bCVgoCQ\niue3fb4z+xHp5DQunGZJpFfo3s9LbQ1csFagHXfvUo+NmFvVlqDA21KlGoZ5\nBnde45GoVH9YElEvg/iqMVOF+GawWJ2nflvINnUsxl1MPzGT6bTnvbb49e1O\nZ++WqvmGD2d2ihJFgRjVHmMZ4fCQijc6oPElcltc3dCi4SJl2ZCmREmnG6Pi\ngGJs0+0YutZTAUTukSTMNgrGhW4fB2pi8JdVnA/Y1mj9iJmp6ZQ5JfDG8mx9\nbbVvrWltBHPJkqtRjtbVUzqm/QuND8bNLbNxx1jXs5jZ4LmVH8Djh1SK4OBP\nox/K\r\n=f/qP\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"recoil": "^0.5.2",
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.2.0-rc.2"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.2.0-rc.2_1637413151954_0.4016402295591537",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.3-rc.0": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.3-rc.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.3-rc.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "6b3b59a5db9200e5e04a326bc568035d95672f99",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.3-rc.0.tgz",
+				"fileCount": 54,
+				"integrity": "sha512-xpKT4KhO42Np0k0ylWFrEj3Fpl5Cd3o4K+T20koXDAh4goSfF//alDJ+cgzB5w19jy+z/n1BUVwFlmFUC1Zyhg==",
+				"signatures": [
+					{
+						"sig": "MEQCICWuo0Sq9gj2OV37Kz/kLPVPo9Wrd7CaPt7XQNIb6xIyAiABhyF/QE0xQ/qzU18M/vbcI3vbKoN4U7eC+YTr/8z5GA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 542486,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh3DztCRA9TVsSAnZWagAAYjMP/1nP0v+Ucp3XhM6ed5s+\n/hr407dmZ7VJb66HpxHfwguwbes594FIZafr2Cu+hdocaN2q6lXm8dmUr8SK\nYLgAQKEZbQ9tJzXex+6T28BCdR/kcfVdD0cjAnrUW07pfZTDtlmnRJ8rLR0s\nS7PwE/Te268p+HiPVQOw/SdS+YUrn8hVKi+8KWfDFAEmYvmIjez322BKRkrM\nOMVHYZFz1T5z/WQiw1tNRKeYmcNgCX5NiUyXasH5uVfZlO7L2wG9a0KmnhoT\nzlEMoLSNMVp/yU+wS7Awd94rJXSwJ81nmN3MYxHJEQdyC4Zj2nHeMGvURbdM\nfrgc3z/5vDANSTcyXphJ695r25joKrnMNUYNpJPn7rFti2Q+zsfCkpyTWXno\nGqY2Y19vyL1ivJcVHgJIQvLYi3Y0NmYYt4gJKys0DkU/koyEuwkrGsmM1cPo\nxyLkutPagg1SLliG0UdicM4OzTCmW6qK7KCeWw1H1n5Wc/n9bH+IkxYSI9vw\nXqJONLS/nTMS52NRZ7sx4freqbBAe5XPcxkGqJc5yIHNahiUZsOpHJJwi+Un\nsbvEC8lUk5uI4Bx3qt5xAkwVrIFUhiknIpP9ZwOf3qUG9kTtDsqeti9eJG7O\nu1JdFL5EQtIJHiSlyU/1SZJuTpUB14Sti1eYZVaXwJ5LOp6lxjS46NEhchKc\nt1aU\r\n=3Gy0\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.3-rc.0"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.3-rc.0_1641823469769_0.534743607975037",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.3": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.3",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.3",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "c3cb86af1784310758246f278c7d0a738d078e21",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.3.tgz",
+				"fileCount": 54,
+				"integrity": "sha512-7oC8egLJBfIl6MuqzaIscOUs4weBam5mIgsUQA26Jth48AxM8QUignijbQX0bp+zp4W4B6H9fgU05zCyTmLSyg==",
+				"signatures": [
+					{
+						"sig": "MEUCIGJL20EgzwVgdoyUgZCxB6e0GzBsldWcdPY7TUHL8CFnAiEAwJ9FTjgFbRyVUJ7TBL69OgnmxbXSkOtkAZAhRcS8KDk=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 542476,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh3d0DCRA9TVsSAnZWagAABdIQAInli6FzSNqNWOJJ1snk\nuLvUrCkNRUV8tsgZ/dskeWKOOEmsqdd2AUM3LIv8hXkxjtWuAQVFZNasBoXD\nxJIFaywKIEX8+1Cs8yAMHT53OE1z7HQIns/R5Sd8XcehbgOBD5WD52NBInan\n4xjP7WPO2HlAYBgJYK23ft21/RE7CjL/Q6utkWV74wKbDvNWAEnOLlv++TzO\n2NZQRgHvcWJ7itsSUFF5NGAUmQ5VYr0NTmDv1ui2V8Kx/nXIlHOCdy9Fmm6C\nj9N9dGVkXBSfqJIJ9h3oIhSe3jAE+AHfFmIUJaDdajNNzHFJ3veMpy9GH4ol\nVXufuq7BWs1wdcSf1tyoLxdrG7z2IzYRCjhriMZSM1zoQoDmxRDexmJB9LPD\nGB1IhWquqfHcvoWb1yJLXl6MrHRPY+VfIBajBS6E6Y4CCtx7TS6j1D1hi2Ms\ncxUo4W+MaKlXx7ls9qYtkvuDE5MmIphQfy07CCkdA6LyfF4I7A3DMAAjfgKO\n1lwVC6EHhdfSj0QDVOy0txLnge984BRnpaaRz+fKWbwyKcd7WsBS6ePZFt5c\n3Ahjsiav9F5LMzZnM+f7bK/ydYLQtHCUlQzmoq70cJ5caly1qlPIEKfjc1CZ\n12tCHu0HuzAZ5XRUbQT+n6EyCOdcSKJNC24usckEEf+EQtnA4oV5S1M9MDX6\n5Th5\r\n=Cyqp\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.3_1641929987337_0.42556628783637085",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.0": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.4-rc.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.4-rc.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "bc2a633ceff975645e21a0b3908413c14308fcd8",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.4-rc.0.tgz",
+				"fileCount": 56,
+				"integrity": "sha512-ChfDFubtFktC1xE1fjYKQEdpPFRwDJPO3mf+zqH0kqhKuVSuJHAz8aeWY01DiNuMr5gGT1FkEY272muxgdo13w==",
+				"signatures": [
+					{
+						"sig": "MEUCIDAcSgWF1Tu0HwTAZgEvRTztDmNNgfT8iyuUdXRU/E5fAiEA9cdVkhBAD8UQYqv0+oHr2li2e4Qp7AID/lvOLfaoTrw=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 543539,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiGKQ0ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmojwA/+PNCjAHdvxN51fOB/VjvaNTAjKaXjWz36p88izT9DBCEkNf7c\r\nZCY8HLmuxlejGPOOR0YIM2BG42q1NXNoZGiB74bGQRKLsEZXR+6CeQ3HVvwr\r\nyDG2+Ivd6B4cVn2eZ5ZZpmr34e3c+qfICBeZZ3Kq54b3tG++sgsj3NOkCwMr\r\nUiAMz1XvHoBpMICVb+WzL5yD0Fb2YnYRy72ZwQp7nI3UL9NhEBbgiMPL625l\r\nC1vGIq7AY6AmU2EmwHWkt95VU4h87ZENnmcdbfxYGoNvqSgs/tr8c35ezwW4\r\n/6oSHko5oHejnZgKPcf2f9kxtFu/Spe2NQkm78wtrRBbK2qvoiIXRIYZO9hO\r\nJQRutUze39jaomlheiX2ok9BTOZB3BfPO9764myD2ETiFcHfK9KIFgNqsx3F\r\nIde1a7lJkN67I3yyusrZGu/X/9asGFAvgcSz6LXA4RVUIWOJbrzqlSfQZJ/F\r\ng52TQfc8mxW+bQcOkBe4fGSYML8vZdwirb5yKfdynRFQDNEgfx+ZIMkVkEl/\r\ngob7xGEdNtvIcgZdzbYQFxMMPJ66TT7atTtZvR2Rc3F0+Ib67kJF0JYdench\r\nazZVdreVwgcfigyMzajxwX5UVpsRT7nySpozeXHHG+3ImJlJGoJrWeo7HWqc\r\nhRW9RNaCiaYGFUtEKA8SaSh1JmtNaltp/Ac=\r\n=PEzR\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.4-rc.0"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.4-rc.0_1645782068096_0.50271581504188",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.1": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.4-rc.1",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.4-rc.1",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "663bdabfc4301ab9858a80766181c6ea34561483",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.4-rc.1.tgz",
+				"fileCount": 56,
+				"integrity": "sha512-2xrZI3hy1UL0vhbCPw7L8rMI7NhUufzN4qiehiSQAbHnXrQ9Anr8ns/VuAx61kETRnpyDBdXbngVByn3IOVbug==",
+				"signatures": [
+					{
+						"sig": "MEQCIFF5aWet3ihUuzJ2uVlsB81wPPxml1isinL7JiA3Zvb/AiAzI/fAN/8gZ9FkLWDmeI2tQ6V3O3TkWYH6nOzizFTEiw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 543539,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSdVvACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmr8MRAAhQSaTKNeQbdfRoTO0ze7ry/xVTCAoVCtaJRwFihIT8DTqhWP\r\nxTbqF6EhQr7H98SKFWElCdUnp9PiY5hTytT6i60dOYnSFkqI7dnCtXdsPSiw\r\nAK3KHfIpmCz16OuqKDJMKpVIY+gqSMCIn/W99dygTUmJsuZmXY/oJFulQrAJ\r\nrOxQejsbUSKcrA8K/wpLVKpJI578Bji4TiHAQXWy5J850I3Be4scvVRK82Kb\r\nzVvnaaIGmBdo8qy3BHnSzpm8WKzQka0rR+zqAaTSNyyR0c5s9JY/p+5q7OVi\r\nHU8IJsiptovRmMaGlAR5v+YwjvLRcPZhwKL/tfYaOKZRar+o5FCzDE31RtyZ\r\nbwHC00hhe8/l66u0KQ6exu0y8fIwJG9IhE1AoMXB5R+1Wx58JfnK3m4OYwLG\r\nXG5YU9jWKgG/8iyIIFmnkehPoJ8vRWTthYYZmYReIPNEqB3oJx4ikA7v83Bx\r\nOcsocdlXN0UXOBO4VkREp02dxfRchi1rN2aGPid1zcUqHlM+6QDU4ZvBZUdN\r\nYo1UXAAdV4QuSWw21D2rPym9aVg5oSXmBwnS4qCWAwtNJOal9JaRaTmaVq8E\r\nDX+enM8a6Q0R+uiAtIp+VJAXJ7CFIP3CVn2dwl9QQrnGihtO/AbQKziz/vrE\r\nbhTgLOgd2ddtMEA07N7dGHiHmnNWeOwksyc=\r\n=iEf0\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.4-rc.1"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.7.0",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.4-rc.1_1649005934913_0.5635642281331648",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.2": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.4-rc.2",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.4-rc.2",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "6bef8b8c7308d8d22e848327e8204b4f6e8ec580",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.4-rc.2.tgz",
+				"fileCount": 56,
+				"integrity": "sha512-HeaPjRpYjCBir6qYkvLBv42UEDsLjY/EpmkI+HhqXnFMXHdeXWwFrIxSVNGh9NtoySAyxHIG6x9lhbQvVOW57A==",
+				"signatures": [
+					{
+						"sig": "MEUCICAuoiqF36cO4wrv027p+BIkd0n9DZUAnQ3of+zX1GWtAiEAhEBiNY+TqLNYEnv/aLRCcDbMJ0u7xc634Rq2TKdROHc=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 279109,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSe5DACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmqqyg//bTm4Wd7tdJL0S6WoEgsX8fBaZ/x0yVFFcfDUQigOrL7TRwaq\r\nbzMMJGAtuJFsJx3LOir6keRvabj9MaYTXUB2ALSZJK3OO3JbjONA8ww1+cge\r\nHCRrUnzbk4kFcTdabC+9u/hSLAd9cUZffXRlj9Kmc3eyObeSdc03Iwjam57L\r\nu1hHOxujT34iFD8fI7C2igNmOaDzyOfSqahGZPVCkumgktfeTnzR5KWR7Dho\r\nHhxtmNegP5W93t/mfuOA/4r9yawLRaVGxwXsm6bKUwRfpLJMCmX649asTFq8\r\nOvUYpBcFq94/IYsWHA5dBEr+VXYWsZHOFYVb3XYM7QCx8Ux+WUcdokE9cOd9\r\np4jqSujVgYybg/NdpX4rq8IZ/+wFwl6IBpiCjlgJNvX1NDYHmYlfrEnYcRDs\r\nMQZu6vqTKgvxDJ71sPdeer5l9ScLdb/5aUsfcHHk0qU3QtojNbYffXIzHhmx\r\nlNAoVA2ufbCQOmD6M2ksgA0PjFaiukP2oqNuZ+3QCTMHusOW61YJ8UpAfebj\r\nqs1tqLRRawCj6gIXlNeCk3ypf4Uu3I5DIkCdZXTPa1gbXYGFlLpy7Awv8Bb5\r\nah3VOvfplyKLI7R7RgTMFhke/P6h0QpPz9HF5MD/E9uk8EpsOV8nN9ORjscK\r\nycmh5FONFYcjWzUEQXHCgTtFDEmyndWo/s0=\r\n=zj2a\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.4-rc.2"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.7.0",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.4-rc.2_1649012291805_0.7449731636070556",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.3": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.4-rc.3",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.4-rc.3",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "91e4029f68db00e380469fd798cc368657008eee",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.4-rc.3.tgz",
+				"fileCount": 56,
+				"integrity": "sha512-qukF0QiDDb47Qpvvnllip2uK3Si6oYMbGO78tZnSmltk2N9lS3RaU+aNccX1Co5Hdjcbksx/oFavN+j9VMUZiQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIH8JL5tekoEmJAus/yrOF1Z2VosneYXjtHwQPMLtP1XBAiEAtcopvCJ2sndxSc24t+UCswzvfDjaVpeQ/lhrIrdxcQM=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 279109,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSgGgACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmra3g/+KmpJeIXc7deeA3wvF3hi8xV1yBPYYcSEjwwvmUfFwZBSgKIR\r\nkvIndqnOcwosv2+bsMkZ4830Cdb2Vb7KMZKBe505HU/sznroChblGma5qYqm\r\npB53+X+MJwBoZL6lHSl+rmovHP6CoAar7Pq84ldrdFC49wlh9WTUSxgb2sx2\r\n13TlUSYOBHJ9QlGrmbyg89VC6tJeB7kTWNga6FHa47iH+lCglsQVgU9lgMTM\r\nhb+RqiZa5oY1PVaX4l6ygIF2SOj8u1EU8CH+nKajCXQuDtF1+iNNdUeTjnwI\r\nau+V34SYhkOrMQrqGOlFn2BhzmBxH60oR4znDmhJE2GKCEzIS+xVYvbVN78O\r\nRjZW0JuwrqXMC2ybuN91KytXgipx6rN9rPJL5GR2f6MXczDi/Y9O1g8Jz9uc\r\nzdoEnLGsNwkIYKfe3eqySfwjy41dkOfkYgnHE+NXhNjJJ57sR6DF/bZ/gDTD\r\n1C+iRW9+gEknBU7fIrW9u2BrUJWxkEGRPekHqsM8u+LIwTW/8IgtBMTggGoW\r\nQTjfRQcb8AH0RkQzt51yPSZEXgXhCz/6dFzLwOZ5QjdLhZ4mdi0Lk0TAZYkJ\r\n+TdJDPvKs7RnEk/Fdw9IY+xuqPbJr6ACxLP/Lz9bvOClNET+nhFxzAan4YNN\r\nLxtvbevSqNcktrTwEU9E8uLU69vqoSSmPAY=\r\n=zcec\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.4-rc.3"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.4-rc.3_1649017248507_0.6584721263042921",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.4": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.4-rc.4",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.4-rc.4",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "d352666e953fb0fc529876316b1d5a1838ad4548",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.4-rc.4.tgz",
+				"fileCount": 57,
+				"integrity": "sha512-r0SGwK6joMRtCTP11rKTIN4W975uWL+rsE3O4jDx+hXlkJKLtudY9qOoYIUjeKjubE1+tAIahP83PDBW0VZ54w==",
+				"signatures": [
+					{
+						"sig": "MEQCIDDMKGWmNa07sfC1Q56ZZOvpwYy4m4odSBrSQ6WXNCwCAiAVWFZzurQpi4+tjavec55lyHhRrLGLZs9hGBBa62LH2Q==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1692433,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSrNsACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmppkQ//VWssO8UlDnwKcH0QMgKX9QXAtDbHX9a8fXNj/WQ6Tl3Mo0y0\r\nkYAfmgcRiPi8Hi2qgyTHEhKq6MVvp3e1tewThIOSgv1wxP8O/9al1t589q3i\r\nTFDG5cPA+tSOVOSKu+TdpKPxQ0X/OR9P9S+Jr457Kb9F9Idt8H17nO99PXEH\r\nIPQoMab/N2hxzA7pm7ALZd6jXqMN1GqkyEyMZrwidtthE8Xi/cJDRLQYj0JK\r\nKB3NHoOXmAdFpS9nh5UutWUcdV144IswDaAiS2Sfz4PtXrRqw0vISlG4xkJb\r\nBTRi142Noj5VyeKStFTj+5OM5c6Z4F8iuL0vtss5UUWu7R7cqHdhKrwan9EZ\r\n5XuCHM1lcTVYqZ/c4FG/oJMAkBIEkw6yuwcnsyWOOl7dWQMYJqpqEBMAIrDK\r\nSWGenOFCJbhoih36x4Dt9HATNq04DDu89V9+BvyakB+wpJSkUHKdHuBwOC+S\r\nbYplvTrAYHEpyfWHhPOYH3Q43PGbDEX+s28/mR0oj3NV2YlMDnvrxpGeIGQv\r\n0CySfN8nyMxDZDdhFhc6bhYw1uvS2+pL+c6XwPFBWAsB7YaAJl/5oNm+2h1Z\r\nb7WysEZ2d6XS6rut//cvRBR+4p+I58tjl+D5z0iL30eAKATxlVlJY2We8ni4\r\nUn70+ZRIN+6G52tI/Wj4W5YyVwQD+dqI3H8=\r\n=ZseN\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.4-rc.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.4-rc.4_1649062763955_0.7044610038311299",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.4",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.4",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "18a8eaf910b3dd47bac788309f4f5372161c74ed",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.4.tgz",
+				"fileCount": 57,
+				"integrity": "sha512-vPlVhBdpzFFp0V0DHuv9iob5MDaN5FkqnmoHia7jpTVIlJV17y9x66SKsR0g7SHh3TXDC4c/D8OhwA42sj8wVg==",
+				"signatures": [
+					{
+						"sig": "MEQCIBk4morUNZtqUw1gpH9B3WvevGUd6F4j0rHvG0qa+1hBAiAtjce1nSiKUh+2EnIfizcR8T9axf3xGfMEa893W/4prg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 2117955,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSsBLACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmoeyg/+PRoKxWzCrZ2cy081zwnd1a/mm2bnEiwBD1U0BziP3HCR4lDS\r\n9JadZmWDayQ4dnknqTUKuosm7RWS6pzhbIfHMeql8nn1IfyvsxD+pNClbohz\r\nwIkoaaUS60ez/mDAJ06LmxLXZ/inOs3DZVLUScFytr6eOVt+WCUhVLx9l7f3\r\namISU1rVZ1agyZzlpNbF9QhHxivtt7sojS1zDI7vJstl+1bTYDsEJjrcxwit\r\nnILIRI+FoqwJrteKJUDQzINvI8kFw8Qm1nDpt7385tfZdURdBBrsnxB1pAFQ\r\nZncT2M17Oya+B9QEw5Vdo1TfI7gCY+si41jjCCPAoOd2gNFoeQ/7lwmxlNxs\r\nzxubPwCB1d+Itlzq9uH6cGMSvEMQpgdq6HAW6aHRBCqRjaF3ZFfHC9uiFUuK\r\nWgLvwFQRq/H6hTsQhsa4pOwp4WbCrZwTTbmN5/e9bj7aGqT2zDxfWYmZois1\r\ncMDswl6QK+2PvSEc4e4gBsRfw0XDndJn6Qgm8WuSIOvAyabEr+X5SOnVi8Ck\r\ngjU+Ci6+d/MdGS0Aph3t+ClZmbyntWUpk3nD+uUaLEDDXOkNe75ME0zrsZvv\r\n5GqC/nm3JfehH8lODHJx4pXT23ohNKuz+DCNQNch5O5H5MpGi+g/7zhJArWT\r\nTbqbqbutyN4UnMihOzISYFpotJ2RRUaq3eY=\r\n=LZWi\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.4_1649066058792_0.6401002272532716",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.5": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.5",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.5",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "39cc1cc2d6b24cde8cae1e05f32db66def2c37eb",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.5.tgz",
+				"fileCount": 57,
+				"integrity": "sha512-Apts51/aWAYMH28SBpgNbzAAvxg44jGseJWQTkDoxEcGcZgAFjUD49FdxxX3GGZn57yNrLIKkCQ2WNDbSZecGw==",
+				"signatures": [
+					{
+						"sig": "MEQCIBl5amCxlUf4PEH9KO1DBog+vEibONfa63KDLi/36aMVAiAZurie7fZChenacIbtrunwMxGCUfHtEeNk82rfvju2BQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 2543437,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSsLXACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmoc4A/9H4P0s8/Tj42GbRZs3nZKDfpQNajuZDFoVxFKUctnvGE8gzS9\r\nTavYIhaFFaQIBCdtolv8JjIBQR97gSVAZv+0Sj111DVqVOc2kKIc34ODSRtb\r\n+3WTDFBQjbwIZFH0PVYfJZm6OTvBzzwLMGj9yTGUJtV/0hYusSJ3Ud+HVBJ0\r\n5veuOZQ60ycMHjJFzZw2StNHTRFuNYb3csKc8cZ1PV3bjs/wA4HkhXy+bEsu\r\n/aOdDU3HrZtk+4FndjzF+soT/ap8CBg8MIvPbU2SH+f9nZ9hk3X1gXbdYyri\r\nTn6NBeVKJc5CoEOwujfdHWITIoe3i/J4fLNd7/DrTGWrnMTIkkq5d341lPOE\r\nxGYgV/BR1yZi4ge7rSe+Xw6nsB9b5ydm+7VAgMbaYmV94RnpvT6Mq2pDGrKh\r\nP8dCaEDggAUKEStgTsgpt4C1WBEHXGAZnBsP1CEgLxJ7Qrf6zoXETVwYaMy3\r\nJg4mEEJcrQTuyv0bdEebDiyLZVay7c3Hj8JS+tJW3pt97h+hkZrRfHF0u5y6\r\nYZbd5f+yQY0kSfvSxvSQYZJtR3CnCJeJX5i71O4SqVFjim7CMM46uTA9LFoV\r\nG8BoHRHtRO/skfHW3EHKLn0JvBE7+OZR+koZoThtsE+Jt1810+3Vhidvr1S7\r\nh+TS56/Djju8hB5DPT9tmsNWFRQWVfWB808=\r\n=E5to\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.5"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.5_1649066711339_0.49640243825308494",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-dev.1": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.2.0-dev.1",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.2.0-dev.1",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "87be8ba1a5590f0927aa36a7ff15c06e28ba2827",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-dev.1.tgz",
+				"fileCount": 56,
+				"integrity": "sha512-+Jej8i/RIPUORPxSj5YeP5GLzlkM5/mHSE5xntj1DtclwwKgAcZWI+gc3gPaUqM74aDmsfAWYgYS3J0XMyFWYw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDLzvkx9wnuI+sDEVgLIYSkHmBBYg9OsT29C6z3rTEIMQIgHAqcjLSepMI8WDv/WPvfSwCsPcRLCETLEpbNR4jUZ3Q=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1981525,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi/hUcACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmqi0w/+IeJYvBc25evU6Pv0F1qBXpkz2D4ff6vvBf8btEcmZNpU7vlq\r\nkkyyy9Kil+sWRA7Y/TNdVmOje/qHb0ZniK42A3MGxIEmERxgheoQY9W30q1v\r\nF/l7V55D/kIQVRYeXiz40DlV/B9ZotGEn0itaSc18XV0OwQd1LyDybhwLqbt\r\n8z0j9iN4375/qrmBJqc5L1+8dwi7EKejoHt3Am/ZrJLV2kDPSo0iwd6dOAay\r\n4ZcgWXxJ4eugKYRtf+vG0nc+XvwwWQelW74pYDv/Pj2nO0oBci/lwhRdRH04\r\nIjjw+TeVQPYj27Q9h9j9PJNAsYT63EbJWNqN2faMFgV89bsnSF6L1jUF4JDr\r\n94nsiI1fQOBDvI/hQqaEbXUPiWsuJ/dcKSkPP32mm9u3ZNBms/adZEopfq8B\r\nE34bkeSP24iaVGA4sarY0jZPyy1blcC07qTPvX3Pe4t6R9Qo6l871Alg1l7G\r\nZPQtF/K4uzbC4A7vyBx5vIeIowNK49PI36oJ9YUHGvG+gbTnrE9wm7VJLSxj\r\nyI+tWyN2ljBMABSaw7e723A3O+Z9kbQaZpRQkRcEJi5P95Z4Fw08+IHMg49c\r\ndnxcNmnJGbZ1eh4OplUJxq77+UaUVPlP8JA6qXnCKBdb+4RQV7W65AcTQfcQ\r\n6k+TkGgReXDkrQWTeIGDPL2cJOOoNDiUMfE=\r\n=uoBV\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.17",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.20.0",
+			"dependencies": {
+				"recoil": "^0.5.2",
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.2.0-dev.1"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org/"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=16.8.6",
+				"react-dom": ">=16.8.6",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.2.0-dev.1_1660818715926_0.20126498955289773",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-dev.2": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.2.0-dev.2",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.2.0-dev.2",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "419f893ad80a34d3868d68cf8cbb20097d87b601",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-dev.2.tgz",
+				"fileCount": 56,
+				"integrity": "sha512-ocP6lyHOBF7K/7HQWswQn/nF3j3OabcGw7RahF1umQUPNyGwvoBFQ6CH6iWbJnhAQCMsMeCyQDnNXU1uGJzrCQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQC5hdg7JV4L4BdWx9TNEBHNrAT3u/Qgtc4n1NdofePyzAIgUMDBfUYULtj1KA7XdaW+/H55sV+wykjhxnz5uz8bs5U=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1981525,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi/hhIACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqQyg//YlYe4tGraq6BoCWYOxC2k02FV+QOHP9cgbo59DFIAYFRozXJ\r\nPIWySO8gk4F8Wq1lDTTRZ0+ctrYGaGuOLZRQkkCZdaIWE0wZILitneh+BZGk\r\njDPBjjNJrrdyGPfnuQaxnBBSirwx0MYl4+xCiF6kVlpOKqduWvElGxD9LUdN\r\nGFhNZEFgnnrYCyP4stxtEs810w6Sr38ix1ebc2UGQEwyaU7+T2t51RmqBMnl\r\nL1Zz+mPwDf+HMRraI1Cegu4393zcQnvlOc/giAPLdd7mD/IpukNtXHyj2wun\r\nnLOeWUmRmj83jW2CGkCmGd8NEBnpj2nS0k/LFdmn3CKG0ap16lmGLo1qcVa0\r\nCp6SVZtdYe9BjI2DyFNt9fJdLaYIJaZUApf90On3X2Xst2k/vmVhwMEwJc/I\r\nRNairIg7Zs5B6+hZ0FJsF3Uf4a151AUxDBzzDBcM+oSevEa/QZmTGq6FECme\r\nFpDtQsfx5il+Mz2F6z6qoG4M6HW+CU+DoryGf6aujHMm9NBb0kOTKujo8NuB\r\nI9jG1j7sKSji2FSBhqciZxRrXw20IJusuHism8SItvLaBDpONEot3znrPh+4\r\n5n2hPUyNAGbykfp61uBH0pgZLz5fk8JMXPiQ0o795V9N3eRGkF1foeZFPfqj\r\n/xFvwsK6yzbuzTA29dQwvp1VEJ7R3BIldgA=\r\n=jWNU\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.17",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.20.0",
+			"dependencies": {
+				"recoil": "^0.5.2",
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.2.0-dev.2"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org/"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=16.8.6",
+				"react-dom": ">=16.8.6",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.2.0-dev.2_1660819528139_0.378718734259885",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-dev.3": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.2.0-dev.3",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.2.0-dev.3",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "87282c954d25ed2b5d6a967661d1259197d80280",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-dev.3.tgz",
+				"fileCount": 56,
+				"integrity": "sha512-2XdZB3bCUoFIa2svVOSKyLSr9oKtHp4YUihMKwIRju1qC0dyfON8ka5US8OkwbLMc94m5d8EVh4VarOlaiRvYg==",
+				"signatures": [
+					{
+						"sig": "MEQCIEIdy1jaLSnTABAktyWmSu+TIeyXhDV5eSweWSEa0mT0AiB10d1h8Yb/AjhIGDiBSJOvb21HbZJNWXWgS3rtAjX7+g==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1981517,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi/jLFACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpdDhAAndl3F1dyGCF8m3Z4rzY4K6suJpBa5zY4Peq3Ssc5ipzwB4EF\r\nA8GHMkt/a8PgXnUb6SOsqt7M4O3/Qvt7LO45AkYrWtahGjNaeTN8L/ShGpIO\r\niqYsfD9m8ImpgCYTRwkRmiaw2ShNCa1NBLiJxPO3TpxOGxvUkFBUq4//5F7X\r\nvN+Qp2K6ZLoRCy25L965dWKM0sQ96C/NteSTEoYpIF0D5dxC5PLrFCn+F9n8\r\nn1DE28oR7kgIG6LJYiXIDWFJJjmpjzyqVWj6o5UGBW+eKG7rHdcY16xBvvY9\r\np1QUYv6pdYPlvB0lIqFB/Tj7rEZJ6EgeZaQmTNBdnfyEl/pF7vBK+UjAevrO\r\nSoEsnT3ZS8hG+5Lz6vnpLrvrcu2Qv6TClER6kZ9xw/5elGy0ejc9oNZpmnRZ\r\nkNGPzl1sud1ifYQ2FcqDpYP4dLPXUPZ5T+mW16fHk+JNbEWlE0DoPV6gT0hn\r\ntSES1lMY3caev77vP4kWYQoEnmabHeJN9EWQsiket1F/kWaac8NgiIWi9US5\r\nLTQhFlg8JFy+rlMh3RgcPAXijPVCs3OihvYWiRmiDaKazWx3oDpzQTb4IqJx\r\newnOR0UNQzcN0FAEZszbKPLWbVTw6e5d2Ovt+q9J9iPC24BSa5Wd5kFzYQVm\r\nlVACV82DsQ+/T468jZpf5Dc89fZk3H7bC+E=\r\n=4Xsi\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.17",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.20.0",
+			"dependencies": {
+				"recoil": "^0.5.2",
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.2.0-dev.3"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org/"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=18",
+				"react-dom": ">=18",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.2.0-dev.3_1660826309766_0.6576809434329591",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-dev.4": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.2.0-dev.4",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.2.0-dev.4",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "0c13c706b8239309db062c42f96622e9dd4b3fdf",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-dev.4.tgz",
+				"fileCount": 56,
+				"integrity": "sha512-RBFMpcgkE7uHkTtH9+RohOjBh2hoc08XmW+GkY6CCCH20ve0IVnuzjByMxOA8ImxZx2d5YNGS856BuWMtlVz2w==",
+				"signatures": [
+					{
+						"sig": "MEUCIArwKwaNdxaOcUbC5FB9fdJP3HYd/uFVC+RK6sgFea+UAiEAu/sdzDhop0Yw0XwGwqndSodCL5AeAh88AJLzN/JYoV0=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 2391088,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi/kcoACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmqytg/8DyFzEWEEinF0PWpApEonTMW8vwm4FGMsrqjsO2NvOq6vBgVE\r\nHUUEktz0w4JzctpT55/JINBP8xJlIFLjl9iyAu5wMqbb+CQuv9KQB8v13d5H\r\nMwBP6tjyixfvSSTWl8NCkqrTOAdTf+Nh2isqtafvHcBdCggwV2Bye7gzG23P\r\nkUwKpcQDm7NtbNMpIFQOkN5apDMNsuxsWsmH+6DBtGnNYHKUxBIa+4E86u/E\r\nWeF2qDeMmU7eA3dGeX1VeJuarftx7lTUxKxjMgmRhR/aQchdh0OGXoX7RWDb\r\nLcyMlrwOJeDnAUslJxcaBaTMRVmhqrH3+adWuRWHAAUIdNE7mu3WEC7/Fdbd\r\np2UWFlXOebh4IW5svN7/L7MY5grZX9zQIdQyH44hZWGjD6cUNyIETjdzAlRB\r\n3LRgDEJcjz442sIYZQxDRJXm+xkUdKASJfCxxqvoj0iyF5FtV5KAvUs0DhY8\r\n8gwGoF8J4MFUS/7hRtlIBAN+yTuO1wBQOz+zy8EsIispjPyUYN64l2hK/9Vb\r\n//BbFZsH305gbhAwn/n1MTW7/gabMZTHGtgnKlRMYjFqNBdctcjJ7kZO1b72\r\nMlnV9qTwLPOyU7chJdYXiQTDncUpJSdv3sJ4nH3ZW9hMRadyALlT+KgDLEqZ\r\nZDDPx03OoASBk81kkkgtg7DrwJ0YSy+Flvs=\r\n=aeg7\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.17",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.20.0",
+			"dependencies": {
+				"recoil": "^0.7.5",
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.2.0-dev.4"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org/"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=18",
+				"react-dom": ">=18",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 2.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.2.0-dev.4_1660831527269_0.9370295130971",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.6-rc.0": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.1.6-rc.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.1.6-rc.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "5ab279d945c75a3b16198ee18673a2755859cf34",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.6-rc.0.tgz",
+				"fileCount": 57,
+				"integrity": "sha512-qFo2qFJcYW0nXaqVF+ckSxn3yXU2oworEENDHBg54G1Eb8gXQY8lrehQCEq6NopPrjdWuYUtImruTKHQkJKxfg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDS08Bdpn+N8HMeZodOFkdaIqKZ+S4ZZrSXc+XeRZS0OgIgVqsWOzeXpWaM1lNJKCyXxHpAfIvRUoIBuYohG1Omz1c=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 7295514,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjQDNXACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrLcA/9G6bsTEap7nQUoOfmXaznsjfCnwV4UyAg/DJzU0ogoshJ0j5L\r\nei5G7+AonWgPQHG/yRGg+uH/z/LvIqtF9drOc9X1Gwrk31xQfAbri0Sw+HpC\r\naz0ShM3ssawWQjAwKWme7xz2rdgatBSUZDEJ79LApOBD4HkRIFO2JcLqONlw\r\nDROTbx5PZTgwV93aVXTpd1zDkO1/hqzToxFKPdxCe+JShoaW1fzqLKaWzzzO\r\nIEWZEzBsBK1fqwqFPnFSSqACFYAL39nb9Pq7iC910BLIegiuPfkAddKjSlGl\r\nVYZSLNctdHrbXeoOqH0Zme6CSVEKUD+NBDzEr+Vs/9C36ZbpIXzYZsbrq8Ji\r\nlMAo5XXAAezVUVwvoJzpR/CBKtHqx7+xiXgcxdl/sLU3M+D2/e8wKdYM5Hy9\r\nHchxT/aXx2CvTLnz3b95kOCc2WfCEum1Q0YZhDWIMHiCO4n93MmgcsmiQvAI\r\nZ0qRSbPcy4mV2sjgQQKB0deKrY8PCYk06PYrH2fhuv/6VKAbdOIQW3NSnDdS\r\nFkBUUtXZqO1TLyVcknU/Avc1V/e2TzbRXsVbPB/lHf8gwrgDt+Qr6Xd6aGwO\r\n3c+yJ8RK/1KbnLWkyMZhNFuLjjBgLzvVGBuOTQTwCwa3d3Cz0WvXeMYBVz9c\r\nwJ1tCpAmQktipPcfpQ5ILZiwCsUOgXd3Qf4=\r\n=sEaB\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.16",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.12",
+			"dependencies": {
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.1.5"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.1.6-rc.0_1665151831458_0.32191865761642835",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.2.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.2.0",
+			"maintainers": [
+				{
+					"name": "sandra.bote",
+					"email": "sandra.bote@hyperting.com"
+				},
+				{
+					"name": "marconalon",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "dd5c79c725c83f0832048abe4c8b7c90f66cf298",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0.tgz",
+				"fileCount": 60,
+				"integrity": "sha512-R2qt1aWKcJftOgy3UivsEb4SAvsZsXc/mAmIcOlwvJy25tWEFOqduVqdR8SjblkrbpCVOykzs0UPg1dOiEndfg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCdX0Z1V98MxDuFPgPy9j0JCsyfWBxLMy+pxsVAb8xW6wIgCh75Vb1vmt2PcQTy2OLHFAv2+Zl0SyB3iCq7bZ+j+jY=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 2010146
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"gitHead": "b0582e816e73679e802ff721c7ea583580ae00b6",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "sandra.bote",
+				"email": "sandra.bote@hyperting.com"
+			},
+			"_npmVersion": "10.7.0",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "22.2.0",
+			"dependencies": {
+				"recoil": "^0.5.2",
+				"react-google-font-loader": "^1.1.0",
+				"@hypertheme-editor/chakra-ui-theme": "^0.2.0"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org/"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=16.8.6",
+				"react-dom": ">=16.8.6",
+				"react-icons": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-core_0.2.0_1718706292913_0.7271492695837387",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.1": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.2.1",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"main": "lib/index.js",
+			"module": "lib/index.esm.js",
+			"types": "lib/index.d.ts",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"peerDependencies": {
+				"@chakra-ui/react": ">= 1.0.0",
+				"framer-motion": ">= 4",
+				"immer": "^9.0.6",
+				"react": ">=16.8.6",
+				"react-dom": ">=16.8.6",
+				"react-icons": "^4.2.0"
+			},
+			"dependencies": {
+				"@hypertheme-editor/chakra-ui-theme": "^0.2.1",
+				"react-google-font-loader": "^1.1.0",
+				"recoil": "^0.5.2"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org/"
+			},
+			"gitHead": "ceda78b5f1cc72c6b87e054ca70aa37ac317926c",
+			"_id": "@hypertheme-editor/chakra-ui-core@0.2.1",
+			"_nodeVersion": "16.18.1",
+			"_npmVersion": "8.19.2",
+			"dist": {
+				"integrity": "sha512-prj252h5d7SEh66oqjp6adr0d56Lp9vLppugIX6/udDaGB/NnCHh6cAvlGKuvm0MBwyERIrxteamX/SVbZ9Pig==",
+				"shasum": "0f498ad75dcd5444474818b63d9cb26f51a844f8",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.1.tgz",
+				"fileCount": 60,
+				"unpackedSize": 2010148,
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQD6WfC9NZaVkssQuggDLoTyzCMiJNwhW1SxTO6gipeUfwIhAPlcZOIr/D8xB0ts/J6BhjM+9lEHZ1ItalialVNYQUj7"
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "sandra.bote",
+				"email": "sandra.bote@hyperting.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "sandra.bote",
+					"email": "sandra.bote@hyperting.com"
+				},
+				{
+					"name": "marconalon",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/chakra-ui-core_0.2.1_1718715570495_0.9101997872167007"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.2.2-dev": {
+			"name": "@hypertheme-editor/chakra-ui-core",
+			"version": "0.2.2-dev",
+			"description": "React components and hooks of [HyperTheme Editor](#hypertheme-editor).",
+			"main": "lib/index.js",
+			"module": "lib/index.esm.js",
+			"types": "lib/index.d.ts",
+			"files": [
+				"lib"
+			],
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"peerDependencies": {
+				"@chakra-ui/react": ">= 1.0.0",
+				"framer-motion": ">= 4",
+				"immer": "^9.0.6",
+				"react": ">=16.8.6",
+				"react-dom": ">=16.8.6",
+				"react-icons": "^4.2.0"
+			},
+			"dependencies": {
+				"@hypertheme-editor/chakra-ui-theme": "^0.2.2-dev",
+				"react-google-font-loader": "^1.1.0",
+				"recoil": "^0.5.2"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "http://localhost:4873/"
+			},
+			"_id": "@hypertheme-editor/chakra-ui-core@0.2.2-dev",
+			"readmeFilename": "README.md",
+			"gitHead": "ceda78b5f1cc72c6b87e054ca70aa37ac317926c",
+			"_nodeVersion": "22.2.0",
+			"_npmVersion": "10.7.0",
+			"dist": {
+				"integrity": "sha512-WQ07YD5pwgdN3Rk1gPtoYxaOI/NaNeHmjorOPW/A/nUFUxnTQk9g2Os+hMcywKz+NKClNugYwMCqANbqR0MFhA==",
+				"shasum": "b64be4ecb3718a666afa4e22d6b7476a3446054b",
+				"tarball": "http://localhost:4873/@hypertheme-editor/chakra-ui-core/-/@hypertheme-editor/chakra-ui-core-0.2.2-dev.tgz"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"created": "2021-09-14T10:23:36.721Z",
+		"modified": "2024-06-26T14:30:11.082Z",
+		"0.1.0-rc.3": "2021-09-14T10:23:36.985Z",
+		"0.1.0-rc.4": "2021-09-14T10:59:13.491Z",
+		"0.1.0-rc.5": "2021-09-14T11:16:00.274Z",
+		"0.1.0-rc.6": "2021-09-15T13:13:37.683Z",
+		"0.1.0-rc.7": "2021-09-15T13:39:27.501Z",
+		"0.1.0-rc.8": "2021-09-21T08:56:36.657Z",
+		"0.1.0-rc.9": "2021-09-21T10:46:20.186Z",
+		"0.1.0-rc.10": "2021-09-22T14:51:00.240Z",
+		"0.1.0": "2021-09-22T15:09:12.857Z",
+		"0.1.1": "2021-09-22T15:43:21.396Z",
+		"0.1.2": "2021-09-22T18:48:19.075Z",
+		"0.2.0-rc.0": "2021-11-19T19:39:46.298Z",
+		"0.2.0-rc.1": "2021-11-20T12:36:34.196Z",
+		"0.2.0-rc.2": "2021-11-20T12:59:12.204Z",
+		"0.1.3-rc.0": "2022-01-10T14:04:29.886Z",
+		"0.1.3": "2022-01-11T19:39:47.636Z",
+		"0.1.4-rc.0": "2022-02-25T09:41:08.231Z",
+		"0.1.4-rc.1": "2022-04-03T17:12:15.090Z",
+		"0.1.4-rc.2": "2022-04-03T18:58:11.945Z",
+		"0.1.4-rc.3": "2022-04-03T20:20:48.879Z",
+		"0.1.4-rc.4": "2022-04-04T08:59:24.151Z",
+		"0.1.4": "2022-04-04T09:54:18.995Z",
+		"0.1.5": "2022-04-04T10:05:11.508Z",
+		"0.2.0-dev.1": "2022-08-18T10:31:56.181Z",
+		"0.2.0-dev.2": "2022-08-18T10:45:28.345Z",
+		"0.2.0-dev.3": "2022-08-18T12:38:29.973Z",
+		"0.2.0-dev.4": "2022-08-18T14:05:28.411Z",
+		"0.1.6-rc.0": "2022-10-07T14:10:31.594Z",
+		"0.2.0": "2024-06-18T10:24:53.134Z",
+		"0.2.1": "2024-06-18T12:59:30.692Z",
+		"0.2.2-dev": "2024-06-26T14:30:11.082Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"rc": "0.1.4-rc.4",
+		"dev": "0.2.0-dev.4",
+		"latest": "0.2.2-dev"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"e8ac8b7a5be9e44ad785ca31cc3d8093\"",
+			"fetched": 1719412211000
+		}
+	},
+	"_distfiles": {
+		"chakra-ui-core-0.1.0-rc.3.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.3.tgz",
+			"sha": "2d2bcc01402f68ed1d8c7c8047b9225e8c83b217",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.0-rc.4.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.4.tgz",
+			"sha": "3ca65acc1a6c8822665ac24d83db27a1ac9d729d",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.0-rc.5.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.5.tgz",
+			"sha": "3f861c6cd4acb0ae18b161be33a954ac030e144a",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.0-rc.6.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.6.tgz",
+			"sha": "5498877ebe3213f795757438b89890e03237ed0c",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.0-rc.7.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.7.tgz",
+			"sha": "23e3328c07ba7c14aa6aadf58273f54e10e724f7",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.0-rc.8.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.8.tgz",
+			"sha": "a72be26aa9810a480f881ea717279877aaed7dd1",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.0-rc.9.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.9.tgz",
+			"sha": "0529ddfc6a74d79506b9e03440c2a017f2313604",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.0-rc.10.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0-rc.10.tgz",
+			"sha": "960adcaae43c52456b8314eec634832220cad6de",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.0.tgz",
+			"sha": "505beb1a3117afd70d35af64fecc15137ccb0aeb",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.1.tgz",
+			"sha": "250df0a49a2996c1d5fef03e405672ed1c4eef96",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.2.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.2.tgz",
+			"sha": "5b957b1371d0f1a581bd2667b95f8b7eea35a3c7",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.2.0-rc.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-rc.0.tgz",
+			"sha": "2840898c6bf886f5e4ada2e1e9f63d56d8418baf",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.2.0-rc.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-rc.1.tgz",
+			"sha": "f2b398c9d28b612e0263da89c3a75c88862d1f36",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.2.0-rc.2.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-rc.2.tgz",
+			"sha": "3d876bee99083ed756b3274a951e38a827c9eafe",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.3-rc.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.3-rc.0.tgz",
+			"sha": "6b3b59a5db9200e5e04a326bc568035d95672f99",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.3.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.3.tgz",
+			"sha": "c3cb86af1784310758246f278c7d0a738d078e21",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.4-rc.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.4-rc.0.tgz",
+			"sha": "bc2a633ceff975645e21a0b3908413c14308fcd8",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.4-rc.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.4-rc.1.tgz",
+			"sha": "663bdabfc4301ab9858a80766181c6ea34561483",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.4-rc.2.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.4-rc.2.tgz",
+			"sha": "6bef8b8c7308d8d22e848327e8204b4f6e8ec580",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.4-rc.3.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.4-rc.3.tgz",
+			"sha": "91e4029f68db00e380469fd798cc368657008eee",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.4-rc.4.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.4-rc.4.tgz",
+			"sha": "d352666e953fb0fc529876316b1d5a1838ad4548",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.4.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.4.tgz",
+			"sha": "18a8eaf910b3dd47bac788309f4f5372161c74ed",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.5.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.5.tgz",
+			"sha": "39cc1cc2d6b24cde8cae1e05f32db66def2c37eb",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.2.0-dev.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-dev.1.tgz",
+			"sha": "87be8ba1a5590f0927aa36a7ff15c06e28ba2827",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.2.0-dev.2.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-dev.2.tgz",
+			"sha": "419f893ad80a34d3868d68cf8cbb20097d87b601",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.2.0-dev.3.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-dev.3.tgz",
+			"sha": "87282c954d25ed2b5d6a967661d1259197d80280",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.2.0-dev.4.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0-dev.4.tgz",
+			"sha": "0c13c706b8239309db062c42f96622e9dd4b3fdf",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.1.6-rc.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.6-rc.0.tgz",
+			"sha": "5ab279d945c75a3b16198ee18673a2755859cf34",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.2.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.0.tgz",
+			"sha": "dd5c79c725c83f0832048abe4c8b7c90f66cf298",
+			"registry": "npmjs"
+		},
+		"chakra-ui-core-0.2.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.2.1.tgz",
+			"sha": "0f498ad75dcd5444474818b63d9cb26f51a844f8",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"chakra-ui-core-0.2.2-dev.tgz": {
+			"shasum": "b64be4ecb3718a666afa4e22d6b7476a3446054b",
+			"version": "0.2.2-dev"
+		}
+	},
+	"_rev": "5-1f38dc5fb304f859",
+	"_id": "@hypertheme-editor/chakra-ui-core",
+	"readme": "# @hypertheme-editor/chakra-ui-core\n\nReact components and hooks of [HyperTheme Editor](#hypertheme-editor).\n\nThis module contains all the building blocks necessary to create a **theme editor** that works with [Chakra UI](https://chakra-ui.com/).\n\n**Don't use this package directly, instead use the [@hypertheme-editor/chakra-ui](https://www.npmjs.com/package/@hypertheme-editor/chakra-ui) package.**\n\nHere's a list of the components and hooks provided by this module with a link to their documentation:\n\n#### Components:\n\n- [`ThemeEditorProvider`](https://hyperthe.me/documentation/components/ThemeEditorProvider)\n- [`ThemeEditor`](https://hyperthe.me/documentation/components/ThemeEditor)\n- [`ThemeEditorDrawer`](https://hyperthe.me/documentation/components/ThemeEditorDrawer)\n- [`ThemeEditorDrawerHeader`](https://hyperthe.me/documentation/components/ThemeEditorDrawerHeader)\n- [`ThemeEditorDrawerFooter`](https://hyperthe.me/documentation/components/ThemeEditorDrawerFooter)\n- [`ThemeEditorRootPanel`](https://hyperthe.me/documentation/components/ThemeEditorRootPanel)\n- [`ThemeEditorButton`](https://hyperthe.me/documentation/components/ThemeEditorButton)\n- [`ColorModeToggle`](https://hyperthe.me/documentation/components/ColorModeToggle)\n- [`ThemeIcon`](https://hyperthe.me/documentation/components/ThemeIcon)\n\n#### Hooks:\n- [`useThemeEditor`](https://hyperthe.me/documentation/hooks/useThemeEditor)\n\n## HyperTheme Editor\n\n![HyperTheme Editor screen shot](https://www.hyperthe.me/images/social-banner.jpg)\n\nPowerful visual theme editor for your next Chakra UI project.\n\nLearn more about it on the website: [`hyperthe.me`](https://hyperthe.me).\n\n### Documentation\n\nRead the HyperTheme Editor [documentation here](https://hyperthe.me/documentation).\n\n## License\n\nHyperTheme Editor is licensed under the [MIT License](https://github.com/Hyperting/hypertheme-editor/blob/main/LICENSE) by [Hyperting S.r.l.](https://hyperting.com)."
+}

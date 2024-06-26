@@ -1,0 +1,2333 @@
+{
+	"name": "@hypertheme-editor/chakra-ui-font-sizes",
+	"versions": {
+		"0.1.0-rc.3": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.0-rc.3",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.0-rc.3",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "db9cce392ff4f07f2cdf6f0bc5de18c65aecf07a",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.3.tgz",
+				"fileCount": 8,
+				"integrity": "sha512-qZ7iBNpQW3r/Nh6VO/nAwR/iRtQadtTU9fVTh77UNaRwOAfd+aqeeLvnHGLsKxYK9c6GUdoRG2EE616k1YiGbQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCbFhYolzMf7wxkyOvzb37elNOVjWaLFlheIUEfucD1kgIgV85cDKSqUXMe4A++aWxNsPPtyo/fz88+MaZ2/CMTEYI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 47194,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQHguCRA9TVsSAnZWagAAVsQQAKJDgHqlxoEMvt+T+21D\nDek5ae0ddhqITzLcdWWUNlJgIrVoDZQGI3DMWTNPpNRnfD07k/01PxqvUJJ4\n8e/oVIboBu//vqKv2Zhp0jzZnLVfd43hvfiCR1okxumTr9MUOnsUtVf+qq2L\nQMZtkfKNFApMrafMFpR0rvUFB/HWPCxVD/SFBX7sMvbfCQ5O2RG4mtfG8GM2\nz81g8SoDt0Hjfm9ZehBf0nlzKf/8jeBOroYUf96OKb30+B0SM4TKAmJvxNpa\nrwBsiV7xI+c2szTkm9VrIVRBRqQv2nqvv5slBhyx85DUJbIF76WjCTExRCAM\n5Av0mDttCtOhNzwkse7VFwNMizZOfYA1WNXd5pGr2RUXRVkvKMKmrk8RnKAo\noNTVFZ9v9n7YG3EQzmsb46YOCfQzuOT5T5LBNo06GVifhnuaZ8eWh/x9Mvzv\ngTCz+9+qtGR4NMCY605RejBvkE+4kTQriN+Zt233QU7jedslQqlXZQ8iuKH2\n0S+ZhxJAvXDbQU92tpzMjvSrcSXQFq8O+pD++mNghg2WxUckf+4g4slAD16Y\nDWTV73wi7ECuNQamW7vD8OQpdN50O3ab6zq1SHAdeLV3eHA/YhiNiMytTmDR\nDEtA3UyJ5L4xRGSRDsqsSvSjwh/5zekTD6tG49ib9Csl5DJVTcR3sTDia4XX\nbYtW\r\n=gusD\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.0-rc.3_1631615022017_0.9831413531582598",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.4": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.0-rc.4",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.0-rc.4",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "abc0402090d2492ee6bdffa418ffdca3c8c91505",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.4.tgz",
+				"fileCount": 8,
+				"integrity": "sha512-qCxrzvAwvc8tFPemD9llZ4mfWCsojyyJ/zDiYass/SYyC1EqGe0Z44BIJUQ5R6O9O8fJ4fLpXeIIXgo1sz/IZw==",
+				"signatures": [
+					{
+						"sig": "MEQCIFxEs4lR5AdYXiFR4spMhUiM6RtattYOAwTqmviX9XnNAiAoF/rje+Cc+z8ygviSGneJhvd8O0nvHQgLFeRqCYbq1g==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 43425,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQICECRA9TVsSAnZWagAAO8sP/R1NfRy8XUwa9Xv4VMIq\nAub7JRa6NYyCs2Kx8bvlTkJNltbh8UiptrKUxQpyXVE6ydkzDtTly+Ggkx6j\nX2VKJlG2SNnvynQxRfEKOv7BwTRZx6VViMSrPJ16jjjxZPSuVy4hdOKPtqAD\n5PfRtb6ob9IjQw5/fUzYD1N7L9eWjspLemdpRYN9bmmJgkW0H50y2hpQDVIK\n5G/bUAgfaWo0RFU5Zy6668B1feV/Pa2fkrpFoEp99cGAX7AOQ/jtVNOaxfu+\n4xPOafsAc+oDXMDllcYwwFYLtCozFajDZJFcv7chO88xtIf3mrYXHB/Ao0EL\nl6oNE8jUqMEnL7BsYQx0fL5VgX9z5kTynmhkTRGc0FSWwsvFNGcJ9NPaB/To\n1qFNLsPvqv7cDoqBZXwU6NYoZyCzXmaCNozN8V6Q5REWApnQHFiGN6OMZPO7\nlnXVaI04eU8WWmiTUyHRWTFN05YyuWWc/HulifqsYY2kQElM92aBqDhZR9F+\nIWg3Edv4MC54WBtnWJsiDZSzcyrTYd0TacQiWDWwEPwGlqs1NHl3FhsPeXDC\nQ/mtnWzD+49aU7tffYA2Qi8Qqybkhqb3gszMunuAQ3Ia4KB34M89OHlliiG2\n8ImoP5Tjx8BYM4hV2Nk//L++T1W3yb2VanwVhbXQePk2zN/KS43TIpbjaFdd\nlytx\r\n=nNN6\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.0-rc.4_1631617156372_0.5676269825256517",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.5": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.0-rc.5",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.0-rc.5",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "376c7c53e2d240028a7f2358d952d74f870eeb40",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.5.tgz",
+				"fileCount": 8,
+				"integrity": "sha512-xC2Kt1c/h/GIHmqjSHBpvIE95IPBLODalOBI5eajZqIpIEQDLSPO6ii+CzBKJ9oS03Qu5tvqpjuSmR/jKTjuug==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDPpIVUToM6EJFniy81T030RqjUmWA78DqQjibRGUf37gIhAKC9Vns+k6Qypj1hZ5z1ijchSlKoh/rmBQX9vCQoCFnq",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 43425,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQIR0CRA9TVsSAnZWagAADSYP/1FS+q1BVfz80jSwzHGJ\nlR/Si/1c+prYCJkE04BRB/Xv7HpR6DJ/3ymqDKfj80KCyUOXdqWDn9RhIFrJ\ncdQItE/kvySUkSkNkJ2LEG8tR2pVx/CVDHt55NlSUjTyhH8kfmPUbyZBUFke\nUfLQssshoj0OdB2hYSqNvuMMHMssRFxXRNQM+bMFS2SG/PUCrLdYinQquhp6\nvl5vYcFj2INGRodQZHb5fFxZOmu1y5NAsnVSa0+rOSpBKFxuPVUdjdIa5c0X\nh28fy7kqlBlbcQrNwXR0CB8s7laOtd33HAKzkyek2U4vMVAIoo6BSbKx3Q+h\ndYD0SEU2J1WlaZfxhqvMyYye/huIddsy9O63n69ggVmhfAZSrHe+TCNomGv8\nUA/VjrjAVmcD7LJgfyY38f5Ug310ZTtc1O0tNjM+cZzX+XdL33NuXMMeQ5La\nYjCr1jAbkFFpyAz9kIsBW0VEw/o1eFP3tN5RR66HymJHt1++HLkwZJR37W/e\nJtTXxdZ/eU7/jG38iqXWT4C5mTQlTG9uObwc2g+YluJOSejEem3UXCDNTZUF\nJnB26XTh73qRyIKaFNk28c6/FM4F0hSiC1oi2or6g3E6NOwW8qwBQD0U9sqh\nWV6zRQfO7rEeIrMZBHMAB3ZjhSZqDPitEMjX+zHuBHYqdcfaFu45UFdt06ZZ\nwOhU\r\n=H0n3\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.5"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.0-rc.5_1631618164362_0.4335015439061045",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.6": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.0-rc.6",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.0-rc.6",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "05f97a9b333bf7df4e75aea7fad93b4751618367",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.6.tgz",
+				"fileCount": 8,
+				"integrity": "sha512-WCPUgnVVpXqF1BG3EkSo4sQsh0E9xPa+M2pdqDhi1NgaCv1QCi/oFmstIM00t09hkHRGVQGfcbgiO+kuyCpo5A==",
+				"signatures": [
+					{
+						"sig": "MEUCIHJwA0f2AgMTwrmIJiaDDMWZXksUvFbSRHEs+uw+9If4AiEAt8hK9drfWnNjdpjgUdkUhm07YPS6BwPTDchUTKjKYkk=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 43425,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQfGECRA9TVsSAnZWagAAG+MP/jz7U/ruUqmq0rEmD0af\nN4CUd84rFWD7Xzil3NhFFA7o0gSVaHFXsjldSQW4yZjgcSwtPOdtS1zy2bRX\nE7dgkEsKmo5WqUAzgWzzgPssZNmTQARohduAJQQPinT/g2j8q8kWO8HEHVlt\nNchHApTKBUJrqGuWXhwArukbldbZ44fIaFrLQWfB7pYnTtkFAx13wdHW4Gfu\niOhs5oHaFjLDdBUDKX6uaB9WyBDfrYE7ghorCZbxDnvqqq+idjJ3rPUbdplc\ngL9Pe4LZ40cpVLDu2HaJcMjGPjsm5Y53bdDGXILUCn3FSXYoJh9wYvKd3P5W\nUXpdOojfNblHQ/XxRn6VM6FRiDAvVIm4hBgfyzHs7R3pWLGlA5zc/3k4EA/j\nniFd5bxbnPjU5yP4RxDcCIGwhY7ng09oWbbE1JjrZtbJx4cASzKeOZh4izBF\n9Il6dKtqZqfZnrYIe4l0IMpCcYwR0xoE9pzhb1XlZlcyIHWTWS8DhwKbSgOf\nG7uGTGuGy9AveoMtJvENIdLDo1SzJ7uhOGUEKEESpbCTtVbG3RqLPTNSnlB/\nmZYsmke+EBKbXpxadba3sMt8FauABfnnB1/+2qezPd5/KD4M1cZRKf8edhKc\n+D5EL0aWdHA/jXv1gFkMZ6eEsuob/Ao6no/ZNE2yJqp1yf05KmGQtHsNfqwj\n5Bb7\r\n=a0wD\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.6"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.0-rc.6_1631711620635_0.7213357235260234",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.7": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.0-rc.7",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.0-rc.7",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "e117496cfd77b1dbc20832ece3921ac41918262d",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.7.tgz",
+				"fileCount": 8,
+				"integrity": "sha512-4NFqxGdWBgGfduM2B8Wqz1Nx0w30Gf6Se7CfIlwkwMd0vY/IBZyvORvOF2DGHQH4M3hT/Zr0KSc2iiMSHtiATQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDm5iWqEZKHYwU1yfrYTKya+Cp/E7eBt5slYM2pXYIEywIgeIyXSJhLMSpXiWWM4MwGx8su82/GLiKi3m/Ik59v2xI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 43425,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhQfeSCRA9TVsSAnZWagAA5vcP/isHbYTA37FLGUcowU8C\n6OMYnp8qYfgcAWFjV5lp30En84ln3py0FmnWksv8iRhLnWivI14ouqjSxgxg\nkUS4FoGAtmaV3sWBsWwiW6eVFJR3a+aeewidMSTBXTzQtCVeW436pC00wnR6\nGLYbbNg7Ww/DYqe9Z/zeg8ortNvOmvdT0kDCuzpBuWZYZrFZmTulVs5/pkwl\nuk3GaFhNZGATFa/ff7jlISkQ9NfHdRK/xmdRxdC/kZb47kriMLZ8/OnwMktV\npWZ0Ad7P/5uCa6pJfDD96lTKB/PNMT3ohR/nPVFyB58kmX+IdFJzr8dcXQZJ\nVPkkNtJU+QX0jVYelVpGRhfMETyya8GIYMsCJaUPoRQvKzW2SlihRrJIlyZd\n+YqSVqQET0JcZOStji9GbRUvHEcsGww+nTTnCyAu39r3Ba1X9SWf8aebfPlx\n6qWKmlYu22hdtsS21lVr3NQiXfH50MpVz9fdUF0mq3JgktBu0u3uDNxQ1UBc\nsI5iFGF2sIMZbsYFsfKkD5C14pzzwxwHbgYFwYH5WGkvr0Csa50eMyleTl1k\n5cCkyoHp0fHTTuVGrqGilN6+9aZkhGwtJzOXDRuWFPQ3fjNBOUXll4qoZcZf\nJqgLvZmKIk5EZT8GoDFifNnpapvZv4l7ilLFiouAreHf5k+nL3AgqPAbTmuf\nJNfx\r\n=ynfW\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.7"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.0-rc.7_1631713170461_0.7659658912520126",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.8": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.0-rc.8",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.0-rc.8",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "8057321c06a4181943ce147edec6e27a630f377b",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.8.tgz",
+				"fileCount": 8,
+				"integrity": "sha512-CfouFfhir8o+I1Sxic3KsIs+xOHxsA43wblrbDBzpoEz8cN4185TEq6IW1JFmKgl7IkOp/lPEJEhpgtjbZZxqQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIBLBdEEiA/GvPt5+36m5YKJ3IGHgpo8v1d3EKJiIbrD4AiEAsUa0w4CK1Fyh6JJYgLyMEFj7A8tBuRRvlXnH/8UtOfM=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 43425
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.8"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.0-rc.8_1632214597986_0.5823784534622654",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.9": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.0-rc.9",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.0-rc.9",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "4649cdaeda3982e3c71accad37d40efaeed2cb07",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.9.tgz",
+				"fileCount": 8,
+				"integrity": "sha512-VP2HMalT4UmMNQgq32Y/M6BAdGCQU05aLpfjf/zNE1gw70A3GXjZlpb3JUsQCYdcaalW8Fme1j7m1mN8TKY8lQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIHq2jOHSnJ3OQdNmNIcsC/uJh6rMm26oQmcRkMr5RxitAiEAxjAks19HAebZqcsEglyzqU6R6CHbXGLXEXZdd89sk+Y=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 43425
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.9"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.0-rc.9_1632221182155_0.43947935477268585",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0-rc.10": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.0-rc.10",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.0-rc.10",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "f9b5b4366fec6196569e6ded7fbdb5538f06ed19",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.10.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-XUlSVDgaNueBnOeV7EAYoBbrriYDzMlHY2/sJ/lTQLgA0zR5VVOCLkZtzaV3uMjj+z1cAsFhoVJDHk9GF31pgA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDY711h4Pcuw6y15veDcEnARBHyBO3DAIO3GwZw3o9uygIgEjF64mOPNVbHnd/XH4HVHylYuQFtxBJlxSnc2AKhSbM=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45036
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.10"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0-rc.10"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.0-rc.10_1632322261687_0.4623563046814614",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.0": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "9bbc098d21bff656ac7fb05043100d2ad5745117",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-9a4ZFhwx3s7p9DD+HPRIX9dFyt/lPi7odyUkG6ndw8aOxvYOTaA5endxp3Ay6NWKVj9uy9lWjUSI5f12k6KjOQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIBhdP6mbjL28+Z3BgD/anuvqUoz30J8KLaGoAqAwcC3CAiEA/sIKPYbmlKzw1Mu61C5ol4UcugCAVtn/H2o7Yco9jiA=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45018
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.0"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.0_1632323355425_0.9364931785021722",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.1": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.1",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.1",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "7c1c4a83d2c8e4f1e90b958c262e362444db76d1",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.1.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-S1TWZyc/N410RT7S37Cbzi8NbfsOxQip6VNb40nlPjxgMz+gZ4yh8RgZTLBAZc2exFA95hWNgy+Ikj66ZX6zmw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCw1y+1k+EACtGfyt4KdfBjPPEFbnglNoxGJ8D1InEkyAIhAMjajLkNGtD+B5PoLroDQH4Lx9Ij8PfsnoRU7FmcCuKD",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45016
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.1"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.1_1632325402631_0.1853437450662636",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.2": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.2",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.2",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "a7c263909d1085a69eafd4b5d46498114140e8c4",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.2.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-EvWNWRXSCqx6vTQ1E7ov6CtqViIVbv/fLvO+Qm8jdnmaNi/c/kgaQRgtXoCBdQ9TFDTPPrB0DLOJldYAJ4hqog==",
+				"signatures": [
+					{
+						"sig": "MEUCIQD3pco3FVFhe4IsuXp9LsEF346CApkDhgE4ZNSti+UVbAIgbYm1678zUbYd1JSrIbzgbruIC6GG2IG0gzCxZKjSVHo=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45016
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.2"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.4.1",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.2_1632336501033_0.2835279814241347",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-rc.0": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.2.0-rc.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.2.0-rc.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "47dc110f4fbfd2cbd7c2ba2be0c1f91b4448d5dd",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-rc.0.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-PNESYyzsi2LVY2Y6bxc+qSE9wZvTaC3U9YwxLXFzJfoYtx0/hjYo33ngyvEsLMAmzCx1rMhZR72+X9RzwynOfA==",
+				"signatures": [
+					{
+						"sig": "MEQCIBIB64XhpuMQo2Gn2iLyhPUK0T1JpOHz6ddnafX56GbsAiABxy1fe1MTHiSxCR7rd8WmAxOuMp7PSOavmZ3AfmPhgQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45153,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhl/2DCRA9TVsSAnZWagAAmI4QAJ8b7sv8G93xlvTBfunA\nKXEQEsmi6/IzFury7WC63Jfb9EBA7vNSluzG2Uwax+aMPsvw8srXAyKGzFBB\nfGLSmeQ7z2txjBWElJXu2Hkqru91zl2M/hklUarIDbLxrz3wcWoZCrHkEKGG\nHcJ6TXifqrJBXENXLjT4G7JABr11GNZcCaWaIDVzdcLUbCJXjrndGoZy2HfF\nAk/wrftX8WiubG+yHhcgcUvGOHcJFVt2wOwA+TDkltmV2VCzHMxsrO9NYwCi\n7UfWwo0z51NtAlmCcRo4ERyYdm1ti4dFGO0x7E2kaB1jZ4V//N4LLXX44FoZ\nnIevoN+jdmQ9BFBwVBCKtLWiIapdFoAQoMPxP7VIjhl3V5J3A9ix4LxdwGzT\nR7BwSUWWcKu7ti/n093J0MCxzKNAfldeK/3P3enI4gAFD4DFzdNsgDcGe5EX\noiRYpqKoIpYdWN2bx8/MjoCl5V8q6MCjVp+lxsbX/o/xNucqb0xu2hbIWn/u\nyYtgXDdg/XXqxaL4+gDG3mtN7Lv5B3zPz2ltwZ6A2owzL89YPkwVRk8ocu7t\nEsc13yC320PBkCf48QMSPy8XUqnOIOo0Oh2UeUyQNq/57eHJODlOku8G1YqK\n6T2Lk0LLSzWT3x8HBxL6ShX6LhM38RSt+E0EuBcLyV+TMK5Gz4Mvkc1IAGVb\n4VfU\r\n=1opV\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-rc.0"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.5.2",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-rc.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.2.0-rc.0_1637350787696_0.6021120619755771",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-rc.1": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.2.0-rc.1",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.2.0-rc.1",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "2c114057ddb7505319189c5190d26cdb4a8e2252",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-rc.1.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-0MCKCYM/4gbhFXXURNp49OnIntHij3DtInoknDysEw0stEUfKW2ipcW3M4A5oKv7s9YK93Dl0+lH4dyVOLvXMg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCFreEocp2Hd53PuVxfnQErt5Eawnm/QCxUD6McKitNHwIhAMfd6Rd3rI7pRAB7ELXaclDu1mYyjQj4abu5TtVVjPUM",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45155,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhmOvVCRA9TVsSAnZWagAA/YkP/A3VVQUQ4PfE9cu00j0j\nfIi8BPkAGsaC8rSLjg1MQDYceeYXynx/Sm3wFcqBI8wuOSwLTUYWIwedeRKj\nMcR1tEfhGjE8QdakgMvCilZTCeJsO65LLwnULC9h206RhbK7+YWqVMV8ub3g\n8CJ0F0S7X/PHLQhF0T9gz3RV2oIYQWuvTCjhTzWyXEcmhYt+a+p5acGIRN3Z\nWX//rawsXav7JQmw9e0tVykisZfi9+LkdvgN3u+kEqBpSSrAEY/055Bd4pNN\nC4NGvERYPP4FngnBMKMlUnw5rXx9KgCZr5zP7hcYZjR30PNbRv3WE+HRF3jc\n/LYF+Y/k/1HFU7PNU7dKUZuW4H/geoLuGP0LeY8PXcDEGR1zBfHa5s2/Vn50\nJZopfUsoCO5JDg7So0/lE8USGQw+UJUHEYxQ4Z/z36RWvTFVYxx997x/DNJs\n60S3tE4YfSCXpdoL/UWFjN7gEGTe3H0Yb60w6CTgldc3+8k79kVfW/2S4Amz\n7R8xU0gfHOofCb00BZ5ANLR1JqkMaLxiGgz69i8Y1+nTsun4UfW+27eFUC4a\n2oN5hJKtUfNXhzSWMkaKoa2HxF3iPT4KKjxFvDuGyEfo60I4wQ44Wi8SzpTn\nC6vS9hma6/c1hacqGYs+/yVV1E4n9uFvotchBtzS90kxdaZISBdtt8HCUikD\nJ6Ol\r\n=7zfZ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-rc.1"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.5.2",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-rc.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.2.0-rc.1_1637411797177_0.34380386072953484",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-rc.2": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.2.0-rc.2",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.2.0-rc.2",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "a76e6dddce7066329d852f11fd61cba24d74eaf9",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-rc.2.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-+Yv4zITWBD+iHFqLInSmtx4a9q76Xx7TeaQBczw57QKDCNrbbsLboSMEI3bMISBecQFZ/q+bnxBuCXqH9UpkFw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCOqh+GmpaDHWhuT1bH3pPaKgXNMESdWVAArKKwsiM4/gIgHYrSYfVFFCRYbvMGtBrz2WDiMvoEZsdz5Wix+5C1We8=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45155,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhmPEjCRA9TVsSAnZWagAA2jYQAIFaGGR3ZdMXY/pz1BH1\nN/lZ10v001PT5o1Tdlyqt0SJ0qPJWNw6zxkirHRzlaRn6hO7mB4uXIjYp+fP\nYh7qBE9K+ZLubCQA7qDX7YlaCbmppKlQwfnWmqtGgUuPY0VAylwZWAdHsMIn\n+9K+sMcSUYyywVPjC8sFTH+z6zd7gbhPnOSXpRSqoujenKV8pXP+dDazxpNa\n/s17k8JCPEqjZi1eUleXwaA1yYyjhHAhCYEuDNhwXDmrTAOxuWxlOp4crgqM\nsXHndjZS8aAMPBX9eNEpqtrp7rHQseCtJqzS1u8/dYLCmztMNxmbUMTitsDd\nORj9sQVeamzYetQwtkQlyLKRY5RHFX9fg4Sy6epgJZg9Pdf4GgEYNU6iuQY9\nj9DeiYM0o3kWYI/qksA1aycWzl1obgTUgTLnGzWQD6hy5bIFyR9TPVv03fVb\nf/f/9FQqwa4ODjBIY6xVCgLmHLClqkBD61XTnisaaU1HHKUeuBdwa4pRXPlr\nX/1H2o/vUPuX/n054RWf//MYODygS51WRoRm77vrRjiFuRmY+67zJ1B9L+Oe\nXI9+Y9FxJp+jA8EM05Dvq9A7nE2/GF6HZD9gz1hFIQfQn6A7szQMhsTuOE7Y\nNvYcwZ3+LkcR0YHrC5oyEFFHwFDsTcUtRNrXd8kjt8lw3w8tQp+/4S/baclt\n9BOx\r\n=hAi0\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-rc.2"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": "^16.8.0",
+				"recoil": "^0.5.2",
+				"react-dom": "^16.8.0",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-rc.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.2.0-rc.2_1637413155203_0.5965444231245538",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.3-rc.0": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.3-rc.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.3-rc.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "2ea35362baabda64fe5ba58dd09a15ef8ecd6a04",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.3-rc.0.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-k+TU//odb+jkXXKMcsLIFama/AR+SoE2PtOM+3xWq7b5u6Kfrv34McX/j7gcPIyuaTg6EN/9kpNv6dbpqWTXyg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC7HGDHU3PPE6YI3MSPuW3mMUApyUEqnpUHNovgDH+7qAIhAMD4ZI0i1Xu1mPZPKUj4N1yDkUlY/fv1xUBSD6kWXB7v",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45034,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh3DzxCRA9TVsSAnZWagAAQJIP/jcRUb9C5Q+0sHnID8GT\n74GRisCWTNau66BuEWsdUyouytFHdnblW3+yCspLfrOX2uWhkAjwqrdHUhTL\neDwXkFwi0799bfXPLmV0uJPcsrZPzNN8DkokfPozNFvhZgHMuLfUjNfHwL8S\n57sZge6ZX9oiKDAoKydNV//E16wJ4iMAn0AyGlZ48thJQ/6D1JQ1MJbg8UDq\nr56BNZ6FjKxmE9i+o6Dwok32XsoUuSyjcUBSkgiDKwCawBynmVi6vyn7Ypwe\nsGz07ziX7P4/ujK7clji70DxQz/ivM6B3WbvBRu+he92+tdsasR8HP9tnyqw\nTRkL1rbzJhrXN+AVaRQ5XXLzKvx7CP000f0x9sHV/0bNFFDeQ5+ZFOYN7u+h\nbWdPFbcHVG7CuPGtVGS5v+6UZlLD2l5Kheye5DwB7X9VnFLXRiGPRupOzrB1\n4D7GIChh6RbdAAfFN4xtE48j5E9kr2W+nc/KK2KbnRerkujpnsefQm70uCe5\ndhmLLqJl3fd2v3DDwmjAYCkNQdMQae82DSfPqtLLVoX+83P8tzhQ3jU95l5T\n3665pa2PbgcB0odWpfMSW6lw0E2fKPt8l1pCEl+0yWptgs4vhhfhbOylCch9\nTyCijwx/9Vtkk9/OVk2W6zrOqME9z3p/Zofkc7uPhUoC+VaRItCmHcH+DRiJ\nTJJz\r\n=eaEU\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.3-rc.0"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.3-rc.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.3-rc.0_1641823472952_0.4286777577989691",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.3": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.3",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.3",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "728b0647399943059069193bad6b56ac113115fe",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.3.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-MVzfQgUtqJEGYFlRZkIAwPZUMxG99LY4cqZbvkmajQLHJ8ISjN0KvcrXLVzeIOIHg2RsT1Njkj+GDAHA5Ts9zw==",
+				"signatures": [
+					{
+						"sig": "MEQCIG69ezgUqR9Nmj7z//WGH1fzNyxWqnatBOZdAubDcjBpAiAWtWA5CN1gQqLZRXp3OICMcpoMRn5S5Y/iY4NCXaVCnw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45019,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh3d0HCRA9TVsSAnZWagAASMIQAJGXGMWdFuIC8wcgRO42\nni3Ej4JgsYNS0b6pypj2J3zpWlIZ+GDS07a4J9cWIo/UVWKf1liowAL7fMVv\n+WieAk1d1xg4tlSRCxe+rrPOI11AlkEj15VHjuz9a4LRQD409BcXh0AaILwV\n9CMjo6XfWUJAtqFrAcY7PDLvlwNecoeXIqk/IdH9K1Gtt5RJu2tuko/4FvHt\nKW6oH2UjwuEbBKt89b/ogiyF9F7Lh0q13yujvodgMov2EMsG0dN9+xsOTLxz\nQF5s/qGHmT6zuVwj5fdWqiM95Nv+KXJ4Ll4nSvDs7yK2Et712syb3Xy/42TB\nczNW3SZcebESBjIuTTXtSVlRg5vkzAUhjH0TNYW8jMBq5ulWzHacxkKkbyvZ\nPykkOKVKWBSix7061V2NPimmoL3mNYEkbVrHVg+f6gnKnyMhohI9BxkIpZJ4\nPlEJKTxVi03GOE42D3psEDTzfAzv2f3oSc5EKMsgf3sM3EtwXCfZl+5UXstC\nP9em9fwO/KRfZNq0Te7p/PDH66UjEm+d1Zz7EiuaefG26oQkYQnTUAXlc5fD\ndqWtEvkzNTFWKKOwnpxvmc2zmh/UBLPRPgpBs+h9PcFwZwsx/AXAXbtiEc9r\n06ZgvMqLd+F6bfNdmr0vl9oiz84PLdHxNl1LhEMef2JArpAHj72KgSMh+QeQ\nkGVj\r\n=gLhg\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.12",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.1",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.3"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.3_1641929990923_0.5629544545738494",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.0": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.4-rc.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.4-rc.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "9863ee5e45d0d2aea623c0ec700dcdf94bd80968",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.4-rc.0.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-PXYPk7DdgXVuh+M93yNdIAtCNSHVKjTLyF7ApcwZnMPb5bXCjA4g5k8EYnQq26LnuJRnjmLh+YFfOnr5MhF0/g==",
+				"signatures": [
+					{
+						"sig": "MEUCIBrF/F7Fx/6sBnNprosHD2naxdh2N2mo1Nnb4GFYLDhOAiEAyAs6KPnYmJtntuhYw58xmegTqwmJ/J5DqGvBdtLuHhM=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45034,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiGKQ1ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmriiw//YS1HE7dkCM5gQf5E47hMDSmt9vESVBwK45CyztvHIs35xiEH\r\nIwTvkfIyWFsfm9DvbOm0IrePq4zaSe+W4oj+0koYMUDG3ih10fn08jLtjPj9\r\nVz4nfhd+1m+7beVLCYconH6B7WsyXeVlux+e94S8nlk6o/Y/U0gbilfD/JyJ\r\nRqKGq+AZKRQ+cpQd89Wa04gKxsyxEq/Q1NMx7lrW9cxD10GfF7mFt8L9GILE\r\nWidSpnvZiHmfn58WgYvpGaMNE1Dv0/ada+bSzwQUWOzLKDBWO5C1FVffKRrW\r\n1KNuUQ7DKv1t+00YzO6pnVlBhcwEbktlWRHGpdin2D9eOPRrGnBf5NInuRVP\r\nK5BG1fEayXJYS77f/JbH+jXfwH7fCcmgLpQOCo6FKX/W38NVkWx3MBVIGGK4\r\nxavLXgrsOP4026eNJvRHCMcsjDUyTWA+lcnnfvScZd/D7JajTzujqf/F8du4\r\n+yeO1OVJPWiftLA3CVk88jCGq9b7Tl3CrzdeJ8hwVF3dn5WE0CfeS0Hb9bzI\r\nqq22Hrtc92C69h6eiJxGq87A27C4lDtMqSljGZLFqY60R9IJhSd2R/FIFWRe\r\njzNsyT3NszwymYZfHttsz+V/C4/sklhbcCL7biVE+ZhUKO7EuGF5qDkrBPZO\r\ncmx+0RA6L5M3GTx3FHFAvxjl6sRiHe/LLmk=\r\n=hPbF\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.0"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.4-rc.0_1645782069556_0.14807836892682946",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.1": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.4-rc.1",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.4-rc.1",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "643ca8b2ee6f586a1212146133a89071c2d57634",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.4-rc.1.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-nu5+rJCivfEW3QexHzxQDn2DUpy+czTMRqsFejWftdjlh6C/6HGJ/ObzeSaD3+CrbiDFB+mDiOHAxS5MJST3eA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDg4bvw7jJW6y+nYTLBqyPJkJvYfR94zJeUhHtaKgnzYQIge34vs3IerZzmd7/e3AC3IfSYWHRSRRxBRPAgyhKiI1c=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45034,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSdVwACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmoA2Q/+KMw+NZ8ufqXINws8iR+W+owqtkCDcoKHbonrDfWi46Qq8XMJ\r\nVYiZpPQ+gdqEbC/jDOk0bFfjjtBqisLC303sXMfVqGRIgK5w7nIEeII/tIqJ\r\niGxIK+978QL57z51iE369yWNlcvjcCxQSZOKTyMWkt2Xt3Zyr94/DmFULpOo\r\nNoOJaKzhsJi9X9P2uKeiKY6GA35yC2REZX2/HlgRTHQUNTRC31T6721zaVTM\r\ng+35+LX+5bj0XeJJvQLQNc3J/ZP5LpKC5leBL8Zg4wetvaz2/OQEdqyumn+N\r\n1NoYz2BtW8wMOquaqU2l/UNfZwPyjHupLF5/6DumpdLvZDV+Y09+XsdIWcjq\r\nl2TilRI9I5TFaXmjNNRBqg94RK6EtKP5CWlIBy9/a8kOnASd4PSAkPixxDHe\r\nHG6AmDZuCT2OM120CGfN6xIHZzsoIDNkihGIsToha7Vz8Ob0PVO0YZi2Melo\r\nTDoQyoMpgjNfTdeGWBcUlNDEdxBy7HUE5eoAe65Yhxy2WcTVFvOSR9Z1g6oa\r\nVZfDoS9b6yYSOjTTBGk+BAq5i+vH+AGShvTbVjuQM90OL1YBqSeUFaLLRDAK\r\ntUS1N15c1N+ZtuuBoCbtGKp7bavWcUP682ENjU2V5sMuUY532gbb7VREn4td\r\nxNEUBw0jgOkX1YcImHGM1DuCdklrlJqlKAM=\r\n=z4D+\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.1"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.7.0",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.4-rc.1_1649005936515_0.35351751586505564",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.2": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.4-rc.2",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.4-rc.2",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "6ba9d5099cc1900b214a1ce507f1c30cf66aa943",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.4-rc.2.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-xKcvVKb1fQwyKGa/7opsRRQ1VLj8KDAIf1cZBVJQG0BsGbOFp20MNVf5It7eTxTEkTbzZFabG8LV6t6Vp/xCCg==",
+				"signatures": [
+					{
+						"sig": "MEQCIHE33FUJGWHdtTN62LoI9PviGLWvHeOrYxvlMRHV9PsMAiBSrVCTFy2ls0L+yGrT9pQvvrwdjhc/208JZPd0OZQ8Yg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45034,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSe5FACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrvOA/+PoqzguwAigt800F1k2u1QDL3s9rqZyQbfbGNdEdYfiCxNgFl\r\nzsudm3+2UsM4aauK6ptRauoVlC9uahnujpDgHuoXtGjDLL2fiaomkXg7dhWU\r\ndPgPk1uxTQHIQqxBKskSYwjqAc+qDHpe5kU0jc01ZS7aIz5mIaZUiyVUlEK+\r\nPEFcegvbQYlnp5Ch6Xrs7sUWCpyaXPVpGzibYJDrxACdxHHNpInFliFWdiJT\r\nxWk36826bvcfjY2a63YbAlqa2Ih+o/WcusHOBdzlt6zQeaWPW5P9VIrdxjvz\r\nZ1KI3o6KddH3itq8L2sqlCJn3dQhE0Wx2/keMIw64eeBJU1uTIYkeI3BCY0c\r\nrtbhV6QmN8q6/JmJ+46YHewuSgqTQQZ/N1faKy20akNWID7NTByEuUlzrWzJ\r\ntlAtxnIwRsToZG30XaaK50ITKprEnbgO9EGSV9bPDsR9S37hp5ExilKrc1UO\r\n/3H1Ucsmzs7Rejx5IzaPs1FcnaASAwd36bAibdxERmSLOd+5JFj4kPNDzOjb\r\nggmOcW2LO7x/nNi+V943f2uvqBb+6fHYjbP0k7BWfY3rtIimsDW5Cl5Bpq3L\r\nDY+BSOe6GhGU56pepNkRt2c+SKfyLfoMyUYos9ZNCK+J4YGlE7anefoF1Xgl\r\nidt0RgL4iAt20T2pfmo2bT44c24KpuDd41c=\r\n=2yOC\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.2"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.7.0",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.4-rc.2_1649012293357_0.4862195740505444",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.3": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.4-rc.3",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.4-rc.3",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "14699ddc273e336ade78594081e29cf0acf48e3f",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.4-rc.3.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-TPqGhUDY0f0iw90MRafKNpGtUqrN7QC3M3nCqhCN3Msjmpwi1MsTpSlj3l85NIhXSx6y1pvb/cU7xnpnlleITA==",
+				"signatures": [
+					{
+						"sig": "MEQCIGYRg1SDoKBsYXAPqqtSigXvgAgipZHYDPZbRuohHOfkAiBsozTS3fhfF7+6dYsdj/0Ea5kOyNAvG9nUlCk9lumeHg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45034,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSgGiACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrvXA//RFircoHDu4WrHuB0KVIEkFIdfIiRn+BWDFNmtKhe1LlikB82\r\nG2FfaLn3SLyPuO1Dx3KidehI1uVTieRbI7l7puhsqYmoab/LBmgmqt5lhHMa\r\nUnnEZ1y7XFHt8qRHfhE5+Hb6qpRJ/02lAdPykSx1E+i1RKEdIbP/TSgBc2f3\r\nkjooePkQWZwQ2s6LSlN7UH4bQCviNkxvrwTSZ8V8xugaiIYueXHcohWVTJRJ\r\nK0j1eEcaLUN1FZaaxRy+pBVmDqbiq2mX4SZ/ezhM4cGdBMLLUpufipnIIa6L\r\n1l9K6LxtTv6a8NzQfdWs6MxrsxUPOmiK2uT4qFg7keUg3Vmit1iIv0VV32Ye\r\ntjroAPgQ4GvEZZv3bR8al9B0a/AiivP2GMGs68lx/Wan+k3mmKD4bUlbEG5m\r\n/lCLNig5QoUMaF0R3v0z6f0Xwfvx2Lu9Scv9+Ie2kz88HQmYK0UHDW0OYXQZ\r\nr2llJhHcq4Tnl2soeCAj2ZtJO8Ewk3IYW0azj3/ILSyINGdDWxUm4n4KyLkb\r\nU1fL4UgSDYabPtJy/PQv4Kuck6ECZvaK+QUY54NXomdzJV7LF6/9gVPHwWWy\r\nd1cHHp/5mJ8CHH6OMtEq4jWpqyO6qqawpp33QhIMFleKcoMlXp6WjB29SYoo\r\ncjXHOhOQdUrI5lZgnfc0EKbM3y22Y52ow/U=\r\n=fQRs\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.3"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.4-rc.3_1649017250339_0.5940266599715331",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4-rc.4": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.4-rc.4",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.4-rc.4",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "88a12c9864f010ef230268dd4c74bd0441214413",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.4-rc.4.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-NemEQ4PRLGkZ8FVXnuk3VOqUFT8FaaTliCFGAm28npRfm9F2gbzYChou9ejjh7YTeQAZ9rWx2dezSsWDETlYvA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCix9zPJWDLkT406CuVcirRjFqZt4l39zEF76plcTOZiQIhAIumXUtPQWaBvqIVBLRRFZjriPmCyRBzUYVYdA3uLGBy",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45034,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSrNuACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrebQ/+IfV/RNmPdmeHNBNgxZgr0ozJpYBzxKKrJ13MjhU5pBXsGD9A\r\ncmwxkkUb/yaaP6aauXM5FNyEci1tun1pvu4oQSzVgDA9QaIKZXZ/xWnoRRUE\r\nZin2YpdGuFqprGFEiam+TLdwnp7B6sH5spJ4mGQ05un7S2MxDWamC776uh7T\r\n347DYnzLEp7n1cj3E6FPSdM70Fa3BdJT8blTFUQZwoeywG4HuK+NnNhiq4YA\r\nDz7KnoYdL4bdT7xwXRAFzZy3qx4q/cDJj2v4eHrUfcZFFTbRA2EhuZ6z7YeE\r\nt2x7FoKUM6IEJK6EyWlyVff5ddggi4cwAfCwy3CdIu/atBM18cROkD0Mb6qT\r\nExr6uH73zYCEyBNx13dNHHE61SGfCFkX4Y0G6Do1YdKyTHkMe1bLUeT1CwRe\r\nWxzzItR1BFskhHQLQXqOW5VuIpDhpBPMft96rUOoTUF3utLcVq9+GHu8kCYn\r\nrP7e9AEoX42WmVeR6tfGnSUgXSMAe5x5Y2OcEDjgllKAISr2f3l83h567dyG\r\nzbeZvhm4C9Up5uQqUsaqHMuWprXyHu8HGrzxqDIgrO2877r2C/RXGNEZRlVb\r\ncGtyvldiP4qj52MaEt48ryvzY9GwkRMDIYEexayBHOh46qZWIsBpG2hno2L2\r\nAJO3KjwvSBLewSP9bPPX6afkloHdHeL0HGk=\r\n=UXIn\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.4"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.4-rc.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.4-rc.4_1649062765942_0.6028873576454417",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.4": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.4",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.4",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "1cc0ebadb1752f89987d825b399de664e58a4cf7",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.4.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-Y6j/tzGOuxp0ye67tYJMn5Kf7hml8A2drgGdU0QIxZqgGFBQINZVAuk1GafWXtl9pEgW3BbpwC4MOfj8zgD/ow==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCNIiM/naPp57jbi+NaQ13CHJJJh6k4xS9DMArGRUUbdwIhAO9JmG9fWcbEsB5SEOhXrVb+HnsKPKl4ygipvuEYy1RP",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45019,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSsBMACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqnwA//bZf3RsN5mU3Fe67RHCLGdtgwxPtgVJwIN0+3lwaBz4GohuLY\r\n1AqpHq7eu0sc7zbr/6MCO81u0joH2uflnzvzzgGyaJjBCRJ0Deh1kt/j0wak\r\n6pvPtQnocs1O+vaTQk3iZSlHKzWaFfkBCE1y7uCeYvfupnYkUU9iY/MJ+lhu\r\nKrsTopqOmSohkkZUAZ5zYjKYzJ6z6/vMInc4b3fkdEMHZOnnq20h25upGeg8\r\n4MfPeBWM/BIXyNf8KW3etgK6Jezwt6gPr00FBfrOnvAAxKJ//Se8ylg2c5ER\r\nyGDyzfk9yjbwzXlp9xc1DhGOivvMYL/Z1symey9120/1LK+Iu5Wsb6m+wsUS\r\no/11/qQUkur2LrNQcEpJg6T9Zwr1BErQWT79RT6lTt/wbvgSHv570nQKK4QQ\r\nXfnnU1twb+XmybAqMmmcmq/MLPFEobR5JGLH5Neh9FuCNeuVhFgaob8wQEXY\r\n0ulTcVHQxErilBMy5zfE1N4uMwFLhkhFm16I+RL/AT4u/CR/fgTfSh0BDkYd\r\nnCJSL3DaHAK69FkzGjzhUZGkA+OyJLjWwxbncBECohdHv6NuC9SywSVmLb8w\r\n/M9V7K0M+rGKrkItipPdS0CDVn8EHPLh74pzTR+oaHTq16+XMeBJpsK5NiWd\r\nBQ0jU4I4MFTUtci/AUw1dAt164GVJj/OrH4=\r\n=7v2E\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.4"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.4_1649066060311_0.16389255959907634",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.5": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.5",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.5",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "b085247a95736310a0854d2d54a0fc3724e37134",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.5.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-5zJLHC2Cmchmj/DJqO3a7NHg/JbMQ932ozDSjBEj0X8UjOLyUit8B1ypfKTwAb7CJjkbuk+XVmgqBzFEDvzYhg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDxKiQUQXyy3gQSaZH0vTL0NY7QoxNO5CKuHK9zoECAdAIgNOo/f0U4NlAH5ngIvh3H3tmquaOpD5iZ1V5M+N7mUoc=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45019,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiSsLYACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmq1sg/+Nk0G7lFVQu+z8PUmGjlrrPVlYK0SuLquZ9OUgWGPKWsb7RhH\r\nKnHyHJfQvh8TdqpQ8ooo9JNxl/rOP/j+I2V8D5cQ8DBFL7ssWKflCajWwxKj\r\nzn1ZjNxxTXtlcVDR+Fgect7H7xifygZhRPeg6xHdo7DFkKMIeDoPjTTe2roH\r\nhfdFhuj6YYCR0VuiuaodRV9RdKJ4tsNZvzlDFEp9K1ly6T9s4jJZ/bQD1Aah\r\nX4QuTBaZTw7fM9nHLdIaFx5IQG6qmUrx36VvwWVEsVkb7wl1Edv+6P6Fj/ZU\r\nKHeyjOlOJZoWEzURirPHfysI92hT9BzoYAJ0LN/Ep4wZ5XPxr2743KqIMTfD\r\n1bu46icLapPntuoA2zz8Ex92VheZ0rAdPjwzdSfaCJXndLX7wEoM/qjhso/b\r\n+OZIwqTWZVdyz9hEgeyQ+3tFKg7OygEZiYWpeU6XsCeRuXEe6TIk/22McM8i\r\npe0jpJeCEX6Qj69+FM4tesEX4tUlbhS6+GkQy0J4SSYE+TytXZFOHhgpFnvP\r\neYKSZLLz+d0+gkcGIrb9aoP/pJlPpE47KssfkitDK4oixjuY95OMzSBQznh0\r\nIz6rjBjXYXD1TzqpV0FPEcDpiG5poybCHnhOVL3w2kL/UZbO9/ThU7ioEJoW\r\n7j3TKt68UZPcIjcQoSLbnfig0VmjT8oWq+g=\r\n=K1R5\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.15",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.17.6",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.5"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.5"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.5_1649066712725_0.46625714150447206",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-dev.1": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.2.0-dev.1",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.2.0-dev.1",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "b7ce0144c0dae21b7230ec55343ee8fde757f0ba",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-dev.1.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-dXgUDXBhBxnkAZA0uYTLp8K0Bku+XnXj7GZmkwDquP0Z+gXAgQM4pJws+cJtA8+ajCT7VeTVhjGXuF826Lh4QQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDHv+/Tksjd1tttJ4czu9LYldgo8gPqfL99LeGi7tuQqwIhAJXMwOjQU59YJGG/ivhZK9LAwvR6kFnKeND8NsYsU4t5",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45308,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi/hVBACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmoqKg//R3/Eya79Xd8R1uAK8purvu6AcByojdRvzUF/tmVrVOiPw9Qt\r\nDNvG8UIXcdoIEw0rax84w4xmgRaSsDJwnN7N3OcDgYG6Uhw0UZa3cDnPK5aa\r\nZEms9HGOqiKnOd4BjURhGJEGlzsL9OzdJEvIEyvvsInN36kmETwGH9/+CPBQ\r\nyqh/KIrq1MirYUMpRi54Zt9NLZ0jWafc9GhlfQMLwCwWdtCxrwvNoV03EOtX\r\nF3qhL+CRZNdyZVJmQhv/OvZpDQ7sTMpzh/igksVlzAmj2pOF/Ei84o5mmSfc\r\ne1iVZE5cOkYC3cg3H5+6hzqvwRHJOVXoTSmzZ902A4gpEA3RTif3nxuvsl8o\r\nNSC0j+dFRAPYPcCUJ0rpZnLax/umjC+Rzp8nTTrCID50a5WhBfXOKRTW1qC5\r\n6Go+ED7WhTagzcLEjaTUhDFK2XFL/kBq0oZTgve73PfnSlGVH6GPCACKN+2n\r\n9BOflUFQnfxVvAoFWohoRDjOEI8DKXmTLRD93Ux/tgsGTF5QPGoPDHr1Fg6O\r\n/RxsqGioRHMorkJEogMy10VQ9J3tyU0bNmnHF6Y0/5JigdO42yhyYopPN8fr\r\n721YZmUwu737FQhCvuzv3EhsQaQdeIU5nJoxrH5jzpoY5wvaTtl6rMF5Cjqj\r\nRoshWpOp3PQPsilNe/sTcjr3//onPHLlbeI=\r\n=740w\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.17",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.20.0",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org/"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.1"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=16.8.6",
+				"recoil": "^0.5.2",
+				"react-dom": ">=16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.2.0-dev.1_1660818753006_0.7776272559672346",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-dev.2": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.2.0-dev.2",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.2.0-dev.2",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "e0a9063f5accac9cba9583eb08e7585e9d2cc73b",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-dev.2.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-+0D/UXMCgBTQf6BYaNOAZV0wDUFgdgRkg4xpbTwaPAFyc07HQ2ya0+2bjItwJuSfnh0A3QrpZNW/j2vxtKG1/g==",
+				"signatures": [
+					{
+						"sig": "MEUCIA1/lSCBrRgM7/hTp3sa/S0elKKLp/Qq5yi06Z/u+j6aAiEAsYaaaM9mLUPaSqHwG74E8ymCPvtcQf/pI9ibEC7Itx8=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45308,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi/hhKACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrkgA/8CEZLrNgqCC6zmc6mdrVyRP8PFfBZ2g+8Wp0zgGugwfqgIAgy\r\nwmjgCWXkau1LsUWZpEFQsTqRTUv0mZeXc1grOuEAwDTsjE86eCMje4GmHAtp\r\noFAxvtrlPuEuXCb7/QXN3f1T/MWivYOyo7vde/XSLkMss2+777dcq6eZMDn6\r\nj1AzEGr34f+djhOsi4F0DpUGiVOVrFFJcI0lWt9p+tudPOR6p5kcWMwzFmOG\r\nvqZsMXJlgVQQ4RN5Btjvt+1QM5nnaPGUaLNyYIhH9DXe9Qbxhdrh/LZEYJyR\r\njSfvw1qOFXXBiWEfHeVhwvI6SEAViBFKmtswlsyACWHA7Nu7wnujhfaX5n5C\r\nyp/RB7v+IW8q0TaqW2pVk167OdC3grRD6KHYLifITfBmIaB47NIeNw4wlaEs\r\npVaoY/ENivtpDqXIIcGBRlDr/+v8LcJoq/Vc+yJVnOvQwEpZPTkZV4LNZIcU\r\nqx/c9BkNQy7S1Cr4CIibGfDZErwahIIgKaGImvy/x0PkhuUI75b6ddkYjk7p\r\nkVzy2/wAkXUIb+ddiMSZhpOh/tFjZ9m82f+uyOlpzeTKnxwkOiA8zS8I2iKH\r\nLc/YnN23TDdwWpW4sHPfdVIPsJ2D11X5U4ei7ks5JivqLdyLKjme6awPJoAq\r\n1Pw1zZmNnkQgCVtaR6N/1wNKUIERKlPgNHg=\r\n=+/PH\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.17",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.20.0",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org/"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.2"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=16.8.6",
+				"recoil": "^0.5.2",
+				"react-dom": ">=16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.2.0-dev.2_1660819529998_0.5962091140217103",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-dev.3": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.2.0-dev.3",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.2.0-dev.3",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "5dd580674fcba54f43e8a4ec99cd4201a42dc9ad",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-dev.3.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-Mgp4U20vggzFHtjvkge9nan/ds1YZ3gOVeoQnvsjLy57ni9TCvFZTD82YE5qCmq3mnYxQNsbfV8dg+qKtOaBLQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDVnVJCFJU83Y20nxhcSZbnSoP8vYe0O3DduOsKsQr2LAIgC6Ge8bTnqgTMv14AnYyb3IHREJM+i0OXqWPdvJ+kJEI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45300,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi/jLHACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpAxw/+NGUG9dzmkCmP6x/1E1K5LJoARDl43lQgKwdjmWZHculpiKYP\r\nQb2Wo0DGkgGQ9emItCT/di84f91KBHTP73hVqIn4Xkcrh3FRmaZi5Gej4e+r\r\naLxiNBJb+iKD6Iv1v4SfAAW+P7tYKKfGNT2lONRvL1FtV6hz8V0jyY/FyBFk\r\nlf4lXmJc4oVIr/KMRuMFzxZPGlCOo4KOXFBmOGug+nvspafYkOqtpBN3i8kJ\r\noOVj187wsTTXVIAziPqUNmv6vlXjVOQYyZip+iPsowuc24OSFr4kvLZv87lz\r\nVsA4o6NcxnevjbropmWgViwL3hDhiolCn9bbL+RiLw4bpY87HWrd7TWtDSiX\r\nBgjbycGpiUKD2B8nGkiWIhY2kuWbGm1QbkkA6czR2XeX4gaR9b9E26XSopR0\r\nZvRjMdmLevwjj9mTvdqs0LPO3qOJkQeZFfxPMsjM82tUNqvf4d9MjlBlJ9B1\r\nw74Xx9wLmREjcgKP2bIiKGOsz2X8/Pnjyg9YMI7rh3tViaUxnCF+LRdZ1faD\r\nT2HwxoH94lJgKu8M5mZiqzYDLm+kT7+0r2YU8kDERnCHG/ygQQAv7MNe6qYI\r\nNDBRckaa3d5KUV4V9KDw5XuuGhLasVStDz2oRmHFgRw087RNhrAVidJBJBkN\r\nHp9dt1f+FRV8ME8WxU4q6Mn3H1S3+gtfS6I=\r\n=LQqy\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.17",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.20.0",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org/"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.3"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=18",
+				"recoil": "^0.5.2",
+				"react-dom": ">=18",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.2.0-dev.3_1660826311567_0.3051075906322305",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0-dev.4": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.2.0-dev.4",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.2.0-dev.4",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "41e76d56f9c51c895ab3e9270738d0c74068011d",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-dev.4.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-/SDCSsBLMxl5YcgzzrPgnU7RMhrhrpKINcwSlip1q0NvDFPx5YP1qHFAzdQH/tWKSTR4tNmOj4j7mrE07A9rsA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCLJBhDApgyWtaa6TOTFROdE/CBfrrZJEb9Op/467nK5wIgTiNY9hjVxwHodUiJ+6hXqq4jOMotDXEXURy/JKvIQU4=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45312,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi/kcqACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmpc7g/+NGTABnCgaf0JahngYcpBd1sQW8sSV/tCk5lSobTAi+MzYDWe\r\ndbQGUKO21NtR6pVoVocwjddTK/jYctFQ25E2e3X7qBkWiPqRiRVor/7UCEG5\r\nfHLJ0VnG349jjZIpUMj8WVGpkGvA9mnn7W1+ESgHb1H8USwStm4r3du+R705\r\nEOI72/BPj+jsuG/XdfTu9DEWFpjSCLaJtxD55PFzLOEPvjIObUlKqZ1uoMz7\r\nl97mF3WehFJuqV2qqjfmsKNE1sJCWR1VXUE59Ax8xB2AvZ7kKYfLGBHjQIGD\r\ncPux59Ncb1HMBnr8r27/vqomxOAVj1R6ianl5Cu5JhRY3l5s3mJJfHZqY3wR\r\nSlttCrViNXOsPLxo84VsxL/3KC6Kc2ZPPxX8rMwzq9sU8f+ZRDQo/3IS630Q\r\nigGOV4O9idy6pqmd6i443H3HY/TMgHBC0JtmqAN7eECIC5cav3n4Qvrkumiq\r\nkiL0LkYVbNhUImx2Ep74luO3R8iw6U9m7WAPnBu3hO1LjKRrqeaw4Hyvei3g\r\ntsmOfuZAm2fFBXWTu3Qa8CUCBbIgAWHcg/2cadyPta4mM1c9yKt3kOZUsbfL\r\n4avQL2ayCUeRJy4gt/RZjcw1mOkUp/L5uJ+insNTLYV2wgqR8Vcqzr0FUcWY\r\nmfu2dgYvZQ4xEc9benl13lIPdrL0tAiN/gA=\r\n=7VsS\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.17",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "14.20.0",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org/"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.4"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=18",
+				"recoil": "^0.7.5",
+				"react-dom": ">=18",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 2.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0-dev.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.2.0-dev.4_1660831529950_0.5763690808803323",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.1.6-rc.0": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.1.6-rc.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.1.6-rc.0",
+			"maintainers": [
+				{
+					"name": "hyperting",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "98ff8892ec9ea9c5ed332dc34531faee65aa0d18",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.6-rc.0.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-Y7h8K2f8uNodX9+kO2wWB2Q3IE/OKuPQI/FeK3PYYlih+iJqrXIzwayy1gq7F/9pd0O/TUKrZkbIZQlKsia8lQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCr+ru7DloB1rpHVCxyqHCutIkkeDbW+F7DspaH9u1bTQIgc3AZ5fZ/xvg4RBr6Mvkko+5eQlOb9tFzEQv9h6bO0fE=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 46174,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjQDNxACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpU4g//Z42YBe68Zvjm4mV+mYhgWSe1VqnphqHj0qNyy5UpljNXr/TX\r\n+y84NvpZoYmaBn3aDzizsLrYPtHJi75IwlPMIEKUZd1UUhmttnCb0xeKyXHp\r\nyCd8rBgqcX5tN60tCfom81+Wgni282y8OIONIKZ2OFXR/NWL+jNMg35kGb9/\r\nzU0iT3haW0lneAmqPr3lFHtYi9fSkDFK1iwXVLIPkvpHzeoyth7zDaQU76DT\r\nVhra7CmSwopx2XEYmfeJkk47pa4sQF0G0rkaY0QG4bA/NkxURo7oHrx6eM+I\r\nXF87Cpp6NaARRUEBqfArDS21PCZ3cRp7D874EbaFkhR39gDl/PpuO2SnCLmK\r\nsrmKZY0kjS11HucF9J5j26D9rou6igSaWTvX53JdBwIvnXNYCzHmEsmaQu9k\r\nWDk2Tk5Zc7f81TtpMYV0gX5RTFqrUWm+XBFei7dCJz9S7O0yd0nCE4Onwfq9\r\n2EtAP/7TNGeMCr2pNED6L0E5Ux5yeE81aSvlNMHw1nD7hCOGm/ztPtXXlCD9\r\ncd7vhbo3q+FNGfYyFF9zkUOK+T7rvLm80YBKd6HiUcYITk1x2/77RLPr1QK4\r\n3STB1mo9Cd6j59R+BHHHhDyctdDtCaqa8FOexCOSTE5oGj1GjDNIvP7PCsAk\r\n2LjgXPXwjpUreyjkkYb2XmVMjSaQB3umIUI=\r\n=Br+c\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "hyperting",
+				"email": "hello@hyperting.com"
+			},
+			"_npmVersion": "6.14.16",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "12.22.12",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.1.6-rc.0"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">= 16.8.6",
+				"recoil": "^0.4.1",
+				"react-dom": ">= 16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.1.6-rc.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.1.6-rc.0_1665151857406_0.8862812089329619",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.0": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.2.0",
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.2.0",
+			"maintainers": [
+				{
+					"name": "sandra.bote",
+					"email": "sandra.bote@hyperting.com"
+				},
+				{
+					"name": "marconalon",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"dist": {
+				"shasum": "139e96c423dbe20f1a018696cc97894373dd7c24",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0.tgz",
+				"fileCount": 9,
+				"integrity": "sha512-O9W+O+t4XxmSZvb73qnQa8YWSPQKCZ+Z30eiBq5RCW6eBuHKaX+y+mlwTtSfldzrWjAIGwqAaqyrMqwlxeLVgQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDtGUjnaVcLHfzAJlf2Xg60SmJjVoBciWgr5Q+kL0YmFQIgIMF9aQdZx+8/lqDevRu4caaYzXv3iIIBanXOv8sF014=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 45290
+			},
+			"main": "lib/index.js",
+			"types": "lib/index.d.ts",
+			"module": "lib/index.esm.js",
+			"gitHead": "b0582e816e73679e802ff721c7ea583580ae00b6",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"_npmUser": {
+				"name": "sandra.bote",
+				"email": "sandra.bote@hyperting.com"
+			},
+			"_npmVersion": "10.7.0",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"directories": {},
+			"_nodeVersion": "22.2.0",
+			"dependencies": {},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org/"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.0"
+			},
+			"peerDependencies": {
+				"immer": "^9.0.6",
+				"react": ">=16.8.6",
+				"recoil": "^0.5.2",
+				"react-dom": ">=16.8.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0",
+				"framer-motion": ">= 4",
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/chakra-ui-font-sizes_0.2.0_1718706294643_0.16446869551946341",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"0.2.1": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.2.1",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"main": "lib/index.js",
+			"module": "lib/index.esm.js",
+			"types": "lib/index.d.ts",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"peerDependencies": {
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.1",
+				"framer-motion": ">= 4",
+				"react": ">=16.8.6",
+				"react-dom": ">=16.8.6",
+				"recoil": "^0.5.2",
+				"immer": "^9.0.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0"
+			},
+			"dependencies": {},
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.1"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org/"
+			},
+			"gitHead": "ceda78b5f1cc72c6b87e054ca70aa37ac317926c",
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.2.1",
+			"_nodeVersion": "16.18.1",
+			"_npmVersion": "8.19.2",
+			"dist": {
+				"integrity": "sha512-UjlRNuabv6vmY8bPtd24ybls0xzVHWOXGEZ1hbluxYqfghU5ZZVOZgjtoCH2HfglxSu6pzcWJ/McBIrlpHNfkQ==",
+				"shasum": "8f7b7cd6a6376a3743994497df0dbbcc44e45fe9",
+				"tarball": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.1.tgz",
+				"fileCount": 9,
+				"unpackedSize": 45290,
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQC9GaNNiGcfuGKnQgb2sWiRBiMe4pLLhSt7ezPXcj9cXgIgO6taGuI20i/3fadlSuqCH4sTfQcLHnSf+CMawV412eU="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "sandra.bote",
+				"email": "sandra.bote@hyperting.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "sandra.bote",
+					"email": "sandra.bote@hyperting.com"
+				},
+				{
+					"name": "marconalon",
+					"email": "hello@hyperting.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/chakra-ui-font-sizes_0.2.1_1718715572377_0.1763283560837794"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"0.2.2-dev": {
+			"name": "@hypertheme-editor/chakra-ui-font-sizes",
+			"version": "0.2.2-dev",
+			"description": "Edit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).",
+			"main": "lib/index.js",
+			"module": "lib/index.esm.js",
+			"types": "lib/index.d.ts",
+			"files": [
+				"lib"
+			],
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"build": "rollup -c",
+				"start": "rollup -c -w"
+			},
+			"author": {
+				"name": "marco"
+			},
+			"license": "ISC",
+			"peerDependencies": {
+				"@chakra-ui/react": ">= 1.0.0",
+				"@hypertheme-editor/chakra-ui-core": "0.2.2-dev",
+				"framer-motion": ">= 4",
+				"react": ">=16.8.6",
+				"react-dom": ">=16.8.6",
+				"recoil": "^0.5.2",
+				"immer": "^9.0.6",
+				"react-icons": "^4.2.0",
+				"use-debouncy": "^4.2.0"
+			},
+			"dependencies": {},
+			"devDependencies": {
+				"@hypertheme-editor/chakra-ui-core": "0.2.2-dev"
+			},
+			"publishConfig": {
+				"access": "public",
+				"registry": "http://localhost:4873/"
+			},
+			"_id": "@hypertheme-editor/chakra-ui-font-sizes@0.2.2-dev",
+			"readmeFilename": "README.md",
+			"gitHead": "ceda78b5f1cc72c6b87e054ca70aa37ac317926c",
+			"_nodeVersion": "22.2.0",
+			"_npmVersion": "10.7.0",
+			"dist": {
+				"integrity": "sha512-WCk9iECir2H9gTkLPngYE+nFbcX1WPaeGprtVRnezQPnxhDuvem24qkdzjcpLX456XUiNxwMqg1CNNjGg6I39w==",
+				"shasum": "782e3fd3de15ecdb4404d8d8a05ce448715ad392",
+				"tarball": "http://localhost:4873/@hypertheme-editor/chakra-ui-font-sizes/-/@hypertheme-editor/chakra-ui-font-sizes-0.2.2-dev.tgz"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"created": "2021-09-14T10:23:41.943Z",
+		"modified": "2024-06-26T14:02:49.201Z",
+		"0.1.0-rc.3": "2021-09-14T10:23:42.134Z",
+		"0.1.0-rc.4": "2021-09-14T10:59:16.572Z",
+		"0.1.0-rc.5": "2021-09-14T11:16:04.508Z",
+		"0.1.0-rc.6": "2021-09-15T13:13:40.832Z",
+		"0.1.0-rc.7": "2021-09-15T13:39:30.573Z",
+		"0.1.0-rc.8": "2021-09-21T08:56:38.145Z",
+		"0.1.0-rc.9": "2021-09-21T10:46:22.381Z",
+		"0.1.0-rc.10": "2021-09-22T14:51:01.804Z",
+		"0.1.0": "2021-09-22T15:09:15.533Z",
+		"0.1.1": "2021-09-22T15:43:22.765Z",
+		"0.1.2": "2021-09-22T18:48:21.249Z",
+		"0.2.0-rc.0": "2021-11-19T19:39:47.837Z",
+		"0.2.0-rc.1": "2021-11-20T12:36:37.331Z",
+		"0.2.0-rc.2": "2021-11-20T12:59:15.350Z",
+		"0.1.3-rc.0": "2022-01-10T14:04:33.086Z",
+		"0.1.3": "2022-01-11T19:39:51.058Z",
+		"0.1.4-rc.0": "2022-02-25T09:41:09.693Z",
+		"0.1.4-rc.1": "2022-04-03T17:12:16.640Z",
+		"0.1.4-rc.2": "2022-04-03T18:58:13.486Z",
+		"0.1.4-rc.3": "2022-04-03T20:20:50.499Z",
+		"0.1.4-rc.4": "2022-04-04T08:59:26.096Z",
+		"0.1.4": "2022-04-04T09:54:20.477Z",
+		"0.1.5": "2022-04-04T10:05:12.880Z",
+		"0.2.0-dev.1": "2022-08-18T10:32:33.164Z",
+		"0.2.0-dev.2": "2022-08-18T10:45:30.158Z",
+		"0.2.0-dev.3": "2022-08-18T12:38:31.722Z",
+		"0.2.0-dev.4": "2022-08-18T14:05:30.256Z",
+		"0.1.6-rc.0": "2022-10-07T14:10:57.607Z",
+		"0.2.0": "2024-06-18T10:24:54.821Z",
+		"0.2.1": "2024-06-18T12:59:32.526Z",
+		"0.2.2-dev": "2024-06-26T14:02:49.201Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"rc": "0.1.4-rc.4",
+		"dev": "0.2.0-dev.4",
+		"latest": "0.2.2-dev"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"3ed27ae8459df37d8dc9e83ad40b7dd6\"",
+			"fetched": 1719412228720
+		}
+	},
+	"_distfiles": {
+		"chakra-ui-font-sizes-0.1.0-rc.3.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.3.tgz",
+			"sha": "db9cce392ff4f07f2cdf6f0bc5de18c65aecf07a",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.0-rc.4.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.4.tgz",
+			"sha": "abc0402090d2492ee6bdffa418ffdca3c8c91505",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.0-rc.5.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.5.tgz",
+			"sha": "376c7c53e2d240028a7f2358d952d74f870eeb40",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.0-rc.6.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.6.tgz",
+			"sha": "05f97a9b333bf7df4e75aea7fad93b4751618367",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.0-rc.7.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.7.tgz",
+			"sha": "e117496cfd77b1dbc20832ece3921ac41918262d",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.0-rc.8.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.8.tgz",
+			"sha": "8057321c06a4181943ce147edec6e27a630f377b",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.0-rc.9.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.9.tgz",
+			"sha": "4649cdaeda3982e3c71accad37d40efaeed2cb07",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.0-rc.10.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0-rc.10.tgz",
+			"sha": "f9b5b4366fec6196569e6ded7fbdb5538f06ed19",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.0.tgz",
+			"sha": "9bbc098d21bff656ac7fb05043100d2ad5745117",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.1.tgz",
+			"sha": "7c1c4a83d2c8e4f1e90b958c262e362444db76d1",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.2.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.2.tgz",
+			"sha": "a7c263909d1085a69eafd4b5d46498114140e8c4",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.2.0-rc.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-rc.0.tgz",
+			"sha": "47dc110f4fbfd2cbd7c2ba2be0c1f91b4448d5dd",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.2.0-rc.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-rc.1.tgz",
+			"sha": "2c114057ddb7505319189c5190d26cdb4a8e2252",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.2.0-rc.2.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-rc.2.tgz",
+			"sha": "a76e6dddce7066329d852f11fd61cba24d74eaf9",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.3-rc.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.3-rc.0.tgz",
+			"sha": "2ea35362baabda64fe5ba58dd09a15ef8ecd6a04",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.3.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.3.tgz",
+			"sha": "728b0647399943059069193bad6b56ac113115fe",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.4-rc.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.4-rc.0.tgz",
+			"sha": "9863ee5e45d0d2aea623c0ec700dcdf94bd80968",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.4-rc.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.4-rc.1.tgz",
+			"sha": "643ca8b2ee6f586a1212146133a89071c2d57634",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.4-rc.2.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.4-rc.2.tgz",
+			"sha": "6ba9d5099cc1900b214a1ce507f1c30cf66aa943",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.4-rc.3.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.4-rc.3.tgz",
+			"sha": "14699ddc273e336ade78594081e29cf0acf48e3f",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.4-rc.4.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.4-rc.4.tgz",
+			"sha": "88a12c9864f010ef230268dd4c74bd0441214413",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.4.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.4.tgz",
+			"sha": "1cc0ebadb1752f89987d825b399de664e58a4cf7",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.5.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.5.tgz",
+			"sha": "b085247a95736310a0854d2d54a0fc3724e37134",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.2.0-dev.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-dev.1.tgz",
+			"sha": "b7ce0144c0dae21b7230ec55343ee8fde757f0ba",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.2.0-dev.2.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-dev.2.tgz",
+			"sha": "e0a9063f5accac9cba9583eb08e7585e9d2cc73b",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.2.0-dev.3.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-dev.3.tgz",
+			"sha": "5dd580674fcba54f43e8a4ec99cd4201a42dc9ad",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.2.0-dev.4.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0-dev.4.tgz",
+			"sha": "41e76d56f9c51c895ab3e9270738d0c74068011d",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.1.6-rc.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.6-rc.0.tgz",
+			"sha": "98ff8892ec9ea9c5ed332dc34531faee65aa0d18",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.2.0.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.0.tgz",
+			"sha": "139e96c423dbe20f1a018696cc97894373dd7c24",
+			"registry": "npmjs"
+		},
+		"chakra-ui-font-sizes-0.2.1.tgz": {
+			"url": "https://registry.npmjs.org/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.2.1.tgz",
+			"sha": "8f7b7cd6a6376a3743994497df0dbbcc44e45fe9",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"chakra-ui-font-sizes-0.2.2-dev.tgz": {
+			"shasum": "782e3fd3de15ecdb4404d8d8a05ce448715ad392",
+			"version": "0.2.2-dev"
+		}
+	},
+	"_rev": "8-0c785e5a96af99aa",
+	"_id": "@hypertheme-editor/chakra-ui-font-sizes",
+	"readme": "# @hypertheme-editor/chakra-ui-font-sizes\n\nEdit [Chakra UI](https://chakra-ui.com/) theme **fontSizes** with [HyperTheme Editor](#hypertheme-editor).\n\n![Font Sizes Panel](https://hyperthe.me/images/documentation/font-sizes-screen.png)\n\nThis module is part of **[HyperTheme Editor](#hypertheme-editor)**, check it out before installing and using it.\n\n## Import\n\n```jsx\nimport { ThemeEditorFontSizes } from '@hypertheme-editor/chakra-ui-font-sizes'\n```\n\n## Usage\n\nThemeEditorFontSizes works with the [`ThemeEditorDrawer` component](https://hyperthe.me/documentation/components/ThemeEditorDrawer).\n\nPut the `ThemeEditFontSizes` component as a children of `ThemeEditorDrawer` and set `icon` and `title` props like in this example:\n\n```jsx live=true\nfunction MyThemeEditor(props) {\n  return (\n    <ThemeEditor>\n      <ThemeEditorButton {...props} />\n      <ThemeEditorDrawer>\n        <ThemeEditorFontSizes icon={ImFontSize} title=\"Font Sizes\" />\n      </ThemeEditorDrawer>\n    </ThemeEditor>\n  )\n}\n```\n\n## HyperTheme Editor\n\n![HyperTheme Editor screen shot](https://www.hyperthe.me/images/social-banner.jpg)\n\nPowerful visual theme editor for your next Chakra UI project.\n\nLearn more about it on the website: [`hyperthe.me`](https://hyperthe.me).\n\n### Documentation\n\nRead the HyperTheme Editor [documentation here](https://hyperthe.me/documentation).\n\n## License\n\nHyperTheme Editor is licensed under the [MIT License](https://github.com/Hyperting/hypertheme-editor/blob/main/LICENSE) by [Hyperting S.r.l.](https://hyperting.com)."
+}

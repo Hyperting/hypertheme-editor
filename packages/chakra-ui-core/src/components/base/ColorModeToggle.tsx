@@ -51,7 +51,7 @@ const ColorModeToggle: FC<ColorModeToggleProps> = (props) => {
         onChange={toggleColorMode}
       /> */}
       <Tabs
-        onChange={(index) => setColorMode(colorModeValues[index])}
+        defaultIndex={0}
         variant="unstyled"
         boxShadow="0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.2)"
         borderRadius="md"
@@ -75,6 +75,7 @@ const ColorModeToggle: FC<ColorModeToggleProps> = (props) => {
               }
               p={1.5}
               _focus={{ border: 'none' }}
+              onClick={() => setColorMode(value)}
             >
               <Icon
                 boxSize={size === 'sm' ? '12px' : size === 'md' ? '16px' : '20px'}

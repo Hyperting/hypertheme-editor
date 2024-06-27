@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { ThemeProvider, useDisclosure, UseDisclosureProps } from '@chakra-ui/react'
+import { ChakraProvider, useDisclosure, UseDisclosureProps } from '@chakra-ui/react'
 import { ThemeEditorDrawerProps } from './ThemeEditorDrawer'
 import { ThemeEditorButtonProps } from './ThemeEditorButton'
 import { theme } from '@hypertheme-editor/chakra-ui-theme'
@@ -17,7 +17,7 @@ export const ThemeEditor: FC<ThemeEditorProps> = ({ children, ...disclosureProps
   const { isOpen, onOpen, onClose } = useDisclosure(disclosureProps)
 
   return (
-    <ThemeProvider theme={theme}>
+    <ChakraProvider theme={theme}>
       {React.Children.map(React.Children.toArray(children), (child, index) => {
         return React.cloneElement(child as any, {
           isOpen,
@@ -25,6 +25,6 @@ export const ThemeEditor: FC<ThemeEditorProps> = ({ children, ...disclosureProps
           onClose,
         })
       })}
-    </ThemeProvider>
+    </ChakraProvider>
   )
 }

@@ -1,5 +1,5 @@
-export const API_ENDPOINT = 'http://localhost:4000'
-// export const API_ENDPOINT = 'https://api.hyperthe.me'
+// export const API_ENDPOINT = 'http://localhost:4000'
+export const API_ENDPOINT = 'https://api.hyperthe.me'
 export const THEME_STATE_LOCAL_STORAGE_KEY = 'hypertheme-edit-state'
 export const GOOGLE_FONTS_LOCAL_STORAGE_KEY = 'hypertheme-google-fonts-state'
 export const DRAWER_EXPANDED_INDEX_LOCAL_STORAGE_KEY = 'hypertheme-drawer-expanded-index'

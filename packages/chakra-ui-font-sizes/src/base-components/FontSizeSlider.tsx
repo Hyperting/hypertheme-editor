@@ -1,5 +1,5 @@
 import { Slider, SliderTrack, SliderFilledTrack, SliderThumb } from '@chakra-ui/react'
-import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
+import React, { useContext, useMemo, useState } from 'react'
 import { InputGroupContext } from '../ThemeEditorFontSizesItem'
 
 export const FontSizeSlider = () => {
@@ -20,39 +20,30 @@ export const FontSizeSlider = () => {
       numbersSubstring += item
     })
 
-    const int = Number(numbersSubstring)
+    const int = Number.isNaN(Number(numbersSubstring)) ? 0 : Number(numbersSubstring)
 
     return int
   }, [currentFontValue])
 
-  const [sliderValue, setSliderValue] = useState<number>(fontSizeValue)
-
-  useEffect(() => {
-    let newValue = '0rem'
-
-    if (fontSizeUnit === 'px') {
-      newValue = `${sliderValue}${fontSizeUnit}`
-    } else {
-      const digit = (sliderValue * 0.1).toFixed(2)
-      newValue = `${digit}${fontSizeUnit}`
-    }
-
-    setCurrentFontValue(newValue)
-  }, [sliderValue, fontSizeUnit])
+  const [isMouseOver, setIsMouseOver] = useState<boolean>(false)
 
   return (
     <Slider
       aria-label="slider-ex-1"
       min={0}
-      max={100}
+      max={fontSizeUnit === 'px' ? 100 : 10}
+      step={fontSizeUnit === 'px' ? 1 : 0.01}
       mx="1rem"
-      value={sliderValue}
-      onChange={(value) => setSliderValue(value)}
+      focusThumbOnChange={isMouseOver}
+      value={fontSizeValue}
+      onChange={(value) => setCurrentFontValue(`${value}${fontSizeUnit}`)}
+      onMouseOver={() => setIsMouseOver(true)}
+      onMouseLeave={() => setIsMouseOver(false)}
     >
       <SliderTrack>
         <SliderFilledTrack bg="primary.500" />
       </SliderTrack>
-      <SliderThumb />
+      <SliderThumb zIndex={2} />
     </Slider>
   )
 }

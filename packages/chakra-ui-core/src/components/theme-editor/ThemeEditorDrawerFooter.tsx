@@ -20,6 +20,7 @@ export const ThemeEditorDrawerFooter: FC<ThemeEditorDrawerFooterProps> = ({
     <Flex
       display={isMobile ? 'none' : 'flex'}
       position="fixed"
+      zIndex={10}
       justifyContent="center"
       bottom={6}
       w="100%"

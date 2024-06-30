@@ -1,5 +1,5 @@
 import { Flex, Input, Select } from '@chakra-ui/react'
-import React, { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
+import React, { useCallback, useContext, useMemo } from 'react'
 import { InputGroupContext } from '../ThemeEditorFontSizesItem'
 
 export const InputFields = () => {
@@ -20,43 +20,22 @@ export const InputFields = () => {
       numbersSubstring += item
     })
 
-    const int = Number(numbersSubstring)
-
-    return int
+    return numbersSubstring
   }, [currentFontValue])
-
-  const [inputValue, setInputValue] = useState<number>(fontSizeValue)
 
   const handleUnitChange = useCallback<React.ChangeEventHandler<HTMLSelectElement>>(
     (event) => {
       let newValue = '0rem'
-      if (!fontSizeUnit?.length) {
-        newValue = `${fontSizeValue || 0}rem`
+      if (fontSizeUnit === 'px' && (event.target.value === 'em' || event.target.value === 'rem')) {
+        newValue = `${Number(fontSizeValue) / 16}${event.target.value}`
       } else {
-        if (
-          fontSizeUnit === 'px' &&
-          (event.target.value === 'em' || event.target.value === 'rem')
-        ) {
-          newValue = `${fontSizeValue / 16}${event.target.value}`
-        } else {
-          newValue = `${fontSizeValue}${event.target.value}`
-        }
+        newValue = `${fontSizeValue}${event.target.value}`
       }
+
       setCurrentFontValue(newValue)
     },
     [currentFontValue]
   )
-
-  useEffect(() => {
-    let newValue = '0rem'
-    if (fontSizeUnit === 'px') {
-      newValue = `${!inputValue ? 0 : inputValue}${fontSizeUnit}`
-    } else {
-      const valueAsEm = Number(inputValue) / 16
-      newValue = `${valueAsEm}${fontSizeUnit}`
-    }
-    setCurrentFontValue(newValue)
-  }, [inputValue, fontSizeUnit])
 
   return (
     <Flex alignItems="center">
@@ -67,16 +46,18 @@ export const InputFields = () => {
         w="70px"
         borderRadius="6px"
         size="sm"
+        value={fontSizeValue}
+        onChange={(e) =>
+          setCurrentFontValue(`${!e.target.value ? '' : e.target.value}${fontSizeUnit}`)
+        }
         onWheel={(e) => e.currentTarget.blur()}
-        value={inputValue}
-        onChange={(e) => setInputValue(Number(e.target.value))}
       />
       <Select
         size="sm"
         w="70px"
         ml="0.5rem"
         borderRadius="6px"
-        value={!!fontSizeUnit?.length ? fontSizeUnit : 'rem'}
+        value={!fontSizeValue?.length ? '' : !!fontSizeUnit?.length ? fontSizeUnit : 'rem'}
         onChange={handleUnitChange}
         fontSize="0.875rem"
       >

@@ -113,9 +113,6 @@ export const ThemeDownloadButton: FC<Props> = ({
       w="fit-content"
       px={10}
       onClick={handleDownload(selectedLanguage)}
-      position="absolute"
-      bottom={2}
-      zIndex={10}
       {...rest}
     >
       Export <Icon boxSize={4} ml={2} as={BsArrowRight} />

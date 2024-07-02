@@ -62,7 +62,7 @@ const BaseListItem: FC<BaseListItemProps> = ({
           {title && (
             <Text
               fontSize="md"
-              d="flex"
+              display="flex"
               alignContent="space-between"
               textOverflow="ellipsis"
               overflow="scroll"

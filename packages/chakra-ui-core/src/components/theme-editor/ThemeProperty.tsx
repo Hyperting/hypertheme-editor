@@ -39,7 +39,7 @@ export const ThemeProperty = (props) => {
         borderRadius="2xl"
         w="40px"
         h="40px"
-        colorscheme="primary"
+        // colorscheme="primary"
         bgColor={
           checked ? (colorMode === 'light' ? 'primary.500' : 'primary.600') : checkboxBgColor
         }

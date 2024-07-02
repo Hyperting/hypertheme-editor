@@ -100,7 +100,7 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
                     Export
                   </Text>
                   <Heading
-                    d="flex"
+                    display="flex"
                     alignItems="center"
                     fontSize="1.25rem"
                     h={{ lg: '50%' }}
@@ -113,7 +113,7 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
               ),
             }
           )}
-        <DrawerBody bgColor="rgba(0,0,0,0)" justify="center" pt={0}>
+        <DrawerBody bgColor="rgba(0,0,0,0)" justifyContent="center" pt={0}>
           <Flex flexDir="row" justifyContent="space-between" alignItems="center" mb={4}>
             <Text color="gray.400">Export</Text>
             <Button
@@ -128,7 +128,6 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
                   ? setValue([...getKeys(editableProperties)])
                   : setValue([])
               }}
-              on
             >
               Select all
             </Button>
@@ -140,8 +139,8 @@ export const ThemeExportDrawer: FC<ThemeExportDrawerProps> = ({
                   <ThemeProperty
                     {...getCheckboxProps({
                       value: key,
-                      label: themeLabels[index].title,
-                      icon: themeLabels[index].icon,
+                      label: themeLabels?.[index]?.title,
+                      icon: themeLabels?.[index]?.icon,
                     })}
                   />
                 </GridItem>

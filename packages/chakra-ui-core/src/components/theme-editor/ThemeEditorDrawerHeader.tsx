@@ -67,7 +67,7 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
         </Button>
       </Flex>
       <DrawerHeader
-        d="flex"
+        display="flex"
         alignItems="center"
         backgroundColor={{ md: bgColor }}
         pl={{ base: 3, lg: 6 }}
@@ -107,7 +107,7 @@ const ThemeEditorDrawerDefaultHeader = ({ title }) => {
               fontSize="1rem"
               bg="transparent"
             > */}
-      <Heading d="flex" alignItems="center" fontSize="1.25rem" h={{ lg: '60%' }} mb={2}>
+      <Heading display="flex" alignItems="center" fontSize="1.25rem" h={{ lg: '60%' }} mb={2}>
         {title}
       </Heading>
       {/* </ThemeSwitchDrawerButton> */}

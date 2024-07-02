@@ -52,7 +52,7 @@ export const ConfirmModal: FC<Props> = ({
     >
       <ModalOverlay />
       <ModalContent overflow="hidden" fontFamily="Sora">
-        <ModalHeader shadow={shadow} alignItems="center" d="flex">
+        <ModalHeader shadow={shadow} alignItems="center" display="flex">
           <Heading fontSize="xl" color={`${colorScheme}.500`}>
             {title}
           </Heading>
@@ -66,7 +66,7 @@ export const ConfirmModal: FC<Props> = ({
             variant="outline"
             onClick={onClose}
             leftIcon={AvoidIcon ? <AvoidIcon /> : undefined}
-            isFullWidth
+            width="full"            
             size="lg"
             mb={4}
             ref={initialFocusRef}
@@ -77,7 +77,7 @@ export const ConfirmModal: FC<Props> = ({
             onClick={onConfirm}
             colorScheme={colorScheme}
             leftIcon={ConfirmIcon && <ConfirmIcon />}
-            isFullWidth
+            width="full"        
             size="lg"
           >
             Yes, confirm

@@ -1,7 +1,7 @@
 import { atom, DefaultValue, useRecoilState } from 'recoil'
 import { Theme as ChakraTheme } from '@chakra-ui/react'
 import { useCallback } from 'react'
-import produce, { applyPatches, enablePatches, nothing, Patch } from 'immer'
+import { produce, applyPatches, enablePatches, nothing, Patch } from 'immer'
 import { setThemeTokens } from '../utils/updateThemeTokens'
 import { THEME_STATE_LOCAL_STORAGE_KEY } from '../constants'
 
@@ -136,11 +136,19 @@ export const useThemeEditor = (): useThemeEditorReturn => {
     const newUndone = [lastPatches, ...undone]
     const newUndoable = undoable.slice(1)
 
-    const newTheme = applyPatches(currentTheme as any, lastPatches.inversePatches)
+    let newTheme
+    if(lastPatches && lastPatches.inversePatches) {
+      newTheme = applyPatches(currentTheme as any, lastPatches.inversePatches)
+    } else {
+      newTheme = currentTheme
+      console.error("lastPatches is undefined or lastPatches.inversePatches is undefined.");
+    }
+
+    const filteredUndone = newUndone.filter((item): item is { patches: Patch[]; inversePatches: Patch[] } => item !== undefined);
     setThemeState({
       initialTheme,
       currentTheme: newTheme,
-      undone: newUndone,
+      undone: filteredUndone,
       undoable: newUndoable,
     })
   }, [currentTheme, initialTheme, setThemeState, undoable, undone])
@@ -151,13 +159,20 @@ export const useThemeEditor = (): useThemeEditorReturn => {
     const newUndoable = [nextPatches, ...undoable]
     const newUndone = undone.slice(1)
 
-    const newTheme = applyPatches(currentTheme as any, nextPatches.patches)
+    let newTheme
+    if(nextPatches && nextPatches.patches) {
+      newTheme = applyPatches(currentTheme as any, nextPatches.patches)
+    } else {
+      newTheme = currentTheme
+      console.error("nextPatches is undefined or nextPatches.patches is undefined.");
+    }
 
+    const filteredUndoable = newUndoable.filter((item): item is { patches: Patch[]; inversePatches: Patch[] } => item !== undefined);
     setThemeState({
       initialTheme,
       currentTheme: newTheme,
       undone: newUndone,
-      undoable: newUndoable,
+      undoable: filteredUndoable,
     })
   }, [currentTheme, initialTheme, setThemeState, undoable, undone])
 

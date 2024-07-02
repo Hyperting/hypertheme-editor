@@ -12,7 +12,7 @@ export const ThemeSwitchDrawerHeader: FC<Props> = ({ onClose }) => {
 
   return (
     <DrawerHeader
-      d="flex"
+      display="flex"
       justifyContent="space-between"
       alignItems="center"
       backgroundColor={bgColor}

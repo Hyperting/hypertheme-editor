@@ -15,7 +15,12 @@ export const setThemeColorsOfPalette = (
 ): void => {
   const paletteKeys = Object.keys(newPalette)
   for (const paletteKey of paletteKeys) {
-    setThemePaletteColor(token, paletteKey, newPalette[paletteKey])
+    const color = newPalette[paletteKey];
+    if (typeof color === 'string') {
+      setThemePaletteColor(token, paletteKey, color);
+    } else {
+      console.error(`Color for palette key ${paletteKey} is not a string: ${color}`);
+    }
   }
 }
 

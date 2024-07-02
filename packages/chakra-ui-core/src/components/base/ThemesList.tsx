@@ -49,7 +49,7 @@ const ThemesList: FC<ThemesListProps> = ({
   const [themes, setThemes] = useState(defaultThemes)
   const { getRootProps, getRadioProps } = useRadioGroup({
     name: 'themes-list-radio-group',
-    defaultValue: themes && themes.length && themes[0].id,
+    defaultValue: themes && themes.length && themes[0]?.id || '',
     onChange: onChange,
   })
 

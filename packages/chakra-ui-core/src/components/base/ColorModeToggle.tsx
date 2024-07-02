@@ -51,6 +51,7 @@ const ColorModeToggle: FC<ColorModeToggleProps> = (props) => {
         onChange={toggleColorMode}
       /> */}
       <Tabs
+        size={size}
         defaultIndex={0}
         variant="unstyled"
         boxShadow="0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.2)"
@@ -62,7 +63,6 @@ const ColorModeToggle: FC<ColorModeToggleProps> = (props) => {
           {colorModeValues.map((value) => (
             <Tab
               key={value}
-              size={size}
               borderRadius="md"
               bgColor={
                 value == 'light'

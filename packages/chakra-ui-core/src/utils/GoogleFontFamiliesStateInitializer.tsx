@@ -80,8 +80,11 @@ export const GoogleFontFamiliesStateInitializer: FC<Props> = () => {
           ? -1
           : googleFontsState.fontFamilies.indexOf(firstFontFamilyName)
 
-      if (googleFontIndex > -1 && googleFontsState.fonts[googleFontIndex]) {
-        newToLoadFonts.push(googleFontsState.fonts[googleFontIndex])
+      const googleFont = googleFontsState.fonts[googleFontIndex];
+      if (googleFontIndex > -1 && googleFont !== undefined) {
+        newToLoadFonts.push(googleFont);
+      } else {
+        console.error(`Font at index ${googleFontIndex} is undefined or index is invalid.`);
       }
     }
 

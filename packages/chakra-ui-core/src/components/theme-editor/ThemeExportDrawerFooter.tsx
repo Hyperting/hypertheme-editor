@@ -47,7 +47,7 @@ export const ThemeExportDrawerFooter: FC<ThemeExportDrawerFooterProps> = (props)
                 borderRadius="2xl"
                 w="32px"
                 h="32px"
-                colorscheme="primary"
+                // colorscheme="primary"
                 bgColor={colorMode === 'light' ? 'gray.100' : 'gray.900'}
               >
                 <Icon

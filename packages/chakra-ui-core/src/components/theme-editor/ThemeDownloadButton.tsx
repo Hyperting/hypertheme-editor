@@ -17,7 +17,6 @@ import BaseMenu from '../base/BaseMenu'
 import BaseMenuItem from '../base/BaseMenuItem'
 import { API_ENDPOINT } from '../../constants'
 import { Theme, useThemeEditor } from '../../hooks/useThemeEditor'
-import { transform } from '@babel/core'
 import { BsArrowRight } from 'react-icons/bs'
 
 const GENERATE_THEME_ENDPOINT = `${API_ENDPOINT}/generate-theme`

@@ -101,7 +101,7 @@ const ThemeEditorPaletteColorItem: FC<ThemeEditorPaletteColorItemProps> = ({
       <Text mb={1} p={p} px={px} fontSize="0.875rem" textTransform="capitalize">
         {title}
       </Text>
-      <Flex alignItems="center" p={p} px={px} pos="relative" minH="48px">
+      <Flex alignItems="center" p={p} px={px} minH="48px">
         <Popover trigger="hover" placement="bottom-start">
           <ElementsHighlighter themeKeys={`colors.${token}${palette ? '.500' : ''}`}>
             <PopoverTrigger>

@@ -1,6 +1,6 @@
 import type { StorybookConfig } from "@storybook/react-vite";
-
 import { join, dirname } from "path";
+import nodePolyfills from "rollup-plugin-polyfill-node";
 
 /**
  * This function is used to resolve the absolute path of a package.
@@ -10,7 +10,9 @@ function getAbsolutePath(value: string): any {
   return dirname(require.resolve(join(value, "package.json")));
 }
 const config: StorybookConfig = {
-  stories: ["../../../packages/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+  stories: [
+    "../../../packages/**/stories/*.@(mdx|stories.@(js|jsx|mjs|ts|tsx))",
+  ],
   addons: [
     getAbsolutePath("@storybook/addon-onboarding"),
     getAbsolutePath("@storybook/addon-links"),
@@ -21,6 +23,22 @@ const config: StorybookConfig = {
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
     options: {},
+  },
+  viteFinal: async (config) => {
+    config.plugins?.push(
+      nodePolyfills({
+        include: ["process"],
+      })
+    );
+    return {
+      ...config,
+      resolve: {
+        alias: {
+          ...config.resolve?.alias,
+          process: "process/browser",
+        },
+      },
+    };
   },
 };
 export default config;

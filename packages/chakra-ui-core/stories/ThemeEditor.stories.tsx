@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, { useCallback, useState } from 'react'
-import { ComponentMeta } from '@storybook/react'
+import { Meta } from '@storybook/react'
 import { Button } from '@chakra-ui/react'
 import { CgColorPicker, CgEditShadows, CgSpaceBetween } from 'react-icons/cg'
 import { ImFontSize } from 'react-icons/im'
@@ -20,7 +20,7 @@ export default {
   component: ThemeEditor,
   argTypes: {},
   disclosureProps: {},
-} as ComponentMeta<typeof ThemeEditor>
+} as Meta<typeof ThemeEditor>
 
 export const FreeVersionWithRootPanel = (args) => (
   <ThemeEditorProvider>

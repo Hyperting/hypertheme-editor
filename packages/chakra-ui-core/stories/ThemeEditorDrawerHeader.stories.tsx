@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react'
-import { ComponentMeta } from '@storybook/react'
+import { Meta } from '@storybook/react'
 import {
   ThemeEditorButton,
   ThemeEditorProvider,
@@ -13,7 +13,7 @@ export default {
   title: 'HyperThemeEditor/chakra-ui-core/ThemeEditorDrawerHeader',
   component: ThemeEditorDrawerHeader,
   argTypes: {},
-} as ComponentMeta<typeof ThemeEditorDrawerHeader>
+} as Meta<typeof ThemeEditorDrawerHeader>
 
 export const DefaultHeader = (args) => (
   <ThemeEditorProvider>

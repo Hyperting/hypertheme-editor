@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react'
-import { ComponentMeta } from '@storybook/react'
+import { Meta } from '@storybook/react'
 import { Stack } from '@chakra-ui/react'
 import { ThemeEditorProvider, ThemeIcon } from '../src'
 import { theme as defaultTheme } from '@hypertheme-editor/chakra-ui-theme'
@@ -9,7 +9,7 @@ export default {
   title: 'HyperThemeEditor/chakra-ui-core/ThemeIcon',
   component: ThemeIcon,
   argTypes: {},
-} as ComponentMeta<typeof ThemeIcon>
+} as Meta<typeof ThemeIcon>
 
 export const Basic = (args) => {
   return (

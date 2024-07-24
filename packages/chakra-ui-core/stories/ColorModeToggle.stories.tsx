@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react'
-import { ComponentMeta } from '@storybook/react'
+import { Meta } from '@storybook/react'
 import { Stack } from '@chakra-ui/react'
 import { ThemeEditorProvider } from '../src'
 import ColorModeToggle from '../src/components/base/ColorModeToggle'
@@ -9,7 +9,7 @@ export default {
   title: 'HyperThemeEditor/chakra-ui-core/ColorModeToggle',
   component: ColorModeToggle,
   argTypes: {},
-} as ComponentMeta<typeof ColorModeToggle>
+} as Meta<typeof ColorModeToggle>
 
 export const Sizes = (args) => {
   return (

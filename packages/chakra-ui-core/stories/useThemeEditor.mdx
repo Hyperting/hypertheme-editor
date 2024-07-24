@@ -4,7 +4,7 @@ import {
   ThemeEditorProvider,
   ThemeEditorDrawer,
   ThemeEditor,
-  ThemeEditorColors,
+  ThemeEditorRootPanel,
   ThemeEditorDrawerFooter,
   useThemeEditor,
 } from '../src'
@@ -70,7 +70,7 @@ In this example the `useThemeEditor()` hook is used to manage the history state:
 
       <ThemeEditorDrawer>
         <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
-          <ThemeEditorColors />
+         {/*  <ThemeEditorColors /> */}
         </ThemeEditorRootPanel>
       </ThemeEditorDrawer>
     </ThemeEditor>
@@ -131,7 +131,7 @@ In order to make a custom reset button we have to use the underlying `themeEdito
 
       <ThemeEditorDrawer>
         <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
-          <ThemeEditorColors />
+         {/*  <ThemeEditorColors /> */}
         </ThemeEditorRootPanel>
       </ThemeEditorDrawer>
     </ThemeEditor>

@@ -41,8 +41,8 @@ export const FreeVersionWithRootPanel = (args) => (
 
 export const FreeVersionWithoutRootPanel = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Button</Button>
     <ThemeEditor {...args}>
+      <Button colorScheme="blue">Button</Button>
       <ThemeEditorButton />
       <ThemeEditorDrawer>
         {/* <ThemeEditorColors icon={CgColorPicker} title="Colors" />
@@ -54,11 +54,10 @@ export const FreeVersionWithoutRootPanel = (args) => (
 
 export const ProVersion = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue" letterSpacing="wider">
-      Button
-    </Button>
-
     <ThemeEditor {...args}>
+      <Button colorScheme="blue" letterSpacing="wider">
+        Button
+      </Button>
       <ThemeEditorButton />
       <ThemeEditorButton label="Try it" size="sm" />
       <ThemeEditorDrawer hideUpgradeToPro hideCredits>
@@ -82,8 +81,8 @@ export const ProVersion = (args) => (
           <ThemeEditorSpacing />
         </ThemeEditorRootPanel> */}
       </ThemeEditorDrawer>
+      <ColorModeToggle />
     </ThemeEditor>
-    <ColorModeToggle />
   </ThemeEditorProvider>
 );
 
@@ -94,11 +93,10 @@ export const ControlledThemeEditor = (args) => {
 
   return (
     <ThemeEditorProvider>
-      <Button colorScheme="blue" letterSpacing="wider" onClick={onClick}>
-        Click Me!
-      </Button>
-
       <ThemeEditor isOpen={isOpen} onClose={onClose} {...args}>
+        <Button colorScheme="blue" letterSpacing="wider" onClick={onClick}>
+          Click Me!
+        </Button>
         <ThemeEditorDrawer />
       </ThemeEditor>
     </ThemeEditorProvider>

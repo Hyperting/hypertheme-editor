@@ -126,7 +126,7 @@ const ThemeEditorDrawerDefaultHeader = ({ title }) => {
             height="27px"
             width="27px"
             aria-label="undo"
-            disabled={!canUndo}
+            isDisabled={!canUndo}
             onClick={undo}
             variant="outline"
             border="none"
@@ -141,7 +141,7 @@ const ThemeEditorDrawerDefaultHeader = ({ title }) => {
             height="27px"
             width="27px"
             aria-label="redo"
-            disabled={!canRedo}
+            isDisabled={!canRedo}
             onClick={redo}
             variant="outline"
             border="none"

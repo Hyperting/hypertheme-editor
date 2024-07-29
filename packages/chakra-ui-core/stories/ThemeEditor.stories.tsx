@@ -1,31 +1,31 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React, { useCallback, useState } from 'react'
-import { Meta } from '@storybook/react'
-import { Button } from '@chakra-ui/react'
-import { CgColorPicker, CgEditShadows, CgSpaceBetween } from 'react-icons/cg'
-import { ImFontSize } from 'react-icons/im'
-import { BiText } from 'react-icons/bi'
-import { MdRoundedCorner } from 'react-icons/md'
-import ColorModeToggle from '../src/components/base/ColorModeToggle'
+import React, { useCallback, useState } from "react";
+import { Meta } from "@storybook/react";
+import { Button } from "@chakra-ui/react";
+import { CgColorPicker, CgEditShadows, CgSpaceBetween } from "react-icons/cg";
+import { ImFontSize } from "react-icons/im";
+import { BiText } from "react-icons/bi";
+import { MdRoundedCorner } from "react-icons/md";
+import ColorModeToggle from "../src/components/base/ColorModeToggle";
 import {
   ThemeEditorButton,
   ThemeEditorProvider,
   ThemeEditorRootPanel,
   ThemeEditorDrawer,
   ThemeEditor,
-} from '../src'
+} from "../src";
 
 export default {
-  title: 'HyperThemeEditor/chakra-ui-core/ThemeEditor',
+  title: "HyperThemeEditor/chakra-ui-core/ThemeEditor",
   component: ThemeEditor,
   argTypes: {},
   disclosureProps: {},
-} as Meta<typeof ThemeEditor>
+} as Meta<typeof ThemeEditor>;
 
 export const FreeVersionWithRootPanel = (args) => (
   <ThemeEditorProvider>
-    <Button colorScheme="blue">Button</Button>
     <ThemeEditor {...args}>
+      <Button colorScheme="blue">Button</Button>
       <ThemeEditorButton />
       <ThemeEditorDrawer>
         {/* <ThemeEditorRootPanel icon={CgColorPicker} title="Colors">
@@ -37,7 +37,7 @@ export const FreeVersionWithRootPanel = (args) => (
       </ThemeEditorDrawer>
     </ThemeEditor>
   </ThemeEditorProvider>
-)
+);
 
 export const FreeVersionWithoutRootPanel = (args) => (
   <ThemeEditorProvider>
@@ -50,7 +50,7 @@ export const FreeVersionWithoutRootPanel = (args) => (
       </ThemeEditorDrawer>
     </ThemeEditor>
   </ThemeEditorProvider>
-)
+);
 
 export const ProVersion = (args) => (
   <ThemeEditorProvider>
@@ -85,12 +85,12 @@ export const ProVersion = (args) => (
     </ThemeEditor>
     <ColorModeToggle />
   </ThemeEditorProvider>
-)
+);
 
 export const ControlledThemeEditor = (args) => {
-  const [isOpen, setIsOpen] = useState(true)
-  const onClick = useCallback(() => setIsOpen(!isOpen), [isOpen])
-  const onClose = () => setIsOpen(false)
+  const [isOpen, setIsOpen] = useState(true);
+  const onClick = useCallback(() => setIsOpen(!isOpen), [isOpen]);
+  const onClose = () => setIsOpen(false);
 
   return (
     <ThemeEditorProvider>
@@ -102,5 +102,5 @@ export const ControlledThemeEditor = (args) => {
         <ThemeEditorDrawer />
       </ThemeEditor>
     </ThemeEditorProvider>
-  )
-}
+  );
+};

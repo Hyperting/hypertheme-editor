@@ -153,6 +153,7 @@ const ThemeEditorDrawerDefaultHeader = ({ title }) => {
         <IconButton
           aria-label="reset"
           icon={<BsArrowClockwise />}
+          isDisabled={!!kitThemeState.initialTheme}
           onClick={handleResetTheme}
           fontSize="15px"
           size="sm"

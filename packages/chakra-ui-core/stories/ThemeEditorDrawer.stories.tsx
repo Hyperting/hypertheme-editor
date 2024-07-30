@@ -1,23 +1,23 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react'
-import { Meta } from '@storybook/react'
+import React from "react";
+import { Meta } from "@storybook/react";
 
-import { Box } from '@chakra-ui/react'
-import { CgColorPicker } from 'react-icons/cg'
-import ColorModeToggle from '../src/components/base/ColorModeToggle'
+import { Box } from "@chakra-ui/react";
+import { CgColorPicker } from "react-icons/cg";
+import ColorModeToggle from "../src/components/base/ColorModeToggle";
 import {
   ThemeEditorButton,
   ThemeEditorProvider,
   ThemeEditorRootPanel,
   ThemeEditorDrawer,
   ThemeEditor,
-} from '../src'
+} from "../src";
 
 export default {
-  title: 'HyperThemeEditor/chakra-ui-core/ThemeEditorDrawer',
+  title: "HyperThemeEditor/chakra-ui-core/ThemeEditorDrawer",
   component: ThemeEditorDrawer,
   argTypes: {},
-} as Meta<typeof ThemeEditorDrawer>
+} as Meta<typeof ThemeEditorDrawer>;
 
 export const Default = (args) => (
   <ThemeEditorProvider>
@@ -28,7 +28,7 @@ export const Default = (args) => (
       </ThemeEditorDrawer>
     </ThemeEditor>
   </ThemeEditorProvider>
-)
+);
 
 export const DefaultWithRootPanel = (args) => (
   <ThemeEditorProvider>
@@ -41,7 +41,7 @@ export const DefaultWithRootPanel = (args) => (
       </ThemeEditorDrawer>
     </ThemeEditor>
   </ThemeEditorProvider>
-)
+);
 
 export const WithAllEditorsWithRootPanel = (args) => (
   <ThemeEditorProvider>
@@ -65,10 +65,10 @@ export const WithAllEditorsWithRootPanel = (args) => (
           <ThemeEditorSpacing />
         </ThemeEditorRootPanel> */}
       </ThemeEditorDrawer>
+      <ColorModeToggle />
     </ThemeEditor>
-    <ColorModeToggle />
   </ThemeEditorProvider>
-)
+);
 
 export const WithAllEditorsWithoutRootPanel = (args) => (
   <ThemeEditorProvider>
@@ -82,10 +82,10 @@ export const WithAllEditorsWithoutRootPanel = (args) => (
         <ThemeEditorRadii icon={MdRoundedCorner} title="Radii" />
         <ThemeEditorSpacing icon={CgSpaceBetween} title="Space" /> */}
       </ThemeEditorDrawer>
+      <ColorModeToggle />
     </ThemeEditor>
-    <ColorModeToggle />
   </ThemeEditorProvider>
-)
+);
 
 export const WithCustomHeader = (args) => (
   <ThemeEditorProvider>
@@ -104,7 +104,7 @@ export const WithCustomHeader = (args) => (
       </ThemeEditorDrawer>
     </ThemeEditor>
   </ThemeEditorProvider>
-)
+);
 
 export const WithCustomFooter = (args) => (
   <ThemeEditorProvider>
@@ -123,7 +123,7 @@ export const WithCustomFooter = (args) => (
       </ThemeEditorDrawer>
     </ThemeEditor>
   </ThemeEditorProvider>
-)
+);
 
 export const WithCustomPanel = (args) => (
   <ThemeEditorProvider>
@@ -138,4 +138,4 @@ export const WithCustomPanel = (args) => (
       </ThemeEditorDrawer>
     </ThemeEditor>
   </ThemeEditorProvider>
-)
+);

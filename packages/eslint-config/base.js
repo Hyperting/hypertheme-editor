@@ -24,6 +24,7 @@ module.exports = {
     "node_modules/",
     "dist/",
     ".eslintrc.cjs",
+    "vite.config.ts",
   ],
   plugins: ["only-warn", "react-refresh"],
   globals: {

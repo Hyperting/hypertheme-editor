@@ -274,7 +274,7 @@ const components = {
       line: (props: any) => {
         const { colorScheme: c, orientation } = props
         const isVertical = orientation === 'vertical'
-        const borderProp = orientation === 'vertical' ? 'borderStart' : 'borderBottom'
+        // const borderProp = orientation === 'vertical' ? 'borderStart' : 'borderBottom'
         const marginProp = isVertical ? 'marginStart' : 'marginBottom'
 
         return {

@@ -1,22 +1,23 @@
 import {
   ChakraProvider,
   ColorModeScript,
-  extendTheme,
+  // extendTheme,
   Theme,
 } from '@chakra-ui/react'
 import React, { FC } from 'react'
 
 type ThemeProviderProps = {
   theme: Theme
+  children: React.ReactNode
 }
 
 const ThemeProvider: FC<ThemeProviderProps> = (props) => {
   const { theme, children } = props
 
-  const customTheme = extendTheme({
-    ...theme,
-    config: { ...theme.config, cssVarPrefix: 'hyper-theme' },
-  })
+  // const customTheme = extendTheme({
+  //   ...theme,
+  //   config: { ...theme.config, cssVarPrefix: 'hyper-theme' },
+  // })
 
   return (
     <div className="themeRoot">

@@ -1,4 +1,4 @@
-import { extendTheme, ThemeOverride } from '@chakra-ui/react'
+import { ChakraTheme, DeepPartial, extendTheme, ThemeOverride } from '@chakra-ui/react'
 import components from './components'
 import config from './foundations/config'
 import fonts from './foundations/fonts'
@@ -16,7 +16,7 @@ const customTheme: ThemeOverride = {
   sizes,
   shadows,
   radii,
-  components,
+  components: components as DeepPartial<ChakraTheme['components']>,
   lineHeights: {
     3: '.75rem',
     4: '1rem',

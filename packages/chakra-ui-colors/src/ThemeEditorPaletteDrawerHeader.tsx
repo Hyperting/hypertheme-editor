@@ -57,7 +57,7 @@ export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocu
         <IconButton
           icon={<RiArrowGoBackFill />}
           aria-label="undo"
-          disabled={!canUndo}
+          isDisabled={!canUndo}
           onClick={undo}
         />
 
@@ -65,7 +65,7 @@ export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocu
         <IconButton
           icon={<RiArrowGoForwardFill />}
           aria-label="redo"
-          disabled={!canRedo}
+          isDisabled={!canRedo}
           onClick={redo}
         />
       </ButtonGroup>

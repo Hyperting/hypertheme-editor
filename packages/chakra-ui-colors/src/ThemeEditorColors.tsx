@@ -97,7 +97,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
               value={
                 typeof theme!.colors![item] === 'string'
                   ? (theme?.colors![item] as string)
-                  : theme!.colors![item][500]
+                  : theme!.colors![item]?.[500]
               }
               onChange={handleChangeColor}
               hasDelete
@@ -126,7 +126,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
           token="blue"
           title="Blue"
           palette={theme?.colors?.blue as any}
-          value={`${theme?.colors?.blue[500]}`}
+          value={`${theme?.colors?.blue?.[500]}`}
           onChange={handleChangeColor}
           showIndex
         />
@@ -134,7 +134,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
           token="red"
           title="Red"
           palette={theme?.colors?.red as any}
-          value={`${theme?.colors?.red[500]}`}
+          value={`${theme?.colors?.red?.[500]}`}
           onChange={handleChangeColor}
           showIndex
         />
@@ -142,7 +142,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
           token="green"
           title="Green"
           palette={theme?.colors?.green as any}
-          value={`${theme?.colors?.green[500]}`}
+          value={`${theme?.colors?.green?.[500]}`}
           onChange={handleChangeColor}
           showIndex
         />
@@ -150,7 +150,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
           token="orange"
           title="Orange"
           palette={theme?.colors?.orange as any}
-          value={`${theme?.colors?.orange[500]}`}
+          value={`${theme?.colors?.orange?.[500]}`}
           onChange={handleChangeColor}
           showIndex
         />
@@ -158,7 +158,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
           token="yellow"
           title="Yellow"
           palette={theme?.colors?.yellow as any}
-          value={`${theme?.colors?.yellow[500]}`}
+          value={`${theme?.colors?.yellow?.[500]}`}
           onChange={handleChangeColor}
           showIndex
         />
@@ -166,7 +166,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
           token="purple"
           title="Purple"
           palette={theme?.colors?.purple as any}
-          value={`${theme?.colors?.purple[500]}`}
+          value={`${theme?.colors?.purple?.[500]}`}
           onChange={handleChangeColor}
           showIndex
         />
@@ -174,7 +174,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
           token="teal"
           title="Teal"
           palette={theme?.colors?.teal as any}
-          value={`${theme?.colors?.teal[500]}`}
+          value={`${theme?.colors?.teal?.[500]}`}
           onChange={handleChangeColor}
           showIndex
         />
@@ -182,7 +182,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
           token="cyan"
           title="Cyan"
           palette={theme?.colors?.cyan as any}
-          value={`${theme?.colors?.cyan[500]}`}
+          value={`${theme?.colors?.cyan?.[500]}`}
           onChange={handleChangeColor}
           showIndex
         />
@@ -190,7 +190,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
           token="pink"
           title="Pink"
           palette={theme?.colors?.pink as any}
-          value={`${theme?.colors?.pink[500]}`}
+          value={`${theme?.colors?.pink?.[500]}`}
           onChange={handleChangeColor}
           showIndex
         />
@@ -200,7 +200,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
           token="gray"
           title="Gray"
           palette={theme?.colors?.gray as any}
-          value={theme?.colors?.gray[500]}
+          value={theme?.colors?.gray?.[500]}
           onChange={handleChangeColor}
           showIndex
         />
@@ -210,7 +210,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
           title="WhiteAlpha"
           token="whiteAlpha"
           palette={theme?.colors?.whiteAlpha as any}
-          value={theme?.colors?.whiteAlpha[500]}
+          value={theme?.colors?.whiteAlpha?.[500]}
           onChange={handleChangeColor}
           showIndex
         />
@@ -218,7 +218,7 @@ export const ThemeEditorColors: FC<Props> = (props) => {
           title="BlackAlpha"
           token="blackAlpha"
           palette={theme?.colors?.blackAlpha as any}
-          value={theme?.colors?.blackAlpha[500]}
+          value={theme?.colors?.blackAlpha?.[500]}
           onChange={handleChangeColor}
           showIndex
         />

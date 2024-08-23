@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC } from "react";
 import {
   BoxProps,
   useColorModeValue,
@@ -8,21 +8,21 @@ import {
   useDisclosure,
   Tooltip,
   SimpleGridProps,
-} from '@chakra-ui/react'
-import { extend } from 'colord'
-import namesPlugin from 'colord/plugins/names'
-import ThemeEditorPaletteDrawer from './ThemeEditorPaletteDrawer'
+} from "@chakra-ui/react";
+import { extend } from "colord";
+import namesPlugin from "colord/plugins/names";
+import ThemeEditorPaletteDrawer from "./ThemeEditorPaletteDrawer";
 
-extend([namesPlugin])
+extend([namesPlugin]);
 
 export type ThemeEditorPaletteProps = {
-  palette: Record<string | number, string>
-  scale?: (string | number)[]
-  value?: string
-  token: string
-  showIndex?: boolean
-  disableEditDrawer?: boolean
-} & Omit<SimpleGridProps, 'onChange'>
+  palette: Record<string | number, string>;
+  scale?: (string | number)[];
+  value?: string;
+  token: string;
+  showIndex?: boolean;
+  disableEditDrawer?: boolean;
+} & Omit<SimpleGridProps, "onChange">;
 
 const ThemeEditorPalette: FC<ThemeEditorPaletteProps> = ({
   p,
@@ -35,9 +35,9 @@ const ThemeEditorPalette: FC<ThemeEditorPaletteProps> = ({
   disableEditDrawer,
   ...rest
 }) => {
-  const { onOpen, onClose, isOpen } = useDisclosure()
-  const shadow = useColorModeValue('surface', 'surfaceDark')
-  const borderColor = useColorModeValue('blackAlpha.100', 'whiteAlpha.100')
+  const { onOpen, onClose, isOpen } = useDisclosure();
+  const shadow = useColorModeValue("surface", "surfaceDark");
+  const borderColor = useColorModeValue("blackAlpha.100", "whiteAlpha.100");
 
   return (
     <>
@@ -68,15 +68,19 @@ const ThemeEditorPalette: FC<ThemeEditorPaletteProps> = ({
               shadow={shadow}
               bgColor={palette[paletteIndex] as string}
               fontSize="0.75rem"
-              borderColor={key < 5 ? 'whiteAlpha.600' : 'whiteAlpha.300'}
-              cursor={!disableEditDrawer ? 'pointer' : 'auto'}
+              borderColor={key < 5 ? "whiteAlpha.600" : "whiteAlpha.300"}
+              cursor={!disableEditDrawer ? "pointer" : "auto"}
               key={key}
             >
               {showIndex && (
                 <Text
-                  color={token.indexOf('white') >= 0 ? 'gray.500' : palette[scale[9 - key]]}
+                  color={
+                    token.indexOf("white") >= 0
+                      ? "gray.500"
+                      : palette[scale[9 - key] as string | number]
+                  }
                   size="xs"
-                  d={{ base: 'none', md: 'inline' }}
+                  display={{ base: "none", md: "inline" }}
                 >
                   {paletteIndex}
                 </Text>
@@ -94,7 +98,7 @@ const ThemeEditorPalette: FC<ThemeEditorPaletteProps> = ({
         />
       )}
     </>
-  )
-}
+  );
+};
 
-export default ThemeEditorPalette
+export default ThemeEditorPalette;

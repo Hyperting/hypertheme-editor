@@ -216,7 +216,7 @@ export const ThemeEditorPalettePopoverForm: FC<Props> = (props) => {
           </Stack>
         </PopoverBody>
         <PopoverFooter>
-          <ButtonGroup d="flex" justifyContent="flex-end">
+          <ButtonGroup display="flex" justifyContent="flex-end">
             <Button onClick={onClose} size="sm">
               Cancel
             </Button>

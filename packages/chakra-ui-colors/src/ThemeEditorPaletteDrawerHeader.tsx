@@ -25,7 +25,7 @@ export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocu
 
   return (
     <DrawerHeader
-      d="flex"
+      display="flex"
       alignItems="center"
       backgroundColor="rgba(0,0,0,0)"
       px={{ base: 3, lg: 6 }}
@@ -33,13 +33,13 @@ export const ThemeEditorPaletteDrawerHeader: FC<Props> = ({ onClose, initialFocu
       <Flex alignItems="center" w="100%" flex="1">
         {theme?.colors && (
           <ThemeEditorPalette
-            palette={theme?.colors[token]}
+            palette={theme?.colors[token] as Record<string | number, string>}
             token={token}
             w={20}
             h={{ base: 10, md: 10 }}
             mr={3}
             alignSelf="centrer"
-            d={{ base: 'none', sm: 'grid' }}
+            display={{ base: 'none', sm: 'grid' }}
             disableEditDrawer
           />
         )}

@@ -104,6 +104,9 @@ importers:
       '@chakra-ui/react':
         specifier: '>= 2.8.2'
         version: registry.npmjs.org/@chakra-ui/react@2.8.2(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@types/react@18.2.66)(framer-motion@11.2.12)(react-dom@18.2.0)(react@18.2.0)
+      colord:
+        specifier: ^2.9.3
+        version: registry.npmjs.org/colord@2.9.3
       framer-motion:
         specifier: '>= 11.2.12'
         version: registry.npmjs.org/framer-motion@11.2.12(react-dom@18.2.0)(react@18.2.0)
@@ -113,6 +116,9 @@ importers:
       react:
         specifier: '>=18.2.0'
         version: registry.npmjs.org/react@18.2.0
+      react-colorful:
+        specifier: ^5.6.1
+        version: registry.npmjs.org/react-colorful@5.6.1(react-dom@18.2.0)(react@18.2.0)
       react-dom:
         specifier: '>=18.2.0'
         version: registry.npmjs.org/react-dom@18.2.0(react@18.2.0)
@@ -11451,7 +11457,7 @@ packages:
     dependencies:
       '@chakra-ui/anatomy': registry.npmjs.org/@chakra-ui/anatomy@2.2.2
       '@chakra-ui/shared-utils': registry.npmjs.org/@chakra-ui/shared-utils@2.0.5
-      '@chakra-ui/styled-system': registry.npmjs.org/@chakra-ui/styled-system@2.9.2
+      '@chakra-ui/styled-system': 2.9.2
       color2k: registry.npmjs.org/color2k@2.0.3
     dev: false
 
@@ -13563,6 +13569,12 @@ packages:
     version: 2.0.3
     dev: false
 
+  registry.npmjs.org/colord@2.9.3:
+    resolution: {integrity: sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/colord/-/colord-2.9.3.tgz}
+    name: colord
+    version: 2.9.3
+    dev: false
+
   registry.npmjs.org/commondir@1.0.1:
     resolution: {integrity: sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/commondir/-/commondir-1.0.1.tgz}
     name: commondir
@@ -15436,6 +15448,19 @@ packages:
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime@7.23.2
       react: registry.npmjs.org/react@18.2.0
+    dev: false
+
+  registry.npmjs.org/react-colorful@5.6.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-1exovf0uGTGyq5mXQT0zgQ80uvj2PCwvF8zY1RN9/vbJVSjSo3fsB/4L3ObbF7u70NduSiK4xu4Y6q1MHoUGEw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/react-colorful/-/react-colorful-5.6.1.tgz}
+    id: registry.npmjs.org/react-colorful/5.6.1
+    name: react-colorful
+    version: 5.6.1
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: registry.npmjs.org/react@18.2.0
+      react-dom: registry.npmjs.org/react-dom@18.2.0(react@18.2.0)
     dev: false
 
   registry.npmjs.org/react-dom@18.2.0(react@18.2.0):

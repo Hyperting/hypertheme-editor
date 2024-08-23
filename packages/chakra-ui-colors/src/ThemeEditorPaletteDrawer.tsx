@@ -41,10 +41,10 @@ const ThemeEditorPaletteDrawer: FC<ThemeEditorPaletteDrawerProps> = (props) => {
 
   const handleChangeColor = useCallback(
     ({ token, index, value }) => {
-      if (theme && theme.colors && theme.colors[token] && theme.colors[token][index]) {
+      if (theme && theme.colors && theme.colors[token] && theme.colors?.[token]?.[index]) {
         if (
-          typeof theme.colors[token][index] === 'string' &&
-          theme.colors[token][index] !== value
+          typeof theme.colors?.[token]?.[index] === 'string' &&
+          theme.colors?.[token]?.[index] !== value
         ) {
           try {
             const newTheme = {

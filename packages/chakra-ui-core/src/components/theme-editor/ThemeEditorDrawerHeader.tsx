@@ -1,4 +1,4 @@
-import React, { FC, useCallback, MutableRefObject } from 'react'
+import React, { FC, useCallback, MutableRefObject } from "react";
 import {
   DrawerHeader,
   Flex,
@@ -12,31 +12,37 @@ import {
   HStack,
   useColorMode,
   Heading,
-} from '@chakra-ui/react'
-import { BsArrowClockwise } from 'react-icons/bs'
-import { MdClose } from 'react-icons/md'
-import { BsArrow90DegLeft, BsArrow90DegRight } from 'react-icons/bs'
-import { useRecoilState } from 'recoil'
-import { ThemeIcon, ColorModeToggle } from '../base'
-import { setThemeTokens } from '../../utils/updateThemeTokens'
-import { themeEditorState, useThemeEditor } from '../../hooks/useThemeEditor'
+  useTheme as useChakraTheme,
+  Theme as ChakraTheme,
+} from "@chakra-ui/react";
+import { BsArrowClockwise } from "react-icons/bs";
+import { MdClose } from "react-icons/md";
+import { BsArrow90DegLeft, BsArrow90DegRight } from "react-icons/bs";
+import { useRecoilState } from "recoil";
+import { ThemeIcon, ColorModeToggle } from "../base";
+import { setThemeTokens } from "../../utils/updateThemeTokens";
+import {
+  Theme,
+  themeEditorState,
+  useThemeEditor,
+} from "../../hooks/useThemeEditor";
 
 export type ThemeEditorDrawerHeaderProps = {
-  title?: string
-  onClose?: () => void
-  initialFocusRef?: MutableRefObject<HTMLButtonElement>
-  children?: React.ReactNode
-}
+  title?: string;
+  onClose?: () => void;
+  initialFocusRef?: MutableRefObject<HTMLButtonElement>;
+  children?: React.ReactNode;
+};
 
 export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
-  title = 'Hyper Theme',
+  title = "Hyper Theme",
   onClose,
   initialFocusRef,
   children,
 }) => {
-  const shadow = useColorModeValue('surface', 'surfaceDark')
-  const bgColor = useColorModeValue('white', 'gray.900')
-  const { colorMode } = useColorMode()
+  const shadow = useColorModeValue("surface", "surfaceDark");
+  const bgColor = useColorModeValue("white", "gray.900");
+  const { colorMode } = useColorMode();
 
   return (
     <Box pos="relative">
@@ -57,8 +63,8 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
           onClick={onClose}
           fontSize="1rem"
           // p="0.5rem"
-          color={colorMode == 'light' ? 'gray.600' : 'white'}
-          bgColor={colorMode == 'light' ? 'white' : 'gray.700'}
+          color={colorMode == "light" ? "gray.600" : "white"}
+          bgColor={colorMode == "light" ? "white" : "gray.700"}
           border="none"
           p={2}
           ref={initialFocusRef}
@@ -71,31 +77,46 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
         alignItems="center"
         backgroundColor={{ md: bgColor }}
         pl={{ base: 3, lg: 6 }}
-        pr={{ base: '75px', lg: '100px' }}
+        pr={{ base: "75px", lg: "100px" }}
         py={{ base: 2, lg: 4 }}
       >
         <Flex alignItems="center" w="100%" flex="1">
           <ThemeIcon boxSize={16} mr={2} shadow={shadow} />
-          {children ? children : <ThemeEditorDrawerDefaultHeader title={title} />}
+          {children ? (
+            children
+          ) : (
+            <ThemeEditorDrawerDefaultHeader title={title} />
+          )}
         </Flex>
       </DrawerHeader>
     </Box>
-  )
-}
+  );
+};
 
 const ThemeEditorDrawerDefaultHeader = ({ title }) => {
-  const { canUndo, canRedo, undo, redo } = useThemeEditor()
-  const { colorMode } = useColorMode()
-  const [kitThemeState, setThemeState] = useRecoilState(themeEditorState)
+  const { canUndo, canRedo, undo, redo } = useThemeEditor();
+  const chakraTheme = useChakraTheme();
+  const { colorMode } = useColorMode();
+  const [kitThemeState, setThemeState] = useRecoilState(themeEditorState);
+
   const handleResetTheme = useCallback(() => {
-    setThemeState({
-      ...kitThemeState,
+    const initialTheme = (
+      kitThemeState.initialTheme &&
+      Object.keys(kitThemeState.initialTheme).length > 0
+        ? kitThemeState.initialTheme
+        : chakraTheme
+    ) as ChakraTheme; // Fallback to Chakra theme if no initial theme is set
+
+    setThemeState((prevState) => ({
+      ...prevState,
+      currentTheme: initialTheme,
+      initialTheme,
       undoable: [],
       undone: [],
-      currentTheme: kitThemeState.initialTheme,
-    })
-    setThemeTokens(kitThemeState.initialTheme as any)
-  }, [kitThemeState, setThemeState])
+    }));
+
+    setThemeTokens(initialTheme);
+  }, [chakraTheme, kitThemeState, setThemeState]);
 
   return (
     <Flex flexDir="column" justifyContent="center">
@@ -107,7 +128,13 @@ const ThemeEditorDrawerDefaultHeader = ({ title }) => {
               fontSize="1rem"
               bg="transparent"
             > */}
-      <Heading display="flex" alignItems="center" fontSize="1.25rem" h={{ lg: '60%' }} mb={2}>
+      <Heading
+        display="flex"
+        alignItems="center"
+        fontSize="1.25rem"
+        h={{ lg: "60%" }}
+        mb={2}
+      >
         {title}
       </Heading>
       {/* </ThemeSwitchDrawerButton> */}
@@ -130,9 +157,9 @@ const ThemeEditorDrawerDefaultHeader = ({ title }) => {
             onClick={undo}
             variant="outline"
             border="none"
-            color={colorMode == 'light' ? 'gray.600' : 'gray.100'}
-            bgColor={colorMode == 'light' ? 'white' : 'gray.700'}
-            _focus={{ border: 'none' }}
+            color={colorMode == "light" ? "gray.600" : "gray.100"}
+            bgColor={colorMode == "light" ? "white" : "gray.700"}
+            _focus={{ border: "none" }}
           />
           <Divider orientation="vertical" height="27px" />
           <IconButton
@@ -145,15 +172,15 @@ const ThemeEditorDrawerDefaultHeader = ({ title }) => {
             onClick={redo}
             variant="outline"
             border="none"
-            color={colorMode == 'light' ? 'gray.600' : 'gray.100'}
-            bgColor={colorMode == 'light' ? 'white' : 'gray.700'}
-            _focus={{ border: 'none' }}
+            color={colorMode == "light" ? "gray.600" : "gray.100"}
+            bgColor={colorMode == "light" ? "white" : "gray.700"}
+            _focus={{ border: "none" }}
           />
         </ButtonGroup>
         <IconButton
           aria-label="reset"
           icon={<BsArrowClockwise />}
-          isDisabled={!!kitThemeState.initialTheme}
+          isDisabled={kitThemeState.undoable.length === 0}
           onClick={handleResetTheme}
           fontSize="15px"
           size="sm"
@@ -161,9 +188,9 @@ const ThemeEditorDrawerDefaultHeader = ({ title }) => {
           w="10px"
           variant="outline"
           border="none"
-          color={colorMode == 'light' ? 'gray.600' : 'gray.100'}
-          bgColor={colorMode == 'light' ? 'white' : 'gray.700'}
-          _focus={{ border: 'none' }}
+          color={colorMode == "light" ? "gray.600" : "gray.100"}
+          bgColor={colorMode == "light" ? "white" : "gray.700"}
+          _focus={{ border: "none" }}
           boxShadow="0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 1px rgba(0, 0, 0, 0.2)"
         />
         {/* <BaseMenu
@@ -195,5 +222,5 @@ const ThemeEditorDrawerDefaultHeader = ({ title }) => {
               </BaseMenu> */}
       </HStack>
     </Flex>
-  )
-}
+  );
+};

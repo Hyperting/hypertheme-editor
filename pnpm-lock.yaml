@@ -400,6 +400,79 @@ importers:
         specifier: ^5.3.3
         version: registry.npmjs.org/typescript@5.4.5
 
+  packages/hypertheme-chakra-ui:
+    dependencies:
+      '@chakra-ui/react':
+        specifier: '>= 2.8.2'
+        version: registry.npmjs.org/@chakra-ui/react@2.8.2(@emotion/react@11.13.3)(@emotion/styled@11.13.0)(@types/react@18.2.66)(framer-motion@11.2.12)(react-dom@18.2.0)(react@18.2.0)
+      '@hypertheme-editor/chakra-ui-colors':
+        specifier: ^0.2.2
+        version: link:../chakra-ui-colors
+      '@hypertheme-editor/chakra-ui-core':
+        specifier: ^0.2.2
+        version: link:../chakra-ui-core
+      '@hypertheme-editor/chakra-ui-font-sizes':
+        specifier: ^0.2.2
+        version: link:../chakra-ui-font-sizes
+      framer-motion:
+        specifier: '>= 11.2.12'
+        version: registry.npmjs.org/framer-motion@11.2.12(react-dom@18.2.0)(react@18.2.0)
+      immer:
+        specifier: ^10.1.1
+        version: registry.npmjs.org/immer@10.1.1
+      react:
+        specifier: '>=18.2.0'
+        version: registry.npmjs.org/react@18.2.0
+      react-dom:
+        specifier: '>=18.2.0'
+        version: registry.npmjs.org/react-dom@18.2.0(react@18.2.0)
+      react-icons:
+        specifier: ^5.2.1
+        version: registry.npmjs.org/react-icons@5.2.1(react@18.2.0)
+      use-debouncy:
+        specifier: ^5.0.1
+        version: registry.npmjs.org/use-debouncy@5.0.1(react@18.2.0)
+    devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      '@storybook/react':
+        specifier: ^8.1.9
+        version: registry.npmjs.org/@storybook/react@8.1.9(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.5)
+      '@types/react':
+        specifier: ^18.2.66
+        version: registry.npmjs.org/@types/react@18.2.66
+      '@types/react-dom':
+        specifier: ^18.2.22
+        version: registry.npmjs.org/@types/react-dom@18.2.22
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^7.2.0
+        version: registry.npmjs.org/@typescript-eslint/eslint-plugin@7.2.0(@typescript-eslint/parser@7.2.0)(eslint@8.57.0)(typescript@5.4.5)
+      '@typescript-eslint/parser':
+        specifier: ^7.2.0
+        version: registry.npmjs.org/@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5)
+      '@vitejs/plugin-react':
+        specifier: ^4.2.1
+        version: registry.npmjs.org/@vitejs/plugin-react@4.2.1(vite@5.2.0)
+      eslint:
+        specifier: ^8.57.0
+        version: registry.npmjs.org/eslint@8.57.0
+      eslint-plugin-react-hooks:
+        specifier: ^4.6.0
+        version: registry.npmjs.org/eslint-plugin-react-hooks@4.6.0(eslint@8.57.0)
+      eslint-plugin-react-refresh:
+        specifier: ^0.4.6
+        version: registry.npmjs.org/eslint-plugin-react-refresh@0.4.6(eslint@8.57.0)
+      typescript:
+        specifier: ^5.2.2
+        version: registry.npmjs.org/typescript@5.4.5
+      vite:
+        specifier: ^5.2.0
+        version: registry.npmjs.org/vite@5.2.0
+
   packages/typescript-config: {}
 
 packages:

@@ -1,9 +1,8 @@
 {
-  "name": "@hypertheme-editor/chakra-ui-colors",
+  "name": "@hypertheme-editor/chakra-ui",
   "private": true,
   "version": "0.2.2",
   "type": "module",
-  "main": "src/index.ts",
   "author": "marco",
   "license": "ISC",
   "scripts": {
@@ -13,7 +12,6 @@
   },
   "peerDependencies": {
     "@chakra-ui/react": ">= 2.8.2",
-    "@hypertheme-editor/chakra-ui-core": "^0.2.2",
     "framer-motion": ">= 11.2.12",
     "immer": "^10.1.1",
     "react": ">=18.2.0",
@@ -22,8 +20,9 @@
     "use-debouncy": "^5.0.1"
   },
   "dependencies": {
-    "react-colorful": "^5.6.1",
-    "colord": "^2.9.3"
+    "@hypertheme-editor/chakra-ui-colors": "^0.2.2",
+    "@hypertheme-editor/chakra-ui-core": "^0.2.2",
+    "@hypertheme-editor/chakra-ui-font-sizes": "^0.2.2"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",

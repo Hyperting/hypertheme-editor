@@ -3,6 +3,12 @@
   "private": true,
   "version": "0.2.2",
   "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "author": "marco",
   "license": "ISC",
   "scripts": {
@@ -13,7 +19,6 @@
   "peerDependencies": {
     "@chakra-ui/react": ">= 2.8.2",
     "framer-motion": ">= 11.2.12",
-    "immer": "^10.1.1",
     "react": ">=18.2.0",
     "react-dom": ">=18.2.0",
     "react-icons": "^5.2.1",
@@ -38,7 +43,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.2.2",
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^4.0.3"
   },
   "publishConfig": {
     "access": "public",

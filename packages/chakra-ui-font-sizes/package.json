@@ -23,8 +23,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@hypertheme/eslint-config": "workspace:*",
+    "@hypertheme/typescript-config": "workspace:*",
     "@hypertheme-editor/chakra-ui-core": "^0.2.2",
     "@storybook/react": "^8.1.9",
     "@types/react": "^18.2.66",

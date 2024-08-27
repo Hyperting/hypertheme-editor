@@ -26,12 +26,12 @@ importers:
       '@chromatic-com/storybook':
         specifier: ^1.5.0
         version: registry.npmjs.org/@chromatic-com/storybook@1.5.0(react@18.2.0)
-      '@repo/eslint-config':
+      '@hypertheme/eslint-config':
         specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/typescript-config':
+        version: link:../../config/eslint-config
+      '@hypertheme/typescript-config':
         specifier: workspace:*
-        version: link:../../packages/typescript-config
+        version: link:../../config/typescript-config
       '@storybook/addon-essentials':
         specifier: ^8.1.9
         version: registry.npmjs.org/@storybook/addon-essentials@8.1.9(@types/react-dom@18.2.22)(@types/react@18.2.66)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)
@@ -99,6 +99,32 @@ importers:
         specifier: ^5.2.0
         version: registry.npmjs.org/vite@5.2.0
 
+  config/eslint-config:
+    devDependencies:
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^7.1.0
+        version: registry.npmjs.org/@typescript-eslint/eslint-plugin@7.2.0(@typescript-eslint/parser@7.2.0)(eslint@8.57.0)(typescript@5.4.5)
+      '@typescript-eslint/parser':
+        specifier: ^7.1.0
+        version: registry.npmjs.org/@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5)
+      '@vercel/style-guide':
+        specifier: ^5.2.0
+        version: registry.npmjs.org/@vercel/style-guide@5.2.0(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5)
+      eslint-config-prettier:
+        specifier: ^9.1.0
+        version: registry.npmjs.org/eslint-config-prettier@9.1.0(eslint@8.57.0)
+      eslint-config-turbo:
+        specifier: ^2.0.0
+        version: registry.npmjs.org/eslint-config-turbo@2.0.0(eslint@8.57.0)
+      eslint-plugin-only-warn:
+        specifier: ^1.1.0
+        version: registry.npmjs.org/eslint-plugin-only-warn@1.1.0
+      typescript:
+        specifier: ^5.3.3
+        version: registry.npmjs.org/typescript@5.4.5
+
+  config/typescript-config: {}
+
   packages/chakra-ui-colors:
     dependencies:
       '@chakra-ui/react':
@@ -132,12 +158,12 @@ importers:
       '@hypertheme-editor/chakra-ui-core':
         specifier: ^0.2.2
         version: link:../chakra-ui-core
-      '@repo/eslint-config':
+      '@hypertheme/eslint-config':
         specifier: workspace:*
-        version: link:../eslint-config
-      '@repo/typescript-config':
+        version: link:../../config/eslint-config
+      '@hypertheme/typescript-config':
         specifier: workspace:*
-        version: link:../typescript-config
+        version: link:../../config/typescript-config
       '@storybook/react':
         specifier: ^8.1.9
         version: registry.npmjs.org/@storybook/react@8.1.9(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.5)
@@ -208,12 +234,12 @@ importers:
         specifier: ^5.0.1
         version: registry.npmjs.org/use-debouncy@5.0.1(react@18.2.0)
     devDependencies:
-      '@repo/eslint-config':
+      '@hypertheme/eslint-config':
         specifier: workspace:*
-        version: link:../eslint-config
-      '@repo/typescript-config':
+        version: link:../../config/eslint-config
+      '@hypertheme/typescript-config':
         specifier: workspace:*
-        version: link:../typescript-config
+        version: link:../../config/typescript-config
       '@storybook/react':
         specifier: ^8.1.9
         version: registry.npmjs.org/@storybook/react@8.1.9(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.5)
@@ -275,12 +301,12 @@ importers:
       '@hypertheme-editor/chakra-ui-core':
         specifier: ^0.2.2
         version: link:../chakra-ui-core
-      '@repo/eslint-config':
+      '@hypertheme/eslint-config':
         specifier: workspace:*
-        version: link:../eslint-config
-      '@repo/typescript-config':
+        version: link:../../config/eslint-config
+      '@hypertheme/typescript-config':
         specifier: workspace:*
-        version: link:../typescript-config
+        version: link:../../config/typescript-config
       '@storybook/react':
         specifier: ^8.1.9
         version: registry.npmjs.org/@storybook/react@8.1.9(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.5)
@@ -336,12 +362,12 @@ importers:
         specifier: '>=18.2.0'
         version: registry.npmjs.org/react-dom@18.2.0(react@18.2.0)
     devDependencies:
-      '@repo/eslint-config':
+      '@hypertheme/eslint-config':
         specifier: workspace:*
-        version: link:../eslint-config
-      '@repo/typescript-config':
+        version: link:../../config/eslint-config
+      '@hypertheme/typescript-config':
         specifier: workspace:*
-        version: link:../typescript-config
+        version: link:../../config/typescript-config
       '@storybook/react':
         specifier: ^8.1.9
         version: registry.npmjs.org/@storybook/react@8.1.9(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.5)
@@ -375,30 +401,6 @@ importers:
       vite:
         specifier: ^5.2.0
         version: registry.npmjs.org/vite@5.2.0
-
-  packages/eslint-config:
-    devDependencies:
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^7.1.0
-        version: registry.npmjs.org/@typescript-eslint/eslint-plugin@7.2.0(@typescript-eslint/parser@7.2.0)(eslint@8.57.0)(typescript@5.4.5)
-      '@typescript-eslint/parser':
-        specifier: ^7.1.0
-        version: registry.npmjs.org/@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5)
-      '@vercel/style-guide':
-        specifier: ^5.2.0
-        version: registry.npmjs.org/@vercel/style-guide@5.2.0(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5)
-      eslint-config-prettier:
-        specifier: ^9.1.0
-        version: registry.npmjs.org/eslint-config-prettier@9.1.0(eslint@8.57.0)
-      eslint-config-turbo:
-        specifier: ^2.0.0
-        version: registry.npmjs.org/eslint-config-turbo@2.0.0(eslint@8.57.0)
-      eslint-plugin-only-warn:
-        specifier: ^1.1.0
-        version: registry.npmjs.org/eslint-plugin-only-warn@1.1.0
-      typescript:
-        specifier: ^5.3.3
-        version: registry.npmjs.org/typescript@5.4.5
 
   packages/hypertheme-chakra-ui:
     dependencies:
@@ -433,12 +435,12 @@ importers:
         specifier: ^5.0.1
         version: registry.npmjs.org/use-debouncy@5.0.1(react@18.2.0)
     devDependencies:
-      '@repo/eslint-config':
+      '@hypertheme/eslint-config':
         specifier: workspace:*
-        version: link:../eslint-config
-      '@repo/typescript-config':
+        version: link:../../config/eslint-config
+      '@hypertheme/typescript-config':
         specifier: workspace:*
-        version: link:../typescript-config
+        version: link:../../config/typescript-config
       '@storybook/react':
         specifier: ^8.1.9
         version: registry.npmjs.org/@storybook/react@8.1.9(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.5)
@@ -472,8 +474,6 @@ importers:
       vite:
         specifier: ^5.2.0
         version: registry.npmjs.org/vite@5.2.0
-
-  packages/typescript-config: {}
 
 packages:
 

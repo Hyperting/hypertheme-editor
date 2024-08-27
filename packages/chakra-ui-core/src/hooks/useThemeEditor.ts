@@ -72,6 +72,7 @@ export interface useThemeEditorReturn {
    * @param undo - this function set the current theme to the last change
    * @param canRedo - this function set the current theme to the next change
    * @param redo - call this function to go back in the history
+   * @param reset - call this function to reset the theme to the initial one
    */
   theme: Theme | undefined
   initialTheme: Theme | undefined
@@ -84,6 +85,7 @@ export interface useThemeEditorReturn {
   undo: () => void
   canRedo: boolean
   redo: () => void
+  reset: () => void
 }
 
 /**
@@ -176,6 +178,25 @@ export const useThemeEditor = (): useThemeEditorReturn => {
     })
   }, [currentTheme, initialTheme, setThemeState, undoable, undone])
 
+  const reset = useCallback(() => {
+    const initialPatches = undoable[undoable.length - 1]
+    
+    let newTheme
+    if(initialPatches && initialPatches.inversePatches) {
+      newTheme = applyPatches(currentTheme as any, initialPatches.inversePatches)
+    } else {
+      newTheme = currentTheme
+      console.error("initialPatches is undefined or initialPatches.inversePatches is undefined.");
+    }
+
+    setThemeState({
+      initialTheme,
+      currentTheme: newTheme,
+      undone: [], 
+      undoable: [],
+    });
+  }, [currentTheme, initialTheme, setThemeState, undoable]);
+
   return {
     initialTheme,
     theme: currentTheme,
@@ -184,5 +205,6 @@ export const useThemeEditor = (): useThemeEditorReturn => {
     undo,
     canRedo: undone.length > 0,
     redo,
+    reset,
   }
 }

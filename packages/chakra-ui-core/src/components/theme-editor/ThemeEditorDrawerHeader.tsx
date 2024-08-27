@@ -12,8 +12,6 @@ import {
   HStack,
   useColorMode,
   Heading,
-  useTheme as useChakraTheme,
-  Theme as ChakraTheme,
 } from "@chakra-ui/react";
 import { BsArrowClockwise } from "react-icons/bs";
 import { MdClose } from "react-icons/md";
@@ -21,11 +19,7 @@ import { BsArrow90DegLeft, BsArrow90DegRight } from "react-icons/bs";
 import { useRecoilState } from "recoil";
 import { ThemeIcon, ColorModeToggle } from "../base";
 import { setThemeTokens } from "../../utils/updateThemeTokens";
-import {
-  Theme,
-  themeEditorState,
-  useThemeEditor,
-} from "../../hooks/useThemeEditor";
+import { themeEditorState, useThemeEditor } from "../../hooks/useThemeEditor";
 
 export type ThemeEditorDrawerHeaderProps = {
   title?: string;
@@ -94,29 +88,13 @@ export const ThemeEditorDrawerHeader: FC<ThemeEditorDrawerHeaderProps> = ({
 };
 
 const ThemeEditorDrawerDefaultHeader = ({ title }) => {
-  const { canUndo, canRedo, undo, redo } = useThemeEditor();
-  const chakraTheme = useChakraTheme();
+  const { theme, canUndo, canRedo, undo, redo, reset } = useThemeEditor();
   const { colorMode } = useColorMode();
   const [kitThemeState, setThemeState] = useRecoilState(themeEditorState);
-
   const handleResetTheme = useCallback(() => {
-    const initialTheme = (
-      kitThemeState.initialTheme &&
-      Object.keys(kitThemeState.initialTheme).length > 0
-        ? kitThemeState.initialTheme
-        : chakraTheme
-    ) as ChakraTheme; // Fallback to Chakra theme if no initial theme is set
-
-    setThemeState((prevState) => ({
-      ...prevState,
-      currentTheme: initialTheme,
-      initialTheme,
-      undoable: [],
-      undone: [],
-    }));
-
-    setThemeTokens(initialTheme);
-  }, [chakraTheme, kitThemeState, setThemeState]);
+    reset();
+    setThemeTokens(theme as any);
+  }, [reset, setThemeState, theme]);
 
   return (
     <Flex flexDir="column" justifyContent="center">

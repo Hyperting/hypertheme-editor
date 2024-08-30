@@ -19,12 +19,15 @@ export default defineConfig({
     // Adjust assetsDir as needed if you have assets to be copied
     assetsDir: "assets",
     sourcemap: true,
+    minify: false,
     // Rollup options
     rollupOptions: {
       // Externalize dependencies
       external: ["react", "react-dom"], // Add other dependencies as needed
       // Customize entry point if necessary
       input: path.resolve(__dirname, "src/index.ts"),
+      // Preserve entry signatures for better tree-shaking and type checking in consumers
+      preserveEntrySignatures: "strict",
       // Customize output formats (ES modules and CommonJS)
       output: [
         {

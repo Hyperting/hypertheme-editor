@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
+import { ExpandedIndex } from '@chakra-ui/react'
 
-type ExpandedIndex = number | number[]
 type UseAccordionStateProps = (
   localStorageKey: string
 ) => [ExpandedIndex, (index: ExpandedIndex) => void]

@@ -4,6 +4,9 @@
   "version": "0.2.2",
   "type": "module",
   "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
   "author": "marco",
   "license": "ISC",
   "scripts": {

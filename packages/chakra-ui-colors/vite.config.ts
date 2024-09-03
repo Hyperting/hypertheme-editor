@@ -1,32 +1,43 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import path from 'path';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
+import dts from "vite-plugin-dts";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    dts({
+      // Configure the Vite TypeScript declaration plugin as needed
+      include: ["src"],
+    }),
+  ],
   build: {
     // Specify output directory for production build
-    outDir: 'dist', // Adjust output directory as needed
+    outDir: "dist", // Adjust output directory as needed
     // Set target to 'esnext' for ES module output
-    target: 'esnext',
+    target: "esnext",
     // Adjust assetsDir as needed if you have assets to be copied
-    assetsDir: 'assets',
+    assetsDir: "assets",
+    sourcemap: true,
+    minify: false,
     // Rollup options
     rollupOptions: {
       // Externalize dependencies
-      external: ['react', 'react-dom'], // Add other dependencies as needed
+      external: ["react", "react-dom"], // Add other dependencies as needed
       // Customize entry point if necessary
-      input: path.resolve(__dirname, 'src/index.ts'),
+      input: path.resolve(__dirname, "src/index.ts"),
+      // Preserve entry signatures for better tree-shaking and type checking in consumers
+      preserveEntrySignatures: "strict",
       // Customize output formats (ES modules and CommonJS)
-      output: {
-        dir: 'dist', // Adjust output directory as needed
-        format: 'es', // Output format
-        sourcemap: true, // Enable sourcemaps
-      },
-      // Plugins for Rollup (if necessary)
-      plugins: [
-        // Example: peerDepsExternal(), resolve(), commonjs(), typescript()
-        // Add plugins as required by your project
+      output: [
+        {
+          format: "es",
+          entryFileNames: "index.esm.js",
+        },
+        {
+          format: "cjs",
+          entryFileNames: "index.cjs.js",
+        },
       ],
     },
   },
